@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/Digilent/vivado-library",
+  "commit": "0362ce72d39eebc400fdabacff706ee7fa8ad564",
+  "files_sha256": {
+    "component.xml": "da4b8a84e98fd5839f1917f8c5805531cfe2dbb5b7555d54617cf574ce63d59a",
+    "docs/rgb2dvi.docx": "ac771fff3b8b4a1673d7228ba6273e608522cdc4cdd3adad50418ec7a03d48ce",
+    "docs/rgb2dvi.pdf": "cb0f2492f587bc453aec91df91c83f7f108c84b1478d42de77c752c8dc2d2dc8",
+    "src/ClockGen.vhd": "911088c9f4cf5897443a13bdbeaef4a0b3cf8157745582d68b556482e642765b",
+    "src/DVI_Constants.vhd": "d8dbbbc3c8696d4527ee0d3c4757f1a40d0acebc845899483bc61c2bb8270cde",
+    "src/OutputSERDES.vhd": "6205d58405919d4f899a525256e2cafa725408f6644642755cd0de63e69b286e",
+    "src/SyncAsync.vhd": "5561ac8099ed13f3114e97387aab5f7f30ad28a8be2fc540004cbee3f19eb3a7",
+    "src/SyncAsyncReset.vhd": "3ce7ade3267959da59b4d448cc6641018e4f0ac3de9f8f998d0b9ff84a3794bc",
+    "src/TMDS_Encoder.vhd": "b047a257c1172412d1b354a98e3cc77d013d0f3c1af6ff646233abf8b669c196",
+    "src/rgb2dvi.vhd": "e3f24df794677dcef79628051686677eff6ca86612285635b79c0c6fe1dc49bf",
+    "src/rgb2dvi.xdc": "51b9ac7f1229a2250cddb1d490e45e536dd836eb5c42851f67359c7a5aef6130",
+    "src/rgb2dvi_clocks.xdc": "d11f05f62ffa0fce205fc2c2fe95033972da802fdfc7cd3572cef32014fdba57",
+    "src/rgb2dvi_ooc.xdc": "77f9820235b2c3ce1e99d369db4932a76705633eeb5f950908855183931dc1a2",
+    "xgui/rgb2dvi_v1_1.tcl": "44d93693f4a4eac11a86d7ff2be4dc03e2bab44a407c342bd3dd8f1477c55f92",
+    "xgui/rgb2dvi_v1_2.tcl": "c11f022c22fd63e32d2daeec345995f91a9556df9d4946e8a1ef6d8d82a715ff",
+    "xgui/rgb2dvi_v1_3.tcl": "4cbe81ddb19072e4fd53f425f6d18bbdb97e98919e8d6da55674f3f6d0fe863d",
+    "xgui/rgb2dvi_v1_4.tcl": "70a7d4865a5e5a450ca4de65418125024e3de94621f8699a47f268968011083b"
+  }
+}

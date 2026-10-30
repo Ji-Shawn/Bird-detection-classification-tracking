@@ -1,0 +1,251 @@
+{
+  "date": "2026-10-30",
+  "directory_moves": [
+    {
+      "from": "src/m12_servo_tracking/capture/pc",
+      "to": "src/pc"
+    },
+    {
+      "from": "src/m12_servo_tracking",
+      "to": "src/platform"
+    },
+    {
+      "from": "src/m13_logmel_pl",
+      "to": "src/audio_features"
+    },
+    {
+      "from": "src/m14_ssd_preprocess_pl",
+      "to": "src/detector_preprocess"
+    },
+    {
+      "from": "src/m29_center_focus",
+      "to": "src/application"
+    },
+    {
+      "from": "src/verification/m21_continuous_direction",
+      "to": "src/services/core1"
+    },
+    {
+      "from": "src/verification/m23_video_neon",
+      "to": "src/services/core0"
+    },
+    {
+      "from": "src/pl/m12_servo_tracking",
+      "to": "src/pl/capture_and_inference"
+    },
+    {
+      "from": "src/pl/m13_logmel_pl",
+      "to": "src/pl/logmel"
+    },
+    {
+      "from": "src/pl/m14_ssd_preprocess_pl",
+      "to": "src/pl/ssd_preprocess"
+    },
+    {
+      "from": "src/pl/m15_histogram_gamma",
+      "to": "src/pl/image_enhancement"
+    },
+    {
+      "from": "src/pl/m27_hdmi50",
+      "to": "src/pl/hdmi"
+    },
+    {
+      "from": "src/pl/m28_board_osd",
+      "to": "src/pl/display_constraints"
+    },
+    {
+      "from": "src/pl/m29_center_focus",
+      "to": "src/pl/on_screen_display"
+    },
+    {
+      "from": "src/pl/verification/j11_adapter_20261016",
+      "to": "src/pl/board_constraints/camera_adapter"
+    },
+    {
+      "from": "src/pl/verification/m50_four_keys_20261027",
+      "to": "src/pl/board_constraints/buttons"
+    }
+  ],
+  "original_manifest_sha256": "41a1961562610398f27ed16d27549139692e14af113cbecaf8e4998936fdf555",
+  "updated_text_files": [
+    "readme.md",
+    "build/build_boot.py",
+    "build/build_firmware.py",
+    "sim/run_tests.py",
+    "board/tools/launch.py",
+    "build/boot/package_sd_base.py",
+    "build/pl/build_pl.tcl",
+    "build/pl/create_project.tcl",
+    "src/audio_features/tools/linker.py",
+    "src/application/tools/acquisition_overlay.py",
+    "src/application/tools/build_software.py",
+    "src/application/tools/directional_display_overlay.py",
+    "src/services/core1/build_core1.py",
+    "src/services/core0/build_core0.py"
+  ],
+  "historical_reports": "Existing validation reports, PL export reports and original compiler receipts describe the export before this directory reorganization. See this report for current validation.",
+  "firmware_and_model_assets_changed": false,
+  "board_accessed": false,
+  "original_file_count": 2501,
+  "validation": {
+    "original_files_accounted_for": 2501,
+    "original_files_with_identical_content": 2484,
+    "all_directory_names_functional_no_milestone_prefix": true,
+    "all_paths_lowercase_ascii": true,
+    "python_syntax": "pass",
+    "pl_build_input_references_resolved": 195,
+    "firmware_and_model_assets_byte_identical": true,
+    "rtl_rom_ip_and_constraints_byte_identical": true,
+    "arm_generation": {
+      "core0": {
+        "source_inputs_resolved": 35,
+        "generation_passed": true,
+        "compiled": false
+      },
+      "core1": {
+        "source_inputs_resolved": 29,
+        "generation_passed": true,
+        "compiled": false
+      }
+    },
+    "ssd95_native_tests": {
+      "status": "pass",
+      "cases": 37,
+      "fatfs_integration_cases": 5,
+      "board_accessed": false,
+      "sd_card_written": false,
+      "inputs": {
+        "sim/archive/test_ssd95_record.c": "eb4030595b7c9453f1cf90a347af908be9edf025c23fe019fbed08539e4e0176",
+        "src/application/software/ssd_fast.c": "5f84bb81a8a8a812074b68c42c9468a6b40dbd889ad760c9f8f3c94c6394e7f0",
+        "src/application/software/sd_record.c": "026771cd2177eb9aa421f2b5aaec6a7fa100573a7769756006b267f564056322",
+        "src/application/software/sd_writer.c": "3e76c949f46351adaf60e91faf216d35d211422a4d3f1db123ef94a48f15733e",
+        "src/application/software/sd_vendor/ff.c": "9e920dd42c70b0516d385d9780c23c6ee95e28a685fa85b4e3304129cb491d4c",
+        "src/application/software/sd_vendor/ffunicode.c": "6cd4dc4a664386ebd108e56d367582c35f005fc20381486366b5d77ac58119bd"
+      },
+      "limits": "Deterministic model inputs; no model accuracy or physical hardware claim."
+    },
+    "pc_monitor_import_help": "pass",
+    "full_arm_compilation_run": false,
+    "full_pl_build_run": false,
+    "board_accessed": false,
+    "limits": "Directory and path reorganization only. Source generation checked up to compiler invocation; no new ARM compilation, PL synthesis/implementation or board validation.",
+    "board_tools_tests": {
+      "status": "PASS",
+      "cases": 25,
+      "tests": [
+        {
+          "name": "default_help_no_hardware",
+          "passed": true
+        },
+        {
+          "name": "explicit_help_no_hardware",
+          "passed": true
+        },
+        {
+          "name": "program_requires_explicit_program_flag",
+          "passed": true
+        },
+        {
+          "name": "sd_update_requires_target_root",
+          "passed": true
+        },
+        {
+          "name": "valid_date_2026.10.29",
+          "passed": true
+        },
+        {
+          "name": "valid_date_2000.02.29",
+          "passed": true
+        },
+        {
+          "name": "valid_date_1999.12.31",
+          "passed": true
+        },
+        {
+          "name": "reject_invalid_date_0",
+          "passed": true
+        },
+        {
+          "name": "reject_invalid_date_1",
+          "passed": true
+        },
+        {
+          "name": "reject_invalid_date_2",
+          "passed": true
+        },
+        {
+          "name": "reject_invalid_date_3",
+          "passed": true
+        },
+        {
+          "name": "reject_invalid_date_4",
+          "passed": true
+        },
+        {
+          "name": "reject_invalid_date_5",
+          "passed": true
+        },
+        {
+          "name": "tcl_program_preserves_original_boot_sequence",
+          "passed": true
+        },
+        {
+          "name": "tcl_sdcheck_has_reads_and_no_board_mutations",
+          "passed": true
+        },
+        {
+          "name": "unverified_tcl_rejected_before_connect_program.tcl",
+          "passed": true
+        },
+        {
+          "name": "unverified_tcl_rejected_before_connect_read_only_probe.tcl",
+          "passed": true
+        },
+        {
+          "name": "ambiguous_cable_count_rejected_0",
+          "passed": true
+        },
+        {
+          "name": "ambiguous_cable_count_rejected_2",
+          "passed": true
+        },
+        {
+          "name": "explicit_cable_selects_one_of_two",
+          "passed": true
+        },
+        {
+          "name": "write_sd_preview_preserves_fixture_files",
+          "passed": true
+        },
+        {
+          "name": "write_sd_preserves_fixture_photos_and_existing_date",
+          "passed": true
+        },
+        {
+          "name": "write_sd_adds_missing_fixture_date_only",
+          "passed": true
+        },
+        {
+          "name": "write_sd_card_identity_change_does_not_replace_boot",
+          "passed": true
+        },
+        {
+          "name": "fixture_writer_refuses_leftover_staging_file",
+          "passed": true
+        }
+      ],
+      "sources": {
+        "board/tools/launch.py": "67b804304b09cd9fdbd2290b68ee7b61fe011b0f2662d68fc35c02818a25e6c1",
+        "board/tools/program.tcl": "9b4dc6b1b4bfe899e94fbc155d211191cf4e26c65687cd02c5b289da7a969527",
+        "board/tools/read_only_probe.tcl": "6a72efd3fdb087238ca8d02e0574960026c208deb0a9e11a6a4ca558af202f3c",
+        "board/tools/select_cable.tcl": "071de3314db7b2c20c7a7f91df2de7522a2e6a3c39439aca6970f02e14ceaf06",
+        "sim/board_tools/run_tests.py": "6515f1fa93ab2ff3655ec6a1ef7bec535a95c04937f0c8e492a13c519d5b2379"
+      },
+      "board_accessed": false,
+      "physical_sd_card_read": false,
+      "physical_sd_card_written": false,
+      "scope": "Actual portable CLI and Tcl scripts with fully mocked hardware commands; SD writer uses temporary host-directory fixtures with mocked disk identity.",
+      "limits": "Does not validate physical JTAG/USB, removable-disk detection, board cold boot, SD latency or mechanical behavior."
+    }
+  }
+}

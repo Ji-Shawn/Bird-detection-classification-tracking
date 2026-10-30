@@ -1,0 +1,12 @@
+{
+  "core0_byte_identical": true,
+  "core1_all_29_c_inputs_exactly_original": true,
+  "core1_byte_identical": false,
+  "core0_c_inputs": 35,
+  "core1_c_inputs": 29,
+  "both_arm_builds_passed": true,
+  "core0_rebuilt_sha256": "4d2391599eeab5adf9ff38790320aeba958dae3c675687977ba4572c47474e33",
+  "core1_rebuilt_sha256": "bdab1b4ace9588d1dc1d1dbc845d5d58bff4656762626ba996cd13a8a1e7ba68",
+  "board_accessed": false,
+  "core1_rebuild_difference": "Same 29 C input hashes and options; absolute __FILE__ strings in Xilinx driver assertion metadata change with the build workspace path. Shipped firmware remains the original sealed pair."
+}

@@ -1,0 +1,55 @@
+{
+  "project": "m51",
+  "revision": "ssd95_record_20261027",
+  "original_seal_sha256": "c1e79e8d2e947ea59bbe50f91adafec371abc23ec3878ba825fa6d37a5db0403",
+  "original_inventory_counts": {
+    "sources": 6130,
+    "artifacts": 3152,
+    "evidence": 170
+  },
+  "pair": {
+    "applications": {
+      "core0": "4d2391599eeab5adf9ff38790320aeba958dae3c675687977ba4572c47474e33",
+      "core1": "7b44dd4dc2767f44fc105e695ad5c1bc9a46d496f8fd7314663dcf21f5576ca9",
+      "changed_object": "m29_center_focus/build/software/31.o",
+      "unchanged_core0_objects": 34,
+      "core1_recompiled": false
+    },
+    "memory": {
+      "assets_verified": 388,
+      "regions": 400,
+      "overlap": false
+    },
+    "hardware": {
+      "bit": "e40ca4fa56f394fbb2b5bee504feba79fae2587a027e4db9aeafeeddc4679f26",
+      "xsa": "42e0182e912797a98795d053550805ace50bc6ffabcccf03c9430d0155519559",
+      "models": 388,
+      "hardware_recompiled": false,
+      "camera_pins_changed": false,
+      "keys_preserved": true
+    },
+    "boot": {
+      "network_video_gap_us": "0x00165808",
+      "boot_gap_value": 10,
+      "photo_ssd_minimum": 0.95,
+      "tracking_ssd_strict_minimum": 0.5,
+      "date_source": "SD file only"
+    },
+    "tests": {
+      "ssd95_tests.json": "512d3419a4e5944c163e07135b2b79917537e4347680c2313210ed9d644b2dd5"
+    },
+    "inherited_changes": {
+      "sources": [
+        "m29_center_focus/software/ssd_fast.c",
+        "verification/m50_sd_pc_debug_20261025/program_adapter.py",
+        "verification/m50_sd_pc_debug_20261025/release.py"
+      ],
+      "artifacts": [
+        "m29_center_focus/build/software/core0_hdmi.elf",
+        "m29_center_focus/build/software/compile_inputs.json"
+      ],
+      "evidence": []
+    }
+  },
+  "note": "Compact provenance summary. Historical backups and their seals are retained only in the original project; this export has an independent manifest."
+}

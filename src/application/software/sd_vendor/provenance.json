@@ -1,0 +1,64 @@
+{
+  "fatfs": "AMD xilffs v5.1 / FatFs R0.15 patch1",
+  "sdps": "AMD sdps v4.2 from Vivado 2023.2 BSP",
+  "modifications": [
+    "FatFs platform port made explicit, independent from legacy BSP FILE_SYSTEM_INTERFACE selection",
+    "SDPS waits and delays call cooperative audio-yield wrappers; hardware register semantics retained",
+    "No mkfs, erase, or format code enabled",
+    "Core1 USE_AMP BSP omits L2 maintenance: SD DMA instance/ADMA/bounce and all SCR/SWITCH/EXT_CSD DMA scratch buffers are placed in private noncacheable 0x37200000-0x372fffff",
+    "Core1 maps read-only image slots 0x37000000-0x371fffff noncacheable; Core0 retains bounded flush to DDR before READY",
+    "Native test headers select standard fixed-width integer types without Xilinx dependencies"
+  ],
+  "files": [
+    {
+      "source": "m29_center_focus\\build\\fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\libsrc\\xilffs_v5_1\\src\\ff.c",
+      "sha256": "6b9ebee662a960a7e3e1e0bb75681b71cef0d437092d4566203e29b00eb5421b",
+      "vendored": "ff.c"
+    },
+    {
+      "source": "m29_center_focus\\build\\fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\libsrc\\xilffs_v5_1\\src\\include\\ff.h",
+      "sha256": "26b542f84ab386bf7ff3e3a4c4176bdec247d097346a686eb42827f4cd2e770b",
+      "vendored": "ff.h"
+    },
+    {
+      "source": "m29_center_focus\\build\\fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\libsrc\\xilffs_v5_1\\src\\include\\diskio.h",
+      "sha256": "73edd0c44226a52ff2323030ae4bb0e22634acbb9f4b8636ae09b343a2c0cf26",
+      "vendored": "diskio.h"
+    },
+    {
+      "source": "m29_center_focus\\build\\fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\libsrc\\sdps_v4_2\\src\\xsdps.c",
+      "sha256": "90847502296dac66e5dcbfb1c931046fab7d850fef0d790c245174caab1fbe53",
+      "vendored": "xsdps.c"
+    },
+    {
+      "source": "m29_center_focus\\build\\fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\libsrc\\sdps_v4_2\\src\\xsdps_card.c",
+      "sha256": "8349509e59708bf056b50179b14b3843695dc0fdf945bbed20ad7ffcd7cc2439",
+      "vendored": "xsdps_card.c"
+    },
+    {
+      "source": "m29_center_focus\\build\\fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\libsrc\\sdps_v4_2\\src\\xsdps_host.c",
+      "sha256": "fbd2bb51836a815e1d2fac66c5e1afe27637305fcca53fa467337c7fa76aabad",
+      "vendored": "xsdps_host.c"
+    },
+    {
+      "source": "m29_center_focus\\build\\fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\libsrc\\sdps_v4_2\\src\\xsdps_options.c",
+      "sha256": "f2c7bfd50b03ef8565c0d5ac41aeb456b13052a71328bfff68cb7c5c20b08e8a",
+      "vendored": "xsdps_options.c"
+    },
+    {
+      "source": "m29_center_focus\\build\\fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\libsrc\\sdps_v4_2\\src\\xsdps.h",
+      "sha256": "55af4c44c68a0e1f027c05aac9f70062f888d5dda52f3561b6d621995d328832",
+      "vendored": "xsdps.h"
+    },
+    {
+      "source": "m29_center_focus\\build\\fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\libsrc\\sdps_v4_2\\src\\xsdps_core.h",
+      "sha256": "c9b7d77fd243fffffb3dea632882ac390ad537e7a0b6f87b8d5b9e3048fe8591",
+      "vendored": "xsdps_core.h"
+    },
+    {
+      "source": "m29_center_focus\\build\\fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\libsrc\\sdps_v4_2\\src\\xsdps_hw.h",
+      "sha256": "ef9da038f7b8a76276ba583e35459b4f281ff71a7e251ea7a88b04d313a37d23",
+      "vendored": "xsdps_hw.h"
+    }
+  ]
+}

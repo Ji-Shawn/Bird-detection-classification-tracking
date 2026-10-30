@@ -1,0 +1,31 @@
+{
+  "sha256": "8a9e1060668756aec00e8ec517c307a18f5179415b57b374235d8efd4b9d0051",
+  "bytes": 30821472,
+  "rebuilt_applications": false,
+  "assets": 388,
+  "partitions": 8,
+  "board_accessed": false,
+  "sd_card_written": false,
+  "independent_partition_verify": {
+    "status": "pass",
+    "sha256": "8a9e1060668756aec00e8ec517c307a18f5179415b57b374235d8efd4b9d0051",
+    "bytes": 30821472,
+    "partitions": 8,
+    "model_assets": 388,
+    "core0_sha256": "4d2391599eeab5adf9ff38790320aeba958dae3c675687977ba4572c47474e33",
+    "core1_sha256": "7b44dd4dc2767f44fc105e695ad5c1bc9a46d496f8fd7314663dcf21f5576ca9",
+    "bit_sha256": "e40ca4fa56f394fbb2b5bee504feba79fae2587a027e4db9aeafeeddc4679f26",
+    "core0_runtime_segments": 1,
+    "core1_runtime_segments": 1,
+    "fsbl_runtime_segments": 1,
+    "core1_gnu_note_only_exclusion": true,
+    "pl_runtime_equal": true,
+    "model_groups_equal": true,
+    "ready_seed_verified": true,
+    "fsbl_entry_and_rom_header_verified": true,
+    "fsbl_stack_startup_check": "Performed separately by build_fsbl on rebuilt images; not inferred from BOOT header",
+    "board_accessed": false,
+    "sd_card_written": false
+  },
+  "note": "Rebuilt FSBL contains compilation metadata; the shipped boot.bin is retained byte-for-byte."
+}

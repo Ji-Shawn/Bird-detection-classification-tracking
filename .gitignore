@@ -1,0 +1,21 @@
+# Build output, generated projects, host data and local environments.
+/build/out/
+/.venv/
+/.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.xil/
+.Xil/
+*.jou
+*.wdb
+*.wlf
+*.o
+*.d
+*.log
+*.jsonl
+*.tmp
+captures/
+/board/photos/
+/board/backups/
+/src/platform/captures/

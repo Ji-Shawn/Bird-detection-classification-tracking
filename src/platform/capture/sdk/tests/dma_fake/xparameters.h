@@ -1,0 +1,2 @@
+#define XPAR_VDMA_DEVICE_ID 0
+#define XPAR_DMA_DEVICE_ID 0

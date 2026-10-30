@@ -1,0 +1,12 @@
+/* 头部参数(head_s0/meta.json 生成)*/
+#define L51_SCALE   0.023529412224888802f
+#define L51_ZP      -128
+#define VIEW_SCALE  0.019147997722029686f
+#define VIEW_ZP     -128
+#define LOG_SCALE   0.21258553862571716f
+#define LOG_ZP      -16
+#define GW_SCALE    0.0012006787583231926f
+#define GW_ZP       0
+#define VIEW_N      1280
+#define NCLS        60
+#define GOLD_TOP1   11

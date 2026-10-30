@@ -1,0 +1,12 @@
+# Preserve the published byte hashes across Git clones (including CRLF inputs).
+* -text
+*.bin binary
+*.elf binary
+*.bit binary
+*.xsa binary
+*.a binary
+*.npy binary
+*.npz binary
+*.jpg binary
+*.png binary
+*.wav binary
