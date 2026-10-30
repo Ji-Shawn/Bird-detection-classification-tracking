@@ -1,4 +1,17 @@
-# M51 PL 构建
+# FPGA 硬件构建导览
+
+本目录把 `src/pl/` 中的硬件源码和 IP 配置创建为 Vivado 工程，并提供展开检查与完整实现入口。硬件模块按采集、推理、音频特征、视频增强和显示等功能组织，详见[硬件源码导览](../../src/pl/readme.md)。ARM 双核与 BOOT 的构建步骤见[构建总览](../readme.md)。
+
+```text
+build/pl/
+├── readme.md              # 本说明
+├── create_project.tcl     # 创建工程并生成 IP
+├── check_pl.tcl           # RTL 展开检查
+├── build_pl.tcl           # 完整综合、实现和时序检查
+└── av_system.tcl          # 历史连线参考
+```
+
+输入源码位于 `src/pl/`，生成工程和结果位于 `build/out/pl/`，原发布实现报告位于 `build/reports/`。所有命令从仓库根目录运行。
 
 工具版本为 Vivado 2023.2，器件为 `xc7z020clg400-2`。在仓库根目录执行：
 
@@ -16,4 +29,4 @@ Windows 可使用 Vivado 安装目录中的 `vivado.bat`。第一条命令只建
 
 `src/pl/bd/av_system.bd` 与 `build/pl/av_system.tcl` **仅作为原设计连线和地址配置的参考**，不作为正式构建入口。对它们进行全新 `validate_bd_design` 时，旧接口传播元数据将 `vdma_proto` 的目标协议推为 AXI4，但该转换器只接受 AXI3/AXI4LITE，因此检查失败。已发布硬件的真实配置是该转换器输出 AXI3，而后级总线接收 AXI4 子集。打包没有更改协议、跳过失败后声称通过，也没有改动已发布的 bitstream；改用实际结构连接源码保留原来硬件实现。
 
-本次已完成：干净工程创建、39 个叶 IP 全部重新生成、39 份功能配置逐项一致性核对，以及 `synth_design -rtl` 展开检查（168 个外部端口、4 位实体按键，0 严重警告、0 错误；487 条普通警告）。详细结果见 `report/pl_package.json` 与 `build/reports/pl_package_checks.txt`。未重新运行完整综合、布局布线或上板测试；`build/reports/` 的时序等报告属于原已发布实现。重新完整构建后必须满足脚本保留的时序、未约束路径、DRC 和总线偏斜检查。结构构建只导出 bitstream；调整 PS 配置或地址映射后，需要重新建立有效的硬件交接描述，不能继续使用原 XSA。
+原始导出阶段已完成：干净工程创建、39 个叶 IP 全部重新生成、39 份功能配置逐项一致性核对，以及 `synth_design -rtl` 展开检查（168 个外部端口、4 位实体按键，0 严重警告、0 错误；487 条普通警告）。这些历史结果见 `report/pl_package.json` 与 `build/reports/pl_package_checks.txt`；其中旧阶段路径通过 `report/directory_reorganization.json` 对照当前功能目录。2026-10-30 目录整理确认了构建输入路径有效，未重新运行上述 Vivado 检查、完整综合、布局布线或上板测试。`build/reports/` 的时序等报告属于原已发布实现。重新完整构建后必须满足脚本保留的时序、未约束路径、DRC 和总线偏斜检查。结构构建只导出 bitstream；调整 PS 配置或地址映射后，需要重新建立有效的硬件交接描述，不能继续使用原 XSA。

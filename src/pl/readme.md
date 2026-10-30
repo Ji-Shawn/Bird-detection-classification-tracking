@@ -2,6 +2,25 @@
 
 PL 是 Zynq 芯片里的 FPGA 可编程逻辑部分。软件向硬件配置参数并搬运数据，下面的 RTL 描述硬件如何处理音频、图像和神经网络运算。
 
+```text
+src/pl/
+├── readme.md              # 硬件模块与源码位置
+├── capture_and_inference/ # 音视频采集、控制与神经网络计算引擎
+├── logmel/                # 音频特征提取
+├── ssd_preprocess/        # 检测图像预处理
+├── image_enhancement/     # 直方图与亮度增强
+├── hdmi/                  # 显示输出
+├── on_screen_display/     # 字体和屏幕信息叠加
+├── display_constraints/   # 显示时序与跨时钟域约束
+├── board_constraints/     # 板卡引脚约束
+├── structural/            # 系统顶层连接
+├── ip_config/             # 官方 IP 配置
+├── ip_repo/               # 随包 IP 仓库
+└── bd/                    # 历史连接参考
+```
+
+下表中的路径相对于 `src/pl/`；构建命令从仓库根目录执行。返回[源码导览](../readme.md)。
+
 | 目录 | 作用 |
 | --- | --- |
 | `capture_and_inference/capture/pl/rtl/audio/` | 四麦接收、波束形成、音频流 |

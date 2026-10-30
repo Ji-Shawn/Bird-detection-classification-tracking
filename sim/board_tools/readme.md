@@ -1,5 +1,20 @@
 # 上板工具离线验证
 
+这里验证 `board/tools/` 的命令行为。项目仿真总览见[sim/readme.md](../readme.md)，实际上板操作见[board/readme.md](../../board/readme.md)。
+
+```text
+sim/board_tools/
+├── readme.md              # 测试范围与运行方法
+└── run_tests.py           # CLI、Tcl 模拟和写卡临时目录测试
+```
+
+| 对象 | 当前目录 |
+| --- | --- |
+| 实际上板工具 | `board/tools/` |
+| 上位机界面源码 | `src/pc/av_monitor/` |
+| 已配套固件 | `board/firmware/` |
+| 本次运行结果 | `build/out/board_tools_tests.json` |
+
 在仓库根目录运行：
 
 ```powershell

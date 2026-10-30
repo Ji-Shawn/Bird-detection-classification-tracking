@@ -2,6 +2,20 @@
 
 先分清运行位置：`pc/` 在电脑上运行；`application/`、`services/`、`platform/` 和两个预处理驱动运行在 Zynq 的 ARM 处理器上；`pl/` 是 FPGA 内的硬件逻辑。
 
+```text
+src/
+├── readme.md              # 源码总览
+├── pc/                    # 电脑端监控与调参界面
+├── application/           # 当前板端应用与功能生成器
+├── services/              # core0 主核服务、core1 副核构建入口
+├── platform/              # 双核基础代码、协议、BSP 与推理运行库
+├── audio_features/        # 音频特征硬件驱动
+├── detector_preprocess/   # 检测预处理硬件驱动
+└── pl/                    # FPGA 硬件源码与约束
+```
+
+下表中的路径相对于本目录；命令均从仓库根目录执行。返回[项目说明](../readme.md)，或查看[构建导览](../build/readme.md)。
+
 | 目录 | 内容 | 常见修改入口 |
 | --- | --- | --- |
 | `pc/` | Python 监控界面、图像预览、在线调参 | `av_monitor/`；依赖在 `requirements.txt` |
