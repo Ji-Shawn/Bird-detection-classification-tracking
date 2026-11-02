@@ -1,0 +1,27 @@
+{
+  "capture": {
+    "execution": "board",
+    "run_id": "",
+    "captured_at": "",
+    "firmware_or_design_sha256": "",
+    "raw_evidence": "",
+    "input_sha256": {
+      "1": "632dfbf8ff58db3a97ec16212fa797147b54fde453c75fe707088623add00a2d",
+      "2": "a5fd5db9d675acdc05998b00bc610f6663fee82a9e33036e2262077c3a4e1c18",
+      "3": "b4bcf2f6e6955365c6a262456fd8f9a5fea4a05779053422dcb36a7d8af73bf1"
+    }
+  },
+  "results": {
+    "1": {
+      "logits": null,
+      "top1": null
+    },
+    "2": {
+      "logits": null,
+      "top1": null
+    },
+    "3": {
+      "detections": null
+    }
+  }
+}

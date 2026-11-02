@@ -1,0 +1,36 @@
+{
+  "run_utc": "2026-11-02T16:54:44.486663+00:00",
+  "status": "pass",
+  "repetitions": [
+    {
+      "run": 1,
+      "returncode": 0,
+      "stdout": ".                                                                        [100%]\n1 passed in 0.42s"
+    },
+    {
+      "run": 2,
+      "returncode": 0,
+      "stdout": ".                                                                        [100%]\n1 passed in 0.43s"
+    },
+    {
+      "run": 3,
+      "returncode": 0,
+      "stdout": ".                                                                        [100%]\n1 passed in 0.41s"
+    },
+    {
+      "run": 4,
+      "returncode": 0,
+      "stdout": ".                                                                        [100%]\n1 passed in 0.41s"
+    },
+    {
+      "run": 5,
+      "returncode": 0,
+      "stdout": ".                                                                        [100%]\n1 passed in 0.42s"
+    }
+  ],
+  "test_path": "src/pc/tests/test_video_health.py",
+  "test_sha256": "50a416c19588a6176ebbb44786ad0fa73c8d940a62625ca7ccd77046ae1af49e",
+  "observed_before_fix": "One full-suite run saw port_packets==1 while assembly progress was still empty. The receive counter is updated before frame assembly in the worker.",
+  "fix": "Await actual assembly progress under a generous initial expiry interval, then arm the 80ms timeout under the receiver lock and verify expiry without any following packet. Product networking code is unchanged.",
+  "hardware_accessed": false
+}

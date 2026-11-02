@@ -1,0 +1,687 @@
+{
+  "schema": "vivado_summary_review_v1",
+  "scope": "Summary screening only; no design, topology or hardware signoff",
+  "inputs": {
+    "timing": {
+      "path": "build/reports/pl_timing.rpt",
+      "sha256": "dad3f05066300af26d3458f170fff45713a44b29f49eb0aaba9671d1c579315f",
+      "bytes": 489040,
+      "metadata": {
+        "tool_version": "Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023",
+        "date": "Tue Oct 27 11:43:59 2026",
+        "design": "av_system_wrapper",
+        "device": "7z020-clg400",
+        "design_state": "Physopt postRoute"
+      }
+    },
+    "utilization": {
+      "path": "build/reports/pl_utilization.rpt",
+      "sha256": "9b0ff77be5ec13c957156646e3e808c55d732bd047bb810db59d1303e5a16914",
+      "bytes": 185488,
+      "metadata": {
+        "tool_version": "Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023",
+        "date": "Tue Oct 27 11:43:49 2026",
+        "design": "av_system_wrapper",
+        "device": "xc7z020clg400-2",
+        "design_state": "Physopt postRoute"
+      }
+    },
+    "cdc": {
+      "path": "build/reports/pl_cdc.rpt",
+      "sha256": "4cf210170097a822e2c8c4fcaf6ca50cf0157b3470204171ab98b16d9d461b80",
+      "bytes": 3764,
+      "metadata": {
+        "tool_version": "Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023",
+        "date": "Tue Oct 27 11:44:36 2026",
+        "design": "av_system_wrapper",
+        "device": "7z020-clg400",
+        "design_state": "Physopt postRoute"
+      }
+    },
+    "methodology": {
+      "path": "build/reports/pl_methodology.rpt",
+      "sha256": "284cf86606ca4be46f6ab3a662a8f34d15d499f5650dbd8906113ff4a8350255",
+      "bytes": 74578,
+      "metadata": {
+        "tool_version": "Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023",
+        "date": "Tue Oct 27 11:44:31 2026",
+        "design": "av_system_wrapper",
+        "device": "xc7z020clg400-2",
+        "design_state": "Fully Routed"
+      }
+    },
+    "drc": {
+      "path": "build/reports/pl_drc.rpt",
+      "sha256": "9b4df206d510057c01809678bba01ca8256eb1da40152c3658e5400bf1dc9190",
+      "bytes": 224707,
+      "metadata": {
+        "tool_version": "Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023",
+        "date": "Tue Oct 27 11:44:12 2026",
+        "design": "av_system_wrapper",
+        "device": "xc7z020clg400-2",
+        "design_state": "Fully Routed"
+      }
+    }
+  },
+  "metrics": {
+    "timing": {
+      "wns_ns": 0.128,
+      "tns_ns": 0.0,
+      "setup_failing_endpoints": 0,
+      "setup_total_endpoints": 182784,
+      "whs_ns": 0.005,
+      "ths_ns": 0.0,
+      "hold_failing_endpoints": 0,
+      "hold_total_endpoints": 182137,
+      "wpws_ns": 0.147,
+      "tpws_ns": 0.0,
+      "pulse_failing_endpoints": 0,
+      "pulse_total_endpoints": 49646,
+      "coverage": {
+        "no_clock": 0,
+        "constant_clock": 0,
+        "pulse_width_clock": 0,
+        "unconstrained_internal_endpoints": 0,
+        "no_input_delay": 7,
+        "no_output_delay": 11,
+        "multiple_clock": 0,
+        "generated_clocks": 0,
+        "loops": 0,
+        "partial_input_delay": 4,
+        "partial_output_delay": 0,
+        "latch_loops": 0
+      },
+      "clocks": [
+        {
+          "name": "cam_pclk",
+          "period_ns": 11.904,
+          "frequency_mhz": 84.005
+        },
+        {
+          "name": "clk_fpga_0",
+          "period_ns": 10.0,
+          "frequency_mhz": 100.0
+        },
+        {
+          "name": "av_system_i/clk_audio/inst/clk_in1",
+          "period_ns": 10.0,
+          "frequency_mhz": 100.0
+        },
+        {
+          "name": "clk_out1_av_system_clk_audio_0",
+          "period_ns": 10.172,
+          "frequency_mhz": 98.305
+        },
+        {
+          "name": "clkfbout_av_system_clk_audio_0",
+          "period_ns": 10.0,
+          "frequency_mhz": 100.0
+        },
+        {
+          "name": "av_system_i/clk_hdmi/inst/clk_in1",
+          "period_ns": 10.0,
+          "frequency_mhz": 100.0
+        },
+        {
+          "name": "clk_out1_av_system_clk_hdmi_0_1",
+          "period_ns": 8.696,
+          "frequency_mhz": 115.0
+        },
+        {
+          "name": "clk_out2_av_system_clk_hdmi_0_1",
+          "period_ns": 1.739,
+          "frequency_mhz": 575.0
+        },
+        {
+          "name": "clk_out3_av_system_clk_hdmi_0_1",
+          "period_ns": 6.957,
+          "frequency_mhz": 143.75
+        },
+        {
+          "name": "clkfbout_av_system_clk_hdmi_0_1",
+          "period_ns": 10.0,
+          "frequency_mhz": 100.0
+        }
+      ]
+    },
+    "utilization": {
+      "instance": "av_system_wrapper",
+      "lut": 43722,
+      "logic_lut": 33314,
+      "lutram": 9736,
+      "srl": 672,
+      "ff": 35383,
+      "ramb36": 80,
+      "ramb18": 18,
+      "dsp": 164
+    },
+    "cdc": {
+      "rows": [
+        {
+          "severity": "Critical",
+          "source_clock": "clk_fpga_0",
+          "destination_clock": "clk_out1_av_system_clk_hdmi_0_1",
+          "cdc_type": "Safely Timed",
+          "exceptions": "Max Delay Datapath Only",
+          "endpoints": 495,
+          "safe": 494,
+          "unsafe": 0,
+          "unknown": 1,
+          "no_async_reg": 0,
+          "line": 17
+        },
+        {
+          "severity": "Critical",
+          "source_clock": "clk_out1_av_system_clk_hdmi_0_1",
+          "destination_clock": "clk_out3_av_system_clk_hdmi_0_1",
+          "cdc_type": "User Ignored",
+          "exceptions": "False Path",
+          "endpoints": 8,
+          "safe": 7,
+          "unsafe": 1,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 18
+        },
+        {
+          "severity": "Warning",
+          "source_clock": "clk_out1_av_system_clk_audio_0",
+          "destination_clock": "cam_pclk",
+          "cdc_type": "No Common Primary Clock",
+          "exceptions": "False Path",
+          "endpoints": 22,
+          "safe": 22,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 19
+        },
+        {
+          "severity": "Warning",
+          "source_clock": "cam_pclk",
+          "destination_clock": "clk_fpga_0",
+          "cdc_type": "No Common Primary Clock",
+          "exceptions": "Max Delay Datapath Only",
+          "endpoints": 47,
+          "safe": 47,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 20
+        },
+        {
+          "severity": "Warning",
+          "source_clock": "clk_out1_av_system_clk_audio_0",
+          "destination_clock": "clk_fpga_0",
+          "cdc_type": "Safely Timed",
+          "exceptions": "Max Delay Datapath Only",
+          "endpoints": 151,
+          "safe": 151,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 21
+        },
+        {
+          "severity": "Warning",
+          "source_clock": "clk_out1_av_system_clk_hdmi_0_1",
+          "destination_clock": "clk_fpga_0",
+          "cdc_type": "Safely Timed",
+          "exceptions": "Max Delay Datapath Only",
+          "endpoints": 25,
+          "safe": 25,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 22
+        },
+        {
+          "severity": "Warning",
+          "source_clock": "cam_pclk",
+          "destination_clock": "clk_out1_av_system_clk_audio_0",
+          "cdc_type": "No Common Primary Clock",
+          "exceptions": "False Path",
+          "endpoints": 86,
+          "safe": 86,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 23
+        },
+        {
+          "severity": "Warning",
+          "source_clock": "clk_fpga_0",
+          "destination_clock": "clk_out3_av_system_clk_hdmi_0_1",
+          "cdc_type": "Safely Timed",
+          "exceptions": "Max Delay Datapath Only",
+          "endpoints": 8,
+          "safe": 8,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 24
+        },
+        {
+          "severity": "Info",
+          "source_clock": "clk_fpga_0",
+          "destination_clock": "cam_pclk",
+          "cdc_type": "No Common Primary Clock",
+          "exceptions": "Max Delay Datapath Only",
+          "endpoints": 4,
+          "safe": 4,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 25
+        },
+        {
+          "severity": "Info",
+          "source_clock": "clk_out3_av_system_clk_hdmi_0_1",
+          "destination_clock": "clk_fpga_0",
+          "cdc_type": "Safely Timed",
+          "exceptions": "Max Delay Datapath Only",
+          "endpoints": 7,
+          "safe": 7,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 26
+        },
+        {
+          "severity": "Info",
+          "source_clock": "input port clock",
+          "destination_clock": "clk_fpga_0",
+          "cdc_type": "No Common Primary Clock",
+          "exceptions": "False Path",
+          "endpoints": 2,
+          "safe": 2,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 27
+        },
+        {
+          "severity": "Info",
+          "source_clock": "clk_fpga_0",
+          "destination_clock": "clk_out1_av_system_clk_audio_0",
+          "cdc_type": "Safely Timed",
+          "exceptions": "Max Delay Datapath Only",
+          "endpoints": 7,
+          "safe": 7,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 28
+        },
+        {
+          "severity": "Info",
+          "source_clock": "input port clock",
+          "destination_clock": "clk_out1_av_system_clk_audio_0",
+          "cdc_type": "No Common Primary Clock",
+          "exceptions": "False Path",
+          "endpoints": 4,
+          "safe": 4,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 29
+        },
+        {
+          "severity": "Info",
+          "source_clock": "clk_out3_av_system_clk_hdmi_0_1",
+          "destination_clock": "clk_out1_av_system_clk_hdmi_0_1",
+          "cdc_type": "User Ignored",
+          "exceptions": "False Path",
+          "endpoints": 8,
+          "safe": 8,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 30
+        },
+        {
+          "severity": "Info",
+          "source_clock": "input port clock",
+          "destination_clock": "clk_out1_av_system_clk_hdmi_0_1",
+          "cdc_type": "No Common Primary Clock",
+          "exceptions": "False Path",
+          "endpoints": 1,
+          "safe": 1,
+          "unsafe": 0,
+          "unknown": 0,
+          "no_async_reg": 0,
+          "line": 31
+        }
+      ],
+      "critical_rows": 2,
+      "reported_unsafe_endpoints": 1,
+      "reported_unknown_endpoints": 1,
+      "reported_no_async_reg_endpoints": 0
+    },
+    "methodology": {
+      "violations": 45,
+      "rows": [
+        {
+          "rule": "LUTAR-1",
+          "severity": "Warning",
+          "description": "LUT drives async reset alert",
+          "count": 17,
+          "line": 30
+        },
+        {
+          "rule": "TIMING-9",
+          "severity": "Warning",
+          "description": "Unknown CDC Logic",
+          "count": 1,
+          "line": 31
+        },
+        {
+          "rule": "TIMING-11",
+          "severity": "Warning",
+          "description": "Inappropriate max delay with datapath only option",
+          "count": 1,
+          "line": 32
+        },
+        {
+          "rule": "TIMING-18",
+          "severity": "Warning",
+          "description": "Missing input or output delay",
+          "count": 16,
+          "line": 33
+        },
+        {
+          "rule": "TIMING-28",
+          "severity": "Warning",
+          "description": "Auto-derived clock referenced by a timing constraint",
+          "count": 2,
+          "line": 34
+        },
+        {
+          "rule": "TIMING-39",
+          "severity": "Warning",
+          "description": "Invalid bus skew constraint on paths that have too many levels of logic",
+          "count": 1,
+          "line": 35
+        },
+        {
+          "rule": "ULMTCS-1",
+          "severity": "Warning",
+          "description": "Control Sets use limits recommend reduction",
+          "count": 1,
+          "line": 36
+        },
+        {
+          "rule": "XDCB-5",
+          "severity": "Warning",
+          "description": "Runtime inefficient way to find pin objects",
+          "count": 2,
+          "line": 37
+        },
+        {
+          "rule": "XDCC-4",
+          "severity": "Warning",
+          "description": "User Clock constraint overwritten with the same name",
+          "count": 2,
+          "line": 38
+        },
+        {
+          "rule": "XDCC-8",
+          "severity": "Warning",
+          "description": "User Clock constraint overwritten on the same source",
+          "count": 2,
+          "line": 39
+        }
+      ]
+    },
+    "drc": {
+      "violations": 321,
+      "rows": [
+        {
+          "rule": "DPIP-1",
+          "severity": "Warning",
+          "description": "Input pipelining",
+          "count": 57,
+          "line": 31
+        },
+        {
+          "rule": "DPOP-1",
+          "severity": "Warning",
+          "description": "PREG Output pipelining",
+          "count": 58,
+          "line": 32
+        },
+        {
+          "rule": "DPOP-2",
+          "severity": "Warning",
+          "description": "MREG Output pipelining",
+          "count": 153,
+          "line": 33
+        },
+        {
+          "rule": "PDCN-1569",
+          "severity": "Warning",
+          "description": "LUT equation term check",
+          "count": 15,
+          "line": 34
+        },
+        {
+          "rule": "REQP-1839",
+          "severity": "Warning",
+          "description": "RAMB36 async control check",
+          "count": 8,
+          "line": 35
+        },
+        {
+          "rule": "REQP-1840",
+          "severity": "Warning",
+          "description": "RAMB18 async control check",
+          "count": 16,
+          "line": 36
+        },
+        {
+          "rule": "RTSTAT-10",
+          "severity": "Warning",
+          "description": "No routable loads",
+          "count": 1,
+          "line": 37
+        },
+        {
+          "rule": "REQP-165",
+          "severity": "Advisory",
+          "description": "writefirst",
+          "count": 3,
+          "line": 38
+        },
+        {
+          "rule": "REQP-181",
+          "severity": "Advisory",
+          "description": "writefirst",
+          "count": 10,
+          "line": 39
+        }
+      ]
+    }
+  },
+  "resource_limits": {},
+  "findings": [
+    {
+      "level": "review",
+      "report": "timing",
+      "detail": "check_timing no_input_delay: 7; inspect the affected objects and constraints"
+    },
+    {
+      "level": "review",
+      "report": "timing",
+      "detail": "check_timing no_output_delay: 11; inspect the affected objects and constraints"
+    },
+    {
+      "level": "review",
+      "report": "timing",
+      "detail": "check_timing partial_input_delay: 4; inspect the affected objects and constraints"
+    },
+    {
+      "level": "review",
+      "report": "cdc",
+      "detail": "clk_fpga_0 -> clk_out1_av_system_clk_hdmi_0_1: Critical, unsafe=0, unknown=1, no_async_reg=0; requires object-level review",
+      "line": 17
+    },
+    {
+      "level": "review",
+      "report": "cdc",
+      "detail": "clk_out1_av_system_clk_hdmi_0_1 -> clk_out3_av_system_clk_hdmi_0_1: Critical, unsafe=1, unknown=0, no_async_reg=0; requires object-level review",
+      "line": 18
+    },
+    {
+      "level": "review",
+      "report": "cdc",
+      "detail": "clk_out1_av_system_clk_audio_0 -> cam_pclk: Warning, unsafe=0, unknown=0, no_async_reg=0; requires object-level review",
+      "line": 19
+    },
+    {
+      "level": "review",
+      "report": "cdc",
+      "detail": "cam_pclk -> clk_fpga_0: Warning, unsafe=0, unknown=0, no_async_reg=0; requires object-level review",
+      "line": 20
+    },
+    {
+      "level": "review",
+      "report": "cdc",
+      "detail": "clk_out1_av_system_clk_audio_0 -> clk_fpga_0: Warning, unsafe=0, unknown=0, no_async_reg=0; requires object-level review",
+      "line": 21
+    },
+    {
+      "level": "review",
+      "report": "cdc",
+      "detail": "clk_out1_av_system_clk_hdmi_0_1 -> clk_fpga_0: Warning, unsafe=0, unknown=0, no_async_reg=0; requires object-level review",
+      "line": 22
+    },
+    {
+      "level": "review",
+      "report": "cdc",
+      "detail": "cam_pclk -> clk_out1_av_system_clk_audio_0: Warning, unsafe=0, unknown=0, no_async_reg=0; requires object-level review",
+      "line": 23
+    },
+    {
+      "level": "review",
+      "report": "cdc",
+      "detail": "clk_fpga_0 -> clk_out3_av_system_clk_hdmi_0_1: Warning, unsafe=0, unknown=0, no_async_reg=0; requires object-level review",
+      "line": 24
+    },
+    {
+      "level": "review",
+      "report": "methodology",
+      "detail": "LUTAR-1: Warning, count=17",
+      "line": 30
+    },
+    {
+      "level": "review",
+      "report": "methodology",
+      "detail": "TIMING-9: Warning, count=1",
+      "line": 31
+    },
+    {
+      "level": "review",
+      "report": "methodology",
+      "detail": "TIMING-11: Warning, count=1",
+      "line": 32
+    },
+    {
+      "level": "review",
+      "report": "methodology",
+      "detail": "TIMING-18: Warning, count=16",
+      "line": 33
+    },
+    {
+      "level": "review",
+      "report": "methodology",
+      "detail": "TIMING-28: Warning, count=2",
+      "line": 34
+    },
+    {
+      "level": "review",
+      "report": "methodology",
+      "detail": "TIMING-39: Warning, count=1",
+      "line": 35
+    },
+    {
+      "level": "review",
+      "report": "methodology",
+      "detail": "ULMTCS-1: Warning, count=1",
+      "line": 36
+    },
+    {
+      "level": "review",
+      "report": "methodology",
+      "detail": "XDCB-5: Warning, count=2",
+      "line": 37
+    },
+    {
+      "level": "review",
+      "report": "methodology",
+      "detail": "XDCC-4: Warning, count=2",
+      "line": 38
+    },
+    {
+      "level": "review",
+      "report": "methodology",
+      "detail": "XDCC-8: Warning, count=2",
+      "line": 39
+    },
+    {
+      "level": "review",
+      "report": "drc",
+      "detail": "DPIP-1: Warning, count=57",
+      "line": 31
+    },
+    {
+      "level": "review",
+      "report": "drc",
+      "detail": "DPOP-1: Warning, count=58",
+      "line": 32
+    },
+    {
+      "level": "review",
+      "report": "drc",
+      "detail": "DPOP-2: Warning, count=153",
+      "line": 33
+    },
+    {
+      "level": "review",
+      "report": "drc",
+      "detail": "PDCN-1569: Warning, count=15",
+      "line": 34
+    },
+    {
+      "level": "review",
+      "report": "drc",
+      "detail": "REQP-1839: Warning, count=8",
+      "line": 35
+    },
+    {
+      "level": "review",
+      "report": "drc",
+      "detail": "REQP-1840: Warning, count=16",
+      "line": 36
+    },
+    {
+      "level": "review",
+      "report": "drc",
+      "detail": "RTSTAT-10: Warning, count=1",
+      "line": 37
+    },
+    {
+      "level": "review",
+      "report": "drc",
+      "detail": "REQP-165: Advisory, count=3",
+      "line": 38
+    },
+    {
+      "level": "review",
+      "report": "drc",
+      "detail": "REQP-181: Advisory, count=10",
+      "line": 39
+    }
+  ],
+  "status": "review_required",
+  "exit_code": 2
+}

@@ -1,0 +1,90 @@
+{
+  "archived_on": "2026-11-03",
+  "execution_date": "2026-10-31",
+  "files": [
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/full_build_result.json",
+      "source_sha256": "ddd86d4a488fd27a72e405311c5e55642df228c29cde77ba7f2959baeb8cd55a",
+      "package": "result.json",
+      "package_sha256": "954118709bb0faa99f67b51183e050b09b02d6e001e8f494d58e2ca8afd03d90",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    },
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/build_explore.tcl",
+      "source_sha256": "c364d8da81d8eeaf648e98b9ec86d1fe8593156cb0129067e3766ceb460b2320",
+      "package": "successful_strategy.tcl",
+      "package_sha256": "c364d8da81d8eeaf648e98b9ec86d1fe8593156cb0129067e3766ceb460b2320",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    },
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/timing.rpt",
+      "source_sha256": "40f97da2256db79fd5204fa3a7514002551f47303ad2d194e65a62774fa7d0d9",
+      "package": "timing.rpt",
+      "package_sha256": "f4b51ce32780e19825285be94f563dbc22383979a71197eb28e23d9efd82a36a",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    },
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/utilization_summary.rpt",
+      "source_sha256": "f5b133082402f85e3d9638625003a0cdfbf36589d823d78f093cef8c39fbae2b",
+      "package": "utilization.rpt",
+      "package_sha256": "8d2e909fba680c0104e3e8329b6e4842edb0cd910cac2e987a696ed8610e70ed",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    },
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/cdc_details.rpt",
+      "source_sha256": "863aad81d1079b8043eb214584ea93a783119232851bc1a3fcd835cc10ff7180",
+      "package": "cdc_details.rpt",
+      "package_sha256": "4c89bbd78b4567eb85a1dd1b102ccf9eb858e2296733cc15a4b252e37c621826",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    },
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/cdc.rpt",
+      "source_sha256": "3656a88d7373e9ce89a39321adce06d3e98b86715afd51af369109a9f0d2cf0e",
+      "package": "cdc.rpt",
+      "package_sha256": "45dcc630c460baddea0d6a25150034d04b5da2d2ee54efa0125d1ba873503e49",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    },
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/methodology.rpt",
+      "source_sha256": "8855eca0ab718dacacd9364e74b2d1bc3ede5f120e0453ae80d019bd3a2b1546",
+      "package": "methodology.rpt",
+      "package_sha256": "4754b948f1b08d435367a013940a52f6173f45415d946e596238e6c22e923b90",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    },
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/drc.rpt",
+      "source_sha256": "92933d561eb99730077fc962ce80b515534ed90a43835a0dafdd3c3b00dfbd8f",
+      "package": "drc.rpt",
+      "package_sha256": "2c52627e61e9f569678b4c9e8a94093f7ffe2425d6fd31273875c8a68d496d99",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    },
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/clocks.rpt",
+      "source_sha256": "856f675a745b9323260daa65f5ee40d8a38c96a05a22e4d9ba8fe5afe0728976",
+      "package": "clocks.rpt",
+      "package_sha256": "ae2510eeb4c4c803e72df6c729956f2b929ea7ee5e3385da8cbb2fe0b531f7e6",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    },
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/route.rpt",
+      "source_sha256": "83f436814ef939cf8e1a31e07ee1a2adf2957e9509702a65b77749e4ced9ff82",
+      "package": "route.rpt",
+      "package_sha256": "83f436814ef939cf8e1a31e07ee1a2adf2957e9509702a65b77749e4ced9ff82",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    },
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/explore_build.log",
+      "source_sha256": "91947b165ac40becbc6bf3ce46adb25e9694cb7002741f7975baa9e37c01c3df",
+      "package": "implementation_log.txt",
+      "package_sha256": "264dd781c6d2d29e9d8f792fdb54c7f04255fa7be13caa309acc697c95de32b7",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    },
+    {
+      "source_relative": "github_vivado_7bcce46/build/out/pl/attempt1_default/timing.rpt",
+      "source_sha256": "517b4780d485c594ff7c0c6f8dac944ea386e3e63e7397d037b6b5dd3119431e",
+      "package": "default_timing.rpt",
+      "package_sha256": "b57467cbbf35f90968a5ba4d936c3ab716e7d92f083b36ec0ab4ed110be09d11",
+      "transformation": "UTF-8 newline normalization and installation/checkout path substitution"
+    }
+  ]
+}

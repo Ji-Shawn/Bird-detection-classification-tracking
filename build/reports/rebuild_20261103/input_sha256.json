@@ -1,0 +1,945 @@
+{
+  "captured_at": "2026-11-02T17:19:18.785863+00:00",
+  "scope": "Archive-time current src/pl tree and build/pl Tcl snapshot; superset, not a captured pre-build or compiler-consumed dependency receipt",
+  "source_tree_count": 148,
+  "source_tree": [
+    {
+      "path": "src/pl/bd/av_system.bd",
+      "sha256": "f74eae8d68e31c8315ddd7505c7c17f230a72bcd390da1cc82be7579d68b6b8d",
+      "bytes": 274877
+    },
+    {
+      "path": "src/pl/board_constraints/buttons/hardware/board_keys.xdc",
+      "sha256": "01a0e228f6d6a99cd050236658c4d31a4cc1f3f1bfe351a82b4011d73a9625ca",
+      "bytes": 717
+    },
+    {
+      "path": "src/pl/board_constraints/camera_adapter/j11_adapter.xdc",
+      "sha256": "33d92a8ca2b8dc6f60857197b8795fbbaae63a90e4d7afe9ac13c71f4fbe6af0",
+      "bytes": 377
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/audio/audio_control_top.sv",
+      "sha256": "f4de6a70138c21d6e9fefde31f85bfbf5bdf7c4537b381232cc9e60c46553671",
+      "bytes": 9714
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/audio/audio_dma_axis.sv",
+      "sha256": "2a6a1efa426029d5b09767dd5422ce7f6fed3533094ec7189dd23511c5664c3c",
+      "bytes": 5023
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/audio/audio_frontend_top.sv",
+      "sha256": "963767c1a362e57bd411dcc4a3043146d628e601bacc350b55ba96ace5ca776d",
+      "bytes": 3468
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/audio/beam_sum_sat.sv",
+      "sha256": "698389380340a07b22a297272133797ecbb194f924a37f77e9fbf30063a227e2",
+      "bytes": 983
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/audio/beamformer4.sv",
+      "sha256": "b6f4e6833cae21044e8a1a55a00712cf611edc14bba4ef75e7f094499b369309",
+      "bytes": 5676
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/audio/fractional_delay.sv",
+      "sha256": "30ffbad48852242e74dc1ad6e8be15eed493520d2eac6aecb4c919c6ce15d6d1",
+      "bytes": 2774
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/audio/i2s_quad_rx.sv",
+      "sha256": "8bbe2daf70be944ab78ef0ac9abf706343939f099688e6466312b435ad4440e8",
+      "bytes": 4345
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/audio/model_mel_axis.sv",
+      "sha256": "438f9e7b297032a50a9b8c63849109f67e6768f8f40831df282a80b6421d3929",
+      "bytes": 2578
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/control/async_event_fifo.sv",
+      "sha256": "8c2af8e6c6176b3930156bd9bcc52bd51173f51eaae8a50c28f73d61aa107b3d",
+      "bytes": 1753
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/control/av_regs.sv",
+      "sha256": "d36f8a8cceccc82b625ffa68e2346c90609f810b2abf2f06b9d9306ac581c1dc",
+      "bytes": 13744
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/control/av_status_cdc.sv",
+      "sha256": "47648ed7a03dade8d9509ba70942a9fea0249e92204cc8458c925a7a6440c84a",
+      "bytes": 913
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/control/camera_ctrl_io.sv",
+      "sha256": "e764f72db50ede7fb7139a3687250ded8fa492cf3713128254f30a5e4e192a3b",
+      "bytes": 988
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/control/camera_input_probe.sv",
+      "sha256": "e2790134fc5a905953161e4fce74d25a2414a4dbcebc1de28637bdf3fd7a4d16",
+      "bytes": 1976
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/control/cdc_snapshot.sv",
+      "sha256": "ce4c154cf118431fcd3c6eb8469f75c31179e6751b3678412b38b32858c12bab",
+      "bytes": 927
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/control/gamma_event_cdc.sv",
+      "sha256": "263f6cef70c7b2944e294c8d22940e1418ce2df7e011f2b20d00ce04951ccce4",
+      "bytes": 810
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/control/servo_pwm_pair.sv",
+      "sha256": "bdd98b24032272e116c74987d684aef70d09e2c654e54ae818d81d6330b0a094",
+      "bytes": 2870
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/model/model_ingress_stub.sv",
+      "sha256": "3d7baccb1f954cd571d0aaf52e93842ce8fc45463ea76f58c13edd7649066eaf",
+      "bytes": 2126
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/box_mean_stream.sv",
+      "sha256": "9f4a55c98aac2063f5ec6a4716ee094f9dd0531f02adafa0d7047ea99650007d",
+      "bytes": 4189
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/camera_cdc_or_fifo.sv",
+      "sha256": "9450e4032177ab5173ba011b248191652843bdded4706250ed8c68c5d09561a7",
+      "bytes": 947
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/camera_eth_adapter.sv",
+      "sha256": "256b3bacf26004ac5ee2dd02a7921ee079fad8b0630f99bfb71fde33f08211c7",
+      "bytes": 1552
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/camera_pipeline_top.sv",
+      "sha256": "dfda0f6a0a9f1448b89eae97cdc7105ef44700e89dbf88a79fac4881b5c2f78a",
+      "bytes": 10255
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/luma_enhance.sv",
+      "sha256": "7c7922328d798bbf75dd9f92b56b828f462d0e6a0a819c88f9d48f6803c2186a",
+      "bytes": 4918
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/luma_stats.sv",
+      "sha256": "0ecf0258d18a27e6958276685e44073baece78f3591983f89eaa8ffa4890e6f5",
+      "bytes": 3347
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/model_video_axis.sv",
+      "sha256": "2550855a3fa34d718349bf8fc2a818f4b6da8a9358056b937a9d654d5e481dc6",
+      "bytes": 2468
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/multiscale_illum.sv",
+      "sha256": "cc041e5a2a3a54a54aeef2eaafc774f38943f023ad81df5858d74afca8483227",
+      "bytes": 6841
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_dvp_capture.sv",
+      "sha256": "82f46cdb21ab733f8a28ad08f9287b59a012675e81659ca5d01fe50624aa9a84",
+      "bytes": 4921
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_dvp_rx.sv",
+      "sha256": "b68734ac7d4eac8c25a202b04ce9f98af562534e3f4c6cb8e073082dba6b171d",
+      "bytes": 5679
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_sccb_config.sv",
+      "sha256": "10da7c7fe0d354bfdee0f64720c2282e5d9625b13ecce8cea4a5f4e6f84e6451",
+      "bytes": 800
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/rgb_ycbcr.sv",
+      "sha256": "c3e98cea2bacee538a3cf8f4e13ad7d6699364965862fd15966b1b0fa15c07df",
+      "bytes": 2371
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/video_axis_fifo565.sv",
+      "sha256": "cb243de78a10b29f3711bde2ae941e71ac6799125bfe03fa5ae4551c87ea46ad",
+      "bytes": 2071
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/video_enhance_top.sv",
+      "sha256": "78087387a0a26d36191e645baf05be74846c1fdcd17ca08ace787dd7d66f11d7",
+      "bytes": 7581
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/pl/rtl/video/video_frame_framer.sv",
+      "sha256": "02e62173a5ac1ece799cd24244638bc5d23c699b5eedcdd303381c7a13c6a7d7",
+      "bytes": 1985
+    },
+    {
+      "path": "src/pl/capture_and_inference/capture/vivado/constraints/ax7020_av.xdc",
+      "sha256": "a12d3427c58a178a1cb184f229c6bc4a1373758dde729db87e38ce793c866d89",
+      "bytes": 6561
+    },
+    {
+      "path": "src/pl/capture_and_inference/hardware/dw_core_rtl.sv",
+      "sha256": "276b59f155aac747e500eca500c8eeeb0bc839d2a620e15abd4282beba3fb26a",
+      "bytes": 12184
+    },
+    {
+      "path": "src/pl/capture_and_inference/hardware/mac_pool_rtl.sv",
+      "sha256": "37ad088a62809b68b6f9361ec77b78174312b93a68e3ccef753f63fab4da04fe",
+      "bytes": 2003
+    },
+    {
+      "path": "src/pl/capture_and_inference/hardware/mnet_engine_rtl.v",
+      "sha256": "aa0e716f418bf2819fe2cce4c53fcfd4505b6e4e989cd7bb4b264b06f590bbd5",
+      "bytes": 7796
+    },
+    {
+      "path": "src/pl/capture_and_inference/hardware/pw_core_rtl.sv",
+      "sha256": "feb4c375e1eebd3ebc6b638a60aab0eef0a7320bdac1129ede7e145e9effb67c",
+      "bytes": 14913
+    },
+    {
+      "path": "src/pl/display_constraints/hardware/hdmi_clock_source.xdc",
+      "sha256": "2a49006890f28023cf0a4abfe1786dc7b841bcafecafddc69e439c35f9dde20d",
+      "bytes": 799
+    },
+    {
+      "path": "src/pl/display_constraints/hardware/osd_cdc.xdc",
+      "sha256": "c7eb2413316e1dae337d8091e059eec5f63ded99068953afc08285400d2b0a2a",
+      "bytes": 704
+    },
+    {
+      "path": "src/pl/hdmi/hardware/hdmi.xdc",
+      "sha256": "0680743876c360b680e901013558dc79f8f99deef0f9e024ab8209773ca0f915",
+      "bytes": 1154
+    },
+    {
+      "path": "src/pl/hdmi/hardware/hdmi_clock_source.xdc",
+      "sha256": "2a49006890f28023cf0a4abfe1786dc7b841bcafecafddc69e439c35f9dde20d",
+      "bytes": 799
+    },
+    {
+      "path": "src/pl/hdmi/rtl/hdmi_raster.sv",
+      "sha256": "28af22b5dd57ac15bce086b19d9f9e148b5a3cefef31a43b92f254b2ffa72272",
+      "bytes": 2978
+    },
+    {
+      "path": "src/pl/hdmi/rtl/hdmi_status_cdc.v",
+      "sha256": "fbfc0e44e2ae803ae41d70edecabcc7e999e5faab5e4c203d5fc2e2b06eaa8fa",
+      "bytes": 951
+    },
+    {
+      "path": "src/pl/hdmi/rtl/rgb565_axis.sv",
+      "sha256": "ffc34d329c2c30846ceecf783c59e65ea9f318ae577b7d1265d108645dda9df0",
+      "bytes": 1884
+    },
+    {
+      "path": "src/pl/image_enhancement/hardware/audio_clock_source.xdc",
+      "sha256": "fc5dfa9512d57886f4d3f9ade596eb46bc897124c9900db872a8b1df4df07b9d",
+      "bytes": 528
+    },
+    {
+      "path": "src/pl/image_enhancement/hardware/logmel_hold.xdc",
+      "sha256": "0b9635075d240de8a08829272a3c56aaf7ff8cdaf55c4256c1acd1b0b088a51e",
+      "bytes": 48
+    },
+    {
+      "path": "src/pl/image_enhancement/rtl/auto_vision_top.sv",
+      "sha256": "8632ff1b20f5d9780d7a60821cd6e161a719a0bb1a383a586aa8ee729026111d",
+      "bytes": 7162
+    },
+    {
+      "path": "src/pl/image_enhancement/rtl/frame_histogram.sv",
+      "sha256": "e0d3ea697f87350ffcb31badd28b5cbbc5bfaf9172416ae1bbd6ae46b864d2fc",
+      "bytes": 3014
+    },
+    {
+      "path": "src/pl/image_enhancement/rtl/gamma_rom.sv",
+      "sha256": "17b9e17e8712715da4d9bb6995b36c8d53dbba1efaeacb34158a965231d8078a",
+      "bytes": 16778
+    },
+    {
+      "path": "src/pl/image_enhancement/rtl/hist_gain_pipeline.sv",
+      "sha256": "e978f99f05ef2dcc90764c1829fb4e6019c85f6ddfec0df9df219e94edea1a99",
+      "bytes": 993
+    },
+    {
+      "path": "src/pl/image_enhancement/rtl/hist_lut_builder.sv",
+      "sha256": "d1f67537413db7e658419f07d2f9e278ca68a409c6b7de27b449d35b6bf92f10",
+      "bytes": 7205
+    },
+    {
+      "path": "src/pl/image_enhancement/rtl/hist_mode_ctrl.sv",
+      "sha256": "f94f3b54d6fd82642da9ef6d5d89637d7385485ce0b4608822b621552cce31ca",
+      "bytes": 576
+    },
+    {
+      "path": "src/pl/image_enhancement/rtl/histogram_vision_top.sv",
+      "sha256": "a0b9448aff5fee765b297e57f7041840e3f1edd69d0370ba36e243a496ee9fbc",
+      "bytes": 3665
+    },
+    {
+      "path": "src/pl/image_enhancement/rtl/live_frame_stats.sv",
+      "sha256": "b225f14c58b0ed3e4161392a12fec8b87767491524d7efc4a8b234dcba478bf0",
+      "bytes": 1660
+    },
+    {
+      "path": "src/pl/image_enhancement/rtl/unsigned_divider.sv",
+      "sha256": "6f813cc5a4ff8a7df3ee8fb9817b12393b232ea15649de5484c113ad4a80bb1f",
+      "bytes": 958
+    },
+    {
+      "path": "src/pl/ip_config/av_system_auto_cc_0/av_system_auto_cc_0.xci",
+      "sha256": "26c910993cc52366840195eed5f41005053a7560127ca131242ca9d53d89c57a",
+      "bytes": 50412
+    },
+    {
+      "path": "src/pl/ip_config/av_system_auto_pc_0/av_system_auto_pc_0.xci",
+      "sha256": "5d0f7c0f41bff2ae7fe41e38ee8ede2c493d8180bafbba3bcbf54061d34595b2",
+      "bytes": 52481
+    },
+    {
+      "path": "src/pl/ip_config/av_system_auto_pc_1/av_system_auto_pc_1.xci",
+      "sha256": "a245b4cad0e7e93cc05a7aee85675824944652b55200e97179839d0c755af8a9",
+      "bytes": 56987
+    },
+    {
+      "path": "src/pl/ip_config/av_system_auto_pc_2/av_system_auto_pc_2.xci",
+      "sha256": "660b729c7b8df63e8203aa4f98246b5dbb1cac5254c969b2b7c07f0f3f3ea95e",
+      "bytes": 56980
+    },
+    {
+      "path": "src/pl/ip_config/av_system_auto_pc_3/av_system_auto_pc_3.xci",
+      "sha256": "44b49a5db4b5eb4a5dbe0367fc668375642609e69a98cd0d8d91f139a807d735",
+      "bytes": 56982
+    },
+    {
+      "path": "src/pl/ip_config/av_system_auto_pc_4/av_system_auto_pc_4.xci",
+      "sha256": "2e75f3f534db21e4019be0865f3f618b597225eda9103e57b5a6be0c07cf9a17",
+      "bytes": 46651
+    },
+    {
+      "path": "src/pl/ip_config/av_system_auto_us_0/av_system_auto_us_0.xci",
+      "sha256": "9d0d5bf11c55a2b4df454a2a11a7bc32c7ea0cc1131d19180e599e24a1742718",
+      "bytes": 45308
+    },
+    {
+      "path": "src/pl/ip_config/av_system_auto_us_1/av_system_auto_us_1.xci",
+      "sha256": "ceec40a008a6a02a0378c96358ce41091c30a523fe0ed49de0af919863879f98",
+      "bytes": 46790
+    },
+    {
+      "path": "src/pl/ip_config/av_system_auto_us_2/av_system_auto_us_2.xci",
+      "sha256": "baba01e08f3bebf4ec00070a5ec84aa2d4c2e574e6d4ab7f001640a3e8686fde",
+      "bytes": 45308
+    },
+    {
+      "path": "src/pl/ip_config/av_system_auto_us_3/av_system_auto_us_3.xci",
+      "sha256": "5dc5e61e53ffaf6b4312baabd5f9bfb1f4a978678e0763976834de60cdd70252",
+      "bytes": 46790
+    },
+    {
+      "path": "src/pl/ip_config/av_system_cam_gpio_0/av_system_cam_gpio_0.xci",
+      "sha256": "258f4016c4f30e08187587a6fbc0cf45a7d933f4f417f7bac85342b5a1a38ea1",
+      "bytes": 37321
+    },
+    {
+      "path": "src/pl/ip_config/av_system_clk_audio_0/av_system_clk_audio_0.xci",
+      "sha256": "9790b03ef4583418cbe4cb194ecefd934ee553851ba32b7cb0cf3eaf458c37de",
+      "bytes": 112746
+    },
+    {
+      "path": "src/pl/ip_config/av_system_clk_hdmi_0/av_system_clk_hdmi_0.xci",
+      "sha256": "a7819fc7f1298380cb40031ea51aba0e214ecd2fbf050bb25d3354bfc7543b9a",
+      "bytes": 118799
+    },
+    {
+      "path": "src/pl/ip_config/av_system_const_one_0/av_system_const_one_0.xci",
+      "sha256": "6b09c18ad44b783a43090d25da4c90d30d43d63dc310f05feefdb4445d4b800a",
+      "bytes": 3208
+    },
+    {
+      "path": "src/pl/ip_config/av_system_const_zero_0/av_system_const_zero_0.xci",
+      "sha256": "c331c4ab3b5ccfed91c08835dd92b8b9ac82558b46a5034f06a25d80c4b2b51f",
+      "bytes": 3211
+    },
+    {
+      "path": "src/pl/ip_config/av_system_ctrl_cdc_0/av_system_ctrl_cdc_0.xci",
+      "sha256": "bf2e2cebce5c8a262371991163b461412fb959c6f394ff07d4e69b75f8c5d7c0",
+      "bytes": 51179
+    },
+    {
+      "path": "src/pl/ip_config/av_system_dma_0/av_system_dma_0.xci",
+      "sha256": "2f7ba2a58f1924e75f4ab5286c4454bdfb0243d23b369e8a3f1c4c1a38ccfb0f",
+      "bytes": 109556
+    },
+    {
+      "path": "src/pl/ip_config/av_system_dma_proto_0/av_system_dma_proto_0.xci",
+      "sha256": "e92c6cd88e02bd315e47a2e4f78bab2bb6a7bc65e3dfa630671ff6acf7c7d437",
+      "bytes": 46498
+    },
+    {
+      "path": "src/pl/ip_config/av_system_dma_width_0/av_system_dma_width_0.xci",
+      "sha256": "d8851ed093a69b145c7e29b740e8bffcea87a96c8f81dc0469c0db14afa86f42",
+      "bytes": 46789
+    },
+    {
+      "path": "src/pl/ip_config/av_system_hdmi_encoder_0/av_system_hdmi_encoder_0.xci",
+      "sha256": "e1673ee85b0e17dd94dbaba18af1d390449c342cebe32ab0079a5ddd8dca6be6",
+      "bytes": 21371
+    },
+    {
+      "path": "src/pl/ip_config/av_system_hdmi_video_out_0/av_system_hdmi_video_out_0.xci",
+      "sha256": "11177e7e3c1ee57a0584e00e8b104c9b6f2ac73057e36a0328482a6b78ef08d5",
+      "bytes": 23528
+    },
+    {
+      "path": "src/pl/ip_config/av_system_infer_dma_0/av_system_infer_dma_0.xci",
+      "sha256": "9dc8281e0295f1ebc1205bb6c8ae1aa5ecc44d9c0f7e58c8a8a8621a3bd68b00",
+      "bytes": 130774
+    },
+    {
+      "path": "src/pl/ip_config/av_system_irq_concat_0/av_system_irq_concat_0.xci",
+      "sha256": "37af06d591df014d4bb0e669f7acfaef4068d308d8352260b258667101efccda",
+      "bytes": 55958
+    },
+    {
+      "path": "src/pl/ip_config/av_system_mel_dma_0/av_system_mel_dma_0.xci",
+      "sha256": "7ba65626a67d7bf1773736543fb39faccc80f11bb521be09cfc3b0e47d876105",
+      "bytes": 130767
+    },
+    {
+      "path": "src/pl/ip_config/av_system_pcm_cdc_0/av_system_pcm_cdc_0.xci",
+      "sha256": "83cb102f9aa5c1ca7604afcadc9af84f579f99b857e021e92edb0c73d9d70f7b",
+      "bytes": 27794
+    },
+    {
+      "path": "src/pl/ip_config/av_system_ps7_0/av_system_ps7_0.xci",
+      "sha256": "11b911f1f15b800cc1aa1ea0906f099b6060a2642b24e6b1e72bf9384060c99c",
+      "bytes": 358689
+    },
+    {
+      "path": "src/pl/ip_config/av_system_rst_audio_0/av_system_rst_audio_0.xci",
+      "sha256": "f0367c892ccebc2a51eb7faace75b9db9d091b68bff34784d8075842ee0e9661",
+      "bytes": 19076
+    },
+    {
+      "path": "src/pl/ip_config/av_system_rst_fclk_0/av_system_rst_fclk_0.xci",
+      "sha256": "c388f05e2b1dc200c24b922dca9669d7f80a898109836991bccb3c24dc3ad1a2",
+      "bytes": 19029
+    },
+    {
+      "path": "src/pl/ip_config/av_system_rst_hdmi_0/av_system_rst_hdmi_0.xci",
+      "sha256": "2cccb8da3cad05b37d7145de12e2b485087d6562a2fc072f1cc13c1050d21199",
+      "bytes": 19073
+    },
+    {
+      "path": "src/pl/ip_config/av_system_rst_hdmi_read_0/av_system_rst_hdmi_read_0.xci",
+      "sha256": "2daa1c9bbb4c5affcef6a2040581dc6f019a154e6bebd790972c81c0a0f4da82",
+      "bytes": 19088
+    },
+    {
+      "path": "src/pl/ip_config/av_system_rst_pixel_0/av_system_rst_pixel_0.xci",
+      "sha256": "fb59d7b2af4f127f1ebf6f994b2b9b33459a132af788b2c011f1ca35f936600b",
+      "bytes": 19024
+    },
+    {
+      "path": "src/pl/ip_config/av_system_ssd_dma_0/av_system_ssd_dma_0.xci",
+      "sha256": "92566c0a2b7e34320afebe96b682296815d3aaa12a3d3816959a2886eb437fdd",
+      "bytes": 130770
+    },
+    {
+      "path": "src/pl/ip_config/av_system_vdma_0/av_system_vdma_0.xci",
+      "sha256": "d450c2ab7afaf702794544ec3a9775d90a2242a713999b8bf7d1954648ac56d5",
+      "bytes": 175736
+    },
+    {
+      "path": "src/pl/ip_config/av_system_vdma_proto_0/av_system_vdma_proto_0.xci",
+      "sha256": "94f36e79e195848cf0f4ad945fe7b815327e2c92b3a12ce6c6f43d82751dc8c5",
+      "bytes": 46672
+    },
+    {
+      "path": "src/pl/ip_config/av_system_video_cdc_0/av_system_video_cdc_0.xci",
+      "sha256": "0226b01c39de7f9402611864ebb088edbfd0fa60146f97ba23d052e2cf923a14",
+      "bytes": 28233
+    },
+    {
+      "path": "src/pl/ip_config/av_system_xbar_0/av_system_xbar_0.xci",
+      "sha256": "ccc90b25e05ba930a4e75f7c3fe808c1ae6df081586e4e543500f45c9765dc75",
+      "bytes": 461344
+    },
+    {
+      "path": "src/pl/ip_config/av_system_xbar_1/av_system_xbar_1.xci",
+      "sha256": "f2bd7177404b62c9223eeeb2813ac5610db98de85b943b80f5fae6986153befd",
+      "bytes": 368619
+    },
+    {
+      "path": "src/pl/ip_config/av_system_xbar_2/av_system_xbar_2.xci",
+      "sha256": "b73b59da87fbd45ea2d77046b1a643cabefaea9515f1ffca05ac3d705e96cffa",
+      "bytes": 407847
+    },
+    {
+      "path": "src/pl/ip_config/av_system_xbar_3/av_system_xbar_3.xci",
+      "sha256": "6c2c3bd5d296f5e89aa1f449a3902eaa715235d9b30b2f562bbf2f1588b530ab",
+      "bytes": 368660
+    },
+    {
+      "path": "src/pl/ip_repo/if/tmds_v1_0/tmds.xml",
+      "sha256": "c6a3cbcfa3de47ca91a2fbe49de15f1f61c7196039f14381d1598a26233be489",
+      "bytes": 908
+    },
+    {
+      "path": "src/pl/ip_repo/if/tmds_v1_0/tmds_rtl.xml",
+      "sha256": "f79979c9844723343c83a80cc6bb9d1e49bdeb0796729517f5e339965e70d2c1",
+      "bytes": 3607
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/component.xml",
+      "sha256": "f209c93f70850b6a7569a15e6f074983b121898d88a63151772abe355dbd5695",
+      "bytes": 34705
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/src/clockgen.vhd",
+      "sha256": "911088c9f4cf5897443a13bdbeaef4a0b3cf8157745582d68b556482e642765b",
+      "bytes": 10787
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/src/dvi_constants.vhd",
+      "sha256": "d8dbbbc3c8696d4527ee0d3c4757f1a40d0acebc845899483bc61c2bb8270cde",
+      "bytes": 3151
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/src/outputserdes.vhd",
+      "sha256": "6205d58405919d4f899a525256e2cafa725408f6644642755cd0de63e69b286e",
+      "bytes": 8366
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/src/rgb2dvi.vhd",
+      "sha256": "e3f24df794677dcef79628051686677eff6ca86612285635b79c0c6fe1dc49bf",
+      "bytes": 8777
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/src/rgb2dvi.xdc",
+      "sha256": "51b9ac7f1229a2250cddb1d490e45e536dd836eb5c42851f67359c7a5aef6130",
+      "bytes": 292
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/src/rgb2dvi_clocks.xdc",
+      "sha256": "d11f05f62ffa0fce205fc2c2fe95033972da802fdfc7cd3572cef32014fdba57",
+      "bytes": 146
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/src/rgb2dvi_ooc.xdc",
+      "sha256": "77f9820235b2c3ce1e99d369db4932a76705633eeb5f950908855183931dc1a2",
+      "bytes": 136
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/src/syncasync.vhd",
+      "sha256": "5561ac8099ed13f3114e97387aab5f7f30ad28a8be2fc540004cbee3f19eb3a7",
+      "bytes": 3727
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/src/syncasyncreset.vhd",
+      "sha256": "3ce7ade3267959da59b4d448cc6641018e4f0ac3de9f8f998d0b9ff84a3794bc",
+      "bytes": 3734
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/src/tmds_encoder.vhd",
+      "sha256": "b047a257c1172412d1b354a98e3cc77d013d0f3c1af6ff646233abf8b669c196",
+      "bytes": 7863
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/upstream.json",
+      "sha256": "57a9fff61e7da334cb175c22a295aa274017fa88d0aa23974050d7accd769b5b",
+      "bytes": 1775
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/xgui/rgb2dvi_v1_1.tcl",
+      "sha256": "44d93693f4a4eac11a86d7ff2be4dc03e2bab44a407c342bd3dd8f1477c55f92",
+      "bytes": 2930
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/xgui/rgb2dvi_v1_2.tcl",
+      "sha256": "c11f022c22fd63e32d2daeec345995f91a9556df9d4946e8a1ef6d8d82a715ff",
+      "bytes": 3376
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/xgui/rgb2dvi_v1_3.tcl",
+      "sha256": "4cbe81ddb19072e4fd53f425f6d18bbdb97e98919e8d6da55674f3f6d0fe863d",
+      "bytes": 6195
+    },
+    {
+      "path": "src/pl/ip_repo/rgb2dvi/xgui/rgb2dvi_v1_4.tcl",
+      "sha256": "70a7d4865a5e5a450ca4de65418125024e3de94621f8699a47f268968011083b",
+      "bytes": 6176
+    },
+    {
+      "path": "src/pl/logmel/rom/config.vh",
+      "sha256": "339cc05afab88e6016e90cc09fb24849eeb5ab1c0be8596912be7239804a7246",
+      "bytes": 22
+    },
+    {
+      "path": "src/pl/logmel/rom/hann.hex",
+      "sha256": "8d5bb78321903f12d8b35e34fa14791bd1406cd63ff554090d875ee51be93e1d",
+      "bytes": 10240
+    },
+    {
+      "path": "src/pl/logmel/rom/log.hex",
+      "sha256": "9e92c348cf88d09366b25f5919f413cbc1d56fc08ae424e924e9e0e69d8a222d",
+      "bytes": 28672
+    },
+    {
+      "path": "src/pl/logmel/rom/mel_ops.hex",
+      "sha256": "ed76116022fe3d8256d84b54340e6ac0d912d2dd71da5635bf2c4b2800bdc456",
+      "bytes": 13091
+    },
+    {
+      "path": "src/pl/logmel/rom/tw_im.hex",
+      "sha256": "65111f15f870b494875ccd7667aa166683e7a997ce62aad58ac10ac1d847a6b8",
+      "bytes": 5120
+    },
+    {
+      "path": "src/pl/logmel/rom/tw_re.hex",
+      "sha256": "10c3352afa5a1de1a21ab0c69f1dc87ec6fdd7e4cabff6d404e3b48a1895e9eb",
+      "bytes": 5120
+    },
+    {
+      "path": "src/pl/logmel/rtl/logmel_axis_wrap.v",
+      "sha256": "47eec0c694fab5eb54ec2558844dc78b1f1bbebf2a9c11f94992490da17bccca",
+      "bytes": 1681
+    },
+    {
+      "path": "src/pl/logmel/rtl/logmel_frame.sv",
+      "sha256": "107d5c3f40e5002568caa26eef8d91d5ee413953a3b965a04cb4a7fd79aabe27",
+      "bytes": 9796
+    },
+    {
+      "path": "src/pl/on_screen_display/hardware/hdmi_clock_source.xdc",
+      "sha256": "2a49006890f28023cf0a4abfe1786dc7b841bcafecafddc69e439c35f9dde20d",
+      "bytes": 799
+    },
+    {
+      "path": "src/pl/on_screen_display/rtl/board_osd.v",
+      "sha256": "4e7e99e974efdf710a100d02af83a2f792f64d1c53485e6cef81e34bc7550b31",
+      "bytes": 8274
+    },
+    {
+      "path": "src/pl/on_screen_display/rtl/font.hex",
+      "sha256": "02bdad25f9aaec7ba8799cf9b21a828b811c33595fbf676db6efa114f746c317",
+      "bytes": 8192
+    },
+    {
+      "path": "src/pl/readme.md",
+      "sha256": "211bafb5b03dbfbd4f776fd9109b8bce698a1f0c9c0998b02301f30451368e4f",
+      "bytes": 2809
+    },
+    {
+      "path": "src/pl/ssd_preprocess/rom/quant0.hex",
+      "sha256": "bf9caf2d6c623f2273128d20d21e9b6b5f006f216e32cdc14b66b3e12edcc2fd",
+      "bytes": 32768
+    },
+    {
+      "path": "src/pl/ssd_preprocess/rom/quant1.hex",
+      "sha256": "697793d44d65d37b83190d60a53c3980e24ff54a4bd94a8ae6c09a13ba1e05b4",
+      "bytes": 32768
+    },
+    {
+      "path": "src/pl/ssd_preprocess/rom/quant2.hex",
+      "sha256": "3d2ffd868407057cc6ffb16ba2b9a469b6c62948fe97be3798fdbc5ddc4fb47c",
+      "bytes": 32768
+    },
+    {
+      "path": "src/pl/ssd_preprocess/rtl/ssd_axis_wrap.v",
+      "sha256": "57f04a222986e004234bf579be45eea32379417862a5664245b94d6b5fb17cba",
+      "bytes": 1837
+    },
+    {
+      "path": "src/pl/ssd_preprocess/rtl/ssd_preprocess.sv",
+      "sha256": "4c5622a302b1757f9d57632cf9f9a9a58748fcb8f9003ea08ee7f47ba4611d8b",
+      "bytes": 3582
+    },
+    {
+      "path": "src/pl/structural/av_system.v",
+      "sha256": "6b1839f82e960901daa77d156b93f5edfffceda4378851c42a89a3d62fbcb221",
+      "bytes": 415500
+    },
+    {
+      "path": "src/pl/structural/av_system_audio_0.v",
+      "sha256": "5006cbe89447cd2288713ab3e239e72c31212e7a09e280ea1e9e1781d7ccaed7",
+      "bytes": 11032
+    },
+    {
+      "path": "src/pl/structural/av_system_cam_io_0.v",
+      "sha256": "f0ada4db2e059ef24898c4fb611cee2ebdc408ec2b379a9c700eed97e70415bc",
+      "bytes": 3493
+    },
+    {
+      "path": "src/pl/structural/av_system_camera_0.v",
+      "sha256": "443d47e73a987a62f5455f3b2a72f1fe1becc8cf87ad577e158a302f3be97b94",
+      "bytes": 7830
+    },
+    {
+      "path": "src/pl/structural/av_system_camera_probe_0.v",
+      "sha256": "d90082307580992346f905c70ba62a481c805fa0acf0618d4f2c6adf35d7c27f",
+      "bytes": 4139
+    },
+    {
+      "path": "src/pl/structural/av_system_gamma_cdc_0.v",
+      "sha256": "57174d514bc850d9a4c81b2dace576b98ea45abbe18b21456bff67f94c4c998a",
+      "bytes": 4452
+    },
+    {
+      "path": "src/pl/structural/av_system_hdmi_osd_0.v",
+      "sha256": "8d1e50bc2a61570ecbbfed91be0816990151fe4f85d551e8cf2821101d48898e",
+      "bytes": 7890
+    },
+    {
+      "path": "src/pl/structural/av_system_hdmi_raster_0.v",
+      "sha256": "03e691687d34120a681a29fc5521a15e0c0738425cd6a416a5b2f7f73d789b65",
+      "bytes": 5137
+    },
+    {
+      "path": "src/pl/structural/av_system_hdmi_rgb_0.v",
+      "sha256": "10aa54b335a59cbc98d557c0b8c27546c4e9d7616442eeeacd29fd34ce80a2b7",
+      "bytes": 5576
+    },
+    {
+      "path": "src/pl/structural/av_system_hdmi_status_0.v",
+      "sha256": "db4ca8fe2afd6a2aa115f241bdc535817bd0c142806ba10f2819def9edf5dced",
+      "bytes": 4241
+    },
+    {
+      "path": "src/pl/structural/av_system_inference_engine_0.v",
+      "sha256": "c31870e72285c4625fadefabd5dc0e9f111261cc05fed1e57d988f25f6a0a1d0",
+      "bytes": 8970
+    },
+    {
+      "path": "src/pl/structural/av_system_mel_core_0.v",
+      "sha256": "cc082696abde49040de399eb912676c7e144c3698956f66f7a49b9a6fce2629d",
+      "bytes": 5269
+    },
+    {
+      "path": "src/pl/structural/av_system_model_ingress_0.v",
+      "sha256": "cd0e3b05d8fc3724df191f1f687bc61ae541801454516cdcefd2e4f6d5481a3f",
+      "bytes": 6365
+    },
+    {
+      "path": "src/pl/structural/av_system_ssd_preprocess_core_0.v",
+      "sha256": "eaa6d0135f1cea1446dab617dbc986a0ed1c8ff30441ccd2a43aba8ce6feabd3",
+      "bytes": 5437
+    },
+    {
+      "path": "src/pl/structural/av_system_status_cdc_0.v",
+      "sha256": "8dc634077fbc24df9347a9ca815804a06c84fca553cf7638aeca65f7119acf08",
+      "bytes": 4758
+    },
+    {
+      "path": "src/pl/structural/av_system_wrapper.v",
+      "sha256": "a3070c57a67c8df68df0c77246924f0f44a374b55bb4a6a46bf4ab89e7476a79",
+      "bytes": 4583
+    }
+  ],
+  "build_tcl": [
+    {
+      "path": "build/pl/av_system.tcl",
+      "sha256": "0c7c2f9166911983cc92ea11bc5f0bd68a54664f4bd42d336fbf3eca5beb6798",
+      "bytes": 74025
+    },
+    {
+      "path": "build/pl/build_pl.tcl",
+      "sha256": "72cec54b93f63e7dfe86bf9776bd8920b1f95d72c230293fd90c782977d3a950",
+      "bytes": 3532
+    },
+    {
+      "path": "build/pl/check_pl.tcl",
+      "sha256": "ef05a8f2d83d39ff3f29a868860de0ca0ff587949160ceeba41165899b69881d",
+      "bytes": 816
+    },
+    {
+      "path": "build/pl/create_project.tcl",
+      "sha256": "0021f18a5a7028f9119904789273447db5d6a13c8f369ad94bb847916f0cc4cf",
+      "bytes": 30062
+    },
+    {
+      "path": "build/pl/normalize_timing.tcl",
+      "sha256": "d40b4cd6e49f85dd8b98891ab88a0529e9617a42639b4ccf09cfe02dcc63dbb4",
+      "bytes": 2722
+    },
+    {
+      "path": "build/pl/validate_native_constraints.tcl",
+      "sha256": "2354ea95384897900ce3d2af99252abf4a860682505e17212d88d02d17b02ed1",
+      "bytes": 674
+    }
+  ],
+  "create_project_direct_reference_paths": [
+    "src/pl/board_constraints/buttons/hardware/board_keys.xdc",
+    "src/pl/capture_and_inference/capture/pl/rtl/audio/audio_control_top.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/audio/audio_dma_axis.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/audio/audio_frontend_top.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/audio/beam_sum_sat.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/audio/beamformer4.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/audio/fractional_delay.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/audio/i2s_quad_rx.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/audio/model_mel_axis.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/control/async_event_fifo.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/control/av_regs.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/control/av_status_cdc.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/control/camera_ctrl_io.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/control/camera_input_probe.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/control/cdc_snapshot.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/control/gamma_event_cdc.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/control/servo_pwm_pair.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/model/model_ingress_stub.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/box_mean_stream.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/camera_cdc_or_fifo.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/camera_eth_adapter.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/camera_pipeline_top.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/luma_enhance.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/luma_stats.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/model_video_axis.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/multiscale_illum.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_dvp_capture.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_dvp_rx.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_sccb_config.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/rgb_ycbcr.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/video_axis_fifo565.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/video_enhance_top.sv",
+    "src/pl/capture_and_inference/capture/pl/rtl/video/video_frame_framer.sv",
+    "src/pl/capture_and_inference/capture/vivado/constraints/ax7020_av.xdc",
+    "src/pl/capture_and_inference/hardware/dw_core_rtl.sv",
+    "src/pl/capture_and_inference/hardware/mac_pool_rtl.sv",
+    "src/pl/capture_and_inference/hardware/mnet_engine_rtl.v",
+    "src/pl/capture_and_inference/hardware/pw_core_rtl.sv",
+    "src/pl/display_constraints/hardware/hdmi_clock_source.xdc",
+    "src/pl/display_constraints/hardware/osd_cdc.xdc",
+    "src/pl/hdmi/hardware/hdmi.xdc",
+    "src/pl/hdmi/hardware/hdmi_clock_source.xdc",
+    "src/pl/hdmi/rtl/hdmi_raster.sv",
+    "src/pl/hdmi/rtl/hdmi_status_cdc.v",
+    "src/pl/hdmi/rtl/rgb565_axis.sv",
+    "src/pl/image_enhancement/hardware/audio_clock_source.xdc",
+    "src/pl/image_enhancement/hardware/logmel_hold.xdc",
+    "src/pl/image_enhancement/rtl/auto_vision_top.sv",
+    "src/pl/image_enhancement/rtl/frame_histogram.sv",
+    "src/pl/image_enhancement/rtl/gamma_rom.sv",
+    "src/pl/image_enhancement/rtl/hist_gain_pipeline.sv",
+    "src/pl/image_enhancement/rtl/hist_lut_builder.sv",
+    "src/pl/image_enhancement/rtl/hist_mode_ctrl.sv",
+    "src/pl/image_enhancement/rtl/histogram_vision_top.sv",
+    "src/pl/image_enhancement/rtl/live_frame_stats.sv",
+    "src/pl/image_enhancement/rtl/unsigned_divider.sv",
+    "src/pl/ip_config/av_system_auto_cc_0/av_system_auto_cc_0.xci",
+    "src/pl/ip_config/av_system_auto_pc_0/av_system_auto_pc_0.xci",
+    "src/pl/ip_config/av_system_auto_pc_1/av_system_auto_pc_1.xci",
+    "src/pl/ip_config/av_system_auto_pc_2/av_system_auto_pc_2.xci",
+    "src/pl/ip_config/av_system_auto_pc_3/av_system_auto_pc_3.xci",
+    "src/pl/ip_config/av_system_auto_pc_4/av_system_auto_pc_4.xci",
+    "src/pl/ip_config/av_system_auto_us_0/av_system_auto_us_0.xci",
+    "src/pl/ip_config/av_system_auto_us_1/av_system_auto_us_1.xci",
+    "src/pl/ip_config/av_system_auto_us_2/av_system_auto_us_2.xci",
+    "src/pl/ip_config/av_system_auto_us_3/av_system_auto_us_3.xci",
+    "src/pl/ip_config/av_system_cam_gpio_0/av_system_cam_gpio_0.xci",
+    "src/pl/ip_config/av_system_clk_audio_0/av_system_clk_audio_0.xci",
+    "src/pl/ip_config/av_system_clk_hdmi_0/av_system_clk_hdmi_0.xci",
+    "src/pl/ip_config/av_system_const_one_0/av_system_const_one_0.xci",
+    "src/pl/ip_config/av_system_const_zero_0/av_system_const_zero_0.xci",
+    "src/pl/ip_config/av_system_ctrl_cdc_0/av_system_ctrl_cdc_0.xci",
+    "src/pl/ip_config/av_system_dma_0/av_system_dma_0.xci",
+    "src/pl/ip_config/av_system_dma_proto_0/av_system_dma_proto_0.xci",
+    "src/pl/ip_config/av_system_dma_width_0/av_system_dma_width_0.xci",
+    "src/pl/ip_config/av_system_hdmi_encoder_0/av_system_hdmi_encoder_0.xci",
+    "src/pl/ip_config/av_system_hdmi_video_out_0/av_system_hdmi_video_out_0.xci",
+    "src/pl/ip_config/av_system_infer_dma_0/av_system_infer_dma_0.xci",
+    "src/pl/ip_config/av_system_irq_concat_0/av_system_irq_concat_0.xci",
+    "src/pl/ip_config/av_system_mel_dma_0/av_system_mel_dma_0.xci",
+    "src/pl/ip_config/av_system_pcm_cdc_0/av_system_pcm_cdc_0.xci",
+    "src/pl/ip_config/av_system_ps7_0/av_system_ps7_0.xci",
+    "src/pl/ip_config/av_system_rst_audio_0/av_system_rst_audio_0.xci",
+    "src/pl/ip_config/av_system_rst_fclk_0/av_system_rst_fclk_0.xci",
+    "src/pl/ip_config/av_system_rst_hdmi_0/av_system_rst_hdmi_0.xci",
+    "src/pl/ip_config/av_system_rst_hdmi_read_0/av_system_rst_hdmi_read_0.xci",
+    "src/pl/ip_config/av_system_rst_pixel_0/av_system_rst_pixel_0.xci",
+    "src/pl/ip_config/av_system_ssd_dma_0/av_system_ssd_dma_0.xci",
+    "src/pl/ip_config/av_system_vdma_0/av_system_vdma_0.xci",
+    "src/pl/ip_config/av_system_vdma_proto_0/av_system_vdma_proto_0.xci",
+    "src/pl/ip_config/av_system_video_cdc_0/av_system_video_cdc_0.xci",
+    "src/pl/ip_config/av_system_xbar_0/av_system_xbar_0.xci",
+    "src/pl/ip_config/av_system_xbar_1/av_system_xbar_1.xci",
+    "src/pl/ip_config/av_system_xbar_2/av_system_xbar_2.xci",
+    "src/pl/ip_config/av_system_xbar_3/av_system_xbar_3.xci",
+    "src/pl/ip_repo",
+    "src/pl/logmel/rom",
+    "src/pl/logmel/rom/config.vh",
+    "src/pl/logmel/rom/hann.hex",
+    "src/pl/logmel/rom/log.hex",
+    "src/pl/logmel/rom/mel_ops.hex",
+    "src/pl/logmel/rom/tw_im.hex",
+    "src/pl/logmel/rom/tw_re.hex",
+    "src/pl/logmel/rtl/logmel_axis_wrap.v",
+    "src/pl/logmel/rtl/logmel_frame.sv",
+    "src/pl/on_screen_display/hardware/hdmi_clock_source.xdc",
+    "src/pl/on_screen_display/rtl/board_osd.v",
+    "src/pl/on_screen_display/rtl/font.hex",
+    "src/pl/ssd_preprocess/rom/quant0.hex",
+    "src/pl/ssd_preprocess/rom/quant1.hex",
+    "src/pl/ssd_preprocess/rom/quant2.hex",
+    "src/pl/ssd_preprocess/rtl/ssd_axis_wrap.v",
+    "src/pl/ssd_preprocess/rtl/ssd_preprocess.sv",
+    "src/pl/structural/av_system.v",
+    "src/pl/structural/av_system_audio_0.v",
+    "src/pl/structural/av_system_cam_io_0.v",
+    "src/pl/structural/av_system_camera_0.v",
+    "src/pl/structural/av_system_camera_probe_0.v",
+    "src/pl/structural/av_system_gamma_cdc_0.v",
+    "src/pl/structural/av_system_hdmi_osd_0.v",
+    "src/pl/structural/av_system_hdmi_raster_0.v",
+    "src/pl/structural/av_system_hdmi_rgb_0.v",
+    "src/pl/structural/av_system_hdmi_status_0.v",
+    "src/pl/structural/av_system_inference_engine_0.v",
+    "src/pl/structural/av_system_mel_core_0.v",
+    "src/pl/structural/av_system_model_ingress_0.v",
+    "src/pl/structural/av_system_ssd_preprocess_core_0.v",
+    "src/pl/structural/av_system_status_cdc_0.v",
+    "src/pl/structural/av_system_wrapper.v"
+  ],
+  "create_project_used_snapshot": {
+    "path": "build/out/pl_rebuild_20261103_create_project.tcl",
+    "sha256": "367e94f3cf8acae080cff5b77cc33df99492e92fc826670e342a00fd8fbb1997",
+    "archive": "create_project_used.tcl"
+  },
+  "create_project_current_diff": "create_project_change.txt",
+  "prebuild_hashes_for_all_sources_available": false,
+  "source_identity_note": "The full run used the preserved create_project snapshot. Current create_project differs only by the documented working-directory change; source-tree hashes here were measured after completion and must not be misrepresented as before/after proof.",
+  "archive_recheck": {
+    "checked_at": "2026-11-02T17:29:18.611190+00:00",
+    "rtl_ip_constraints_unchanged": true,
+    "changes": [
+      {
+        "path": "src/pl/readme.md",
+        "snapshot_sha256": "211bafb5b03dbfbd4f776fd9109b8bce698a1f0c9c0998b02301f30451368e4f",
+        "recheck_sha256": "664e2adf0599b3dc73510f4c697a0c0b97f49830faed5b8911640214844e57b9",
+        "classification": "Documentation navigation update",
+        "original_snapshot_retained": true
+      },
+      {
+        "path": "build/pl/create_project.tcl",
+        "snapshot_sha256": "0021f18a5a7028f9119904789273447db5d6a13c8f369ad94bb847916f0cc4cf",
+        "recheck_sha256": "c35912c45e5903c81c829765e8b68d466f8c9bc78e1c2ccc56af5472490f1f33",
+        "classification": "Only CRLF/bare-CR to LF normalization; byte equality after normalization verified; final independent 39-IP test passed",
+        "original_snapshot_retained": true
+      }
+    ]
+  },
+  "final_create_project": {
+    "path": "build/pl/create_project.tcl",
+    "sha256": "c35912c45e5903c81c829765e8b68d466f8c9bc78e1c2ccc56af5472490f1f33",
+    "archive": "create_project_final.tcl",
+    "validation": "ip_generation_final_check.json",
+    "full_implementation_rerun": false
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema": "pl_rebuild_archive_v1",
+  "status": "implemented_timing_pass_review_required",
+  "run_started_at_local": "2026-11-03T00:53:38+08:00",
+  "run_completed_at_local": "2026-11-03T01:14:26+08:00",
+  "tool": "Vivado 2023.2, SW Build 4029153",
+  "part": "xc7z020clg400-2",
+  "top": "av_system_wrapper",
+  "run_command": "vivado.exe -mode batch -source build/pl/build_pl.tcl -log build/out/pl_rebuild_20261103.log -journal build/out/pl_rebuild_20261103.jou",
+  "strategy": [
+    "place_design -directive Explore",
+    "phys_opt_design -directive AggressiveExplore",
+    "route_design -directive Explore",
+    "phys_opt_design -directive AggressiveExplore"
+  ],
+  "markers": {
+    "structural_project_and_ip_generation": true,
+    "native_constraint_endpoints": {
+      "ports": 4,
+      "registers": 188
+    },
+    "pl_implementation_timing_pass": true,
+    "bitgen_completed": true
+  },
+  "timing": {
+    "wns_ns": 0.062,
+    "tns_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "setup_total_endpoints": 182776,
+    "whs_ns": 0.012,
+    "ths_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "hold_total_endpoints": 182129,
+    "wpws_ns": 0.147,
+    "tpws_ns": 0.0,
+    "pulse_failing_endpoints": 0,
+    "pulse_total_endpoints": 49632
+  },
+  "timing_coverage": {
+    "no_clock": 0,
+    "constant_clock": 0,
+    "pulse_width_clock": 0,
+    "unconstrained_internal_endpoints": 0,
+    "no_input_delay": 7,
+    "no_output_delay": 11,
+    "multiple_clock": 0,
+    "generated_clocks": 0,
+    "loops": 0,
+    "partial_input_delay": 4,
+    "partial_output_delay": 0,
+    "latch_loops": 0
+  },
+  "resources": {
+    "lut": 43274,
+    "logic_lut": 32871,
+    "lutram": 9736,
+    "srl": 667,
+    "ff": 35369,
+    "ramb36": 80,
+    "ramb18": 18,
+    "dsp": 164
+  },
+  "route": {
+    "logical nets": 112648,
+    "nets not needing routing": 35103,
+    "internally routed nets": 29765,
+    "nets with no loads": 5338,
+    "routable nets": 77545,
+    "fully routed nets": 77545,
+    "nets with routing errors": 0
+  },
+  "independent_metric_check": {
+    "timing": "Parsed original 12-column design timing summary",
+    "utilization": "Parsed original top-level hierarchy row",
+    "route": "Parsed original route-status counters",
+    "agrees_with_summary_review": true
+  },
+  "summary_review": {
+    "path": "summary_review.json",
+    "status": "review_required",
+    "findings": 32,
+    "cdc_unsafe_endpoints": 1,
+    "cdc_unknown_endpoints": 1,
+    "drc_reported_violations": 321,
+    "methodology_reported_violations": 139
+  },
+  "log_diagnostics": {
+    "error_lines": 0,
+    "critical_warning_lines": 3,
+    "critical_warnings": [
+      "CRITICAL WARNING: [Vivado 12-3645] Please note that adding or importing multiple files, one at a time, can be performance intensive.  Both add_files and import_files commands accept multiple files as input, and passing a collection of multiple files to a single add_files or import_files commands can offer significant performance improvement.",
+      "CRITICAL WARNING: [Designutils 20-1307] Command 'if' is not supported in the xdc constraint file. [${package_root}/src/pl/board_constraints/buttons/hardware/board_keys.xdc:9]",
+      "CRITICAL WARNING: [Designutils 20-1307] Command 'if' is not supported in the xdc constraint file. [${package_root}/src/pl/board_constraints/buttons/hardware/board_keys.xdc:9]"
+    ],
+    "process_stderr": "Two GB18030 lines report an unspecified path was not found; decoded as UTF-8 in process_stderr.txt. Origin not determined; retained separately from the successful Vivado completion."
+  },
+  "outputs": {
+    "bitstream": {
+      "path": "build/out/pl/adapter_system.bit",
+      "sha256": "898d143f655862a23132a45232d4f9893c6caa9e7bfc58c9cdcab91078649710",
+      "bytes": 4045677,
+      "committed_binary": false,
+      "same_as_published_bit": false
+    },
+    "routed_checkpoint": {
+      "path": "build/out/pl/adapter_routed.dcp",
+      "sha256": "8e1f355a860a032025dfae622ce3c59090b8e97c821d2fe61fb4df886a8740a2",
+      "bytes": 91987245
+    },
+    "published_bit": {
+      "path": "board/firmware/system.bit",
+      "sha256": "e40ca4fa56f394fbb2b5bee504feba79fae2587a027e4db9aeafeeddc4679f26"
+    }
+  },
+  "input_hash_catalog": "input_sha256.json",
+  "script_version_boundary": {
+    "used": "create_project_used.tcl",
+    "current": "create_project_final.tcl",
+    "diff": "create_project_change.txt",
+    "only_change": "Two comments, cd $m51_pl_out, and whitespace were added to contain IP-generated auxiliary files in build/out.",
+    "full_implementation_rerun_after_cd_change": false,
+    "separate_ip_generation_validation": {
+      "status": "pass",
+      "file": "ip_generation_check.json",
+      "scope": "39 IP generated in the requested independent directory; root NA summary absent; full implementation not rerun"
+    },
+    "intermediate": "create_project_current.tcl",
+    "full_implementation_rerun_after_final_lf_change": false,
+    "final_only_change": "Intermediate create_project converted CRLF and standalone CR line endings to LF; exact byte equality after this normalization was independently verified",
+    "final_ip_generation_validation": {
+      "status": "pass",
+      "file": "ip_generation_final_check.json",
+      "scope": "Final LF script generated 39 IP in another independent directory; root summary absent; no new synth/route"
+    }
+  },
+  "board_accessed": false,
+  "hardware_accepted": false,
+  "published_firmware_replaced": false,
+  "limitations": [
+    "Positive setup/hold margins do not close CDC or board-level I/O timing review.",
+    "No current hardware inference, physical cold boot, camera/audio/HDMI/servo/SD qualification was performed.",
+    "The new bit was not inserted into the already verified ARM-rebuilt BOOT, which still contains the released PL.",
+    "Historical 2026-10-31 implementation records remain separate and unchanged.",
+    "Archive-time input hashes are not a substitute for unavailable pre-build hashes."
+  ]
+}

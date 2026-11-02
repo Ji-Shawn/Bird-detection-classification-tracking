@@ -1,0 +1,13 @@
+${vivado_install}\bin\bootgen.bat -arch zynq -image ${package_root}\build\out\boot\boot.bif -o ${package_root}\build\out\boot\boot.bin -w on
+ECHO is off.
+ECHO is off.
+
+
+****** Bootgen v2023.2
+  **** Build date : Oct 11 2023-12:51:58
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+

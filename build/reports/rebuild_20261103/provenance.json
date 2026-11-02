@@ -1,0 +1,267 @@
+{
+  "archived_at": "2026-11-02T17:19:18.875424+00:00",
+  "source_kind": "Current-session full Vivado synthesis and implementation outputs",
+  "path_tokens": {
+    "${package_root}": "Repository root",
+    "${vivado_install}": "Vivado 2023.2 installation",
+    "${vitis_install}": "Vitis 2023.2 installation",
+    "${host}": "Original developer host name",
+    "${reproduction_root}": "Independent temporary output root used for the post-fix project/IP generation test"
+  },
+  "files": [
+    {
+      "source": "build/out/pl/bus_skew.rpt",
+      "source_sha256": "37ff4eea9f930277bbef8cb87c580e1123cabde83c847f0dd5d4034c9eba43e6",
+      "source_bytes": 229620,
+      "archived": "build/reports/rebuild_20261103/bus_skew.rpt",
+      "archived_sha256": "6375fd98a32e4fe254e13e81b8fa20bed4d5840c0b09f7c294768a09d6d7ab8b",
+      "archived_bytes": 229585,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl/cdc.rpt",
+      "source_sha256": "7f41391e11bf9eba8a173373f77dbc382e1b99df77d53dbeab2523c928dffd02",
+      "source_bytes": 3911,
+      "archived": "build/reports/rebuild_20261103/cdc.rpt",
+      "archived_sha256": "a75f2c42f24ae9b19d31a477974bba4cfc0365d696e9f1538482de1b7341c3f1",
+      "archived_bytes": 3876,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl/drc.rpt",
+      "source_sha256": "d17fcdff7aee7069bc076f2469694d40c6f379828ba0cbcc27ba10632b757692",
+      "source_bytes": 224794,
+      "archived": "build/reports/rebuild_20261103/drc.rpt",
+      "archived_sha256": "10fc775fed7d2a325d7ec972f4f87368f41568e1b14b2bede9f90f5c32f32024",
+      "archived_bytes": 224759,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl/methodology.rpt",
+      "source_sha256": "05d72e183e217bed9f04783b975820f62eb306d905bedf3ea1b9ef309675e7b8",
+      "source_bytes": 98816,
+      "archived": "build/reports/rebuild_20261103/methodology.rpt",
+      "archived_sha256": "462d244b70168d11bbe7dc5cd5353a929f807040d6d54c13bc586d6caceadf33",
+      "archived_bytes": 98511,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl/route.rpt",
+      "source_sha256": "83f436814ef939cf8e1a31e07ee1a2adf2957e9509702a65b77749e4ced9ff82",
+      "source_bytes": 651,
+      "archived": "build/reports/rebuild_20261103/route.rpt",
+      "archived_sha256": "83f436814ef939cf8e1a31e07ee1a2adf2957e9509702a65b77749e4ced9ff82",
+      "archived_bytes": 651,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl/synthesis_timing.rpt",
+      "source_sha256": "5489a5bd11acaa36bfe81fe1178d9212ab88704d061660db95f93988b781b629",
+      "source_bytes": 423917,
+      "archived": "build/reports/rebuild_20261103/synthesis_timing.rpt",
+      "archived_sha256": "8cd42985a25de78dabd61eb1d4c2477497bf0a9619bad1cd8e7e9ce7a94f803b",
+      "archived_bytes": 423882,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl/synthesis_utilization.rpt",
+      "source_sha256": "2ab2048c07c1d58c2083f85e8f92625d191ae7aea514bb9bf285cef8a34d2237",
+      "source_bytes": 9813,
+      "archived": "build/reports/rebuild_20261103/synthesis_utilization.rpt",
+      "archived_sha256": "b869916fa81def3cb18abec300801a876fabf39b21dccef500265dd1ed37cb87",
+      "archived_bytes": 9778,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl/timing.rpt",
+      "source_sha256": "9cfdc9ebc38de3d1c2bf1bee6f814d203f0df98f48ede75a9ea3f503cbb40dfe",
+      "source_bytes": 412311,
+      "archived": "build/reports/rebuild_20261103/timing.rpt",
+      "archived_sha256": "7c67ed55b614736f07367d500b1af2b06a831fd728cdfdb6053b8b97a27f3c49",
+      "archived_bytes": 412276,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl/utilization.rpt",
+      "source_sha256": "a21dc1bb07ba0b87fea56909d08149a038cc242e9b06820d1c718410091b617f",
+      "source_bytes": 185785,
+      "archived": "build/reports/rebuild_20261103/utilization.rpt",
+      "archived_sha256": "13b0a22c7bd6786dd3b88a9dbf5e08563bf136f6f8073f134f3aab68a83a99e0",
+      "archived_bytes": 185750,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl_rebuild_20261103.log",
+      "source_sha256": "a4a26da5a91862e9e5be91bc85a06600e8c2e3f93dfb32b1d2f48372c36ac6ae",
+      "source_bytes": 1248423,
+      "archived": "build/reports/rebuild_20261103/implementation_log.txt",
+      "archived_sha256": "2329b64cc2d858f681075098107e0d59f8e4e6880b82a2cdd5da73ad378685cb",
+      "archived_bytes": 1196116,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl_rebuild_20261103.jou",
+      "source_sha256": "9f0429874af558bc9ed32d09ee9899d2e6edd3f5096fb36e362484a737d55d5d",
+      "source_bytes": 918,
+      "archived": "build/reports/rebuild_20261103/session_journal.txt",
+      "archived_sha256": "19d8440fbd63c8b2415ce1cbc48ef411df1c4fde4b5c9d2fcd575d5453731307",
+      "archived_bytes": 829,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl_rebuild_20261103_error.txt",
+      "source_sha256": "683cd921218332406d93efcd0cb6ae7fd004a15ce2d883a962ea6852d94f24ea",
+      "source_bytes": 48,
+      "archived": "build/reports/rebuild_20261103/process_stderr.txt",
+      "archived_sha256": "0482f97e3ee6988b2bf08a3b90498b5bc6e611ec0860fcc72f4fcdb4e4088dc7",
+      "archived_bytes": 70,
+      "source_encoding": "gb18030",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/current_pl_review.json",
+      "source_sha256": "ddff4e46b9c5fd1184b95b72311917a0d13a1bc71a474480efc92a53fb0ce314",
+      "source_bytes": 20674,
+      "archived": "build/reports/rebuild_20261103/summary_review.json",
+      "archived_sha256": "672723979add016f1233e3039080ffcf4f184ece36d378b231b6d445edf1a787",
+      "archived_bytes": 19961,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/out/pl_rebuild_20261103_create_project.tcl",
+      "source_sha256": "367e94f3cf8acae080cff5b77cc33df99492e92fc826670e342a00fd8fbb1997",
+      "source_bytes": 29888,
+      "archived": "build/reports/rebuild_20261103/create_project_used.tcl",
+      "archived_sha256": "367e94f3cf8acae080cff5b77cc33df99492e92fc826670e342a00fd8fbb1997",
+      "archived_bytes": 29888,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/pl/create_project.tcl",
+      "source_sha256": "0021f18a5a7028f9119904789273447db5d6a13c8f369ad94bb847916f0cc4cf",
+      "source_bytes": 30062,
+      "archived": "build/reports/rebuild_20261103/create_project_current.tcl",
+      "archived_sha256": "0021f18a5a7028f9119904789273447db5d6a13c8f369ad94bb847916f0cc4cf",
+      "archived_bytes": 30062,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable",
+      "source_state_at_final_archive": {
+        "current_sha256": "c35912c45e5903c81c829765e8b68d466f8c9bc78e1c2ccc56af5472490f1f33",
+        "reason": "Source later normalized to LF; earlier raw SHA and archived intermediate snapshot retained"
+      }
+    },
+    {
+      "source": "build/pl/build_pl.tcl",
+      "source_sha256": "72cec54b93f63e7dfe86bf9776bd8920b1f95d72c230293fd90c782977d3a950",
+      "source_bytes": 3532,
+      "archived": "build/reports/rebuild_20261103/build_pl.tcl",
+      "archived_sha256": "72cec54b93f63e7dfe86bf9776bd8920b1f95d72c230293fd90c782977d3a950",
+      "archived_bytes": 3532,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/pl/normalize_timing.tcl",
+      "source_sha256": "d40b4cd6e49f85dd8b98891ab88a0529e9617a42639b4ccf09cfe02dcc63dbb4",
+      "source_bytes": 2722,
+      "archived": "build/reports/rebuild_20261103/normalize_timing.tcl",
+      "archived_sha256": "d40b4cd6e49f85dd8b98891ab88a0529e9617a42639b4ccf09cfe02dcc63dbb4",
+      "archived_bytes": 2722,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "build/pl/validate_native_constraints.tcl",
+      "source_sha256": "2354ea95384897900ce3d2af99252abf4a860682505e17212d88d02d17b02ed1",
+      "source_bytes": 674,
+      "archived": "build/reports/rebuild_20261103/validate_native_constraints.tcl",
+      "archived_sha256": "2354ea95384897900ce3d2af99252abf4a860682505e17212d88d02d17b02ed1",
+      "archived_bytes": 674,
+      "source_encoding": "utf-8",
+      "transformation": "UTF-8 archive; known absolute roots and host name replaced by tokens; no warning, error, result or numeric lines removed; JSON reserialized when applicable"
+    },
+    {
+      "source": "${reproduction_root}/pl_create_check.txt",
+      "source_sha256": "20e217f6212965df38d3f882420879fd9ae8c16162d1d42f9e45b08ba594db1a",
+      "source_bytes": 93,
+      "archived": "build/reports/rebuild_20261103/ip_output_check.txt",
+      "archived_sha256": "4e253f34a7976a92b922f2b0b4ce56b2784724f49e92a804cd40eb96a1482d42",
+      "archived_bytes": 72,
+      "source_encoding": "utf-8",
+      "transformation": "Known absolute path roots and host name replaced; complete original diagnostic text retained"
+    },
+    {
+      "source": "build/out/check_ip_output.tcl",
+      "source_sha256": "49f75314ca0e7645995968c41e1c2608d2b843098baf0eba7a9146c2c7e918c7",
+      "source_bytes": 447,
+      "archived": "build/reports/rebuild_20261103/ip_output_check.tcl",
+      "archived_sha256": "ce3427afe4bbee222b1b7ed9c049b2adbd6ae4acb455ed6852a7fb98fb33a168",
+      "archived_bytes": 351,
+      "source_encoding": "utf-8",
+      "transformation": "Known absolute path roots and host name replaced; complete original diagnostic text retained"
+    },
+    {
+      "source": "build/out/ip_output_check.log",
+      "source_sha256": "bdde82bad7e01a76fd5144c3d198f60bbec7d1a6426cf0ff5a815469226b29a1",
+      "source_bytes": 61689,
+      "archived": "build/reports/rebuild_20261103/ip_output_check_log.txt",
+      "archived_sha256": "fd7fb395a1b625d071842c237a3ae033b0b839b502f7accf2a425975b5850461",
+      "archived_bytes": 59719,
+      "source_encoding": "utf-8",
+      "transformation": "Known absolute path roots and host name replaced; complete original diagnostic text retained"
+    },
+    {
+      "source": "build/pl/create_project.tcl",
+      "source_sha256": "c35912c45e5903c81c829765e8b68d466f8c9bc78e1c2ccc56af5472490f1f33",
+      "source_bytes": 29774,
+      "archived": "build/reports/rebuild_20261103/create_project_final.tcl",
+      "archived_sha256": "c35912c45e5903c81c829765e8b68d466f8c9bc78e1c2ccc56af5472490f1f33",
+      "archived_bytes": 29774,
+      "source_encoding": "utf-8",
+      "transformation": "Known absolute path roots and host name replaced; full original diagnostic content retained"
+    },
+    {
+      "source": "${reproduction_root}/pl_create_final_check.txt",
+      "source_sha256": "566f67b825c342e02a5896559a46d1b7f202ad3d6b8ec8bad89b959cd474e355",
+      "source_bytes": 99,
+      "archived": "build/reports/rebuild_20261103/ip_output_final_check.txt",
+      "archived_sha256": "a1a46ff6d88356c100ba21fe953362952fbd6a5946fc9fb39d6508e0ad1d0271",
+      "archived_bytes": 78,
+      "source_encoding": "utf-8",
+      "transformation": "Known absolute path roots and host name replaced; full original diagnostic content retained"
+    },
+    {
+      "source": "build/out/check_ip_output_final.tcl",
+      "source_sha256": "d5696941506d6be2740d57aa8b9c20e6008b5eece1be41bc34bfeb6d150f77f9",
+      "source_bytes": 458,
+      "archived": "build/reports/rebuild_20261103/ip_output_final_check.tcl",
+      "archived_sha256": "2546b09d596d6f9ea9f0a608754e692be4fc50e59376dfe22bd28b0b2bcafbec",
+      "archived_bytes": 362,
+      "source_encoding": "utf-8",
+      "transformation": "Known absolute path roots and host name replaced; full original diagnostic content retained"
+    },
+    {
+      "source": "build/out/ip_output_final_check.log",
+      "source_sha256": "93f67c86cbdf34db2687d75bd661e54e5b99a61e28114e7278b38dea16924042",
+      "source_bytes": 62813,
+      "archived": "build/reports/rebuild_20261103/ip_output_final_check_log.txt",
+      "archived_sha256": "a4c137b39d6d2b948d1f9a527c2d759245006d41f66149754962cc430e5b700f",
+      "archived_bytes": 60843,
+      "source_encoding": "utf-8",
+      "transformation": "Known absolute path roots and host name replaced; full original diagnostic content retained"
+    }
+  ]
+}

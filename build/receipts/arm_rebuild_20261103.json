@@ -1,0 +1,213 @@
+{
+  "status": "pass",
+  "build_date_local": "2026-11-03",
+  "archive_audited_at": "2026-11-02T17:08:14.614795+00:00",
+  "scope": "Actual dual-core ARM compilation and BOOT reconstruction completed earlier in this work session; current archival verification of input hashes, generated outputs and independent BOOT parsing",
+  "toolchain": {
+    "suite": "Vitis 2023.2",
+    "compiler": "${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
+    "compiler_sha256": "5564b16b151c1c8d626531440c538866aa938bdcecd7460be03ab6a43377a72f",
+    "compiler_version": "arm-xilinx-eabi-gcc.exe (GCC) 12.2.0",
+    "published_compiler_version": "ARM GNU 6.2.1",
+    "byte_identical_to_published_elf": false,
+    "scope_note": "Compiler version differs from publication; successful compilation and internal BOOT pairing do not constitute hardware acceptance"
+  },
+  "results": {
+    "core0": {
+      "sha256": "5a0f4e8a06786d76621cec85f7025f3d9a80107ed5e7139537b12550712621ae",
+      "source_count": 35,
+      "status": "built_and_hash_verified"
+    },
+    "core1": {
+      "sha256": "af37381792c63c5135c5e5bdc2dfacd7ac35329dba4b46f608d7edbe2eefa1d3",
+      "source_count": 29,
+      "status": "built_and_hash_verified"
+    },
+    "boot": {
+      "sha256": "dc3b3f1e9059267f14a8a919798f95caf3d81e5a395b066312efa577e18f4d6b",
+      "status": "rebuilt_and_independently_verified",
+      "partitions": 8,
+      "model_assets": 388,
+      "fsbl_sha256": "3030eb22170b83e37e69602ce139bd984791d56599abe0f3494cc6b1d3395c49",
+      "runtime_bit_path": "board/firmware/system.bit",
+      "uses_rebuilt_fpga_bit": false
+    }
+  },
+  "input_audit": {
+    "file": "build/receipts/arm_rebuild_20261103/input_hash_audit.json",
+    "unique_recorded_files_checked": 624,
+    "direct_current_source_files_checked": 491,
+    "all_recorded_inputs_match": true,
+    "all_direct_current_sources_match": true,
+    "generated_staged_input_note": "Generated overlays/objects/link scripts are retained by hashes in the detailed receipts; direct source mapping does not cover generated content"
+  },
+  "observed_artifacts": [
+    {
+      "path": "build/out/firmware/core0.elf",
+      "sha256": "5a0f4e8a06786d76621cec85f7025f3d9a80107ed5e7139537b12550712621ae",
+      "bytes": 1148964
+    },
+    {
+      "path": "build/out/firmware/core1.elf",
+      "sha256": "af37381792c63c5135c5e5bdc2dfacd7ac35329dba4b46f608d7edbe2eefa1d3",
+      "bytes": 291552
+    },
+    {
+      "path": "build/out/boot/boot.bin",
+      "sha256": "dc3b3f1e9059267f14a8a919798f95caf3d81e5a395b066312efa577e18f4d6b",
+      "bytes": 30788704
+    },
+    {
+      "path": "build/out/boot/fsbl/fsbl_m50.elf",
+      "sha256": "3030eb22170b83e37e69602ce139bd984791d56599abe0f3494cc6b1d3395c49",
+      "bytes": 579216
+    },
+    {
+      "path": "board/firmware/system.bit",
+      "sha256": "e40ca4fa56f394fbb2b5bee504feba79fae2587a027e4db9aeafeeddc4679f26",
+      "bytes": 4045677
+    },
+    {
+      "path": "board/firmware/system.xsa",
+      "sha256": "42e0182e912797a98795d053550805ace50bc6ffabcccf03c9430d0155519559",
+      "bytes": 1770705
+    },
+    {
+      "path": "board/firmware/boot.bin",
+      "sha256": "c04337b3943dcd633f29f63af24005de3d8e3f2d749f85e32b83d6a73b6977d9",
+      "bytes": 30821472
+    },
+    {
+      "path": "board/firmware/core0.elf",
+      "sha256": "4d2391599eeab5adf9ff38790320aeba958dae3c675687977ba4572c47474e33",
+      "bytes": 1165372
+    },
+    {
+      "path": "board/firmware/core1.elf",
+      "sha256": "7b44dd4dc2767f44fc105e695ad5c1bc9a46d496f8fd7314663dcf21f5576ca9",
+      "bytes": 285404
+    }
+  ],
+  "provenance": "build/receipts/arm_rebuild_20261103/provenance.json",
+  "files": [
+    {
+      "path": "build/receipts/arm_rebuild_20261103/boot_build_receipt.json",
+      "sha256": "90353d5997e1a90a0e8d33c1c52c383230d516e4b13e46e3b5e75c36f96ae901",
+      "bytes": 857
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/boot_layout.txt",
+      "sha256": "228388f7b3c4ae6a45e4f2ddbe585e14f7d6b61a43e922c88dba99a5f73c52ce",
+      "bytes": 494
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/boot_verify.json",
+      "sha256": "7f6e3c0d93c803d120eaf05e8d335370189335a02de9de68c78f0d47b158dfd1",
+      "bytes": 883
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/boot_verify.txt",
+      "sha256": "d1f8c6831a90e3ca9f824b0c27ba1f7a202022c565781c9bdb4a4a1b88bf153f",
+      "bytes": 83
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/bootgen.txt",
+      "sha256": "3b271626cb89cf11f39013d4bce87c85a16ec2ab851c08ada99ec6a06d5467ad",
+      "bytes": 443
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/compiler_version.txt",
+      "sha256": "b9c2e4061841bb9fc37df96b24ba083b42753b768130e8286c1a16aa1d30fde1",
+      "bytes": 239
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/core0_build.txt",
+      "sha256": "32c8acf9add47fb46bae1e2d0ebf954d6261b5f8648569885c063809e2f8d721",
+      "bytes": 98
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/core0_compile_and_link.txt",
+      "sha256": "ab60a7564deb747d4cfae841f1887de109e083b09ea728170491875e16fc58da",
+      "bytes": 24295
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/core0_inputs.json",
+      "sha256": "da93cf4563c51a17b24454db62eb31c76765897f625f48ba98583d8c3776257f",
+      "bytes": 108819
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/core0_link_map.txt",
+      "sha256": "86e04b98b32a4e4a27c0c008c43761aaf4168c0c70a1233267b97fc8544f0e31",
+      "bytes": 459779
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/core1_build.txt",
+      "sha256": "7fafdff6d693f017f25492debee6d96e0c300c83a45653877d944bf8b41df925",
+      "bytes": 25
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/core1_compile_and_link.txt",
+      "sha256": "4f6799c1f714e8449f3101b87d530edf1171d1a8c24cc7486a09b77c39080188",
+      "bytes": 5675
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/core1_inputs.json",
+      "sha256": "2fb6e0c81a772939f2abbab2b02ba15c46efd181764a3f37c789e6812747159c",
+      "bytes": 34643
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/core1_link_map.txt",
+      "sha256": "3e176693c5a2243580659d063e4f3f29bd199c19b6c94447868ba2d26b005acf",
+      "bytes": 250405
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/fsbl_build.txt",
+      "sha256": "ed1f48e3510ae975a4d6f5bd5dce0ed0f36808989f0521690f76f29ee6e84322",
+      "bytes": 6626
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/fsbl_inputs.json",
+      "sha256": "787380b3cfaefa65717b3c6a5a008b2c54b330f2ce5d9c39f6fd19ef1d181bf6",
+      "bytes": 29898
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/fsbl_link_map.txt",
+      "sha256": "f2ac9cd00312cb1b9126f66702442293b386a29246ae64e7f92944142e8ffead",
+      "bytes": 158768
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/input_hash_audit.json",
+      "sha256": "7de3a4e981964f8db65c6724e765e6334e91f069a5509438d941c780bdcede2d",
+      "bytes": 163785
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/provenance.json",
+      "sha256": "22520deb6928e684debec2b75fadc9f8581fa3aa8316d880b3d79560cfcb7bd5",
+      "bytes": 21792
+    },
+    {
+      "path": "build/receipts/arm_rebuild_20261103/readme.md",
+      "sha256": "4d013337a30947e8a6ada21cd21796b974311423627dd57c367ef08281693c6e",
+      "bytes": 4507
+    }
+  ],
+  "commands": {
+    "build_entries": [
+      "python -B build/build_firmware.py --core both",
+      "python -B build/build_boot.py --rebuilt"
+    ],
+    "build_entry_scope": "Documented equivalent entry points; these are not a captured parent shell transcript",
+    "archive_boot_verification": "verify_boot.verify(image=build/out/boot/boot.bin, core0=build/out/firmware/core0.elf, core1=build/out/firmware/core1.elf, bit=board/firmware/system.bit, fsbl=build/out/boot/fsbl/fsbl_m50.elf)",
+    "archive_verification_executed": true
+  },
+  "limitations": [
+    "Compiler and linker warnings remain in archived logs; a successful build is not a warning-free build.",
+    "No new FPGA synthesis or implementation was performed by this ARM/BOOT check.",
+    "No board access, physical SD-card write, cold boot or current integrated inference measurement was performed.",
+    "Generated binaries remain in ignored build/out; shipped board/firmware files were not replaced.",
+    "Driver hashes are archive-time snapshots; only files already named and hashed in original compilation receipts have build-receipt identity proof."
+  ],
+  "board_accessed": false,
+  "physical_sd_card_written": false,
+  "published_firmware_replaced": false
+}

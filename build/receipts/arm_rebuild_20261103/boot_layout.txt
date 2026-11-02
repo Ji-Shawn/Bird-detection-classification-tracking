@@ -1,0 +1,11 @@
+the_rom_image:
+{
+ [bootloader] ${package_root}/build/out/boot/fsbl/fsbl_m50.elf
+ ${package_root}/board/firmware/system.bit
+ ${package_root}/build/out/firmware/core0.elf
+ ${package_root}/build/out/boot/core1_sd.elf
+ [load=0x31000000] ${package_root}/build/out/boot/model_31000000.bin
+ [load=0x32089800] ${package_root}/build/out/boot/model_32000000.bin
+ [load=0x33025780] ${package_root}/build/out/boot/model_33000000.bin
+ [load=0x30f01000] ${package_root}/build/out/boot/ready.bin
+}

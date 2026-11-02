@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "cases": 37,
+  "fatfs_integration_cases": 5,
+  "board_accessed": false,
+  "sd_card_written": false,
+  "compiler_version": "gcc.exe (x86_64-posix-seh-rev1, Built by MinGW-Builds project) 13.1.0",
+  "inputs": {
+    "sim/archive/test_ssd95_record.c": "eb4030595b7c9453f1cf90a347af908be9edf025c23fe019fbed08539e4e0176",
+    "src/application/software/ssd_fast.c": "8b9bcf3a88061f136cef60f51984c2a6d10522c3aab611885ea0b6e882a08f74",
+    "src/application/software/sd_record.c": "026771cd2177eb9aa421f2b5aaec6a7fa100573a7769756006b267f564056322",
+    "src/application/software/sd_writer.c": "3e76c949f46351adaf60e91faf216d35d211422a4d3f1db123ef94a48f15733e",
+    "src/application/software/sd_vendor/ff.c": "9e920dd42c70b0516d385d9780c23c6ee95e28a685fa85b4e3304129cb491d4c",
+    "src/application/software/sd_vendor/ffunicode.c": "6cd4dc4a664386ebd108e56d367582c35f005fc20381486366b5d77ac58119bd"
+  },
+  "limits": "Deterministic model inputs; no model accuracy or physical hardware claim."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "sha256": "dc3b3f1e9059267f14a8a919798f95caf3d81e5a395b066312efa577e18f4d6b",
+  "bytes": 30788704,
+  "partitions": 8,
+  "model_assets": 388,
+  "core0_sha256": "5a0f4e8a06786d76621cec85f7025f3d9a80107ed5e7139537b12550712621ae",
+  "core1_sha256": "af37381792c63c5135c5e5bdc2dfacd7ac35329dba4b46f608d7edbe2eefa1d3",
+  "bit_sha256": "e40ca4fa56f394fbb2b5bee504feba79fae2587a027e4db9aeafeeddc4679f26",
+  "core0_runtime_segments": 1,
+  "core1_runtime_segments": 1,
+  "fsbl_runtime_segments": 1,
+  "core1_gnu_note_only_exclusion": true,
+  "pl_runtime_equal": true,
+  "model_groups_equal": true,
+  "ready_seed_verified": true,
+  "fsbl_entry_and_rom_header_verified": true,
+  "fsbl_stack_startup_check": "Performed separately by build_fsbl on rebuilt images; not inferred from BOOT header",
+  "board_accessed": false,
+  "sd_card_written": false
+}

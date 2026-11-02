@@ -1,0 +1,1 @@
+M51_PORTABLE_BOOT_PASS 8 partitions, 388 assets, paired ELF/PL runtime, ready seed

@@ -1,0 +1,114 @@
+{
+  "ingested_on": "2026-11-03",
+  "kind": "historical_board_evidence",
+  "current_m51_board_acceptance": false,
+  "original_measurement_date": "2026-10-02 (except explicitly dated 2026-09-29 failure)",
+  "scope": "Archived hardware reads from separate model-test ELF/bit pairs; not new device access; not current integrated firmware validation.",
+  "files": [
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/old_chain_head.log",
+      "source_sha256": "6bf0572eb7321926daf31149aa202548cadd3b5c2229e4cf6c981c1596755a2b",
+      "file": "old_chain_head.txt",
+      "sha256": "6bf0572eb7321926daf31149aa202548cadd3b5c2229e4cf6c981c1596755a2b",
+      "transform": "Only original workspace root normalized; original message text and numeric values retained."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/candidate_chain_1_head.log",
+      "source_sha256": "4880eb5ea046a0125706e3379cb2c7fdcc6ee18079dfc0b801f969ff4e9544ab",
+      "file": "candidate_chain_1_head.txt",
+      "sha256": "4880eb5ea046a0125706e3379cb2c7fdcc6ee18079dfc0b801f969ff4e9544ab",
+      "transform": "Only original workspace root normalized; original message text and numeric values retained."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/candidate_chain_2_head.log",
+      "source_sha256": "74f1711e023e325162993e6c9a639d35873d6193031294d4e9bfcd76dbd05e1a",
+      "file": "candidate_chain_2_head.txt",
+      "sha256": "74f1711e023e325162993e6c9a639d35873d6193031294d4e9bfcd76dbd05e1a",
+      "transform": "Only original workspace root normalized; original message text and numeric values retained."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/candidate_chain_3_head.log",
+      "source_sha256": "491943ccbd84f006bf09d39f170a77a49507c1a0b2d95d244c61501226bde952",
+      "file": "candidate_chain_3_head.txt",
+      "sha256": "491943ccbd84f006bf09d39f170a77a49507c1a0b2d95d244c61501226bde952",
+      "transform": "Only original workspace root normalized; original message text and numeric values retained."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/image_isolated_clean.log",
+      "source_sha256": "acef2fc2e4c71d8b3d968d46f2066fb98150483b7b546bba0ac44d6be9a88cad",
+      "file": "image_isolated_clean.txt",
+      "sha256": "bad0f2e4de783dae0c97ff40f7a132b39f7f3011be8e34dc289b5923138c9443",
+      "transform": "Only original workspace root normalized; original message text and numeric values retained."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/image_chain_1.log",
+      "source_sha256": "9faf26f835e86d87c00be3f18b4b9ae92bf8c8bf0a813cd57a7b2f93fb67ae0e",
+      "file": "image_chain_1.txt",
+      "sha256": "a3f1805434d1bbb4f6102e9a82de2c21d991a9c26959cecf1558566d8df23497",
+      "transform": "Only original workspace root normalized; original message text and numeric values retained."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/image_chain_repeat_2.log",
+      "source_sha256": "9faf26f835e86d87c00be3f18b4b9ae92bf8c8bf0a813cd57a7b2f93fb67ae0e",
+      "file": "image_chain_repeat_2.txt",
+      "sha256": "a3f1805434d1bbb4f6102e9a82de2c21d991a9c26959cecf1558566d8df23497",
+      "transform": "Only original workspace root normalized; original message text and numeric values retained."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/ssd_chain_1.log",
+      "source_sha256": "b3fc39a3bd63334c9c702d15c7bda505fba00c38d8aa5300dd4f3f5ba14e159c",
+      "file": "ssd_chain_1.txt",
+      "sha256": "b3fc39a3bd63334c9c702d15c7bda505fba00c38d8aa5300dd4f3f5ba14e159c",
+      "transform": "Only original workspace root normalized; original message text and numeric values retained."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/ssd_chain_repeat_2.log",
+      "source_sha256": "1b84b64704695d6c83ceb6a20bce2cc05d31cf1e979fbae62bcd7dd96f85e173",
+      "file": "ssd_chain_repeat_2.txt",
+      "sha256": "1b84b64704695d6c83ceb6a20bce2cc05d31cf1e979fbae62bcd7dd96f85e173",
+      "transform": "Only original workspace root normalized; original message text and numeric values retained."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/image_chain_1_timing.log",
+      "source_sha256": "c3a1e972e6304cf0a1278663e8dd7147991c16dadbffb2ffbbc8a4302eaa7714",
+      "file": "image_chain_1_timing.txt",
+      "sha256": "c3a1e972e6304cf0a1278663e8dd7147991c16dadbffb2ffbbc8a4302eaa7714",
+      "transform": "Only original workspace root normalized; original message text and numeric values retained."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/ssd_chain_1_timing.log",
+      "source_sha256": "365c1c07740f7d76c572ef1d60cef743775e0009c8a2444ad272165049812e16",
+      "file": "ssd_chain_1_timing.txt",
+      "sha256": "365c1c07740f7d76c572ef1d60cef743775e0009c8a2444ad272165049812e16",
+      "transform": "Only original workspace root normalized; original message text and numeric values retained."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/board_validation.json",
+      "source_sha256": "3af5f7beb8fb8a9fd52de666bf4ed7e923b708e745674cb90861d27d7b24743d",
+      "file": "board_validation.json",
+      "sha256": "8f4cd9ac5cf71e2ead22017a1798efde9eeb1e8eb1e7eed71bf83304a49aa6d9",
+      "transform": "Original workspace roots normalized. Some original-log inventory entries refer to source archive files not included in this selected evidence set."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/input_artifacts_sha256.json",
+      "source_sha256": "eee7e551a6edfa2b90e1bef9eb9375cd5a47d9e2d58f963f9db9c063ee8e0af1",
+      "file": "input_artifacts_sha256.json",
+      "sha256": "c4354e2fe0dad04036fe5d6fa60126c661c3f80d2e8306f9470d5dac82eabeca",
+      "transform": "Original workspace roots normalized. Some original-log inventory entries refer to source archive files not included in this selected evidence set."
+    },
+    {
+      "source": "m9_visual_deploy/board_20261002_095532/validation_scripts_sha256.json",
+      "source_sha256": "5443ece97dcbd294ddd99417b335478fae12bf9ef4fcc761daa69b35b9890ef4",
+      "file": "validation_scripts_sha256.json",
+      "sha256": "716bbc9a758e8fa91ca719b1ae32542c916e2992839a704bc406f3d4cb17479c",
+      "transform": "Original workspace roots normalized. Some original-log inventory entries refer to source archive files not included in this selected evidence set."
+    },
+    {
+      "source": "m1_dma_loopback/logs/history_20261002/board/pw128_por2_candidate_chain_2_20260929.log",
+      "source_sha256": "bedf305b75f17f55a24c01ba37a3bf34bd6b729fd3c6c5e7767d65505950b859",
+      "file": "candidate_100mhz_failure_20260929.txt",
+      "sha256": "d5597564a8a79511566abfe4a94c587e0e3f28dbc6ec2b3467472fa25eb58899",
+      "transform": "Only original workspace root normalized; this is the earlier unstable candidate, not the later pipelined candidate."
+    }
+  ]
+}

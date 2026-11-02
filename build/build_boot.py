@@ -42,7 +42,7 @@ def main():
     lines += [f' [load=0x30f01000] {(m.OUT/"ready.bin").as_posix()}','}']
     bif.write_text('\n'.join(lines)+'\n',encoding='ascii')
     image=m.OUT/'boot.bin'
-    m.run([m.vivado_bin()/'bootgen.bat','-arch','zynq','-image',bif,'-o',image,'-w','on'],m.OUT/'bootgen.log')
+    m.run([m.vivado_tool('bootgen'),'-arch','zynq','-image',bif,'-o',image,'-w','on'],m.OUT/'bootgen.log')
     from verify_boot import verify as verify_image
     verified=verify_image(image=image,core0=m.CORE0,core1=m.CORE1,bit=m.BIT,fsbl=fsbl)
     report={'sha256':m.sha(image),'bytes':image.stat().st_size,'rebuilt_applications':args.rebuilt,

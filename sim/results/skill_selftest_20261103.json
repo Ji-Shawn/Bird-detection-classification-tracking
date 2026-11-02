@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "run_started_utc": "2026-11-02T17:19:58.513048+00:00",
+  "run_finished_utc": "2026-11-02T17:19:59.547756+00:00",
+  "command": [
+    "${python}",
+    "-B",
+    "-X",
+    "utf8",
+    "skill/zynq_pl_accel/scripts/test_inspect_reports.py"
+  ],
+  "python_environment": "Same reproduction virtual environment inspected in python_environment_new_full_20261103.json",
+  "python_version": "Python 3.12.5",
+  "cases": 16,
+  "skipped": 0,
+  "returncode": 0,
+  "board_accessed": false,
+  "physical_sd_card_accessed": false,
+  "vivado_started": false,
+  "scope": "Independent standard-library skill report parser tests, including unsupported CDC severity rejection. Separate from the six-stage offline checks receipt.",
+  "input_sha256": {
+    "skill/zynq_pl_accel/scripts/inspect_reports.py": "98acdb790b5164423df0877b4fcd6a87b9903dfc1bb0983e0600aba4b99777d5",
+    "skill/zynq_pl_accel/scripts/test_inspect_reports.py": "6291f9b0cd1ece732d63e00c997f4771824ca5f9ae3284eae0fd1adc206c07e3"
+  },
+  "input_files_unchanged_during_checks": true,
+  "log": "sim/results/skill_selftest_20261103.txt",
+  "original_output_sha256": "a8403cfbef008a4d90c5b3498b23f486b5b8cc551de3ccc854942322429a6bd4",
+  "archived_log_sha256": "e5658dd527c622239ea0a5ca70c225b1fd3d3d07583c70e64862bcfc3e22e5a1",
+  "transformation": "UTF-8 output with CRLF normalized to LF; no absolute paths occurred; test assertions and unittest results unchanged"
+}

@@ -125,7 +125,7 @@ static void begin(float score,const float *box,uint32_t seq,uint64_t ts,uint64_t
     }
     tvar-=tsum*tsum/(GRID*GRID);seeded=tvar>=25.f*GRID*GRID;
 }
-void ssd_fast_selection(unsigned decision,float score,const float *box,
+void ssd_fast_selection(unsigned decision,float score,const float box[4],
                         uint32_t seq,uint64_t ts,uint64_t now) {
     /* Photos use only this accepted SSD observation, never candidate/NCC or
      * species-classification confidence. Tracking keeps its existing gate. */
@@ -220,7 +220,7 @@ int ssd_fast_class_reuse(uint32_t seq,uint64_t ts,unsigned policy,uint64_t now,i
        class_policy!=policy || now<class_time || now-class_time>2000000u)return 0;
     memcpy(logits,class_logits,60);memcpy(roi,class_roi,sizeof class_roi);*applied=class_applied;return 1;
 }
-void ssd_fast_class_store(uint32_t seq,uint64_t ts,unsigned policy,uint64_t now,const int8_t *logits,float confidence,const int32_t roi[4],unsigned applied) {
+void ssd_fast_class_store(uint32_t seq,uint64_t ts,unsigned policy,uint64_t now,const int8_t logits[60],float confidence,const int32_t roi[4],unsigned applied) {
     if(!epoch || !confirmed_time || seq!=confirmed_sequence || ts!=confirmed_time || !logits ||
        now<ts || !isfinite(confidence) || confidence<0 || confidence>1.f || !roi)return;
     memcpy(class_logits,logits,60);class_time=now;class_policy=policy;class_epoch=epoch;class_ready=confidence>=.5f;

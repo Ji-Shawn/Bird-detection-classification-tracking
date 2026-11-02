@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "completed_at_local": "2026-11-03T01:27:56+08:00",
+  "scope": "Fresh project and 39-IP generation using the final LF-only create_project.tcl; no synthesis/place/route/bitstream rerun",
+  "create_project_sha256": "c35912c45e5903c81c829765e8b68d466f8c9bc78e1c2ccc56af5472490f1f33",
+  "create_project_archive": "create_project_final.tcl",
+  "driver": "ip_output_final_check.tcl",
+  "log": "ip_output_final_check_log.txt",
+  "raw_result": "ip_output_final_check.txt",
+  "ip_count": 39,
+  "cwd": "${reproduction_root}/pl_create_final",
+  "root_summary_exists": false,
+  "line_ending_audit": {
+    "carriage_return_count": 0,
+    "same_as_intermediate_after_universal_newline_conversion": true,
+    "tcl_logic_unchanged": true
+  },
+  "completion_marker": "PL_OUTPUT_DIRECTORY_CHECK_PASS",
+  "hardware_accessed": false,
+  "full_implementation_rerun": false
+}

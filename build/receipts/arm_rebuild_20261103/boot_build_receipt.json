@@ -1,0 +1,28 @@
+{
+  "sha256": "dc3b3f1e9059267f14a8a919798f95caf3d81e5a395b066312efa577e18f4d6b",
+  "bytes": 30788704,
+  "rebuilt_applications": true,
+  "assets": 388,
+  "partitions": 8,
+  "fsbl_startup": {
+    "runtime": "Xilinx libxil xil-crt0",
+    "generic_crt_absent": true,
+    "all_load_ranges_in_ocm": true,
+    "stack_addresses": {
+      "_stack": "0xffff6000",
+      "__irq_stack": "0xffffc000",
+      "__supervisor_stack": "0xffffc800",
+      "__abort_stack": "0xffffcc00",
+      "__fiq_stack": "0xffffd000",
+      "__undef_stack": "0xffffd400"
+    },
+    "spec": {
+      "path": "${vivado_install}/data/embeddedsw/scripts/specs/arm/Xilinx.spec",
+      "bytes": 188,
+      "sha256": "b9273e64cea0f2f99dbd79e2cfcfb5b8357b446a6f1e1f1b8da27faf4036d81d"
+    },
+    "network_video_gap_address": "0x161e4c"
+  },
+  "board_accessed": false,
+  "sd_card_written": false
+}

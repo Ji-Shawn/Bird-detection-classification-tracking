@@ -1,0 +1,13 @@
+--- create_project_used.tcl
++++ create_project_current.tcl
+@@ -6,6 +6,10 @@
+ 
+ file mkdir $m51_pl_out
+ 
++# Some IP generators write auxiliary files relative to the process directory.
++# Keep those outputs (including the PS summary) in the ignored build workspace.
++cd $m51_pl_out
++
+ create_project m51_pl [file join $m51_pl_out project] -part xc7z020clg400-2 -force
+ 
+ config_ip_cache -disable_cache

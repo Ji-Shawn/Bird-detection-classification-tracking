@@ -1,0 +1,465 @@
+{
+  "archived_on": "2026-11-03",
+  "path_tokens": {
+    "${package_root}": "Repository root",
+    "${vitis_install}": "Vitis 2023.2 installation root",
+    "${vivado_install}": "Vivado 2023.2 installation root"
+  },
+  "scope": "Archive of existing successful build receipts/logs; source hashes precede path normalization",
+  "files": [
+    {
+      "source": "build/out/firmware/core0_inputs.json",
+      "source_sha256": "8f92575bcfeef60f722c6016b4220b8d025f333c840bec9d6f91142557be6cab",
+      "source_bytes": 132327,
+      "archived": "build/receipts/arm_rebuild_20261103/core0_inputs.json",
+      "archived_sha256": "da93cf4563c51a17b24454db62eb31c76765897f625f48ba98583d8c3776257f",
+      "archived_bytes": 108819,
+      "transformation": "JSON reserialized as UTF-8 with slash-normalized token paths"
+    },
+    {
+      "source": "build/out/firmware/core0_build.log",
+      "source_sha256": "eb0f0659aac5eefab69ae6a0bc0726756efa88783a7f9f0ef4260ae3a2076271",
+      "source_bytes": 125,
+      "archived": "build/receipts/arm_rebuild_20261103/core0_build.txt",
+      "archived_sha256": "32c8acf9add47fb46bae1e2d0ebf954d6261b5f8648569885c063809e2f8d721",
+      "archived_bytes": 98,
+      "transformation": "UTF-8 text; known absolute path roots replaced by tokens; original text and numeric content retained"
+    },
+    {
+      "source": "build/out/firmware/core1_inputs.json",
+      "source_sha256": "2f0f867f774303eace49123bdee3773ba67a079230f0c99e1f7489d30875dcc4",
+      "source_bytes": 41384,
+      "archived": "build/receipts/arm_rebuild_20261103/core1_inputs.json",
+      "archived_sha256": "2fb6e0c81a772939f2abbab2b02ba15c46efd181764a3f37c789e6812747159c",
+      "archived_bytes": 34643,
+      "transformation": "JSON reserialized as UTF-8 with slash-normalized token paths"
+    },
+    {
+      "source": "build/out/firmware/core1_build.log",
+      "source_sha256": "7fafdff6d693f017f25492debee6d96e0c300c83a45653877d944bf8b41df925",
+      "source_bytes": 25,
+      "archived": "build/receipts/arm_rebuild_20261103/core1_build.txt",
+      "archived_sha256": "7fafdff6d693f017f25492debee6d96e0c300c83a45653877d944bf8b41df925",
+      "archived_bytes": 25,
+      "transformation": "UTF-8 text; known absolute path roots replaced by tokens; original text and numeric content retained"
+    },
+    {
+      "source": "build/out/boot/build_receipt.json",
+      "source_sha256": "a64befe29d43bb82984fc2fc04f5679e0617fb864bfa9e04e0f326466ef034b5",
+      "source_bytes": 900,
+      "archived": "build/receipts/arm_rebuild_20261103/boot_build_receipt.json",
+      "archived_sha256": "90353d5997e1a90a0e8d33c1c52c383230d516e4b13e46e3b5e75c36f96ae901",
+      "archived_bytes": 857,
+      "transformation": "JSON reserialized as UTF-8 with slash-normalized token paths"
+    },
+    {
+      "source": "build/out/boot/bootgen.log",
+      "source_sha256": "7d3723e68f84850e10730c80b3218e158985bf1c551a6a8f7a4d43b9ba0644bd",
+      "source_bytes": 503,
+      "archived": "build/receipts/arm_rebuild_20261103/bootgen.txt",
+      "archived_sha256": "3b271626cb89cf11f39013d4bce87c85a16ec2ab851c08ada99ec6a06d5467ad",
+      "archived_bytes": 443,
+      "transformation": "UTF-8 text; known absolute path roots replaced by tokens; original text and numeric content retained"
+    },
+    {
+      "source": "build/out/boot/boot.bif",
+      "source_sha256": "da2758d871c95b1895a39c88db39dab9dbd32fd26cf6921747b633284b76463f",
+      "source_bytes": 710,
+      "archived": "build/receipts/arm_rebuild_20261103/boot_layout.txt",
+      "archived_sha256": "228388f7b3c4ae6a45e4f2ddbe585e14f7d6b61a43e922c88dba99a5f73c52ce",
+      "archived_bytes": 494,
+      "transformation": "UTF-8 text; known absolute path roots replaced by tokens; original text and numeric content retained"
+    },
+    {
+      "source": "build/out/boot/fsbl/compile_inputs.json",
+      "source_sha256": "c5e0901673d64b9efa8eae37c2ff56ab33c06ca9675673c32afcd92cd7174490",
+      "source_bytes": 35657,
+      "archived": "build/receipts/arm_rebuild_20261103/fsbl_inputs.json",
+      "archived_sha256": "787380b3cfaefa65717b3c6a5a008b2c54b330f2ce5d9c39f6fd19ef1d181bf6",
+      "archived_bytes": 29898,
+      "transformation": "JSON reserialized as UTF-8 with slash-normalized token paths"
+    },
+    {
+      "source": "build/out/boot/fsbl/build.log",
+      "source_sha256": "9d0920fce5aa4613326323a3e71dbc9ff76edf6ab4af7d220d597c63fe753eec",
+      "source_bytes": 8822,
+      "archived": "build/receipts/arm_rebuild_20261103/fsbl_build.txt",
+      "archived_sha256": "ed1f48e3510ae975a4d6f5bd5dce0ed0f36808989f0521690f76f29ee6e84322",
+      "archived_bytes": 6626,
+      "transformation": "UTF-8 text; known absolute path roots replaced by tokens; original text and numeric content retained"
+    },
+    {
+      "source": "build/out/boot/fsbl/fsbl.map",
+      "source_sha256": "ee7d3a624962e3a6caf4d4f9d61fca4eea11c4f5eafef16b3770f8a894744ba1",
+      "source_bytes": 177284,
+      "archived": "build/receipts/arm_rebuild_20261103/fsbl_link_map.txt",
+      "archived_sha256": "f2ac9cd00312cb1b9126f66702442293b386a29246ae64e7f92944142e8ffead",
+      "archived_bytes": 158768,
+      "transformation": "UTF-8 text; known absolute path roots replaced by tokens; original text and numeric content retained"
+    },
+    {
+      "source": "build/out/work/application/build/software/app.map",
+      "source_sha256": "a958ca15ba79e6731a18d1695db84c3cb1cc2b95e287af6b6d79ef354eb78536",
+      "source_bytes": 525497,
+      "archived": "build/receipts/arm_rebuild_20261103/core0_link_map.txt",
+      "archived_sha256": "86e04b98b32a4e4a27c0c008c43761aaf4168c0c70a1233267b97fc8544f0e31",
+      "archived_bytes": 459779,
+      "transformation": "UTF-8 text; known absolute path roots replaced by tokens; original text and numeric content retained"
+    },
+    {
+      "source": "build/out/work/services/core1/build/core1.map",
+      "source_sha256": "5c414cb500297312278ebe98eb8a711c93226ae977286bc9baff29e151441072",
+      "source_bytes": 277258,
+      "archived": "build/receipts/arm_rebuild_20261103/core1_link_map.txt",
+      "archived_sha256": "3e176693c5a2243580659d063e4f3f29bd199c19b6c94447868ba2d26b005acf",
+      "archived_bytes": 250405,
+      "transformation": "UTF-8 text; known absolute path roots replaced by tokens; original text and numeric content retained"
+    },
+    {
+      "sources": [
+        {
+          "source": "build/out/work/application/build/software/compile_0.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_1.log",
+          "source_sha256": "f688fd00eb163574570e5706e47e78cce9fc584cb9747921b232afd8e2bb2fa1",
+          "source_bytes": 412
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_10.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_11.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_12.log",
+          "source_sha256": "9290e34e9ff9b4d83c6bf49c73467871a6ab591442796604ee30458f5b18431b",
+          "source_bytes": 415
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_13.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_14.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_15.log",
+          "source_sha256": "97d8c18e0e488d448e1d51f816a03c575f63eeb8c4f78f5da894bbe886411236",
+          "source_bytes": 2663
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_16.log",
+          "source_sha256": "ccfcb0d7d2cd88cb93e8fad02a088f0d1dd380ef93ba03a44d7525339575c28b",
+          "source_bytes": 1716
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_17.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_18.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_19.log",
+          "source_sha256": "54aeaa268c6b560749d6fd4e100454e086bda6ef46003856053971c90c9fe30d",
+          "source_bytes": 2351
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_2.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_20.log",
+          "source_sha256": "77aa0f2fb7da73d822b62b0eaf991ef56e7e6388a8a2750aad431b1b77beb846",
+          "source_bytes": 2351
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_21.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_22.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_23.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_24.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_25.log",
+          "source_sha256": "656337c8f1a1a2904557e7b0e702e6275cbc563490ea1442a366fd1f398fadbe",
+          "source_bytes": 361
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_26.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_27.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_28.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_29.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_3.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_30.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_31.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_32.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_33.log",
+          "source_sha256": "eda5969cdb9b115d2beff20fc43adcd2185a8f71b0c9bc7e7f3744d09ea7b79e",
+          "source_bytes": 3263
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_34.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_4.log",
+          "source_sha256": "b534271951dd8ffae995a9c2ae8553949b788d02a840ccf246df991ce6dd8a63",
+          "source_bytes": 5652
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_5.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_6.log",
+          "source_sha256": "ebf5820c3cd6c25a0b9a8b1c74b905c0faff8948c0ad5db522b5c38c7450e9f3",
+          "source_bytes": 413
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_7.log",
+          "source_sha256": "d5d70c6267e98cccce4f5f455c162ba2ab1bb92a8b451a57a26c5c038489fe53",
+          "source_bytes": 404
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_8.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/application/build/software/compile_9.log",
+          "source_sha256": "0d7f782f2bb4786bb31dc2d2449c77a841466e653afe367f980a586fb43094a0",
+          "source_bytes": 410
+        },
+        {
+          "source": "build/out/work/application/build/software/link.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        }
+      ],
+      "archived": "build/receipts/arm_rebuild_20261103/core0_compile_and_link.txt",
+      "archived_sha256": "ab60a7564deb747d4cfae841f1887de109e083b09ea728170491875e16fc58da",
+      "archived_bytes": 24295,
+      "transformation": "Original compile/link logs concatenated with clearly marked per-source hashes; known absolute path roots replaced by tokens. Empty logs remain labeled."
+    },
+    {
+      "sources": [
+        {
+          "source": "build/out/work/services/core1/build/audio_eth_adapter.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/audio_health.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/audio_model_input.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/audio_quality.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/audio_worker.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/beamform.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/bird_frontend.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/ff.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/fft_q15.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/ffunicode.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/fusion_audio.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/fusion_math.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/gcc_phat.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/link.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/logmel_pl.log",
+          "source_sha256": "c7c24f1e7f79bc77780e534c4554bec2742cd957460ffc6303e527bb626edec2",
+          "source_bytes": 399
+        },
+        {
+          "source": "build/out/work/services/core1/build/main.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/mel128.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/mel_table.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/model_logmel32_pl.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/noise_reduce.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/platform_port.log",
+          "source_sha256": "ce00de52b68dd2a2f436b1ba444e0ff29bbf194425e5a42e1f8a1202353179a8",
+          "source_bytes": 416
+        },
+        {
+          "source": "build/out/work/services/core1/build/sd_disk.log",
+          "source_sha256": "22aa440105f903e4e01db0ddf32de0d40600770d4bdee1e76c3b370ccc314abf",
+          "source_bytes": 395
+        },
+        {
+          "source": "build/out/work/services/core1/build/sd_writer.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/shared_ring.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/tdoa_solver.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/xil_printf.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/xsdps.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/xsdps_card.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/xsdps_host.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        },
+        {
+          "source": "build/out/work/services/core1/build/xsdps_options.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_bytes": 0
+        }
+      ],
+      "archived": "build/receipts/arm_rebuild_20261103/core1_compile_and_link.txt",
+      "archived_sha256": "4f6799c1f714e8449f3101b87d530edf1171d1a8c24cc7486a09b77c39080188",
+      "archived_bytes": 5675,
+      "transformation": "Original compile/link logs concatenated with clearly marked per-source hashes; known absolute path roots replaced by tokens. Empty logs remain labeled."
+    }
+  ]
+}

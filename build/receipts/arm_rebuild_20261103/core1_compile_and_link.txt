@@ -1,0 +1,72 @@
+--- original: build/out/work/services/core1/build/audio_eth_adapter.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/audio_health.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/audio_model_input.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/audio_quality.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/audio_worker.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/beamform.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/bird_frontend.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/ff.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/fft_q15.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/ffunicode.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/fusion_audio.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/fusion_math.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/gcc_phat.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/link.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/logmel_pl.log | bytes=399 | sha256=c7c24f1e7f79bc77780e534c4554bec2742cd957460ffc6303e527bb626edec2 ---
+In file included from ${package_root}\build\out\work\audio_features\software\logmel_pl.c:4:
+${package_root}\build\out\work\platform\bsp_core1\include/xtime_l.h:87:9: note: '#pragma message: For the sleep routines, Global timer is being used'
+   87 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+
+--- original: build/out/work/services/core1/build/main.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/mel128.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/mel_table.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/model_logmel32_pl.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/noise_reduce.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/platform_port.log | bytes=416 | sha256=ce00de52b68dd2a2f436b1ba444e0ff29bbf194425e5a42e1f8a1202353179a8 ---
+In file included from ${package_root}\build\out\work\platform\capture\sdk\core1_audio\src\platform_port.c:5:
+${package_root}\build\out\work\platform\bsp_core1\include/xtime_l.h:87:9: note: '#pragma message: For the sleep routines, Global timer is being used'
+   87 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+
+--- original: build/out/work/services/core1/build/sd_disk.log | bytes=395 | sha256=22aa440105f903e4e01db0ddf32de0d40600770d4bdee1e76c3b370ccc314abf ---
+In file included from ${package_root}\build\out\work\application\software\sd_disk.c:15:
+${package_root}\build\out\work\platform\bsp_core1\include/xtime_l.h:87:9: note: '#pragma message: For the sleep routines, Global timer is being used'
+   87 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+
+--- original: build/out/work/services/core1/build/sd_writer.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/shared_ring.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/tdoa_solver.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/xil_printf.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/xsdps.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/xsdps_card.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/xsdps_host.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/services/core1/build/xsdps_options.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+

@@ -1,0 +1,258 @@
+--- original: build/out/work/application/build/software/compile_0.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_1.log | bytes=412 | sha256=f688fd00eb163574570e5706e47e78cce9fc584cb9747921b232afd8e2bb2fa1 ---
+In file included from ${package_root}\build\out\work\detector_preprocess\software\ssd_preprocess_pl.c:4:
+${package_root}\build\out\work\platform\bsp_core0\include/xtime_l.h:87:9: note: '#pragma message: For the sleep routines, Global timer is being used'
+   87 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+
+--- original: build/out/work/application/build/software/compile_10.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_11.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_12.log | bytes=415 | sha256=9290e34e9ff9b4d83c6bf49c73467871a6ab591442796604ee30458f5b18431b ---
+In file included from ${package_root}\build\out\work\platform\capture\sdk\core0_network\src\telemetry.c:13:
+${package_root}\build\out\work\platform\bsp_core0\include/xtime_l.h:87:9: note: '#pragma message: For the sleep routines, Global timer is being used'
+   87 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+
+--- original: build/out/work/application/build/software/compile_13.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_14.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_15.log | bytes=2663 | sha256=97d8c18e0e488d448e1d51f816a03c575f63eeb8c4f78f5da894bbe886411236 ---
+${package_root}\build\out\work\application\build\software\visual_tracker_response.c: In function 'candidate_appearance':
+${package_root}\build\out\work\application\build\software\visual_tracker_response.c:388:22: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  388 |         if(ax<0 || ax>=WIDTH || bx<0 || bx>=WIDTH || ay<0 || ay>=HEIGHT || by<0 || by>=HEIGHT)return -2.f;
+      |                      ^~
+${package_root}\build\out\work\application\build\software\visual_tracker_response.c:388:43: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  388 |         if(ax<0 || ax>=WIDTH || bx<0 || bx>=WIDTH || ay<0 || ay>=HEIGHT || by<0 || by>=HEIGHT)return -2.f;
+      |                                           ^~
+${package_root}\build\out\work\application\build\software\visual_tracker_response.c:388:64: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  388 |         if(ax<0 || ax>=WIDTH || bx<0 || bx>=WIDTH || ay<0 || ay>=HEIGHT || by<0 || by>=HEIGHT)return -2.f;
+      |                                                                ^~
+${package_root}\build\out\work\application\build\software\visual_tracker_response.c:388:86: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  388 |         if(ax<0 || ax>=WIDTH || bx<0 || bx>=WIDTH || ay<0 || ay>=HEIGHT || by<0 || by>=HEIGHT)return -2.f;
+      |                                                                                      ^~
+${package_root}\build\out\work\application\build\software\visual_tracker_response.c: In function 'motion_revalidate':
+${package_root}\build\out\work\application\build\software\visual_tracker_response.c:505:22: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  505 |         if(px<0 || px>=WIDTH || py<0 || py>=HEIGHT || px-ox<INT8_MIN || px-ox>INT8_MAX ||
+      |                      ^~
+${package_root}\build\out\work\application\build\software\visual_tracker_response.c:505:43: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  505 |         if(px<0 || px>=WIDTH || py<0 || py>=HEIGHT || px-ox<INT8_MIN || px-ox>INT8_MAX ||
+      |                                           ^~
+
+--- original: build/out/work/application/build/software/compile_16.log | bytes=1716 | sha256=ccfcb0d7d2cd88cb93e8fad02a088f0d1dd380ef93ba03a44d7525339575c28b ---
+In file included from ${package_root}\build\out\work\application\build\software\fusion_service_overlay.c:36:
+${package_root}\build\out\work\platform\bsp_core0\include/xtime_l.h:87:9: note: '#pragma message: For the sleep routines, Global timer is being used'
+   87 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+${package_root}\build\out\work\application\build\software\fusion_service_overlay.c: In function 'fusion_capture_control':
+${package_root}\build\out\work\application\build\software\fusion_service_overlay.c:202:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  202 |     if(action>1)return -1;sound_round_reset();capture_state=action;
+      |     ^~
+${package_root}\build\out\work\application\build\software\fusion_service_overlay.c:202:27: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  202 |     if(action>1)return -1;sound_round_reset();capture_state=action;
+      |                           ^~~~~~~~~~~~~~~~~
+${package_root}\build\out\work\application\build\software\fusion_service_overlay.c: In function 'fusion_poll':
+${package_root}\build\out\work\application\build\software\fusion_service_overlay.c:802:52: warning: comparison of integer expressions of different signedness: 'int32_t' {aka 'long int'} and 'unsigned int' [-Wsign-compare]
+  802 |                 use_roi=result.roi[2]-result.roi[0]<=AV_VIDEO_HEIGHT;
+      |                                                    ^~
+
+--- original: build/out/work/application/build/software/compile_17.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_18.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_19.log | bytes=2351 | sha256=54aeaa268c6b560749d6fd4e100454e086bda6ef46003856053971c90c9fe30d ---
+${package_root}\build\out\work\platform\runtime\generated\audio.c: In function 'audio_run':
+${package_root}\build\out\work\platform\runtime\generated\audio.c:397:30: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  397 |                              if (first < 0) first = i2; bad++; }
+      |                              ^~
+${package_root}\build\out\work\platform\runtime\generated\audio.c:397:57: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  397 |                              if (first < 0) first = i2; bad++; }
+      |                                                         ^~~
+${package_root}\build\out\work\platform\runtime\generated\audio.c:468:30: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  468 |                              if (first < 0) first = i2; bad++; }
+      |                              ^~
+${package_root}\build\out\work\platform\runtime\generated\audio.c:468:57: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  468 |                              if (first < 0) first = i2; bad++; }
+      |                                                         ^~~
+${package_root}\build\out\work\platform\runtime\generated\audio.c:514:22: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  514 |                      if (first < 0) first = i2; bad++; }
+      |                      ^~
+${package_root}\build\out\work\platform\runtime\generated\audio.c:514:49: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  514 |                      if (first < 0) first = i2; bad++; }
+      |                                                 ^~~
+${package_root}\build\out\work\platform\runtime\generated\audio.c: At top level:
+${package_root}\build\out\work\platform\runtime\generated\audio.c:109:12: warning: 'calib_khz' defined but not used [-Wunused-variable]
+  109 | static u32 calib_khz = 666000;   /* 标定后的 kHz,见 main 开头标定 */
+      |            ^~~~~~~~~
+
+--- original: build/out/work/application/build/software/compile_2.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_20.log | bytes=2351 | sha256=77aa0f2fb7da73d822b62b0eaf991ef56e7e6388a8a2750aad431b1b77beb846 ---
+${package_root}\build\out\work\platform\runtime\generated\image.c: In function 'image_run':
+${package_root}\build\out\work\platform\runtime\generated\image.c:388:30: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  388 |                              if (first < 0) first = i2; bad++; }
+      |                              ^~
+${package_root}\build\out\work\platform\runtime\generated\image.c:388:57: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  388 |                              if (first < 0) first = i2; bad++; }
+      |                                                         ^~~
+${package_root}\build\out\work\platform\runtime\generated\image.c:459:30: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  459 |                              if (first < 0) first = i2; bad++; }
+      |                              ^~
+${package_root}\build\out\work\platform\runtime\generated\image.c:459:57: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  459 |                              if (first < 0) first = i2; bad++; }
+      |                                                         ^~~
+${package_root}\build\out\work\platform\runtime\generated\image.c:501:22: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  501 |                      if (first < 0) first = i2; bad++; }
+      |                      ^~
+${package_root}\build\out\work\platform\runtime\generated\image.c:501:49: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  501 |                      if (first < 0) first = i2; bad++; }
+      |                                                 ^~~
+${package_root}\build\out\work\platform\runtime\generated\image.c: At top level:
+${package_root}\build\out\work\platform\runtime\generated\image.c:124:12: warning: 'calib_khz' defined but not used [-Wunused-variable]
+  124 | static u32 calib_khz = 666000;   /* 标定后的 kHz,见 main 开头标定 */
+      |            ^~~~~~~~~
+
+--- original: build/out/work/application/build/software/compile_21.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_22.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_23.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_24.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_25.log | bytes=361 | sha256=656337c8f1a1a2904557e7b0e702e6275cbc563490ea1442a366fd1f398fadbe ---
+${package_root}\build\out\work\application\build\software\network_physpeed.c: In function 'get_Marvell_phy_speed':
+${package_root}\build\out\work\application\build\software\network_physpeed.c:529:15: warning: unused variable 'temp' [-Wunused-variable]
+  529 |         u16_t temp;
+      |               ^~~~
+
+--- original: build/out/work/application/build/software/compile_26.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_27.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_28.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_29.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_3.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_30.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_31.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_32.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_33.log | bytes=3263 | sha256=eda5969cdb9b115d2beff20fc43adcd2185a8f71b0c9bc7e7f3744d09ea7b79e ---
+${package_root}\build\out\work\application\software\board_display.c: In function 'board_display_poll':
+${package_root}\build\out\work\application\software\board_display.c:30:78: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   30 |  if(board_focus_searching())snprintf(line,sizeof line,"OPTICAL FOCUS SEARCH %u",board_focus_diag[3]);
+      |                                                                             ~^  ~~~~~~~~~~~~~~~~~~~
+      |                                                                              |                  |
+      |                                                                              unsigned int       uint32_t {aka long unsigned int}
+      |                                                                             %lu
+${package_root}\build\out\work\application\software\board_display.c:31:83: warning: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'long unsigned int' [-Wformat=]
+   31 |  else if(classified)snprintf(line,sizeof line,"%s classification:%u%% possiblity:%u%%",labels[latest.image_top1],(unsigned)(latest.confidence*100.f+.5f),t[10]/10000u);
+      |                                                                                  ~^                                                                      ~~~~~~~~~~~~
+      |                                                                                   |                                                                           |
+      |                                                                                   unsigned int                                                                long unsigned int
+      |                                                                                  %lu
+${package_root}\build\out\work\application\software\board_display.c:32:60: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'long unsigned int' [-Wformat=]
+   32 |  else if(valid)snprintf(line,sizeof line,"BIRD possiblity:%u%% CLASSIFYING",t[10]/10000u);
+      |                                                           ~^                ~~~~~~~~~~~~
+      |                                                            |                     |
+      |                                                            unsigned int          long unsigned int
+      |                                                           %lu
+${package_root}\build\out\work\application\software\board_display.c:34:63: warning: format '%d' expects argument of type 'int', but argument 4 has type 'int32_t' {aka 'long int'} [-Wformat=]
+   34 |  else if(latest.error)snprintf(line,sizeof line,"BOARD ERROR %d",latest.error);
+      |                                                              ~^  ~~~~~~~~~~~~
+      |                                                               |        |
+      |                                                               int      int32_t {aka long int}
+      |                                                              %ld
+
+--- original: build/out/work/application/build/software/compile_34.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_4.log | bytes=5652 | sha256=b534271951dd8ffae995a9c2ae8553949b788d02a840ccf246df991ce6dd8a63 ---
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c: In function 'bird_focus_observe':
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:185:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  185 |     if(x<0)x=0;if(y<0)y=0;
+      |     ^~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:185:16: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  185 |     if(x<0)x=0;if(y<0)y=0;
+      |                ^~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:186:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  186 |     if(x>(int)(AV_VIDEO_WIDTH-cw))x=AV_VIDEO_WIDTH-cw;if(y>(int)(AV_VIDEO_HEIGHT-ch))y=AV_VIDEO_HEIGHT-ch;
+      |     ^~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:186:55: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  186 |     if(x>(int)(AV_VIDEO_WIDTH-cw))x=AV_VIDEO_WIDTH-cw;if(y>(int)(AV_VIDEO_HEIGHT-ch))y=AV_VIDEO_HEIGHT-ch;
+      |                                                       ^~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c: In function 'bird_focus_poll':
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:265:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  265 |         if(++index_==8)step=START;break;
+      |         ^~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:265:35: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  265 |         if(++index_==8)step=START;break;
+      |                                   ^~~~~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:286:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  286 |         if(!rc && !value)step=TRIGGER_ACK;break;
+      |         ^~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:286:43: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  286 |         if(!rc && !value)step=TRIGGER_ACK;break;
+      |                                           ^~~~~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:291:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  291 |         if(!rc && !value)step=FOCUS_WAIT_STATUS;break;
+      |         ^~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:291:49: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  291 |         if(!rc && !value)step=FOCUS_WAIT_STATUS;break;
+      |                                                 ^~~~~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:294:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  294 |         if(!rc && value==0x10)step=RESULT_ACK;break;
+      |         ^~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:294:47: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  294 |         if(!rc && value==0x10)step=RESULT_ACK;break;
+      |                                               ^~~~~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:299:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  299 |         if(!rc && !value)step=RESULT_READ;break;
+      |         ^~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:299:43: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  299 |         if(!rc && !value)step=RESULT_READ;break;
+      |                                           ^~~~~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:317:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  317 |         if(state==3)state=2;break;
+      |         ^~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:317:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  317 |         if(state==3)state=2;break;
+      |                             ^~~~~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:321:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  321 |         if(!rc && !value)step=MANUAL_MCU_READ;break;
+      |         ^~
+${package_root}\build\out\work\platform\capture\sdk\core0_network\src\bird_focus.c:321:47: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  321 |         if(!rc && !value)step=MANUAL_MCU_READ;break;
+      |                                               ^~~~~
+
+--- original: build/out/work/application/build/software/compile_5.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_6.log | bytes=413 | sha256=ebf5820c3cd6c25a0b9a8b1c74b905c0faff8948c0ad5db522b5c38c7450e9f3 ---
+In file included from ${package_root}\build\out\work\application\build\software\dma_service_overlay.c:18:
+${package_root}\build\out\work\platform\bsp_core0\include/xtime_l.h:87:9: note: '#pragma message: For the sleep routines, Global timer is being used'
+   87 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+
+--- original: build/out/work/application/build/software/compile_7.log | bytes=404 | sha256=d5d70c6267e98cccce4f5f455c162ba2ab1bb92a8b451a57a26c5c038489fe53 ---
+In file included from ${package_root}\build\out\work\application\build\software\main_board.c:12:
+${package_root}\build\out\work\platform\bsp_core0\include/xtime_l.h:87:9: note: '#pragma message: For the sleep routines, Global timer is being used'
+   87 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+
+--- original: build/out/work/application/build/software/compile_8.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+
+--- original: build/out/work/application/build/software/compile_9.log | bytes=410 | sha256=0d7f782f2bb4786bb31dc2d2449c77a841466e653afe367f980a586fb43094a0 ---
+In file included from ${package_root}\build\out\work\application\build\software\network_platform.c:14:
+${package_root}\build\out\work\platform\bsp_core0\include/xtime_l.h:87:9: note: '#pragma message: For the sleep routines, Global timer is being used'
+   87 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+
+--- original: build/out/work/application/build/software/link.log | bytes=0 | sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ---
+

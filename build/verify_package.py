@@ -22,13 +22,18 @@ def verify(firmware_only=False):
     for row in rows:
         p=(assets/row['path']).resolve();assert p.is_relative_to(assets) and p.stat().st_size==row['bytes'] and sha(p)==row['sha256'],row['path']
     if not firmware_only:
+        actual_files=set()
         for p in ROOT.rglob('*'):
             rel=p.relative_to(ROOT).as_posix()
-            if rel.startswith(('build/out/','.git/','.venv/','.pytest_cache/')) or '__pycache__' in p.parts:continue
+            if rel.split('/')[0].lower() in {'.git','.venv','.pytest_cache','.xil'} or rel.startswith('build/out/') or '__pycache__' in p.parts:continue
             assert re.fullmatch(r'[a-z0-9_./-]+',rel),('Nonportable filename',rel)
             if p.is_file():
+                actual_files.add(rel)
                 assert p.stat().st_size < 50*1024*1024,('Unexpected large file',rel)
                 assert p.suffix not in {'.o','.pyc','.jou','.wdb','.dcp'},('Intermediate artifact',rel)
+        expected_files=set(manifest['files'])|{'report/package_manifest.json'}
+        assert actual_files==expected_files,('Manifest inventory mismatch',
+            'unlisted',sorted(actual_files-expected_files),'missing',sorted(expected_files-actual_files))
     print('M51_PORTABLE_PACKAGE_PASS',len(manifest['files']),'files',len(rows),'model assets',flush=True)
     return manifest
 if __name__=='__main__':

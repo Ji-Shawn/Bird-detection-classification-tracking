@@ -1,0 +1,1771 @@
+Archive member included to satisfy reference by file (symbol)
+
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+                              ${package_root}\build\out\boot\fsbl\sd.o (f_mount)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o) (disk_status)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(asm_vectors.o)
+                              (_vector_table)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(asm_vectors.o) (_boot)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(translation_table.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o) (MMUTable)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(asm_vectors.o) (FIQInterrupt)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+                              ${package_root}\build\out\boot\fsbl\pcap.o (XDcfg_CfgInitialize)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o) (XDcfg_IntrEnable)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+                              ${package_root}\build\out\boot\fsbl\pcap.o (XDcfg_LookupConfig)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o) (_start)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o) (Xil_Assert)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o) (Xil_DCacheFlushRange)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+                              ${package_root}\build\out\boot\fsbl\main.o (Xil_ExceptionInit)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+                              ${package_root}\build\out\boot\fsbl\image_mover.o (xil_printf)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+                              ${package_root}\build\out\boot\fsbl\pcap.o (usleep)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+                              ${package_root}\build\out\boot\fsbl\qspi.o (XQspiPs_CfgInitialize)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+                              ${package_root}\build\out\boot\fsbl\qspi.o (XQspiPs_SetOptions)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+                              ${package_root}\build\out\boot\fsbl\qspi.o (XQspiPs_LookupConfig)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o) (XSdPs_CfgInitialize)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o) (XSdPs_Read)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o) (XSdPs_SetTapDelay_SDR104)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o) (XSdPs_Change_ClkFreq)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o) (XSdPs_LookupConfig)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o) (XTime_SetTime)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(cpu_init.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o) (__cpu_init)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o) (outbyte)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o) (sleep_A9)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o) (usleep_A9)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_g.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o) (XDcfg_ConfigTable)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o) (Xil_WaitForEvent)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_g.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o) (XQspiPs_ConfigTable)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_g.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o) (XSdPs_ConfigTable)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o) (XUartPs_SendByte)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o) (_ctype_)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o) (exit)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fini.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o) (__libc_fini_array)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+                              ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o) (_global_impure_ptr)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-init.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o) (__libc_init_array)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcmp.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o) (memcmp)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcpy.o)
+                              ${package_root}\build\out\boot\fsbl\md5.o (memcpy)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memmove.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o) (memmove)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memset.o)
+                              ${package_root}\build\out\boot\fsbl\md5.o (memset)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strchr.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o) (strchr)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlen.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o) (strlen)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncat.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o) (strncat)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strnlen.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o) (strnlen)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-__call_atexit.o)
+                              ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o) (__call_exitprocs)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o) (__aeabi_uidiv)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+                              ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o) (__aeabi_idiv)
+${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+                              ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+                              ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o) (_exit)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ps7_ram_0_S_AXI_BASEADDR 0x0000000000000000 0x0000000000030000
+ps7_ram_1_S_AXI_BASEADDR 0x00000000ffff0000 0x000000000000fe00
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+LOAD ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+                0x0000000000006000                _STACK_SIZE = DEFINED (_STACK_SIZE)?_STACK_SIZE:0x6000
+                0x0000000000002000                _HEAP_SIZE = DEFINED (_HEAP_SIZE)?_HEAP_SIZE:0x2000
+                0x0000000000001000                _RSA_AC_SIZE = DEFINED (_RSA_AC_SIZE)?_RSA_AC_SIZE:0x1000
+                0x0000000000000400                _ABORT_STACK_SIZE = DEFINED (_ABORT_STACK_SIZE)?_ABORT_STACK_SIZE:0x400
+                0x0000000000000800                _SUPERVISOR_STACK_SIZE = DEFINED (_SUPERVISOR_STACK_SIZE)?_SUPERVISOR_STACK_SIZE:0x800
+                0x0000000000000400                _FIQ_STACK_SIZE = DEFINED (_FIQ_STACK_SIZE)?_FIQ_STACK_SIZE:0x400
+                0x0000000000000400                _UNDEF_STACK_SIZE = DEFINED (_UNDEF_STACK_SIZE)?_UNDEF_STACK_SIZE:0x400
+
+.text           0x0000000000000000    0x10e20
+ *(.vectors)
+ .vectors       0x0000000000000000      0x12c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(asm_vectors.o)
+                0x0000000000000000                _vector_table
+ *(.boot)
+ .boot          0x000000000000012c      0x38c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+                0x000000000000012c                _prestart
+                0x000000000000012c                _boot
+ *(.text)
+ .text          0x00000000000004b8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+ .text          0x00000000000004b8       0xa8 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ .text          0x0000000000000560      0xe14 ${package_root}\build\out\boot\fsbl\image_mover.o
+                0x0000000000000560                GetPartitionHeaderInfo
+                0x00000000000006d0                GetPartitionHeaderStartAddr
+                0x0000000000000708                GetImageHeaderStartAddr
+                0x0000000000000740                GetFsblLength
+                0x0000000000000778                LoadPartitionsHeaderInfo
+                0x00000000000007ac                HeaderDump
+                0x0000000000000864                GetPartitionCount
+                0x00000000000008ac                IsLastPartition
+                0x00000000000008e0                ValidateHeader
+                0x0000000000000984                IsEmptyHeader
+                0x00000000000009ac                ValidatePartitionHeaderChecksum
+                0x00000000000009f8                PartitionMove
+                0x0000000000000bec                DecryptPartition
+                0x0000000000000c30                ValidateParition
+                0x0000000000000d38                LoadBootImage
+                0x000000000000133c                GetPartitionChecksum
+                0x0000000000001360                CalcPartitionChecksum
+ .text          0x0000000000001374      0x734 ${package_root}\build\out\boot\fsbl\main.o
+                0x0000000000001374                OutputStatus
+                0x00000000000013a0                memcpy_rom
+                0x00000000000013c4                strcpy_rom
+                0x0000000000001400                MarkFSBLIn
+                0x0000000000001414                ClearFSBLIn
+                0x0000000000001428                GetResetReason
+                0x0000000000001438                GetSiliconVersion
+                0x0000000000001480                HeaderChecksum
+                0x0000000000001510                ImageCheckID
+                0x0000000000001550                NextValidImageCheck
+                0x0000000000001674                FsblFallback
+                0x00000000000017b8                FsblHandoff
+                0x00000000000018d4                ErrorLockdown
+                0x0000000000001a6c                DDRInitCheck
+ .text          0x0000000000001aa8     0x10d8 ${package_root}\build\out\boot\fsbl\md5.o
+                0x0000000000001aa8                MD5Memset
+                0x0000000000001ac8                MD5Memcpy
+                0x0000000000001b40                MD5Transform
+                0x0000000000002544                MD5Init
+                0x0000000000002584                MD5Update
+                0x00000000000027dc                MD5Final
+                0x00000000000028dc                md5
+ .text          0x0000000000002b80        0x0 ${package_root}\build\out\boot\fsbl\nand.o
+ .text          0x0000000000002b80       0x60 ${package_root}\build\out\boot\fsbl\nor.o
+                0x0000000000002b80                InitNor
+                0x0000000000002b94                NorAccess
+ .text          0x0000000000002be0      0x95c ${package_root}\build\out\boot\fsbl\pcap.o
+                0x0000000000002be0                InitPcap
+                0x0000000000002c28                FabricInit
+                0x0000000000002e24                ClearPcapStatus
+                0x0000000000002f1c                PcapDumpRegisters
+                0x000000000000309c                PcapDataTransfer
+                0x000000000000321c                PcapLoadPartition
+                0x000000000000346c                XDcfgPollDone
+ .text          0x000000000000353c      0x778 ${package_root}\build\out\boot\fsbl\qspi.o
+                0x00000000000037fc                InitQspi
+                0x0000000000003930                FlashReadID
+                0x0000000000003974                FlashRead
+                0x00000000000039cc                SendBankSelect
+                0x0000000000003b20                QspiAccess
+ .text          0x0000000000003cb4        0x0 ${package_root}\build\out\boot\fsbl\rsa.o
+ .text          0x0000000000003cb4      0x138 ${package_root}\build\out\boot\fsbl\sd.o
+                0x0000000000003cb4                InitSD
+                0x0000000000003d60                SDAccess
+                0x0000000000003de0                ReleaseSD
+ .text          0x0000000000003dec      0x3c0 ${package_root}\build\out\boot\fsbl\ps7_init.o
+                0x0000000000003dec                getPS7MessageInfo
+                0x0000000000003e08                ps7GetSiliconVersion
+                0x0000000000003e1c                mask_write
+                0x0000000000003e34                mask_poll
+                0x0000000000003e70                mask_read
+                0x0000000000003e7c                ps7_config
+                0x0000000000003fc0                ps7_post_config
+                0x0000000000004000                ps7_debug
+                0x0000000000004040                ps7_init
+                0x0000000000004124                perf_start_clock
+                0x0000000000004138                perf_reset_clock
+                0x0000000000004154                get_number_of_cycles_for_delay
+                0x0000000000004174                perf_disable_clock
+                0x0000000000004188                perf_reset_and_start_timer
+ .text          0x00000000000041ac       0xa4 ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+                0x00000000000041ac                FsblHookBeforeBitstreamDload
+                0x00000000000041b4                FsblHookAfterBitstreamDload
+                0x00000000000041bc                FsblHookBeforeHandoff
+                0x000000000000424c                FsblHookFallback
+ .text          0x0000000000004250        0x0 ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+ .text          0x0000000000004250     0x3a00 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+                0x000000000000588c                f_mount
+                0x0000000000005918                f_open
+                0x0000000000005bf8                f_read
+                0x0000000000005ec4                f_write
+                0x00000000000061dc                f_sync
+                0x00000000000062fc                f_close
+                0x0000000000006338                f_lseek
+                0x00000000000065b8                f_opendir
+                0x000000000000667c                f_closedir
+                0x00000000000066d0                f_readdir
+                0x0000000000006774                f_stat
+                0x0000000000006804                f_getfree
+                0x000000000000694c                f_truncate
+                0x0000000000006ad0                f_unlink
+                0x0000000000006be8                f_mkdir
+                0x0000000000006dc8                f_rename
+                0x0000000000007004                f_mkfs
+ .text          0x0000000000007c50      0x3ac ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+                0x0000000000007c50                disk_status
+                0x0000000000007d94                disk_initialize
+                0x0000000000007e4c                disk_read
+                0x0000000000007ec4                disk_ioctl
+                0x0000000000007f78                get_fattime
+                0x0000000000007f84                disk_write
+ .text          0x0000000000007ffc        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(asm_vectors.o)
+ .text          0x0000000000007ffc        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+ .text          0x0000000000007ffc        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(translation_table.o)
+ .text          0x0000000000007ffc       0x78 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+                0x0000000000007ffc                FIQInterrupt
+                0x0000000000008010                IRQInterrupt
+                0x0000000000008024                UndefinedException
+                0x0000000000008038                SWInterrupt
+                0x000000000000804c                DataAbortInterrupt
+                0x0000000000008060                PrefetchAbortInterrupt
+ .text          0x0000000000008074      0xb50 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+                0x0000000000008074                XDcfg_CfgInitialize
+                0x0000000000008124                XDcfg_EnablePCAP
+                0x00000000000081a8                XDcfg_DisablePCAP
+                0x000000000000822c                XDcfg_SetControlRegister
+                0x00000000000082b0                XDcfg_ClearControlRegister
+                0x0000000000008334                XDcfg_GetControlRegister
+                0x00000000000083ac                XDcfg_SetLockRegister
+                0x0000000000008428                XDcfg_GetLockRegister
+                0x00000000000084a0                XDcfg_SetConfigRegister
+                0x000000000000851c                XDcfg_GetConfigRegister
+                0x0000000000008594                XDcfg_SetStatusRegister
+                0x0000000000008610                XDcfg_GetStatusRegister
+                0x0000000000008688                XDcfg_SetRomShadowRegister
+                0x0000000000008704                XDcfg_GetSoftwareIdRegister
+                0x000000000000877c                XDcfg_SetMiscControlRegister
+                0x0000000000008800                XDcfg_GetMiscControlRegister
+                0x0000000000008878                XDcfg_IsDmaBusy
+                0x00000000000088f8                XDcfg_InitiateDma
+                0x0000000000008924                XDcfg_Transfer
+ .text          0x0000000000008bc4      0x3bc ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+                0x0000000000008bc4                XDcfg_IntrEnable
+                0x0000000000008c54                XDcfg_IntrDisable
+                0x0000000000008ce4                XDcfg_IntrGetEnabled
+                0x0000000000008d60                XDcfg_IntrGetStatus
+                0x0000000000008dd8                XDcfg_IntrClear
+                0x0000000000008e54                XDcfg_InterruptHandler
+                0x0000000000008ee0                XDcfg_SetHandler
+ .text          0x0000000000008f80       0x1c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+                0x0000000000008f80                XDcfg_LookupConfig
+ .text          0x0000000000008f9c       0x78 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+                0x0000000000008fb0                _start
+ .text          0x0000000000009014       0x70 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+                0x0000000000009014                Xil_Assert
+                0x0000000000009070                Xil_AssertSetCallback
+                0x0000000000009080                XNullHandler
+ .text          0x0000000000009084      0xabc ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+                0x0000000000009084                Xil_DCacheInvalidateLine
+                0x00000000000090bc                Xil_DCacheInvalidateRange
+                0x00000000000091ac                Xil_DCacheFlushLine
+                0x00000000000091f4                Xil_DCacheFlushRange
+                0x0000000000009288                Xil_DCacheStoreLine
+                0x00000000000092c0                Xil_ICacheDisable
+                0x000000000000933c                Xil_ICacheInvalidateLine
+                0x0000000000009374                Xil_ICacheInvalidateRange
+                0x00000000000093c8                Xil_L1DCacheInvalidate
+                0x0000000000009478                Xil_L1DCacheEnable
+                0x0000000000009498                Xil_L1DCacheInvalidateLine
+                0x00000000000094b0                Xil_L1DCacheInvalidateRange
+                0x00000000000094f0                Xil_L1DCacheFlush
+                0x0000000000009578                Xil_L1DCacheDisable
+                0x0000000000009590                Xil_DCacheFlush
+                0x00000000000095ec                Xil_DCacheDisable
+                0x0000000000009664                Xil_L1DCacheFlushLine
+                0x000000000000967c                Xil_L1DCacheFlushRange
+                0x00000000000096bc                Xil_L1DCacheStoreLine
+                0x00000000000096d4                Xil_L1ICacheEnable
+                0x00000000000096f0                Xil_L1ICacheDisable
+                0x000000000000970c                Xil_L1ICacheInvalidate
+                0x0000000000009724                Xil_L1ICacheInvalidateLine
+                0x000000000000973c                Xil_L1ICacheInvalidateRange
+                0x000000000000977c                Xil_L2CacheDisable
+                0x00000000000097dc                Xil_L2CacheInvalidate
+                0x0000000000009848                Xil_DCacheInvalidate
+                0x0000000000009868                Xil_ICacheInvalidate
+                0x0000000000009898                Xil_L2CacheEnable
+                0x00000000000098f8                Xil_ICacheEnable
+                0x0000000000009970                Xil_DCacheEnable
+                0x00000000000099e8                Xil_L2CacheInvalidateLine
+                0x00000000000099fc                Xil_L2CacheInvalidateRange
+                0x0000000000009a64                Xil_L2CacheFlush
+                0x0000000000009aa8                Xil_L2CacheFlushLine
+                0x0000000000009ac4                Xil_L2CacheFlushRange
+                0x0000000000009b28                Xil_L2CacheStoreLine
+ .text          0x0000000000009b40       0x70 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+                0x0000000000009b50                Xil_ExceptionInit
+                0x0000000000009b54                Xil_ExceptionRegisterHandler
+                0x0000000000009b6c                Xil_GetExceptionRegisterHandler
+                0x0000000000009b8c                Xil_ExceptionRemoveHandler
+ .text          0x0000000000009bb0      0x71c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+                0x0000000000009d58                xil_vprintf
+                0x000000000000a2a0                xil_printf
+ .text          0x000000000000a2cc        0x8 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+                0x000000000000a2cc                sleep
+                0x000000000000a2d0                usleep
+ .text          0x000000000000a2d4     0x111c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+                0x000000000000a3c4                XQspiPs_Abort
+                0x000000000000a43c                XQspiPs_Reset
+                0x000000000000a4d0                XQspiPs_CfgInitialize
+                0x000000000000a5a8                XQspiPs_Transfer
+                0x000000000000a948                XQspiPs_PolledTransfer
+                0x000000000000ae90                XQspiPs_LqspiRead
+                0x000000000000af80                XQspiPs_SetSlaveSelect
+                0x000000000000b020                XQspiPs_SetStatusHandler
+                0x000000000000b0c0                XQspiPs_InterruptHandler
+ .text          0x000000000000b3f0      0x430 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+                0x000000000000b3f0                XQspiPs_SetOptions
+                0x000000000000b4ec                XQspiPs_GetOptions
+                0x000000000000b598                XQspiPs_SetClkPrescaler
+                0x000000000000b660                XQspiPs_GetClkPrescaler
+                0x000000000000b6dc                XQspiPs_SetDelays
+                0x000000000000b784                XQspiPs_GetDelays
+ .text          0x000000000000b820       0x1c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+                0x000000000000b820                XQspiPs_LookupConfig
+ .text          0x000000000000b83c      0x5a8 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+                0x000000000000b83c                XSdPs_CfgInitialize
+                0x000000000000b99c                XSdPs_CardInitialize
+                0x000000000000ba78                XSdPs_ReadPolled
+                0x000000000000bb64                XSdPs_WritePolled
+                0x000000000000bc2c                XSdPs_Idle
+                0x000000000000bcd0                XSdPs_Erase
+ .text          0x000000000000bde4      0xe58 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+                0x000000000000bde4                XSdPs_Read
+                0x000000000000be40                XSdPs_Write
+                0x000000000000be9c                XSdPs_CheckTransferComplete
+                0x000000000000bef0                XSdPs_IdentifyCard
+                0x000000000000bfa0                XSdPs_SdCardInitialize
+                0x000000000000bfd8                XSdPs_MmcCardInitialize
+                0x000000000000c088                XSdPs_CheckCardDetect
+                0x000000000000c0cc                XSdPs_CardReset
+                0x000000000000c0ec                XSdPs_CardIfCond
+                0x000000000000c158                XSdPs_CardOpCond
+                0x000000000000c260                XSdPs_GetCardId
+                0x000000000000c354                XSdPs_GetCsd
+                0x000000000000c410                XSdPs_CardSetVoltage18
+                0x000000000000c46c                XSdPs_ResetConfig
+                0x000000000000c4a0                XSdPs_HostConfig
+                0x000000000000c4d4                XSdPs_CheckResetDone
+                0x000000000000c500                XSdPs_SetupVoltageSwitch
+                0x000000000000c548                XSdPs_CheckBusHigh
+                0x000000000000c570                XSdPs_Identify_UhsMode
+                0x000000000000c630                XSdPs_SetTapDelay
+                0x000000000000c670                XSdPs_Change_SdBusSpeed
+                0x000000000000c71c                XSdPs_Change_MmcBusSpeed
+                0x000000000000c774                XSdPs_AutoTuning
+                0x000000000000c824                XSdPs_SetupADMA2DescTbl
+                0x000000000000c838                XSdPs_SetupADMA2DescTbl64Bit
+                0x000000000000c938                XSdPs_DllReset
+                0x000000000000c98c                XSdPs_IdentifyEmmcMode
+                0x000000000000ca5c                XSdPs_CheckEmmcTiming
+                0x000000000000cab4                XSdPs_SetClock
+                0x000000000000caf4                XSdPs_CheckVoltage18
+                0x000000000000cb08                XSdPs_SetupCmd
+                0x000000000000cb60                XSdPs_SendCmd
+                0x000000000000cbc0                XSdPs_SetStartAddr
+                0x000000000000cbe4                XSdPs_SetEndAddr
+                0x000000000000cc08                XSdPs_SendErase
+ .text          0x000000000000cc3c     0x10dc ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+                0x000000000000cc3c                XSdPs_SetTapDelay_SDR104
+                0x000000000000cc5c                XSdPs_SetTapDelay_SDR50
+                0x000000000000cc70                XSdPs_SetTapDelay_DDR50
+                0x000000000000ccc0                XSdPs_SetTapDelay_SDR25
+                0x000000000000cd10                XSdPs_Switch_Voltage
+                0x000000000000cd50                XSdPs_SetupTransfer
+                0x000000000000cdcc                XSdPs_Reset
+                0x000000000000cde8                XSdPs_SetExecTuning
+                0x000000000000cdfc                XSdPs_SdModeInit
+                0x000000000000cf94                XSdPs_MmcModeInit
+                0x000000000000d058                XSdPs_EmmcModeInit
+                0x000000000000d17c                XSdPs_DisableBusPower
+                0x000000000000d19c                XSdPs_EnableBusPower
+                0x000000000000d1b0                XSdPs_SdCardEnum
+                0x000000000000d260                XSdPs_MmcCardEnum
+                0x000000000000d2ec                XSdPs_Execute_Tuning
+                0x000000000000d32c                XSdPs_EnableClock
+                0x000000000000d374                XSdPs_CalcBusSpeed
+                0x000000000000d464                XSdPs_SetupReadDma
+                0x000000000000d4c8                XSdPs_SetupWriteDma
+                0x000000000000d52c                XSdPs_Setup32ADMA2DescTbl
+                0x000000000000d5f0                XSdPs_Setup64ADMA2DescTbl
+                0x000000000000d6d8                XSdPs_CalcClock
+                0x000000000000d7bc                XSdPs_DllRstCtrl
+                0x000000000000d7fc                XSdPs_ConfigTapDelay
+                0x000000000000d910                XSdPs_SetVoltage18
+                0x000000000000d944                XSdPs_ConfigPower
+                0x000000000000d97c                XSdPs_ConfigDma
+                0x000000000000d998                XSdPs_ConfigInterrupt
+                0x000000000000d9bc                XSdPs_CmdTransfer
+                0x000000000000daac                XSdps_CheckTransferDone
+                0x000000000000db18                XSdPs_CheckBusIdle
+                0x000000000000db50                XSdPs_FrameCmd
+ .text          0x000000000000dd18      0xbe4 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+                0x000000000000dd18                XSdPs_Change_ClkFreq
+                0x000000000000ddc0                XSdPs_SetBlkSize
+                0x000000000000de80                XSdPs_Get_BusWidth
+                0x000000000000df78                XSdPs_Get_BusSpeed
+                0x000000000000e06c                XSdPs_Get_Status
+                0x000000000000e15c                XSdPs_Change_BusSpeed
+                0x000000000000e258                XSdPs_Get_Mmc_ExtCsd
+                0x000000000000e348                XSdPs_Set_Mmc_ExtCsd
+                0x000000000000e3e4                XSdPs_Change_BusWidth
+                0x000000000000e574                XSdPs_Pullup
+                0x000000000000e618                XSdPs_Select_Card
+                0x000000000000e694                XSdPs_StartReadTransfer
+                0x000000000000e754                XSdPs_StartWriteTransfer
+                0x000000000000e814                XSdPs_CheckReadTransfer
+                0x000000000000e888                XSdPs_CheckWriteTransfer
+ .text          0x000000000000e8fc       0x1c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+                0x000000000000e8fc                XSdPs_LookupConfig
+ .text          0x000000000000e918       0x4c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+                0x000000000000e918                XTime_SetTime
+                0x000000000000e93c                XTime_GetTime
+ .text          0x000000000000e964       0x3c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(cpu_init.o)
+                0x000000000000e964                __cpu_init
+ .text          0x000000000000e9a0       0x10 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+                0x000000000000e9a0                outbyte
+ .text          0x000000000000e9b0       0x48 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+                0x000000000000e9b0                sleep_A9
+ .text          0x000000000000e9f8       0x44 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+                0x000000000000e9f8                usleep_A9
+ .text          0x000000000000ea3c        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_g.o)
+ .text          0x000000000000ea3c      0xdfc ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+                0x000000000000ea3c                Xil_Ceil
+                0x000000000000ea60                Xil_ConvertCharToNibble
+                0x000000000000eaac                Xil_ConvertStringToHex
+                0x000000000000eba8                Xil_WaitForEvent
+                0x000000000000ebf8                Xil_WaitForEvents
+                0x000000000000ec54                Xil_IsValidHexChar
+                0x000000000000ec8c                Xil_ValidateHexStr
+                0x000000000000ed18                Xil_ConvertStringToHexBE
+                0x000000000000ee0c                Xil_ConvertStringToHexLE
+                0x000000000000ef14                Xil_Strnlen
+                0x000000000000ef50                Xil_UtilRMW32
+                0x000000000000ef68                Xil_Strcpy
+                0x000000000000eff0                Xil_StrCpyRange
+                0x000000000000f0a8                Xil_Strcat
+                0x000000000000f148                Xil_SecureMemCpy
+                0x000000000000f1ac                Xil_MemCmp
+                0x000000000000f250                Xil_SecureZeroize
+                0x000000000000f2bc                Xil_SMemCmp
+                0x000000000000f314                Xil_SMemCmp_CT
+                0x000000000000f448                Xil_SMemCpy
+                0x000000000000f4e4                Xil_SMemSet
+                0x000000000000f520                Xil_SStrCat
+                0x000000000000f5a4                Xil_SStrCmp
+                0x000000000000f620                Xil_SStrCmp_CT
+                0x000000000000f6a4                Xil_SStrCpy
+                0x000000000000f708                Xil_SMemMove
+                0x000000000000f774                Xil_WaitForEventSet
+                0x000000000000f80c                Xil_SecureRMW32
+ .text          0x000000000000f838        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_g.o)
+ .text          0x000000000000f838        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_g.o)
+ .text          0x000000000000f838       0x84 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+                0x000000000000f838                XUartPs_SendByte
+                0x000000000000f850                XUartPs_RecvByte
+                0x000000000000f86c                XUartPs_ResetHw
+ .text          0x000000000000f8bc        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+ .text          0x000000000000f8bc       0x20 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o)
+                0x000000000000f8bc                exit
+ .text          0x000000000000f8dc       0x2c ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fini.o)
+                0x000000000000f8dc                __libc_fini_array
+ .text          0x000000000000f908        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+ .text          0x000000000000f908       0x58 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-init.o)
+                0x000000000000f908                __libc_init_array
+ .text          0x000000000000f960       0x68 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcmp.o)
+                0x000000000000f960                memcmp
+ *fill*         0x000000000000f9c8       0x38 
+ .text          0x000000000000fa00      0x5e0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcpy.o)
+                0x000000000000fa00                memcpy
+ .text          0x000000000000ffe0       0xfc ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memmove.o)
+                0x000000000000ffe0                memmove
+ .text          0x00000000000100dc       0xa8 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memset.o)
+                0x00000000000100dc                memset
+ .text          0x0000000000010184       0xd0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strchr.o)
+                0x0000000000010184                strchr
+ *fill*         0x0000000000010254       0x2c 
+ .text          0x0000000000010280       0xdc ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlen.o)
+                0x0000000000010280                strlen
+ .text          0x000000000001035c       0x58 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncat.o)
+                0x000000000001035c                strncat
+ .text          0x00000000000103b4       0x24 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strnlen.o)
+                0x00000000000103b4                strnlen
+ .text          0x00000000000103d8       0xa4 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-__call_atexit.o)
+                0x00000000000103d8                __call_exitprocs
+ *fill*         0x000000000001047c        0x4 
+ .text          0x0000000000010480      0x278 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+                0x0000000000010480                __aeabi_uidiv
+                0x0000000000010480                __udivsi3
+                0x00000000000106dc                __aeabi_uidivmod
+ .text          0x00000000000106f8      0x2b0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+                0x00000000000106f8                __divsi3
+                0x00000000000106f8                __aeabi_idiv
+                0x000000000001098c                __aeabi_idivmod
+ .text          0x00000000000109a8        0x4 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+                0x00000000000109a8                __aeabi_idiv0
+                0x00000000000109a8                __aeabi_ldiv0
+ .text          0x00000000000109ac        0x4 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+                0x00000000000109ac                _exit
+ .text          0x00000000000109b0        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+ .text          0x00000000000109b0        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+ *(.text.*)
+ .text.startup  0x00000000000109b0      0x470 ${package_root}\build\out\boot\fsbl\main.o
+                0x00000000000109b0                main
+ *(.gnu.linkonce.t.*)
+ *(.plt)
+ *(.gnu_warning)
+ *(.gcc_execpt_table)
+ *(.glue_7)
+ .glue_7        0x0000000000010e20        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000000010e20        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x0000000000010e20        0x0 linker stubs
+ *(.ARM.extab)
+ *(.gnu.linkonce.armextab.*)
+
+.v4_bx          0x0000000000010e20        0x0
+ .v4_bx         0x0000000000010e20        0x0 linker stubs
+
+.iplt           0x0000000000010e20        0x0
+ .iplt          0x0000000000010e20        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+
+.handoff        0x0000000000010e20       0x4c
+ .handoff       0x0000000000010e20       0x4c ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+                0x0000000000010e20                FsblHandoffJtagExit
+                0x0000000000010e44                FsblHandoffExit
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.init           0x0000000000010e6c        0xc
+ *(.init)
+ .init          0x0000000000010e6c        0x4 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+                0x0000000000010e6c                _init
+ .init          0x0000000000010e70        0x8 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+
+.fini           0x0000000000010e78        0xc
+ *(.fini)
+ .fini          0x0000000000010e78        0x4 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+                0x0000000000010e78                _fini
+ .fini          0x0000000000010e7c        0x8 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+
+.rodata         0x0000000000010e84     0x13d4
+                0x0000000000010e84                __rodata_start = .
+ *(.rodata)
+ .rodata        0x0000000000010e84       0x24 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ .rodata        0x0000000000010ea8       0x18 ${package_root}\build\out\boot\fsbl\ps7_init.o
+ .rodata        0x0000000000010ec0       0x2e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ *fill*         0x0000000000010eee        0x2 
+ .rodata        0x0000000000010ef0       0x28 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .rodata        0x0000000000010f18      0x101 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+                0x0000000000010f18                _ctype_
+ *fill*         0x0000000000011019        0x3 
+ .rodata        0x000000000001101c        0x4 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+                0x000000000001101c                _global_impure_ptr
+ .rodata        0x0000000000011020       0x24 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+ *(.rodata.*)
+ .rodata.str1.4
+                0x0000000000011044      0x64b ${package_root}\build\out\boot\fsbl\image_mover.o
+                                        0x64f (size before relaxing)
+ *fill*         0x000000000001168f        0x1 
+ .rodata.str1.4
+                0x0000000000011690      0x457 ${package_root}\build\out\boot\fsbl\main.o
+ *fill*         0x0000000000011ae7        0x1 
+ .rodata.str1.4
+                0x0000000000011ae8      0x3f6 ${package_root}\build\out\boot\fsbl\pcap.o
+                                        0x3fe (size before relaxing)
+ *fill*         0x0000000000011ede        0x2 
+ .rodata.str1.4
+                0x0000000000011ee0      0x18a ${package_root}\build\out\boot\fsbl\qspi.o
+ *fill*         0x000000000001206a        0x2 
+ .rodata.str1.4
+                0x000000000001206c       0x70 ${package_root}\build\out\boot\fsbl\sd.o
+ .rodata.str1.4
+                0x00000000000120dc       0xce ${package_root}\build\out\boot\fsbl\ps7_init.o
+ *fill*         0x00000000000121aa        0x2 
+ .rodata.str1.4
+                0x00000000000121ac       0x44 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ .rodata.str1.4
+                0x00000000000121f0        0xa ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ *fill*         0x00000000000121fa        0x2 
+ .rodata.str1.4
+                0x00000000000121fc        0xf ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ *fill*         0x000000000001220b        0x1 
+ .rodata.str1.4
+                0x000000000001220c       0x11 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ *fill*         0x000000000001221d        0x3 
+ .rodata.str1.4
+                0x0000000000012220        0xa ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ *fill*         0x000000000001222a        0x2 
+ .rodata.str1.4
+                0x000000000001222c       0x12 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ *fill*         0x000000000001223e        0x2 
+ .rodata.str1.4
+                0x0000000000012240        0x8 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .rodata.str1.4
+                0x0000000000012248       0x10 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ *(.gnu.linkonce.r.*)
+                0x0000000000012258                __rodata_end = .
+
+.rodata1        0x0000000000012258        0x0
+                0x0000000000012258                __rodata1_start = .
+ *(.rodata1)
+ *(.rodata1.*)
+                0x0000000000012258                __rodata1_end = .
+
+.sdata2         0x0000000000012258        0x0
+                0x0000000000012258                __sdata2_start = .
+ *(.sdata2)
+ *(.sdata2.*)
+ *(.gnu.linkonce.s2.*)
+                0x0000000000012258                __sdata2_end = .
+
+.sbss2          0x0000000000012258        0x0
+                0x0000000000012258                __sbss2_start = .
+ *(.sbss2)
+ *(.sbss2.*)
+ *(.gnu.linkonce.sb2.*)
+                0x0000000000012258                __sbss2_end = .
+
+.data           0x0000000000012258     0x2d50
+                0x0000000000012258                __data_start = .
+ *(.data)
+ .data          0x0000000000012258        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+ .data          0x0000000000012258        0x4 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+                0x0000000000012258                __dso_handle
+ .data          0x000000000001225c        0x0 ${package_root}\build\out\boot\fsbl\image_mover.o
+ .data          0x000000000001225c        0x0 ${package_root}\build\out\boot\fsbl\main.o
+ .data          0x000000000001225c        0x0 ${package_root}\build\out\boot\fsbl\md5.o
+ .data          0x000000000001225c        0x0 ${package_root}\build\out\boot\fsbl\nand.o
+ .data          0x000000000001225c        0x0 ${package_root}\build\out\boot\fsbl\nor.o
+ .data          0x000000000001225c        0x0 ${package_root}\build\out\boot\fsbl\pcap.o
+ .data          0x000000000001225c        0x0 ${package_root}\build\out\boot\fsbl\qspi.o
+ .data          0x000000000001225c        0x0 ${package_root}\build\out\boot\fsbl\rsa.o
+ .data          0x000000000001225c        0x4 ${package_root}\build\out\boot\fsbl\sd.o
+ .data          0x0000000000012260     0x2834 ${package_root}\build\out\boot\fsbl\ps7_init.o
+                0x0000000000012260                ps7_post_config_1_0
+                0x000000000001229c                ps7_post_config_2_0
+                0x00000000000122d8                ps7_post_config_3_0
+                0x0000000000012314                ps7_debug_1_0
+                0x000000000001233c                ps7_debug_2_0
+                0x0000000000012364                ps7_debug_3_0
+                0x000000000001238c                ps7_pll_init_data_1_0
+                0x000000000001250c                ps7_clock_init_data_1_0
+                0x00000000000125c8                ps7_ddr_init_data_1_0
+                0x0000000000012ad4                ps7_peripherals_init_data_1_0
+                0x0000000000012bec                ps7_mio_init_data_1_0
+                0x0000000000013078                ps7_pll_init_data_2_0
+                0x00000000000131f8                ps7_clock_init_data_2_0
+                0x00000000000132b4                ps7_ddr_init_data_2_0
+                0x00000000000137e0                ps7_peripherals_init_data_2_0
+                0x00000000000138f8                ps7_mio_init_data_2_0
+                0x0000000000013d84                ps7_pll_init_data_3_0
+                0x0000000000013f04                ps7_clock_init_data_3_0
+                0x0000000000013fc0                ps7_ddr_init_data_3_0
+                0x00000000000144dc                ps7_peripherals_init_data_3_0
+                0x00000000000145f4                ps7_mio_init_data_3_0
+                0x0000000000014a80                ps7_mio_init_data
+                0x0000000000014a84                ps7_pll_init_data
+                0x0000000000014a88                ps7_clock_init_data
+                0x0000000000014a8c                ps7_ddr_init_data
+                0x0000000000014a90                ps7_peripherals_init_data
+ .data          0x0000000000014a94        0x0 ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+ .data          0x0000000000014a94        0x0 ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+ .data          0x0000000000014a94        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ .data          0x0000000000014a94        0x2 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+ .data          0x0000000000014a96        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(asm_vectors.o)
+ .data          0x0000000000014a96        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+ .data          0x0000000000014a96        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(translation_table.o)
+ .data          0x0000000000014a96        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+ .data          0x0000000000014a96        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ .data          0x0000000000014a96        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ .data          0x0000000000014a96        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+ .data          0x0000000000014a96        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+ *fill*         0x0000000000014a96        0x2 
+ .data          0x0000000000014a98        0x4 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+                0x0000000000014a98                Xil_AssertWait
+ .data          0x0000000000014a9c        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+ .data          0x0000000000014a9c       0x38 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+                0x0000000000014a9c                XExc_VectorTable
+ .data          0x0000000000014ad4        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ .data          0x0000000000014ad4        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+ .data          0x0000000000014ad4       0x4e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(cpu_init.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+ .data          0x0000000000014b22        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+ *fill*         0x0000000000014b22        0x2 
+ .data          0x0000000000014b24        0x8 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_g.o)
+                0x0000000000014b24                XDcfg_ConfigTable
+ .data          0x0000000000014b2c        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+ .data          0x0000000000014b2c       0x10 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_g.o)
+                0x0000000000014b2c                XQspiPs_ConfigTable
+ .data          0x0000000000014b3c       0x3c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_g.o)
+                0x0000000000014b3c                XSdPs_ConfigTable
+ .data          0x0000000000014b78        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+ .data          0x0000000000014b78        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+ .data          0x0000000000014b78        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o)
+ .data          0x0000000000014b78        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fini.o)
+ .data          0x0000000000014b78      0x430 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+                0x0000000000014b78                _impure_ptr
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-init.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcmp.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcpy.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memmove.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memset.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strchr.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlen.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncat.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strnlen.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000014fa8        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+ .data          0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+ *(.data.*)
+ *(.gnu.linkonce.d.*)
+ *(.jcr)
+ *(.got)
+ *(.got.plt)
+                0x0000000000014fa8                __data_end = .
+
+.tm_clone_table
+                0x0000000000014fa8        0x0
+ .tm_clone_table
+                0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ .tm_clone_table
+                0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+
+.igot.plt       0x0000000000014fa8        0x0
+ .igot.plt      0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+
+.got2           0x0000000000014fa8        0x0
+ .got2          0x0000000000014fa8        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+
+.data1          0x0000000000014fa8        0x0
+                0x0000000000014fa8                __data1_start = .
+ *(.data1)
+ *(.data1.*)
+                0x0000000000014fa8                __data1_end = .
+
+.got
+ *(.got)
+
+.ctors          0x0000000000014fa8        0x0
+                0x0000000000014fa8                __CTOR_LIST__ = .
+                0x0000000000014fa8                ___CTORS_LIST___ = .
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+                0x0000000000014fa8                __CTOR_END__ = .
+                0x0000000000014fa8                ___CTORS_END___ = .
+
+.dtors          0x0000000000014fa8        0x0
+                0x0000000000014fa8                __DTOR_LIST__ = .
+                0x0000000000014fa8                ___DTORS_LIST___ = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+                0x0000000000014fa8                __DTOR_END__ = .
+                0x0000000000014fa8                ___DTORS_END___ = .
+
+.fixup          0x0000000000014fa8        0x0
+                0x0000000000014fa8                __fixup_start = .
+ *(.fixup)
+                0x0000000000014fa8                __fixup_end = .
+
+.eh_frame       0x0000000000014fa8        0x4
+ *(.eh_frame)
+ .eh_frame      0x0000000000014fa8        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ .eh_frame      0x0000000000014fa8        0x4 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+
+.eh_framehdr    0x0000000000014fac        0x0
+                0x0000000000014fac                __eh_framehdr_start = .
+ *(.eh_framehdr)
+                0x0000000000014fac                __eh_framehdr_end = .
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.mmu_tbl        0x0000000000018000     0x4000
+                0x0000000000018000                __mmu_tbl_start = .
+ *(.mmu_tbl)
+ .mmu_tbl       0x0000000000018000     0x4000 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(translation_table.o)
+                0x0000000000018000                MMUTable
+                0x000000000001c000                __mmu_tbl_end = .
+
+.rel.dyn        0x000000000001c000        0x0
+ .rel.iplt      0x000000000001c000        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+
+.ARM.exidx      0x000000000001c000        0x0
+                0x000000000001c000                __exidx_start = .
+ *(.ARM.exidx*)
+ *(.gnu.linkonce.armexidix.*.*)
+                0x000000000001c000                __exidx_end = .
+
+.preinit_array  0x000000000001c000        0x0
+                0x000000000001c000                __preinit_array_start = .
+ *(SORT_BY_NAME(.preinit_array.*))
+ *(.preinit_array)
+                0x000000000001c000                __preinit_array_end = .
+
+.init_array     0x000000000001c000        0x4
+                0x000000000001c000                __init_array_start = .
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+ .init_array    0x000000000001c000        0x4 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+                0x000000000001c004                __init_array_end = .
+
+.fini_array     0x000000000001c004        0x4
+                0x000000000001c004                __fini_array_start = .
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x000000000001c004        0x4 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+                0x000000000001c008                __fini_array_end = .
+
+.rsa_ac         0x000000000001c008     0x1038
+                0x000000000001c040                . = ALIGN (0x40)
+ *fill*         0x000000000001c008       0x38 
+                0x000000000001c040                __rsa_ac_start = .
+                0x000000000001d040                . = (. + _RSA_AC_SIZE)
+ *fill*         0x000000000001c040     0x1000 
+                0x000000000001d040                __rsa_ac_end = .
+
+.ARM.attributes
+                0x000000000001d040       0x33
+                0x000000000001d040                __ARM.attributes_start = .
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x000000000001d040       0x21 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+ .ARM.attributes
+                0x000000000001d061       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x000000000001d094       0x37 ${package_root}\build\out\boot\fsbl\image_mover.o
+ .ARM.attributes
+                0x000000000001d0cb       0x37 ${package_root}\build\out\boot\fsbl\main.o
+ .ARM.attributes
+                0x000000000001d102       0x37 ${package_root}\build\out\boot\fsbl\md5.o
+ .ARM.attributes
+                0x000000000001d139       0x37 ${package_root}\build\out\boot\fsbl\nand.o
+ .ARM.attributes
+                0x000000000001d170       0x37 ${package_root}\build\out\boot\fsbl\nor.o
+ .ARM.attributes
+                0x000000000001d1a7       0x37 ${package_root}\build\out\boot\fsbl\pcap.o
+ .ARM.attributes
+                0x000000000001d1de       0x37 ${package_root}\build\out\boot\fsbl\qspi.o
+ .ARM.attributes
+                0x000000000001d215       0x37 ${package_root}\build\out\boot\fsbl\rsa.o
+ .ARM.attributes
+                0x000000000001d24c       0x37 ${package_root}\build\out\boot\fsbl\sd.o
+ .ARM.attributes
+                0x000000000001d283       0x37 ${package_root}\build\out\boot\fsbl\ps7_init.o
+ .ARM.attributes
+                0x000000000001d2ba       0x37 ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+ .ARM.attributes
+                0x000000000001d2f1       0x23 ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+ .ARM.attributes
+                0x000000000001d314       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ .ARM.attributes
+                0x000000000001d34b       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+ .ARM.attributes
+                0x000000000001d382       0x23 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(asm_vectors.o)
+ .ARM.attributes
+                0x000000000001d3a5       0x23 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+ .ARM.attributes
+                0x000000000001d3c8       0x23 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(translation_table.o)
+ .ARM.attributes
+                0x000000000001d3eb       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+ .ARM.attributes
+                0x000000000001d422       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ .ARM.attributes
+                0x000000000001d459       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ .ARM.attributes
+                0x000000000001d490       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+ .ARM.attributes
+                0x000000000001d4c7       0x23 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+ .ARM.attributes
+                0x000000000001d4ea       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+ .ARM.attributes
+                0x000000000001d521       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+ .ARM.attributes
+                0x000000000001d558       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+ .ARM.attributes
+                0x000000000001d58f       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ .ARM.attributes
+                0x000000000001d5c6       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+ .ARM.attributes
+                0x000000000001d5fd       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ .ARM.attributes
+                0x000000000001d634       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .ARM.attributes
+                0x000000000001d66b       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+ .ARM.attributes
+                0x000000000001d6a2       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .ARM.attributes
+                0x000000000001d6d9       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+ .ARM.attributes
+                0x000000000001d710       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+ .ARM.attributes
+                0x000000000001d747       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ .ARM.attributes
+                0x000000000001d77e       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+ .ARM.attributes
+                0x000000000001d7b5       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+ .ARM.attributes
+                0x000000000001d7ec       0x23 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(cpu_init.o)
+ .ARM.attributes
+                0x000000000001d80f       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+ .ARM.attributes
+                0x000000000001d846       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+ .ARM.attributes
+                0x000000000001d87d       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+ .ARM.attributes
+                0x000000000001d8b4       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_g.o)
+ .ARM.attributes
+                0x000000000001d8eb       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+ .ARM.attributes
+                0x000000000001d922       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_g.o)
+ .ARM.attributes
+                0x000000000001d959       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_g.o)
+ .ARM.attributes
+                0x000000000001d990       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+ .ARM.attributes
+                0x000000000001d9c7       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x000000000001d9fa       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x000000000001da2d       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x000000000001da60       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000000000001da93       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x000000000001dac6       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcmp.o)
+ .ARM.attributes
+                0x000000000001daf9       0x1b ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x000000000001db14       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x000000000001db47       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000000000001db7a       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strchr.o)
+ .ARM.attributes
+                0x000000000001dbad       0x19 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x000000000001dbc6       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncat.o)
+ .ARM.attributes
+                0x000000000001dbf9       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strnlen.o)
+ .ARM.attributes
+                0x000000000001dc2c       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x000000000001dc5f       0x21 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000000000001dc80       0x21 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x000000000001dca1       0x21 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000000000001dcc2       0x37 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+ .ARM.attributes
+                0x000000000001dcf9       0x33 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+ .ARM.attributes
+                0x000000000001dd2c       0x21 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+                0x000000000001dd4d                __ARM.attributes_end = .
+
+.sdata          0x000000000001d040        0x0
+                0x000000000001d040                __sdata_start = .
+ *(.sdata)
+ *(.sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x000000000001d040                __sdata_end = .
+
+.sbss           0x000000000001d040        0x0
+                0x000000000001d040                __sbss_start = .
+ *(.sbss)
+ *(.sbss.*)
+ *(.gnu.linkonce.sb.*)
+                0x000000000001d040                __sbss_end = .
+
+.tdata          0x000000000001d040        0x0
+                0x000000000001d040                __tdata_start = .
+ *(.tdata)
+ *(.tdata.*)
+ *(.gnu.linkonce.td.*)
+                0x000000000001d040                __tdata_end = .
+
+.tbss           0x000000000001d040        0x0
+                0x000000000001d040                __tbss_start = .
+ *(.tbss)
+ *(.tbss.*)
+ *(.gnu.linkonce.tb.*)
+                0x000000000001d040                __tbss_end = .
+
+.bss            0x000000000001d040     0x23e4
+                0x000000000001d040                __bss_start = .
+                0x000000000001d040                __bss_start__ = .
+ *(.bss)
+ .bss           0x000000000001d040        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+ .bss           0x000000000001d040       0x1c ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ .bss           0x000000000001d05c      0x398 ${package_root}\build\out\boot\fsbl\image_mover.o
+                0x000000000001d05c                FsblLength
+                0x000000000001d060                MoveImage
+                0x000000000001d064                PartitionHeader
+                0x000000000001d3e4                PartitionCount
+                0x000000000001d3e8                EncryptedPartitionFlag
+                0x000000000001d3e9                SignedPartitionFlag
+                0x000000000001d3ea                PartitionChecksumFlag
+                0x000000000001d3eb                PSPartitionFlag
+                0x000000000001d3ec                PLPartitionFlag
+                0x000000000001d3ed                BitstreamFlag
+                0x000000000001d3ee                ApplicationFlag
+                0x000000000001d3f0                ExecutionAddress
+ .bss           0x000000000001d3f4        0xe ${package_root}\build\out\boot\fsbl\main.o
+                0x000000000001d3f4                Silicon_Version
+                0x000000000001d3f8                FlashReadBaseAddress
+                0x000000000001d3fc                PcapCtrlRegVal
+                0x000000000001d400                SystemInitFlag
+                0x000000000001d401                LinearBootDeviceFlag
+ .bss           0x000000000001d402        0x0 ${package_root}\build\out\boot\fsbl\md5.o
+ .bss           0x000000000001d402        0x0 ${package_root}\build\out\boot\fsbl\nand.o
+ .bss           0x000000000001d402        0x0 ${package_root}\build\out\boot\fsbl\nor.o
+ *fill*         0x000000000001d402        0x2 
+ .bss           0x000000000001d404       0x1c ${package_root}\build\out\boot\fsbl\pcap.o
+                0x000000000001d404                DcfgInstPtr
+ .bss           0x000000000001d420     0x104d ${package_root}\build\out\boot\fsbl\qspi.o
+                0x000000000001d420                QspiFlashMake
+                0x000000000001d424                QspiFlashSize
+                0x000000000001d428                QspiInstancePtr
+                0x000000000001d42c                QspiInstance
+                0x000000000001d460                WriteBuffer
+                0x000000000001d468                ReadBuffer
+ .bss           0x000000000001e46d        0x0 ${package_root}\build\out\boot\fsbl\rsa.o
+ *fill*         0x000000000001e46d       0x13 
+ .bss           0x000000000001e480      0x4a0 ${package_root}\build\out\boot\fsbl\sd.o
+ .bss           0x000000000001e920        0x0 ${package_root}\build\out\boot\fsbl\ps7_init.o
+ .bss           0x000000000001e920        0x0 ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+ .bss           0x000000000001e920        0x0 ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+ .bss           0x000000000001e920        0xa ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ *fill*         0x000000000001e92a       0x16 
+ .bss           0x000000000001e940      0x6a0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+ .bss           0x000000000001efe0        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(asm_vectors.o)
+ .bss           0x000000000001efe0        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+ .bss           0x000000000001efe0        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(translation_table.o)
+ .bss           0x000000000001efe0        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+ .bss           0x000000000001efe0        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ .bss           0x000000000001efe0        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ .bss           0x000000000001efe0        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+ .bss           0x000000000001efe0        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+ .bss           0x000000000001efe0        0x8 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+                0x000000000001efe4                Xil_AssertStatus
+ .bss           0x000000000001efe8        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+ .bss           0x000000000001efe8        0xc ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+                0x000000000001efe8                UndefinedExceptionAddr
+                0x000000000001efec                PrefetchAbortAddr
+                0x000000000001eff0                DataAbortAddr
+ .bss           0x000000000001eff4        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ .bss           0x000000000001eff4        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+ .bss           0x000000000001eff4        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ .bss           0x000000000001eff4        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .bss           0x000000000001eff4        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+ .bss           0x000000000001eff4        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .bss           0x000000000001eff4        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+ *fill*         0x000000000001eff4        0xc 
+ .bss           0x000000000001f000      0x420 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+ .bss           0x000000000001f420        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ .bss           0x000000000001f420        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+ .bss           0x000000000001f420        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+ .bss           0x000000000001f420        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(cpu_init.o)
+ .bss           0x000000000001f420        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+ .bss           0x000000000001f420        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+ .bss           0x000000000001f420        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+ .bss           0x000000000001f420        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_g.o)
+ .bss           0x000000000001f420        0x4 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+                0x000000000001f420                fptr
+ .bss           0x000000000001f424        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_g.o)
+ .bss           0x000000000001f424        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_g.o)
+ .bss           0x000000000001f424        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fini.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-init.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcmp.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcpy.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memmove.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memset.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strchr.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlen.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncat.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strnlen.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+ .bss           0x000000000001f424        0x0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+ .bss           0x000000000001f424        0x0 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+ *(.bss.*)
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+                0x000000000001f424                __bss_end = .
+                0x000000000001f424                __bss_end__ = .
+
+.drvcfg_sec     0x000000000001f424        0x4
+                0x000000000001f428                . = ALIGN (0x8)
+ *fill*         0x000000000001f424        0x4 
+                0x000000000001f428                __drvcfgsecdata_start = .
+ *(.drvcfg_sec)
+                0x000000000001f428                __drvcfgsecdata_end = .
+                0x000000000001f424                __drvcfgsecdata_size = (__drvcfgsecdata_end - __drvcfgsecdata_start)
+                0x000000000001d040                _SDA_BASE_ = (__sdata_start + ((__sbss_end - __sdata_start) / 0x2))
+                0x0000000000012258                _SDA2_BASE_ = (__sdata2_start + ((__sbss2_end - __sdata2_start) / 0x2))
+
+.heap           0x000000000001f428     0x2008
+                0x000000000001f430                . = ALIGN (0x10)
+ *fill*         0x000000000001f428        0x8 
+                0x000000000001f430                _heap = .
+                0x000000000001f430                HeapBase = .
+                0x000000000001f430                _heap_start = .
+                0x0000000000021430                . = (. + _HEAP_SIZE)
+ *fill*         0x000000000001f430     0x2000 
+                0x0000000000021430                _heap_end = .
+                0x0000000000021430                HeapLimit = .
+
+.stack          0x00000000ffff0000     0xd400
+                0x00000000ffff0000                . = ALIGN (0x10)
+                0x00000000ffff0000                _stack_end = .
+                0x00000000ffff6000                . = (. + _STACK_SIZE)
+ *fill*         0x00000000ffff0000     0x6000 
+                0x00000000ffff6000                _stack = .
+                0x00000000ffff6000                __stack = _stack
+                0x00000000ffff6000                . = ALIGN (0x10)
+                0x00000000ffff6000                _irq_stack_end = .
+                0x00000000ffffc000                . = (. + _STACK_SIZE)
+ *fill*         0x00000000ffff6000     0x6000 
+                0x00000000ffffc000                __irq_stack = .
+                0x00000000ffffc000                _supervisor_stack_end = .
+                0x00000000ffffc800                . = (. + _SUPERVISOR_STACK_SIZE)
+ *fill*         0x00000000ffffc000      0x800 
+                0x00000000ffffc800                . = ALIGN (0x10)
+                0x00000000ffffc800                __supervisor_stack = .
+                0x00000000ffffc800                _abort_stack_end = .
+                0x00000000ffffcc00                . = (. + _ABORT_STACK_SIZE)
+ *fill*         0x00000000ffffc800      0x400 
+                0x00000000ffffcc00                . = ALIGN (0x10)
+                0x00000000ffffcc00                __abort_stack = .
+                0x00000000ffffcc00                _fiq_stack_end = .
+                0x00000000ffffd000                . = (. + _FIQ_STACK_SIZE)
+ *fill*         0x00000000ffffcc00      0x400 
+                0x00000000ffffd000                . = ALIGN (0x10)
+                0x00000000ffffd000                __fiq_stack = .
+                0x00000000ffffd000                _undef_stack_end = .
+                0x00000000ffffd400                . = (. + _UNDEF_STACK_SIZE)
+ *fill*         0x00000000ffffd000      0x400 
+                0x00000000ffffd400                . = ALIGN (0x10)
+                0x00000000ffffd400                __undef_stack = .
+                0x00000000ffffd400                _end = .
+LOAD ${package_root}\build\out\boot\fsbl\image_mover.o
+LOAD ${package_root}\build\out\boot\fsbl\main.o
+LOAD ${package_root}\build\out\boot\fsbl\md5.o
+LOAD ${package_root}\build\out\boot\fsbl\nand.o
+LOAD ${package_root}\build\out\boot\fsbl\nor.o
+LOAD ${package_root}\build\out\boot\fsbl\pcap.o
+LOAD ${package_root}\build\out\boot\fsbl\qspi.o
+LOAD ${package_root}\build\out\boot\fsbl\rsa.o
+LOAD ${package_root}\build\out\boot\fsbl\sd.o
+LOAD ${package_root}\build\out\boot\fsbl\ps7_init.o
+LOAD ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+LOAD ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+START GROUP
+LOAD ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a
+LOAD ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\librsa.a
+LOAD ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a
+LOAD ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a
+LOAD ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libm.a
+LOAD ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a
+END GROUP
+START GROUP
+LOAD ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a
+LOAD ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libg.a
+LOAD ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a
+END GROUP
+LOAD ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+LOAD ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+OUTPUT(${package_root}\build\out\boot\fsbl\fsbl_m50.elf elf32-littlearm)
+LOAD linker stubs
+
+.comment        0x0000000000000000       0x12
+ .comment       0x0000000000000000       0x12 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\boot\fsbl\image_mover.o
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\boot\fsbl\main.o
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\boot\fsbl\md5.o
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\boot\fsbl\nand.o
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\boot\fsbl\nor.o
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\boot\fsbl\pcap.o
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\boot\fsbl\qspi.o
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\boot\fsbl\rsa.o
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\boot\fsbl\sd.o
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\boot\fsbl\ps7_init.o
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_g.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_g.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_g.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+ .comment       0x0000000000000012       0x13 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+ .comment       0x0000000000000012       0x13 ${vitis_install}/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+
+.debug_info     0x0000000000000000    0x215b3
+ .debug_info    0x0000000000000000     0x1add ${package_root}\build\out\boot\fsbl\image_mover.o
+ .debug_info    0x0000000000001add     0x205d ${package_root}\build\out\boot\fsbl\main.o
+ .debug_info    0x0000000000003b3a      0xee7 ${package_root}\build\out\boot\fsbl\md5.o
+ .debug_info    0x0000000000004a21       0x73 ${package_root}\build\out\boot\fsbl\nand.o
+ .debug_info    0x0000000000004a94      0x24b ${package_root}\build\out\boot\fsbl\nor.o
+ .debug_info    0x0000000000004cdf     0x133d ${package_root}\build\out\boot\fsbl\pcap.o
+ .debug_info    0x000000000000601c      0xc36 ${package_root}\build\out\boot\fsbl\qspi.o
+ .debug_info    0x0000000000006c52      0x6e3 ${package_root}\build\out\boot\fsbl\sd.o
+ .debug_info    0x0000000000007335      0x9b2 ${package_root}\build\out\boot\fsbl\ps7_init.o
+ .debug_info    0x0000000000007ce7      0x33f ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+ .debug_info    0x0000000000008026       0x24 ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+ .debug_info    0x000000000000804a     0x519d ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ .debug_info    0x000000000000d1e7      0xc2c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+ .debug_info    0x000000000000de13       0x25 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+ .debug_info    0x000000000000de38      0x13d ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+ .debug_info    0x000000000000df75     0x19fd ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ .debug_info    0x000000000000f972      0x73b ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ .debug_info    0x00000000000100ad      0x14c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+ .debug_info    0x00000000000101f9       0x24 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+ .debug_info    0x000000000001021d      0x1c9 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+ .debug_info    0x00000000000103e6     0x329e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+ .debug_info    0x0000000000013684      0x314 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+ .debug_info    0x0000000000013998      0x870 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ .debug_info    0x0000000000014208      0x147 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+ .debug_info    0x000000000001434f     0x1f62 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ .debug_info    0x00000000000162b1      0x967 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .debug_info    0x0000000000016c18      0x18d ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+ .debug_info    0x0000000000016da5      0xcd7 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .debug_info    0x0000000000017a7c     0x2a81 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+ .debug_info    0x000000000001a4fd     0x2baa ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+ .debug_info    0x000000000001d0a7     0x180d ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ .debug_info    0x000000000001e8b4      0x252 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+ .debug_info    0x000000000001eb06      0x322 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+ .debug_info    0x000000000001ee28       0x24 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(cpu_init.o)
+ .debug_info    0x000000000001ee4c      0x106 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+ .debug_info    0x000000000001ef52      0x135 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+ .debug_info    0x000000000001f087      0x135 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+ .debug_info    0x000000000001f1bc      0x105 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_g.o)
+ .debug_info    0x000000000001f2c1     0x19c4 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+ .debug_info    0x0000000000020c85      0x145 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_g.o)
+ .debug_info    0x0000000000020dca      0x20d ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_g.o)
+ .debug_info    0x0000000000020fd7      0x52e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+ .debug_info    0x0000000000021505       0xae ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+
+.debug_abbrev   0x0000000000000000     0x58c1
+ .debug_abbrev  0x0000000000000000      0x421 ${package_root}\build\out\boot\fsbl\image_mover.o
+ .debug_abbrev  0x0000000000000421      0x493 ${package_root}\build\out\boot\fsbl\main.o
+ .debug_abbrev  0x00000000000008b4      0x2fd ${package_root}\build\out\boot\fsbl\md5.o
+ .debug_abbrev  0x0000000000000bb1       0x26 ${package_root}\build\out\boot\fsbl\nand.o
+ .debug_abbrev  0x0000000000000bd7      0x15c ${package_root}\build\out\boot\fsbl\nor.o
+ .debug_abbrev  0x0000000000000d33      0x308 ${package_root}\build\out\boot\fsbl\pcap.o
+ .debug_abbrev  0x000000000000103b      0x312 ${package_root}\build\out\boot\fsbl\qspi.o
+ .debug_abbrev  0x000000000000134d      0x228 ${package_root}\build\out\boot\fsbl\sd.o
+ .debug_abbrev  0x0000000000001575      0x330 ${package_root}\build\out\boot\fsbl\ps7_init.o
+ .debug_abbrev  0x00000000000018a5      0x16f ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+ .debug_abbrev  0x0000000000001a14       0x14 ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+ .debug_abbrev  0x0000000000001a28      0x42e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ .debug_abbrev  0x0000000000001e56      0x39c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+ .debug_abbrev  0x00000000000021f2       0x14 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+ .debug_abbrev  0x0000000000002206       0xb5 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+ .debug_abbrev  0x00000000000022bb      0x34d ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ .debug_abbrev  0x0000000000002608      0x225 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ .debug_abbrev  0x000000000000282d       0xe5 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+ .debug_abbrev  0x0000000000002912       0x14 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+ .debug_abbrev  0x0000000000002926      0x115 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+ .debug_abbrev  0x0000000000002a3b      0x371 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+ .debug_abbrev  0x0000000000002dac      0x1ed ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+ .debug_abbrev  0x0000000000002f99      0x38c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ .debug_abbrev  0x0000000000003325       0xc5 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+ .debug_abbrev  0x00000000000033ea      0x36e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ .debug_abbrev  0x0000000000003758      0x2d1 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .debug_abbrev  0x0000000000003a29       0xe8 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+ .debug_abbrev  0x0000000000003b11      0x320 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .debug_abbrev  0x0000000000003e31      0x4a9 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+ .debug_abbrev  0x00000000000042da      0x500 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+ .debug_abbrev  0x00000000000047da      0x3db ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ .debug_abbrev  0x0000000000004bb5       0xfd ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+ .debug_abbrev  0x0000000000004cb2      0x15d ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+ .debug_abbrev  0x0000000000004e0f       0x14 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(cpu_init.o)
+ .debug_abbrev  0x0000000000004e23       0x9e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+ .debug_abbrev  0x0000000000004ec1       0xde ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+ .debug_abbrev  0x0000000000004f9f       0xde ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+ .debug_abbrev  0x000000000000507d       0x8d ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_g.o)
+ .debug_abbrev  0x000000000000510a      0x464 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+ .debug_abbrev  0x000000000000556e       0x9b ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_g.o)
+ .debug_abbrev  0x0000000000005609       0xbb ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_g.o)
+ .debug_abbrev  0x00000000000056c4      0x194 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+ .debug_abbrev  0x0000000000005858       0x69 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+
+.debug_loclists
+                0x0000000000000000    0x145d7
+ .debug_loclists
+                0x0000000000000000      0xcb9 ${package_root}\build\out\boot\fsbl\image_mover.o
+ .debug_loclists
+                0x0000000000000cb9      0xaa6 ${package_root}\build\out\boot\fsbl\main.o
+ .debug_loclists
+                0x000000000000175f     0x1936 ${package_root}\build\out\boot\fsbl\md5.o
+ .debug_loclists
+                0x0000000000003095      0x139 ${package_root}\build\out\boot\fsbl\nor.o
+ .debug_loclists
+                0x00000000000031ce      0xad4 ${package_root}\build\out\boot\fsbl\pcap.o
+ .debug_loclists
+                0x0000000000003ca2      0x39c ${package_root}\build\out\boot\fsbl\qspi.o
+ .debug_loclists
+                0x000000000000403e       0xbf ${package_root}\build\out\boot\fsbl\sd.o
+ .debug_loclists
+                0x00000000000040fd      0x3b1 ${package_root}\build\out\boot\fsbl\ps7_init.o
+ .debug_loclists
+                0x00000000000044ae      0x10b ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+ .debug_loclists
+                0x00000000000045b9     0x52c4 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ .debug_loclists
+                0x000000000000987d      0x3c2 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+ .debug_loclists
+                0x0000000000009c3f      0xf5f ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ .debug_loclists
+                0x000000000000ab9e      0x3fa ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ .debug_loclists
+                0x000000000000af98       0x1e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+ .debug_loclists
+                0x000000000000afb6       0x3e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+ .debug_loclists
+                0x000000000000aff4     0x1c55 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+ .debug_loclists
+                0x000000000000cc49       0x4a ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+ .debug_loclists
+                0x000000000000cc93      0x5fb ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ .debug_loclists
+                0x000000000000d28e       0x30 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+ .debug_loclists
+                0x000000000000d2be     0x172d ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ .debug_loclists
+                0x000000000000e9eb      0x661 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .debug_loclists
+                0x000000000000f04c       0x1e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+ .debug_loclists
+                0x000000000000f06a      0x5c9 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .debug_loclists
+                0x000000000000f633     0x1423 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+ .debug_loclists
+                0x0000000000010a56     0x1572 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+ .debug_loclists
+                0x0000000000011fc8      0xad2 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ .debug_loclists
+                0x0000000000012a9a       0x1e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+ .debug_loclists
+                0x0000000000012ab8       0xcd ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+ .debug_loclists
+                0x0000000000012b85       0x1e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+ .debug_loclists
+                0x0000000000012ba3       0x28 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+ .debug_loclists
+                0x0000000000012bcb       0x28 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+ .debug_loclists
+                0x0000000000012bf3     0x1842 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+ .debug_loclists
+                0x0000000000014435      0x18e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+ .debug_loclists
+                0x00000000000145c3       0x14 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+
+.debug_aranges  0x0000000000000000      0x548
+ .debug_aranges
+                0x0000000000000000       0x20 ${package_root}\build\out\boot\fsbl\image_mover.o
+ .debug_aranges
+                0x0000000000000020       0x28 ${package_root}\build\out\boot\fsbl\main.o
+ .debug_aranges
+                0x0000000000000048       0x20 ${package_root}\build\out\boot\fsbl\md5.o
+ .debug_aranges
+                0x0000000000000068       0x18 ${package_root}\build\out\boot\fsbl\nand.o
+ .debug_aranges
+                0x0000000000000080       0x20 ${package_root}\build\out\boot\fsbl\nor.o
+ .debug_aranges
+                0x00000000000000a0       0x20 ${package_root}\build\out\boot\fsbl\pcap.o
+ .debug_aranges
+                0x00000000000000c0       0x20 ${package_root}\build\out\boot\fsbl\qspi.o
+ .debug_aranges
+                0x00000000000000e0       0x20 ${package_root}\build\out\boot\fsbl\sd.o
+ .debug_aranges
+                0x0000000000000100       0x20 ${package_root}\build\out\boot\fsbl\ps7_init.o
+ .debug_aranges
+                0x0000000000000120       0x20 ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+ .debug_aranges
+                0x0000000000000140       0x20 ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+ .debug_aranges
+                0x0000000000000160       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ .debug_aranges
+                0x0000000000000180       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+ .debug_aranges
+                0x00000000000001a0       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+ .debug_aranges
+                0x00000000000001c0       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+ .debug_aranges
+                0x00000000000001e0       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ .debug_aranges
+                0x0000000000000200       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ .debug_aranges
+                0x0000000000000220       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+ .debug_aranges
+                0x0000000000000240       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+ .debug_aranges
+                0x0000000000000260       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+ .debug_aranges
+                0x0000000000000280       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+ .debug_aranges
+                0x00000000000002a0       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+ .debug_aranges
+                0x00000000000002c0       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ .debug_aranges
+                0x00000000000002e0       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+ .debug_aranges
+                0x0000000000000300       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ .debug_aranges
+                0x0000000000000320       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .debug_aranges
+                0x0000000000000340       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+ .debug_aranges
+                0x0000000000000360       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .debug_aranges
+                0x0000000000000380       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+ .debug_aranges
+                0x00000000000003a0       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+ .debug_aranges
+                0x00000000000003c0       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ .debug_aranges
+                0x00000000000003e0       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+ .debug_aranges
+                0x0000000000000400       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+ .debug_aranges
+                0x0000000000000420       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(cpu_init.o)
+ .debug_aranges
+                0x0000000000000440       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+ .debug_aranges
+                0x0000000000000460       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+ .debug_aranges
+                0x0000000000000480       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+ .debug_aranges
+                0x00000000000004a0       0x18 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_g.o)
+ .debug_aranges
+                0x00000000000004b8       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+ .debug_aranges
+                0x00000000000004d8       0x18 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_g.o)
+ .debug_aranges
+                0x00000000000004f0       0x18 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_g.o)
+ .debug_aranges
+                0x0000000000000508       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+ .debug_aranges
+                0x0000000000000528       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+
+.debug_rnglists
+                0x0000000000000000     0x18fd
+ .debug_rnglists
+                0x0000000000000000       0x9b ${package_root}\build\out\boot\fsbl\image_mover.o
+ .debug_rnglists
+                0x000000000000009b      0x125 ${package_root}\build\out\boot\fsbl\main.o
+ .debug_rnglists
+                0x00000000000001c0       0xa8 ${package_root}\build\out\boot\fsbl\md5.o
+ .debug_rnglists
+                0x0000000000000268       0x1a ${package_root}\build\out\boot\fsbl\nor.o
+ .debug_rnglists
+                0x0000000000000282      0x14b ${package_root}\build\out\boot\fsbl\pcap.o
+ .debug_rnglists
+                0x00000000000003cd       0x81 ${package_root}\build\out\boot\fsbl\qspi.o
+ .debug_rnglists
+                0x000000000000044e       0x83 ${package_root}\build\out\boot\fsbl\ps7_init.o
+ .debug_rnglists
+                0x00000000000004d1       0x69 ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+ .debug_rnglists
+                0x000000000000053a      0x5b1 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ .debug_rnglists
+                0x0000000000000aeb       0x66 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+ .debug_rnglists
+                0x0000000000000b51      0x17f ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ .debug_rnglists
+                0x0000000000000cd0       0x55 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ .debug_rnglists
+                0x0000000000000d25      0x269 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+ .debug_rnglists
+                0x0000000000000f8e       0x86 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ .debug_rnglists
+                0x0000000000001014      0x289 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ .debug_rnglists
+                0x000000000000129d       0x27 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .debug_rnglists
+                0x00000000000012c4       0x38 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .debug_rnglists
+                0x00000000000012fc      0x233 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+ .debug_rnglists
+                0x000000000000152f      0x26b ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+ .debug_rnglists
+                0x000000000000179a       0x73 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ .debug_rnglists
+                0x000000000000180d       0x21 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+ .debug_rnglists
+                0x000000000000182e       0x73 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+ .debug_rnglists
+                0x00000000000018a1       0x5c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+
+.debug_line     0x0000000000000000    0x17c43
+ .debug_line    0x0000000000000000     0x134d ${package_root}\build\out\boot\fsbl\image_mover.o
+ .debug_line    0x000000000000134d     0x15a3 ${package_root}\build\out\boot\fsbl\main.o
+ .debug_line    0x00000000000028f0      0xa1f ${package_root}\build\out\boot\fsbl\md5.o
+ .debug_line    0x000000000000330f       0x78 ${package_root}\build\out\boot\fsbl\nand.o
+ .debug_line    0x0000000000003387      0x2d9 ${package_root}\build\out\boot\fsbl\nor.o
+ .debug_line    0x0000000000003660      0xfb5 ${package_root}\build\out\boot\fsbl\pcap.o
+ .debug_line    0x0000000000004615      0xae7 ${package_root}\build\out\boot\fsbl\qspi.o
+ .debug_line    0x00000000000050fc        0x0 ${package_root}\build\out\boot\fsbl\rsa.o
+ .debug_line    0x00000000000050fc      0x32f ${package_root}\build\out\boot\fsbl\sd.o
+ .debug_line    0x000000000000542b      0x487 ${package_root}\build\out\boot\fsbl\ps7_init.o
+ .debug_line    0x00000000000058b2      0x318 ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+ .debug_line    0x0000000000005bca       0x5b ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+ .debug_line    0x0000000000005c25     0x44f8 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ .debug_line    0x000000000000a11d      0x5d8 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+ .debug_line    0x000000000000a6f5      0x142 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+ .debug_line    0x000000000000a837       0x79 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+ .debug_line    0x000000000000a8b0     0x1592 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ .debug_line    0x000000000000be42      0x7be ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ .debug_line    0x000000000000c600      0x162 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+ .debug_line    0x000000000000c762       0x61 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+ .debug_line    0x000000000000c7c3      0x191 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+ .debug_line    0x000000000000c954     0x1973 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+ .debug_line    0x000000000000e2c7      0x22e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+ .debug_line    0x000000000000e4f5      0x835 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ .debug_line    0x000000000000ed2a      0x149 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+ .debug_line    0x000000000000ee73     0x1e51 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ .debug_line    0x0000000000010cc4      0x7dc ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .debug_line    0x00000000000114a0      0x162 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+ .debug_line    0x0000000000011602      0x875 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .debug_line    0x0000000000011e77     0x1586 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+ .debug_line    0x00000000000133fd     0x18db ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+ .debug_line    0x0000000000014cd8      0xf75 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ .debug_line    0x0000000000015c4d      0x15e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+ .debug_line    0x0000000000015dab      0x25e ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+ .debug_line    0x0000000000016009       0x53 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(cpu_init.o)
+ .debug_line    0x000000000001605c      0x153 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+ .debug_line    0x00000000000161af      0x163 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+ .debug_line    0x0000000000016312      0x165 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+ .debug_line    0x0000000000016477      0x136 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_g.o)
+ .debug_line    0x00000000000165ad     0x1037 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+ .debug_line    0x00000000000175e4      0x136 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_g.o)
+ .debug_line    0x000000000001771a      0x132 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_g.o)
+ .debug_line    0x000000000001784c      0x32d ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+ .debug_line    0x0000000000017b79       0xca ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+
+.debug_str      0x0000000000000000     0x3b2d
+ .debug_str     0x0000000000000000      0x6db ${package_root}\build\out\boot\fsbl\image_mover.o
+                                        0x7f9 (size before relaxing)
+ .debug_str     0x00000000000006db      0x378 ${package_root}\build\out\boot\fsbl\main.o
+                                        0x67d (size before relaxing)
+ .debug_str     0x0000000000000a53      0x11d ${package_root}\build\out\boot\fsbl\md5.o
+                                        0x27e (size before relaxing)
+ .debug_str     0x0000000000000b70       0x58 ${package_root}\build\out\boot\fsbl\nand.o
+                                        0x17d (size before relaxing)
+ .debug_str     0x0000000000000bc8       0x99 ${package_root}\build\out\boot\fsbl\nor.o
+                                        0x255 (size before relaxing)
+ .debug_str     0x0000000000000c61      0x22e ${package_root}\build\out\boot\fsbl\pcap.o
+                                        0x4e9 (size before relaxing)
+ .debug_str     0x0000000000000e8f      0x243 ${package_root}\build\out\boot\fsbl\qspi.o
+                                        0x4e4 (size before relaxing)
+ .debug_str     0x00000000000010d2       0x57 ${package_root}\build\out\boot\fsbl\rsa.o
+                                         0xe7 (size before relaxing)
+ .debug_str     0x0000000000001129      0x29f ${package_root}\build\out\boot\fsbl\sd.o
+                                        0x485 (size before relaxing)
+ .debug_str     0x00000000000013c8      0x374 ${package_root}\build\out\boot\fsbl\ps7_init.o
+                                        0x4f1 (size before relaxing)
+ .debug_str     0x000000000000173c       0x43 ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+                                        0x222 (size before relaxing)
+ .debug_str     0x000000000000177f       0x5f ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+                                         0x8a (size before relaxing)
+ .debug_str     0x00000000000017de      0x54b ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+                                        0x8ac (size before relaxing)
+ .debug_str     0x0000000000001d29      0x2e1 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+                                        0x645 (size before relaxing)
+ .debug_str     0x000000000000200a       0x88 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+                                         0x96 (size before relaxing)
+ .debug_str     0x0000000000002092       0x94 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+                                        0x254 (size before relaxing)
+ .debug_str     0x0000000000002126      0x26f ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+                                        0x532 (size before relaxing)
+ .debug_str     0x0000000000002395       0x52 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+                                        0x36e (size before relaxing)
+ .debug_str     0x00000000000023e7       0x29 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+                                        0x223 (size before relaxing)
+ .debug_str     0x0000000000002410        0xb ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+                                         0x9a (size before relaxing)
+ .debug_str     0x000000000000241b       0x7f ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+                                        0x272 (size before relaxing)
+ .debug_str     0x000000000000249a      0x3eb ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+                                        0x674 (size before relaxing)
+ .debug_str     0x0000000000002885       0xfc ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+                                        0x332 (size before relaxing)
+ .debug_str     0x0000000000002981      0x118 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+                                        0x332 (size before relaxing)
+ .debug_str     0x0000000000002a99       0x25 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+                                        0x1fb (size before relaxing)
+ .debug_str     0x0000000000002abe      0x215 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+                                        0x583 (size before relaxing)
+ .debug_str     0x0000000000002cd3       0xbb ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+                                        0x466 (size before relaxing)
+ .debug_str     0x0000000000002d8e       0x24 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+                                        0x25b (size before relaxing)
+ .debug_str     0x0000000000002db2      0x1de ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+                                        0x6e5 (size before relaxing)
+ .debug_str     0x0000000000002f90      0x505 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+                                        0xb6e (size before relaxing)
+ .debug_str     0x0000000000003495       0xec ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+                                        0xb40 (size before relaxing)
+ .debug_str     0x0000000000003581       0xa2 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+                                        0x7ef (size before relaxing)
+ .debug_str     0x0000000000003623       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+                                        0x31a (size before relaxing)
+ .debug_str     0x0000000000003643       0x2a ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+                                        0x24a (size before relaxing)
+ .debug_str     0x000000000000366d        0xb ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(cpu_init.o)
+                                         0x9a (size before relaxing)
+ .debug_str     0x0000000000003678       0x1b ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+                                        0x1e7 (size before relaxing)
+ .debug_str     0x0000000000003693       0x1b ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+                                        0x1e9 (size before relaxing)
+ .debug_str     0x0000000000003693        0x9 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+                                        0x1ec (size before relaxing)
+ .debug_str     0x000000000000369c        0xc ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_g.o)
+                                        0x1ff (size before relaxing)
+ .debug_str     0x00000000000036a8      0x3a1 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+                                        0x6f4 (size before relaxing)
+ .debug_str     0x0000000000003a49        0xc ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_g.o)
+                                        0x235 (size before relaxing)
+ .debug_str     0x0000000000003a55        0xa ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_g.o)
+                                        0x2f6 (size before relaxing)
+ .debug_str     0x0000000000003a5f       0xb9 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+                                        0x264 (size before relaxing)
+ .debug_str     0x0000000000003b18       0x15 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+                                        0x1ba (size before relaxing)
+
+.debug_frame    0x0000000000000000     0x2720
+ .debug_frame   0x0000000000000000      0x208 ${package_root}\build\out\boot\fsbl\image_mover.o
+ .debug_frame   0x0000000000000208      0x234 ${package_root}\build\out\boot\fsbl\main.o
+ .debug_frame   0x000000000000043c       0xf4 ${package_root}\build\out\boot\fsbl\md5.o
+ .debug_frame   0x0000000000000530       0x30 ${package_root}\build\out\boot\fsbl\nor.o
+ .debug_frame   0x0000000000000560      0x108 ${package_root}\build\out\boot\fsbl\pcap.o
+ .debug_frame   0x0000000000000668       0xd0 ${package_root}\build\out\boot\fsbl\qspi.o
+ .debug_frame   0x0000000000000738       0x64 ${package_root}\build\out\boot\fsbl\sd.o
+ .debug_frame   0x000000000000079c      0x120 ${package_root}\build\out\boot\fsbl\ps7_init.o
+ .debug_frame   0x00000000000008bc       0x58 ${package_root}\build\out\boot\fsbl\fsbl_hooks.o
+ .debug_frame   0x0000000000000914      0x550 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(ff.o)
+ .debug_frame   0x0000000000000e64       0xc0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxilffs.a(diskio.o)
+ .debug_frame   0x0000000000000f24       0x70 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(vectors.o)
+ .debug_frame   0x0000000000000f94      0x1e4 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg.o)
+ .debug_frame   0x0000000000001178       0xc0 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_intr.o)
+ .debug_frame   0x0000000000001238       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xdevcfg_sinit.o)
+ .debug_frame   0x0000000000001258       0x4c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_assert.o)
+ .debug_frame   0x00000000000012a4      0x2dc ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_cache.o)
+ .debug_frame   0x0000000000001580       0x90 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_exception.o)
+ .debug_frame   0x0000000000001610       0xb4 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_printf.o)
+ .debug_frame   0x00000000000016c4       0x30 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_sleepcommon.o)
+ .debug_frame   0x00000000000016f4      0x15c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips.o)
+ .debug_frame   0x0000000000001850       0xa4 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_options.o)
+ .debug_frame   0x00000000000018f4       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xqspips_sinit.o)
+ .debug_frame   0x0000000000001914       0xcc ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps.o)
+ .debug_frame   0x00000000000019e0      0x37c ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_card.o)
+ .debug_frame   0x0000000000001d5c      0x340 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_host.o)
+ .debug_frame   0x000000000000209c      0x1d4 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_options.o)
+ .debug_frame   0x0000000000002270       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xsdps_sinit.o)
+ .debug_frame   0x0000000000002290       0x30 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xtime_l.o)
+ .debug_frame   0x00000000000022c0       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(outbyte.o)
+ .debug_frame   0x00000000000022e0       0x34 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(sleep.o)
+ .debug_frame   0x0000000000002314       0x34 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(usleep.o)
+ .debug_frame   0x0000000000002348      0x378 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil_util.o)
+ .debug_frame   0x00000000000026c0       0x40 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xuartps_hw.o)
+ .debug_frame   0x0000000000002700       0x20 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(_exit.o)
+
+.debug_line_str
+                0x0000000000000000      0x11a
+ .debug_line_str
+                0x0000000000000000       0x7c ${package_root}\build\out\boot\fsbl\fsbl_handoff.o
+ .debug_line_str
+                0x000000000000007c       0x88 ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(boot.o)
+ .debug_line_str
+                0x0000000000000104        0xb ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(xil-crt0.o)
+                                         0x8c (size before relaxing)
+ .debug_line_str
+                0x000000000000010f        0xb ${package_root}\build\out\work\application\build\fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\lib\libxil.a(cpu_init.o)
+                                         0x8c (size before relaxing)

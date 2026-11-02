@@ -1,0 +1,95 @@
+{
+  "status": "pass",
+  "verified_at": "2026-11-02T17:29:20.343609+00:00",
+  "scope": "Unpack candidate ZIP into a new directory and run complete offline suite with newly created CPython venv and pinned dependencies. No files copied from original developer trees.",
+  "candidate_archive_sha256": "05ccaf76697f83f9d4c3b3e9d388bc7ef290d26200dfb746fd3c24a0e7c749be",
+  "candidate_file_count": 2650,
+  "source_result_sha256": "05b17536f1508ad4465a5e20788799eb013bdeb1d98b1a9bb0d86f5301899230",
+  "archived_result": "sim/results/relocation_checks_20261103.json",
+  "archived_result_sha256": "05b17536f1508ad4465a5e20788799eb013bdeb1d98b1a9bb0d86f5301899230",
+  "python_version": "3.12.5",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "pytest": "9.2.0"
+  },
+  "native_compiler_version": "gcc.exe (x86_64-posix-seh-rev1, Built by MinGW-Builds project) 13.1.0",
+  "checks": [
+    {
+      "name": "package",
+      "status": "pass"
+    },
+    {
+      "name": "boot",
+      "status": "pass"
+    },
+    {
+      "name": "native_sd",
+      "status": "pass",
+      "cases": 37
+    },
+    {
+      "name": "comparator_selftest",
+      "status": "pass",
+      "cases": 8
+    },
+    {
+      "name": "pc_pytest",
+      "status": "pass",
+      "junit_counts": {
+        "tests": 381,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "name": "board_tools",
+      "status": "pass",
+      "cases": 25
+    }
+  ],
+  "tested_input_count": 113,
+  "tested_inputs_match_current_package": true,
+  "board_accessed": false,
+  "physical_sd_card_accessed": false,
+  "logs": [
+    {
+      "source": "build/out/checks/package.txt",
+      "source_sha256": "3711487261877cd056306bc3c62b81f605063a4a7c62ef90a24dbd00bfb6b611",
+      "archive": "sim/results/relocation_package_20261103.txt",
+      "archive_sha256": "3711487261877cd056306bc3c62b81f605063a4a7c62ef90a24dbd00bfb6b611"
+    },
+    {
+      "source": "build/out/checks/boot.txt",
+      "source_sha256": "1816996508ce587810a93c4f09f7687d97e7dedf924457e577c6c6694578fc53",
+      "archive": "sim/results/relocation_boot_20261103.txt",
+      "archive_sha256": "1816996508ce587810a93c4f09f7687d97e7dedf924457e577c6c6694578fc53"
+    },
+    {
+      "source": "build/out/checks/native_sd.txt",
+      "source_sha256": "5776134a838f9ccc340cf4f9e3dd5689aa9e14da8a772ccf9a2dfe42c7680158",
+      "archive": "sim/results/relocation_native_sd_20261103.txt",
+      "archive_sha256": "5776134a838f9ccc340cf4f9e3dd5689aa9e14da8a772ccf9a2dfe42c7680158"
+    },
+    {
+      "source": "build/out/checks/comparator_selftest.txt",
+      "source_sha256": "b8bd88d3c6aeec16810a381fa32b41d615655d14847290ea407c6bcd42aa8d4b",
+      "archive": "sim/results/relocation_comparator_selftest_20261103.txt",
+      "archive_sha256": "b8bd88d3c6aeec16810a381fa32b41d615655d14847290ea407c6bcd42aa8d4b"
+    },
+    {
+      "source": "build/out/checks/pc_pytest.txt",
+      "source_sha256": "6e6671a278cafa8b842d3ca21eca3a993abca3aa97e1450a77f88d52d08c2e5b",
+      "archive": "sim/results/relocation_pc_pytest_20261103.txt",
+      "archive_sha256": "6e6671a278cafa8b842d3ca21eca3a993abca3aa97e1450a77f88d52d08c2e5b"
+    },
+    {
+      "source": "build/out/checks/board_tools.txt",
+      "source_sha256": "a68bf46839fb6cbe2f0e3d438a98342a4c851db80caaf044913d47c16e31ee08",
+      "archive": "sim/results/relocation_board_tools_20261103.txt",
+      "archive_sha256": "a68bf46839fb6cbe2f0e3d438a98342a4c851db80caaf044913d47c16e31ee08"
+    }
+  ],
+  "finalization_note": "The final delivery adds this receipt and final PL archival evidence. Tested code and fixtures are hash-identical; package inventory is verified again after updating the final manifest. A candidate archive hash does not identify the final delivery ZIP."
+}

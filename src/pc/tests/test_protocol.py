@@ -8,15 +8,27 @@ from av_monitor.protocol import PacketError, PacketType, build_datagram, parse_d
 
 
 def test_sdk_golden_vectors():
-    vectors = pathlib.Path(__file__).parents[2] / "sdk" / "tests" / "vectors"
+    vectors = pathlib.Path(__file__).resolve().parents[3] / "sim" / "fixtures" / "protocol"
+    # These fixed packets came from the original SDK fixture set. Do not build
+    # them with build_datagram: that would only compare this implementation to itself.
+    rejected = (
+        "bad_fragment_count.bin", "bad_fragment_index.bin", "bad_magic.bin",
+        "bad_payload_crc.bin", "bad_version.bin", "truncated.bin",
+        "bad_fragment_count_crc_valid.bin", "bad_fragment_index_crc_valid.bin",
+    )
+    assert {p.name for p in vectors.glob("*.bin")} == {"valid_video.bin", *rejected}
     packet = parse_datagram((vectors / "valid_video.bin").read_bytes())
     assert packet.header.packet_type == PacketType.VIDEO
+    assert (packet.header.boot_id, packet.header.sequence, packet.header.timestamp_us) == (
+        0x10203040, 17, 1234567,
+    )
     assert packet.payload == b"rgb565"
-    for path in vectors.glob("bad_*.bin"):
+    for name in rejected:
         with pytest.raises(PacketError):
-            parse_datagram(path.read_bytes())
-    with pytest.raises(PacketError):
-        parse_datagram((vectors / "truncated.bin").read_bytes())
+            parse_datagram((vectors / name).read_bytes())
+    for name in ("bad_fragment_count_crc_valid.bin", "bad_fragment_index_crc_valid.bin"):
+        with pytest.raises(PacketError, match="bad fragment metadata"):
+            parse_datagram((vectors / name).read_bytes())
 
 
 def test_round_trip_all_packet_types():

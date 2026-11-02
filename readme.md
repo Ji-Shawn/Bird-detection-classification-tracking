@@ -1,7 +1,9 @@
 # AX7020 鸟类识别与音视融合云台
 本仓库以 SSD95 发布版本（历史编号 M51）为基线，包含四麦听声定位、SSD 鸟目标检测、NCC 视觉追踪、鸟种分类、HDMI 显示、网络上位机在线调参，以及 SD 卡按鸟种和日期自动保存照片。
 
-本次仅整理交付结构和便携入口，原 M51 工作工程未修改。相机使用 M47/M48 原转接板引脚，不使用 M111/M49 的新转接板引脚。
+**第一次接触本项目，请从[从零复现文档](reproduce.md)开始。** 它包含软件安装、可复制命令、每步成功判据、硬件匹配、写卡、源码构建和排错。
+
+本轮补齐复现入口、测试数据、构建修复和可追溯证据，原 M51 工作工程未修改。相机使用 M47/M48 原转接板引脚，不使用 M111/M49 的新转接板引脚。开发过程与验证边界见[大模型协作报告](report/llm_collaboration.md)，复用流程见[技能包](skill/readme.md)。
 ## 目录说明
 
 首次使用建议按“项目说明 → 对应目录说明 → 操作脚本”的顺序阅读。七个顶层目录均有独立导览：[源码](src/readme.md)、[仿真验证](sim/readme.md)、[构建](build/readme.md)、[上板运行](board/readme.md)、[模型数据](data/readme.md)、[技能手册](skill/readme.md)、[设计与验证报告](report/readme.md)。
@@ -11,6 +13,7 @@
 ```text
 github_pack/
 ├── readme.md                  # 从这里开始：项目简介与复现步骤
+├── reproduce.md               # 零基础逐步操作、成功判据和排错
 ├── src/                       # 设计源码（详见 src/readme.md）
 │   ├── pc/                    # 电脑端：监控界面、预览与在线调参
 │   ├── application/           # 板端应用：追踪、对焦、显示、存图及功能生成器
@@ -33,21 +36,22 @@ github_pack/
 
 | 目标 | 入口 |
 | --- | --- |
+| 完全小白，从安装到运行 | [reproduce.md](reproduce.md) |
 | 先运行现成固件、连接板卡 | [board/readme.md](board/readme.md) |
 | 修改电脑端监控界面 | `src/pc/av_monitor/` |
 | 修改追踪、对焦、显示或 SD 存图 | `src/application/software/` 及 `src/application/tools/` |
 | 查看双核分工、网络与融合服务 | `src/services/`，基础代码在 `src/platform/` |
 | 修改 FPGA 硬件或引脚约束 | [src/pl/readme.md](src/pl/readme.md) |
 | 从源码重新生成固件 | 本文“从源码重建 ARM 与 BOOT”，统一从 `build/` 运行 |
-| 先做离线验证 | `python -B build/verify_package.py`、`python -B sim/run_tests.py` |
-| 理解整体设计与开发经验 | `report/design.md`、[skill/readme.md](skill/readme.md) |
+| 先做离线验证 | [sim/readme.md](sim/readme.md)、`build/run_checks.py` |
+| 理解整体设计与开发经验 | `report/design.md`、[协作报告](report/llm_collaboration.md)、[skill/readme.md](skill/readme.md) |
 
 | 目录 | 内容 |
 | --- | --- |
 | `src/` | ARM 双核软件、上位机、BSP、持久化 overlay，以及 `pl/` 中实际 RTL/ROM/约束 |
-| `sim/` | SSD95 存图门槛及真实 FatFs 稀疏扇区仿真测试，不访问物理 SD 卡 |
+| `sim/` | 存图/FatFs 仿真、协议夹具、推理数值比较、离线验证结果，不访问物理 SD 卡 |
 | `build/` | ARM、BOOT、PL 构建脚本、原编译输入摘要和实现报告；生成内容进入 `build/out/` |
-| `board/` | 当前配套固件、SD 日期模板、下载及连接工具 |
+| `board/` | 当前配套固件、SD 日期模板、下载及连接工具、标明版本的历史实测证据 |
 | `data/models/` | 当前三模型的板端运行权重、量化表、地址和 SHA256 清单；含少量原参考样本 |
 | `skill/` | 项目 Zynq 开发与排障手册 |
 | `report/` | 设计说明、协作摘要、原版验证证据、来源对照和本包校验清单 |
@@ -70,12 +74,12 @@ github_pack/
 
 ## 先校验，再运行
 
-建议把工程解压到短的英文路径。Python 3.10 或更新版本，标准 Python 安装应包含 Tk。首次安装上位机依赖：
+建议把工程解压到短的英文路径。下面是熟悉 Python 的读者使用的简明入口；新手按[复现第 3～4 节](reproduce.md)建立 Python 3.12 虚拟环境并配置原生 GCC。项目代码要求 Python 3.10+，本次实际环境为 Python 3.12.5、GCC 8.1/13.1。
 
 ```powershell
-python -m pip install -r src/pc/requirements.txt
+python -m pip install -r src/pc/requirements_reproduce.txt
 python -B build/verify_package.py
-python -B sim/run_tests.py
+python -B build/run_checks.py
 ```
 
 测试需要本机原生 GCC/Clang 的 GCC 兼容入口；若未在 PATH 中，设置 `HOST_CC` 为其完整路径。它不是 ARM 交叉编译器。
@@ -96,12 +100,12 @@ python -B board/tools/launch.py --help
 
 ## 从源码重建 ARM 与 BOOT
 
-已发布版本使用 Vivado 2023.2、ARM GNU 6.2.1（Xilinx SDK 2017.4）。保留 BSP 源码和对应静态库；ARM 构建链接已配套 BSP 库，不会隐式重建 BSP。工具链和 Vivado 本身不随包分发。
+已发布版本使用 Vivado 2023.2、ARM GNU 6.2.1（Xilinx SDK 2017.4）。2026-11-03 另用 Vitis 2023.2 的 ARM GCC 12.2.0 完整重建双核与 FSBL/BOOT，见[构建回执](build/receipts/arm_rebuild_20261103.json)。保留 BSP 源码和对应静态库；ARM 构建链接已配套 BSP 库，不会隐式重建 BSP。工具链和 Vivado 本身不随包分发。
 
 按本机安装位置设置变量，示例中的路径需要替换：
 
 ```powershell
-$env:ARM_GNU_BIN = 'c:/xilinx/sdk/2017.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin'
+$env:ARM_GNU_BIN = 'c:/xilinx/vitis/2023.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin'
 $env:VIVADO_BIN = 'c:/xilinx/vivado/2023.2/bin'
 $env:XILINX_SPEC = 'c:/xilinx/vivado/2023.2/data/embeddedsw/scripts/specs/arm/Xilinx.spec'
 python -B build/build_firmware.py --core both
@@ -119,18 +123,22 @@ python -B build/build_boot.py --rebuilt
 PL 正式重建入口使用当前实际结构 HDL、模块边界源码和精确 IP 配置，使用 Vivado 2023.2 生成官方 IP：
 
 ```powershell
-vivado -mode batch -source build/pl/create_project.tcl
-vivado -mode batch -source build/pl/build_pl.tcl
+New-Item -ItemType Directory -Force -Path build/out | Out-Null
+& "$env:VIVADO_BIN\vivado.bat" -mode batch -source build/pl/build_pl.tcl -log build/out/pl_build.log -journal build/out/pl_build.jou
 ```
 
-旧 BD 导出保留为连线参考：其中一处 AXI 协议元数据不能通过重新验证，因此不将该 BD 当作正式构建入口，也未修改协议参数来绕过检查。实际验证范围见 `build/pl/readme.md` 和 `report/pl_package.json`。本次没有重新全量综合、布局布线；重新实现后的布局、时序和 bitstream 字节可能不同，必须检查新的实现报告并另行上板验证。
+旧 BD 导出保留为连线参考：其中一处 AXI 协议元数据不能通过重新验证，因此不将该 BD 当作正式构建入口，也未修改协议参数来绕过检查。正式入口从真实结构源码重新生成 IP 并实现，已补入 Explore 策略。10 月 31 日实际完整构建的默认策略失败、Explore 通过时序，两份结果均保留在[构建证据](build/reports/rebuild_20261031/readme.md)。CDC、I/O 覆盖及普通告警仍需审查；重新实现后必须检查新的报告并另行上板验证。
+
+2026-11-03 本轮完整 PL 构建已产生新 bitstream，WNS=+0.062 ns、WHS=+0.012 ns，详见[本轮综合与实现报告](build/reports/rebuild_20261103/readme.md)。已保留告警与审查结论，没有将时序通过写成整机签核。
 
 ## 验证范围与发布
 
-原 SSD95 版本已通过 ARM 编译、37 项存图门槛测试（含 5 项实际生产者至 FatFs 的集成用例）及离线配套校验。原始导出的验证记录见 `report/package_validation.json`；2026-10-30 功能目录整理后的验证见 `report/directory_reorganization.json`，包括包校验、37 项存图测试、25 项上板工具离线测试、双核源码生成和构建路径检查。本次目录和说明整理没有重新运行完整 ARM 编译或 FPGA 综合实现，也没有连接板卡、下载或写入 SD 卡；这些离线结果不代表模型准确率、机械响应或 SD 冷启动实测。
+本轮运行存图 37 项、上位机 377 项和 4 个子测试、上板工具 25 项、推理比较器 8 项；存图测试同时在原生 GCC 8.1 与 13.1 通过。最新检查状态、范围、输入哈希和原日志见[离线回执](sim/results/offline_checks_20261103.json)。完整 ARM/BOOT 重建也已完成，8 个分区与 388 项运行模型资产配对校验通过。上述结果不代表模型准确率、机械响应或 SD 冷启动实测。
+
+真实历史模型板测已归档在[board/evidence](board/evidence/readme.md)，包含失败及逐层误差。当前 SSD95 集成固件的实测日志尚待提供并核对；未把历史实验、新编译产物和已发布固件混写成同一次验收。本轮未连接板卡或写物理 SD 卡。原始导出和目录整理报告仍保留原日期与验证范围。
 
 原始封存清单的摘要只用于追溯；本包使用独立的相对路径清单 `report/package_manifest.json` 校验，不依赖开发机历史目录或旧版本工程。导出时清除了重复备份、旧固件、对象文件、缓存、抓拍数据和运行日志。
 
-上传 GitHub 时，将本目录内容放入仓库即可。无需上传外层 ZIP，也不要提交 `build/out/`、虚拟环境和自己运行产生的照片或日志。`.gitignore` 已排除这些目录。`.gitattributes` 禁用自动换行转换，使跨机器克隆后的校验值保持一致。当前没有超过 50 MiB 的单文件；无需为了本交付包另加大文件存储配置。
+上传 GitHub 时使用源文件与经审阅的证据；交付 ZIP 使用 `python -B build/export_package.py` 按清单导出，详见[复现第 11 节](reproduce.md)。不要把含缓存的整个工作目录直接压缩。`build/out/`、虚拟环境和运行抓拍不属于提交材料；`.gitattributes` 禁用自动换行转换，使跨机器克隆后的校验值保持一致。当前交付文件均小于 50 MiB。
 
 第三方许可和当前授权信息见 `report/third_party_notices.md`。本包没有擅自为原项目、模型或训练数据授予新的开源许可证。

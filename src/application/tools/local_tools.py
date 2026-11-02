@@ -14,6 +14,17 @@ def select_dir(variable,executables):
 
 def vivado_bin():return select_dir('VIVADO_BIN',['vivado.bat','vivado'])
 def arm_bin():return select_dir('ARM_GNU_BIN',['arm-none-eabi-gcc.exe','arm-none-eabi-gcc'])
+
+def executable(directory, name):
+    """Resolve an installed executable without assuming a Windows suffix."""
+    suffixes = ('.exe', '.bat', '') if os.name == 'nt' else ('',)
+    for suffix in suffixes:
+        path = Path(directory) / (name + suffix)
+        if path.is_file():return path
+    raise FileNotFoundError('Missing tool '+name+' in '+str(directory))
+
+def arm_tool(name='gcc'):return executable(arm_bin(), 'arm-none-eabi-'+name)
+def vivado_tool(name):return executable(vivado_bin(), name)
 def debug_tool():
     if os.environ.get('XSCT'):return os.environ['XSCT']
     for name in ('xsct','xsdb','xsct.bat','xsdb.bat'):

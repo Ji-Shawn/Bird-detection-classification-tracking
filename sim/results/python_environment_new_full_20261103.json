@@ -1,0 +1,20 @@
+{
+  "python": "${reproduction_venv}/Scripts/python.exe",
+  "prefix": "${reproduction_venv}",
+  "base_prefix": "${python_install}",
+  "version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "pytest": "9.2.0",
+    "colorama": "0.4.6",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0"
+  },
+  "inspection_phase": "After suite completion, during evidence archive; this is not a pre-run snapshot",
+  "original_stdout_sha256": "f14d921e167a7273f020f96e1054db22cbb654e2e83a06e912aaf52ba746a7c9",
+  "requirements": "src/pc/requirements_reproduce.txt",
+  "requirements_sha256": "73348bff58c7396df1e5687ed0ba3824c0bff69d8929678ae80b9e4afa97e300"
+}

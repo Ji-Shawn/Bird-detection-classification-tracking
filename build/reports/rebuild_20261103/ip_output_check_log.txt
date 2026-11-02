@@ -1,0 +1,480 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Nov  3 01:16:17 2026
+# Process ID: 48900
+# Current directory: ${package_root}
+# Command line: vivado.exe -mode batch -source ${package_root}/build/out/check_ip_output.tcl -log ${package_root}/build/out/ip_output_check.log -journal ${package_root}/build/out/ip_output_check.jou
+# Log file: ${package_root}/build/out/ip_output_check.log
+# Journal file: ${package_root}/build/out/ip_output_check.jou
+# Running On: ${host}, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 16, Host memory: 34124 MB
+#-----------------------------------------------------------
+Sourcing tcl script '${vivado_install}/scripts/Vivado_init.tcl'
+source ${package_root}/build/out/check_ip_output.tcl
+# set m51_pl_out ${reproduction_root}/pl_create
+# source ${package_root}/build/pl/create_project.tcl
+## set m51_root [file normalize [file join [file dirname [info script]] ../..]]
+## if {![info exists m51_pl_out]} {set m51_pl_out [file join $m51_root build/out/pl]}
+## file mkdir $m51_pl_out
+## cd $m51_pl_out
+## create_project m51_pl [file join $m51_pl_out project] -part xc7z020clg400-2 -force
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 486.539 ; gain = 179.648
+## config_ip_cache -disable_cache
+## set_property ip_repo_paths [list [file join $m51_root src/pl/ip_repo]] [current_project]
+## update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '${package_root}/src/pl/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '${vivado_install}/data/ip'.
+## set_property include_dirs [list [file join $m51_root src/pl/logmel/rom]] [get_filesets sources_1]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/camera_cdc_or_fifo.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/camera_cdc_or_fifo.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/camera_eth_adapter.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/camera_eth_adapter.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/model_video_axis.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/model_video_axis.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_dvp_capture.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_dvp_capture.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_sccb_config.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_sccb_config.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/video_axis_fifo565.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/video_axis_fifo565.sv]]
+## add_files -norecurse [file join $m51_root src/pl/image_enhancement/rtl/auto_vision_top.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/image_enhancement/rtl/auto_vision_top.sv]]
+## add_files -norecurse [file join $m51_root src/pl/image_enhancement/rtl/frame_histogram.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/image_enhancement/rtl/frame_histogram.sv]]
+## add_files -norecurse [file join $m51_root src/pl/image_enhancement/rtl/gamma_rom.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/image_enhancement/rtl/gamma_rom.sv]]
+## add_files -norecurse [file join $m51_root src/pl/image_enhancement/rtl/hist_gain_pipeline.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/image_enhancement/rtl/hist_gain_pipeline.sv]]
+## add_files -norecurse [file join $m51_root src/pl/image_enhancement/rtl/hist_lut_builder.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/image_enhancement/rtl/hist_lut_builder.sv]]
+## add_files -norecurse [file join $m51_root src/pl/image_enhancement/rtl/hist_mode_ctrl.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/image_enhancement/rtl/hist_mode_ctrl.sv]]
+## add_files -norecurse [file join $m51_root src/pl/image_enhancement/rtl/live_frame_stats.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/image_enhancement/rtl/live_frame_stats.sv]]
+## add_files -norecurse [file join $m51_root src/pl/image_enhancement/rtl/unsigned_divider.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/image_enhancement/rtl/unsigned_divider.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/camera_pipeline_top.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/camera_pipeline_top.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/audio_dma_axis.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/audio_dma_axis.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/audio_frontend_top.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/audio_frontend_top.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/av_regs.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/av_regs.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/beam_sum_sat.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/beam_sum_sat.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/beamformer4.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/beamformer4.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/fractional_delay.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/fractional_delay.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/i2s_quad_rx.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/i2s_quad_rx.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/model_mel_axis.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/model_mel_axis.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/servo_pwm_pair.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/servo_pwm_pair.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/audio_control_top.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/audio/audio_control_top.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/async_event_fifo.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/async_event_fifo.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/gamma_event_cdc.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/gamma_event_cdc.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/cdc_snapshot.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/cdc_snapshot.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/av_status_cdc.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/av_status_cdc.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/camera_ctrl_io.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/camera_ctrl_io.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/camera_input_probe.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/control/camera_input_probe.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/model/model_ingress_stub.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/model/model_ingress_stub.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/hardware/dw_core_rtl.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/capture_and_inference/hardware/dw_core_rtl.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/hardware/mac_pool_rtl.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/capture_and_inference/hardware/mac_pool_rtl.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/hardware/pw_core_rtl.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/capture_and_inference/hardware/pw_core_rtl.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/hardware/mnet_engine_rtl.v]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/hardware/mnet_engine_rtl.v]]
+## add_files -norecurse [file join $m51_root src/pl/logmel/rom/config.vh]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/logmel/rom/config.vh]]
+## add_files -norecurse [file join $m51_root src/pl/logmel/rtl/logmel_frame.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/logmel/rtl/logmel_frame.sv]]
+## add_files -norecurse [file join $m51_root src/pl/logmel/rtl/logmel_axis_wrap.v]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/logmel/rtl/logmel_axis_wrap.v]]
+## add_files -norecurse [file join $m51_root src/pl/ssd_preprocess/rtl/ssd_preprocess.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/ssd_preprocess/rtl/ssd_preprocess.sv]]
+## add_files -norecurse [file join $m51_root src/pl/ssd_preprocess/rtl/ssd_axis_wrap.v]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/ssd_preprocess/rtl/ssd_axis_wrap.v]]
+## add_files -norecurse [file join $m51_root src/pl/hdmi/rtl/rgb565_axis.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/hdmi/rtl/rgb565_axis.sv]]
+## add_files -norecurse [file join $m51_root src/pl/hdmi/rtl/hdmi_raster.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/hdmi/rtl/hdmi_raster.sv]]
+## add_files -norecurse [file join $m51_root src/pl/hdmi/rtl/hdmi_status_cdc.v]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/hdmi/rtl/hdmi_status_cdc.v]]
+## add_files -norecurse [file join $m51_root src/pl/on_screen_display/rtl/board_osd.v]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/on_screen_display/rtl/board_osd.v]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_dvp_rx.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/ov5640_dvp_rx.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/rgb_ycbcr.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/rgb_ycbcr.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/luma_stats.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/luma_stats.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/box_mean_stream.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/box_mean_stream.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/multiscale_illum.sv]
+CRITICAL WARNING: [Vivado 12-3645] Please note that adding or importing multiple files, one at a time, can be performance intensive.  Both add_files and import_files commands accept multiple files as input, and passing a collection of multiple files to a single add_files or import_files commands can offer significant performance improvement.
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/multiscale_illum.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/luma_enhance.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/luma_enhance.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/video_enhance_top.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/video_enhance_top.sv]]
+## add_files -norecurse [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/video_frame_framer.sv]
+## set_property file_type {Verilog} [get_files [file join $m51_root src/pl/capture_and_inference/capture/pl/rtl/video/video_frame_framer.sv]]
+## add_files -norecurse [file join $m51_root src/pl/image_enhancement/rtl/histogram_vision_top.sv]
+## set_property file_type {SystemVerilog} [get_files [file join $m51_root src/pl/image_enhancement/rtl/histogram_vision_top.sv]]
+## add_files -norecurse [file join $m51_root src/pl/logmel/rom/hann.hex]
+## add_files -norecurse [file join $m51_root src/pl/logmel/rom/log.hex]
+## add_files -norecurse [file join $m51_root src/pl/logmel/rom/mel_ops.hex]
+## add_files -norecurse [file join $m51_root src/pl/logmel/rom/tw_im.hex]
+## add_files -norecurse [file join $m51_root src/pl/logmel/rom/tw_re.hex]
+## add_files -norecurse [file join $m51_root src/pl/ssd_preprocess/rom/quant0.hex]
+## add_files -norecurse [file join $m51_root src/pl/ssd_preprocess/rom/quant1.hex]
+## add_files -norecurse [file join $m51_root src/pl/ssd_preprocess/rom/quant2.hex]
+## add_files -norecurse [file join $m51_root src/pl/on_screen_display/rtl/font.hex]
+## add_files -fileset constrs_1 -norecurse [file join $m51_root src/pl/capture_and_inference/capture/vivado/constraints/ax7020_av.xdc]
+## add_files -fileset constrs_1 -norecurse [file join $m51_root src/pl/image_enhancement/hardware/logmel_hold.xdc]
+## set_property used_in_synthesis false [get_files [file join $m51_root src/pl/image_enhancement/hardware/logmel_hold.xdc]]
+## set_property processing_order LATE [get_files [file join $m51_root src/pl/image_enhancement/hardware/logmel_hold.xdc]]
+## add_files -fileset constrs_1 -norecurse [file join $m51_root src/pl/image_enhancement/hardware/audio_clock_source.xdc]
+## set_property used_in_synthesis false [get_files [file join $m51_root src/pl/image_enhancement/hardware/audio_clock_source.xdc]]
+## set_property processing_order LATE [get_files [file join $m51_root src/pl/image_enhancement/hardware/audio_clock_source.xdc]]
+## add_files -fileset constrs_1 -norecurse [file join $m51_root src/pl/hdmi/hardware/hdmi.xdc]
+## add_files -fileset constrs_1 -norecurse [file join $m51_root src/pl/hdmi/hardware/hdmi_clock_source.xdc]
+## set_property used_in_synthesis false [get_files [file join $m51_root src/pl/hdmi/hardware/hdmi_clock_source.xdc]]
+## set_property processing_order LATE [get_files [file join $m51_root src/pl/hdmi/hardware/hdmi_clock_source.xdc]]
+## add_files -fileset constrs_1 -norecurse [file join $m51_root src/pl/display_constraints/hardware/osd_cdc.xdc]
+## add_files -fileset constrs_1 -norecurse [file join $m51_root src/pl/display_constraints/hardware/hdmi_clock_source.xdc]
+## set_property used_in_synthesis false [get_files [file join $m51_root src/pl/display_constraints/hardware/hdmi_clock_source.xdc]]
+## set_property processing_order LATE [get_files [file join $m51_root src/pl/display_constraints/hardware/hdmi_clock_source.xdc]]
+## add_files -fileset constrs_1 -norecurse [file join $m51_root src/pl/on_screen_display/hardware/hdmi_clock_source.xdc]
+## set_property used_in_synthesis false [get_files [file join $m51_root src/pl/on_screen_display/hardware/hdmi_clock_source.xdc]]
+## set_property processing_order LATE [get_files [file join $m51_root src/pl/on_screen_display/hardware/hdmi_clock_source.xdc]]
+## add_files -fileset constrs_1 -norecurse [file join $m51_root src/pl/board_constraints/buttons/hardware/board_keys.xdc]
+## set_property used_in_synthesis false [get_files [file join $m51_root src/pl/board_constraints/buttons/hardware/board_keys.xdc]]
+## set_property processing_order LATE [get_files [file join $m51_root src/pl/board_constraints/buttons/hardware/board_keys.xdc]]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_wrapper.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_audio_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_cam_io_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_camera_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_camera_probe_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_gamma_cdc_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_hdmi_osd_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_hdmi_raster_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_hdmi_rgb_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_hdmi_status_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_inference_engine_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_mel_core_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_model_ingress_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_ssd_preprocess_core_0.v]
+## add_files -norecurse [file join $m51_root src/pl/structural/av_system_status_cdc_0.v]
+## set ip_out [file join $m51_pl_out ip]
+## file mkdir $ip_out
+## file mkdir [file join $ip_out av_system_auto_cc_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_auto_cc_0/av_system_auto_cc_0.xci] [file join $ip_out av_system_auto_cc_0 av_system_auto_cc_0.xci]
+## read_ip [file join $ip_out av_system_auto_cc_0 av_system_auto_cc_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_auto_cc_0/av_system_auto_cc_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_auto_cc_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_auto_pc_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_auto_pc_0/av_system_auto_pc_0.xci] [file join $ip_out av_system_auto_pc_0 av_system_auto_pc_0.xci]
+## read_ip [file join $ip_out av_system_auto_pc_0 av_system_auto_pc_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_auto_pc_0/av_system_auto_pc_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_auto_pc_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_auto_pc_1]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_auto_pc_1/av_system_auto_pc_1.xci] [file join $ip_out av_system_auto_pc_1 av_system_auto_pc_1.xci]
+## read_ip [file join $ip_out av_system_auto_pc_1 av_system_auto_pc_1.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_auto_pc_1/av_system_auto_pc_1.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_auto_pc_1'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_auto_pc_2]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_auto_pc_2/av_system_auto_pc_2.xci] [file join $ip_out av_system_auto_pc_2 av_system_auto_pc_2.xci]
+## read_ip [file join $ip_out av_system_auto_pc_2 av_system_auto_pc_2.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_auto_pc_2/av_system_auto_pc_2.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_auto_pc_2'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_auto_pc_3]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_auto_pc_3/av_system_auto_pc_3.xci] [file join $ip_out av_system_auto_pc_3 av_system_auto_pc_3.xci]
+## read_ip [file join $ip_out av_system_auto_pc_3 av_system_auto_pc_3.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_auto_pc_3/av_system_auto_pc_3.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_auto_pc_3'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_auto_pc_4]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_auto_pc_4/av_system_auto_pc_4.xci] [file join $ip_out av_system_auto_pc_4 av_system_auto_pc_4.xci]
+## read_ip [file join $ip_out av_system_auto_pc_4 av_system_auto_pc_4.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_auto_pc_4/av_system_auto_pc_4.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_auto_pc_4'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_auto_us_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_auto_us_0/av_system_auto_us_0.xci] [file join $ip_out av_system_auto_us_0 av_system_auto_us_0.xci]
+## read_ip [file join $ip_out av_system_auto_us_0 av_system_auto_us_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_auto_us_0/av_system_auto_us_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_auto_us_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_auto_us_1]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_auto_us_1/av_system_auto_us_1.xci] [file join $ip_out av_system_auto_us_1 av_system_auto_us_1.xci]
+## read_ip [file join $ip_out av_system_auto_us_1 av_system_auto_us_1.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_auto_us_1/av_system_auto_us_1.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_auto_us_1'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_auto_us_2]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_auto_us_2/av_system_auto_us_2.xci] [file join $ip_out av_system_auto_us_2 av_system_auto_us_2.xci]
+## read_ip [file join $ip_out av_system_auto_us_2 av_system_auto_us_2.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_auto_us_2/av_system_auto_us_2.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_auto_us_2'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_auto_us_3]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_auto_us_3/av_system_auto_us_3.xci] [file join $ip_out av_system_auto_us_3 av_system_auto_us_3.xci]
+## read_ip [file join $ip_out av_system_auto_us_3 av_system_auto_us_3.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_auto_us_3/av_system_auto_us_3.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_auto_us_3'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_cam_gpio_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_cam_gpio_0/av_system_cam_gpio_0.xci] [file join $ip_out av_system_cam_gpio_0 av_system_cam_gpio_0.xci]
+## read_ip [file join $ip_out av_system_cam_gpio_0 av_system_cam_gpio_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_cam_gpio_0/av_system_cam_gpio_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_cam_gpio_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_clk_audio_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_clk_audio_0/av_system_clk_audio_0.xci] [file join $ip_out av_system_clk_audio_0 av_system_clk_audio_0.xci]
+## read_ip [file join $ip_out av_system_clk_audio_0 av_system_clk_audio_0.xci]
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_clk_audio_0/av_system_clk_audio_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_clk_audio_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_clk_hdmi_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_clk_hdmi_0/av_system_clk_hdmi_0.xci] [file join $ip_out av_system_clk_hdmi_0 av_system_clk_hdmi_0.xci]
+## read_ip [file join $ip_out av_system_clk_hdmi_0 av_system_clk_hdmi_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_clk_hdmi_0/av_system_clk_hdmi_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_clk_hdmi_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_const_one_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_const_one_0/av_system_const_one_0.xci] [file join $ip_out av_system_const_one_0 av_system_const_one_0.xci]
+## read_ip [file join $ip_out av_system_const_one_0 av_system_const_one_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_const_one_0/av_system_const_one_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_const_one_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_const_zero_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_const_zero_0/av_system_const_zero_0.xci] [file join $ip_out av_system_const_zero_0 av_system_const_zero_0.xci]
+## read_ip [file join $ip_out av_system_const_zero_0 av_system_const_zero_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_const_zero_0/av_system_const_zero_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_const_zero_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_ctrl_cdc_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_ctrl_cdc_0/av_system_ctrl_cdc_0.xci] [file join $ip_out av_system_ctrl_cdc_0 av_system_ctrl_cdc_0.xci]
+## read_ip [file join $ip_out av_system_ctrl_cdc_0 av_system_ctrl_cdc_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_ctrl_cdc_0/av_system_ctrl_cdc_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_ctrl_cdc_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_dma_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_dma_0/av_system_dma_0.xci] [file join $ip_out av_system_dma_0 av_system_dma_0.xci]
+## read_ip [file join $ip_out av_system_dma_0 av_system_dma_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_dma_0/av_system_dma_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_dma_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_dma_proto_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_dma_proto_0/av_system_dma_proto_0.xci] [file join $ip_out av_system_dma_proto_0 av_system_dma_proto_0.xci]
+## read_ip [file join $ip_out av_system_dma_proto_0 av_system_dma_proto_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_dma_proto_0/av_system_dma_proto_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_dma_proto_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_dma_width_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_dma_width_0/av_system_dma_width_0.xci] [file join $ip_out av_system_dma_width_0 av_system_dma_width_0.xci]
+## read_ip [file join $ip_out av_system_dma_width_0 av_system_dma_width_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_dma_width_0/av_system_dma_width_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_dma_width_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_hdmi_encoder_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_hdmi_encoder_0/av_system_hdmi_encoder_0.xci] [file join $ip_out av_system_hdmi_encoder_0 av_system_hdmi_encoder_0.xci]
+## read_ip [file join $ip_out av_system_hdmi_encoder_0 av_system_hdmi_encoder_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_hdmi_encoder_0/av_system_hdmi_encoder_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_hdmi_encoder_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_hdmi_video_out_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_hdmi_video_out_0/av_system_hdmi_video_out_0.xci] [file join $ip_out av_system_hdmi_video_out_0 av_system_hdmi_video_out_0.xci]
+## read_ip [file join $ip_out av_system_hdmi_video_out_0 av_system_hdmi_video_out_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_hdmi_video_out_0/av_system_hdmi_video_out_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_hdmi_video_out_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_infer_dma_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_infer_dma_0/av_system_infer_dma_0.xci] [file join $ip_out av_system_infer_dma_0 av_system_infer_dma_0.xci]
+## read_ip [file join $ip_out av_system_infer_dma_0 av_system_infer_dma_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_infer_dma_0/av_system_infer_dma_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_infer_dma_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_irq_concat_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_irq_concat_0/av_system_irq_concat_0.xci] [file join $ip_out av_system_irq_concat_0 av_system_irq_concat_0.xci]
+## read_ip [file join $ip_out av_system_irq_concat_0 av_system_irq_concat_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_irq_concat_0/av_system_irq_concat_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_irq_concat_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_mel_dma_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_mel_dma_0/av_system_mel_dma_0.xci] [file join $ip_out av_system_mel_dma_0 av_system_mel_dma_0.xci]
+## read_ip [file join $ip_out av_system_mel_dma_0 av_system_mel_dma_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_mel_dma_0/av_system_mel_dma_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_mel_dma_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_pcm_cdc_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_pcm_cdc_0/av_system_pcm_cdc_0.xci] [file join $ip_out av_system_pcm_cdc_0 av_system_pcm_cdc_0.xci]
+## read_ip [file join $ip_out av_system_pcm_cdc_0 av_system_pcm_cdc_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_pcm_cdc_0/av_system_pcm_cdc_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_pcm_cdc_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_ps7_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_ps7_0/av_system_ps7_0.xci] [file join $ip_out av_system_ps7_0 av_system_ps7_0.xci]
+## read_ip [file join $ip_out av_system_ps7_0 av_system_ps7_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_ps7_0/av_system_ps7_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_ps7_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_rst_audio_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_rst_audio_0/av_system_rst_audio_0.xci] [file join $ip_out av_system_rst_audio_0 av_system_rst_audio_0.xci]
+## read_ip [file join $ip_out av_system_rst_audio_0 av_system_rst_audio_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_rst_audio_0/av_system_rst_audio_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_rst_audio_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_rst_fclk_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_rst_fclk_0/av_system_rst_fclk_0.xci] [file join $ip_out av_system_rst_fclk_0 av_system_rst_fclk_0.xci]
+## read_ip [file join $ip_out av_system_rst_fclk_0 av_system_rst_fclk_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_rst_fclk_0/av_system_rst_fclk_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_rst_fclk_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_rst_hdmi_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_rst_hdmi_0/av_system_rst_hdmi_0.xci] [file join $ip_out av_system_rst_hdmi_0 av_system_rst_hdmi_0.xci]
+## read_ip [file join $ip_out av_system_rst_hdmi_0 av_system_rst_hdmi_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_rst_hdmi_0/av_system_rst_hdmi_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_rst_hdmi_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_rst_hdmi_read_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_rst_hdmi_read_0/av_system_rst_hdmi_read_0.xci] [file join $ip_out av_system_rst_hdmi_read_0 av_system_rst_hdmi_read_0.xci]
+## read_ip [file join $ip_out av_system_rst_hdmi_read_0 av_system_rst_hdmi_read_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_rst_hdmi_read_0/av_system_rst_hdmi_read_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_rst_hdmi_read_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_rst_pixel_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_rst_pixel_0/av_system_rst_pixel_0.xci] [file join $ip_out av_system_rst_pixel_0 av_system_rst_pixel_0.xci]
+## read_ip [file join $ip_out av_system_rst_pixel_0 av_system_rst_pixel_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_rst_pixel_0/av_system_rst_pixel_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_rst_pixel_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_ssd_dma_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_ssd_dma_0/av_system_ssd_dma_0.xci] [file join $ip_out av_system_ssd_dma_0 av_system_ssd_dma_0.xci]
+## read_ip [file join $ip_out av_system_ssd_dma_0 av_system_ssd_dma_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_ssd_dma_0/av_system_ssd_dma_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_ssd_dma_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_vdma_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_vdma_0/av_system_vdma_0.xci] [file join $ip_out av_system_vdma_0 av_system_vdma_0.xci]
+## read_ip [file join $ip_out av_system_vdma_0 av_system_vdma_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_vdma_0/av_system_vdma_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_vdma_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_vdma_proto_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_vdma_proto_0/av_system_vdma_proto_0.xci] [file join $ip_out av_system_vdma_proto_0 av_system_vdma_proto_0.xci]
+## read_ip [file join $ip_out av_system_vdma_proto_0 av_system_vdma_proto_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_vdma_proto_0/av_system_vdma_proto_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_vdma_proto_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_video_cdc_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_video_cdc_0/av_system_video_cdc_0.xci] [file join $ip_out av_system_video_cdc_0 av_system_video_cdc_0.xci]
+## read_ip [file join $ip_out av_system_video_cdc_0 av_system_video_cdc_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_video_cdc_0/av_system_video_cdc_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_video_cdc_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_xbar_0]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_xbar_0/av_system_xbar_0.xci] [file join $ip_out av_system_xbar_0 av_system_xbar_0.xci]
+## read_ip [file join $ip_out av_system_xbar_0 av_system_xbar_0.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_xbar_0/av_system_xbar_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_xbar_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_xbar_1]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_xbar_1/av_system_xbar_1.xci] [file join $ip_out av_system_xbar_1 av_system_xbar_1.xci]
+## read_ip [file join $ip_out av_system_xbar_1 av_system_xbar_1.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_xbar_1/av_system_xbar_1.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_xbar_1'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_xbar_2]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_xbar_2/av_system_xbar_2.xci] [file join $ip_out av_system_xbar_2 av_system_xbar_2.xci]
+## read_ip [file join $ip_out av_system_xbar_2 av_system_xbar_2.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_xbar_2/av_system_xbar_2.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_xbar_2'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## file mkdir [file join $ip_out av_system_xbar_3]
+## file copy -force [file join $m51_root src/pl/ip_config/av_system_xbar_3/av_system_xbar_3.xci] [file join $ip_out av_system_xbar_3 av_system_xbar_3.xci]
+## read_ip [file join $ip_out av_system_xbar_3 av_system_xbar_3.xci]
+WARNING: [Vivado 12-13650] The IP file '${reproduction_root}/pl_create/ip/av_system_xbar_3/av_system_xbar_3.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '${reproduction_root}/pl_create/ip/av_system_xbar_3'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## set_property generate_synth_checkpoint false [get_files -all *.xci]
+## generate_target all [get_files -all *.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_memory/s01_couplers/auto_cc'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_memory/s01_couplers/auto_cc'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_memory/s01_couplers/auto_cc'...
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'hdmi_memory/s01_couplers/auto_cc'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'hdmi_memory/s01_couplers/auto_cc'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ctrl_ic/s00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ctrl_ic/s00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ctrl_ic/s00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ctrl_ic/s00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'inference_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'inference_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'inference_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'inference_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mel_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mel_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mel_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mel_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'hdmi_memory/m00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_memory/s00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_memory/s00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_memory/s00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'hdmi_memory/s00_couplers/auto_pc'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mel_memory/s00_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mel_memory/s00_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mel_memory/s00_couplers/auto_us'...
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mel_memory/s00_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mel_memory/s00_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mel_memory/s01_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mel_memory/s01_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mel_memory/s01_couplers/auto_us'...
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mel_memory/s01_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mel_memory/s01_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mel_memory/s02_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mel_memory/s02_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mel_memory/s02_couplers/auto_us'...
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mel_memory/s02_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mel_memory/s02_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mel_memory/s03_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mel_memory/s03_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mel_memory/s03_couplers/auto_us'...
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mel_memory/s03_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mel_memory/s03_couplers/auto_us'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'cam_gpio'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cam_gpio'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cam_gpio'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'cam_gpio'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'cam_gpio'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_audio'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_audio'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_audio'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_audio'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_audio'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'const_one'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'const_one'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'const_one'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'const_one'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'const_zero'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'const_zero'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'const_zero'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'const_zero'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ctrl_cdc'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ctrl_cdc'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ctrl_cdc'...
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ctrl_cdc'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ctrl_cdc'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dma'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dma'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dma'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dma'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dma_proto'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dma_proto'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dma_proto'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dma_proto'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dma_width'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dma_width'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dma_width'...
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'dma_width'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dma_width'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_encoder'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_encoder'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_encoder'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_video_out'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_video_out'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_video_out'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'hdmi_video_out'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'hdmi_video_out'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'infer_dma'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'infer_dma'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'infer_dma'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'infer_dma'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'irq_concat'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'irq_concat'...
+INFO: [Common 17-14] Message 'IP_Flow 19-1686' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP1'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP2'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP3'. A default connection has been created.
+generate_target: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1211.117 ; gain = 93.379
+## set_property top av_system_wrapper [get_filesets sources_1]
+## update_compile_order -fileset sources_1
+## puts M51_STRUCTURAL_PROJECT_AND_IP_GENERATION_PASS
+M51_STRUCTURAL_PROJECT_AND_IP_GENERATION_PASS
+# set report [open ${reproduction_root}/pl_create_check.txt w]
+# puts $report "ip_count=[llength [get_ips]]"
+# puts $report "cwd=[pwd]"
+# puts $report "root_summary_exists=[file exists ${package_root}/NA]"
+# close $report
+# puts PL_OUTPUT_DIRECTORY_CHECK_PASS
+PL_OUTPUT_DIRECTORY_CHECK_PASS
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 01:17:18 2026...

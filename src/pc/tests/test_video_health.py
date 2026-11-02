@@ -43,14 +43,19 @@ def fragments(frame_id=1, timestamp=100, boot=7):
 def test_udp_partial_frame_expires_without_any_following_packet():
     port = free_port()
     receiver = ReceiverService('127.0.0.1', {port: PacketType.VIDEO})
-    receiver.video.timeout_ns = 80_000_000
+    # The UDP worker records port_packets before it pushes a packet into the
+    # assembler. Wait for the actual assembly, not the earlier receive counter.
+    # Keep it alive while the test thread is scheduled, then arm the short expiry.
+    receiver.video.timeout_ns = 5_000_000_000
     receiver.start()
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sender:
             sender.sendto(next(fragments()), ('127.0.0.1', port))
-        wait_until(lambda: receiver.snapshots()[1]['port_packets'].get(port) == 1)
+        wait_until(lambda: bool(receiver.snapshots()[1]['video_assembly_progress']))
         progress = receiver.snapshots()[1]['video_assembly_progress']
         assert len(progress) == 1 and progress[0]['received'] == 1
+        with receiver._lock:
+            receiver.video.timeout_ns = 80_000_000
         wait_until(lambda: receiver.snapshots()[1]['video_assembly_loss'] == 1)
         _, telemetry, stats = receiver.snapshots()
         assert telemetry['video_assembly_progress'] == []

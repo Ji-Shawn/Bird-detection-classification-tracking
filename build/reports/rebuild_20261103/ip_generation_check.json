@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "completed_at_local": "2026-11-03T01:17:18+08:00",
+  "scope": "Fresh project and IP generation with current create_project.tcl after the working-directory containment fix; no synthesis, placement, routing or bitstream generation in this follow-up test",
+  "create_project_sha256": "0021f18a5a7028f9119904789273447db5d6a13c8f369ad94bb847916f0cc4cf",
+  "driver": "ip_output_check.tcl",
+  "log": "ip_output_check_log.txt",
+  "raw_result": "ip_output_check.txt",
+  "ip_count": 39,
+  "cwd": "${reproduction_root}/pl_create",
+  "root_summary_exists": false,
+  "completion_marker": "PL_OUTPUT_DIRECTORY_CHECK_PASS",
+  "hardware_accessed": false,
+  "full_implementation_rerun": false
+}

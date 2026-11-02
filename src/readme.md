@@ -18,7 +18,7 @@ src/
 
 | 目录 | 内容 | 常见修改入口 |
 | --- | --- | --- |
-| `pc/` | Python 监控界面、图像预览、在线调参 | `av_monitor/`；依赖在 `requirements.txt` |
+| `pc/` | Python 监控界面、图像预览、在线调参 | `av_monitor/`；本轮固定依赖在 `requirements_reproduce.txt`，开发范围在 `requirements.txt` |
 | `application/` | 当前板端应用及构建时应用的功能修改 | `software/` 为 C 源码；`tools/` 为构建与功能生成器 |
 | `services/core0/` | 主核基础服务：视频 DMA、UDP 网络、融合调度、视觉追踪 | `dma_service.c`、`udp_stream.c`、`fusion_service.c`、`visual_tracker.c` |
 | `services/core1/` | 副核构建入口，组合音频、Log-Mel 与 SD 写入源码 | `build_core1.py` |
@@ -31,7 +31,7 @@ src/
 
 从仓库根目录运行 `python -B build/build_firmware.py --core both`。统一入口把源码复制到 `build/out/work/`，组合基础 C 源码与 `application/tools/` 中的功能生成器，再编译双核固件，输出到 `build/out/firmware/`。
 
-不要只修改 `build/out/` 中生成的 C 文件：重新构建会覆盖它们。Core0 的生成入口是 `application/tools/build_software.py`，Core1 的入口是 `services/core1/build_core1.py`。安装依赖、设置工具链与 BOOT 打包步骤见[项目说明](../readme.md)。
+不要只修改 `build/out/` 中生成的 C 文件：重新构建会覆盖它们。Core0 的生成入口是 `application/tools/build_software.py`，Core1 的入口是 `services/core1/build_core1.py`。安装依赖、设置工具链与 BOOT 打包步骤见[从零复现](../reproduce.md)。本轮双核与 BOOT 实际重建证据见[构建回执](../build/receipts/arm_rebuild_20261103.json)，新固件仍需单独上板。
 
 ## 基础目录里的术语
 

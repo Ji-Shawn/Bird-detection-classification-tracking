@@ -1,0 +1,56 @@
+{
+  "source": "Original project: m12_servo_tracking/capture/sdk/tests/vectors",
+  "copied_date": "2026-11-03",
+  "copy_method": "Byte-for-byte from original fixtures; not regenerated with the decoder under test.",
+  "format": "AVP1 version 1.0, big-endian 40-byte header, CRC32 for header and payload.",
+  "files": [
+    {
+      "path": "bad_fragment_count.bin",
+      "bytes": 46,
+      "sha256": "d57d9b0fc6ee55e70d713e1bd875c302cb329bb4e21dd86d6c39a1ac18a36c33"
+    },
+    {
+      "path": "bad_fragment_index.bin",
+      "bytes": 46,
+      "sha256": "c96b482c3f8d4bc1d504da876a60c3c994cac47de4e0148913ad4cbff6d3dab4"
+    },
+    {
+      "path": "bad_magic.bin",
+      "bytes": 46,
+      "sha256": "bd7a229b1d483679dd2a6ade3d5055fbc0740ae92ea98fbbac598e8d7e59b704"
+    },
+    {
+      "path": "bad_payload_crc.bin",
+      "bytes": 46,
+      "sha256": "072b8e7ee74977eb4c4e7466a98226cdbf1a1f815a71bb5ac30fcc186ef14cff"
+    },
+    {
+      "path": "bad_version.bin",
+      "bytes": 46,
+      "sha256": "8da07976c6ac78165fc08778060af45f1c0f28cce76b20cf7e689bc3fc2cd774"
+    },
+    {
+      "path": "truncated.bin",
+      "bytes": 45,
+      "sha256": "68aae120f56cbb465dd84306d601b33c1665f8c0f8f27075704b430917d6708b"
+    },
+    {
+      "path": "valid_video.bin",
+      "bytes": 46,
+      "sha256": "6c95c09632db5d5189312e5be9c1e5d2651eadeac4ca86cf9fce3966e3fbdbd4"
+    },
+    {
+      "path": "bad_fragment_count_crc_valid.bin",
+      "bytes": 46,
+      "sha256": "c6aafa2f38eefd5f22e82949f2b04b63e6969e6a6f578fcdbf10b5d342d2cc03",
+      "origin": "Derived independently using standard struct/zlib; invalid fragment metadata, valid header CRC."
+    },
+    {
+      "path": "bad_fragment_index_crc_valid.bin",
+      "bytes": 46,
+      "sha256": "2251618e269c2297323ffe43de02675a13a47022301fa520c0ba6422324b8110",
+      "origin": "Derived independently using standard struct/zlib; invalid fragment metadata, valid header CRC."
+    }
+  ],
+  "additional_vectors": "Two extra fixtures exercise current fragment bounds (count 4097 and index 1 with count 1) with valid CRC; original 7 fixtures are preserved unchanged."
+}

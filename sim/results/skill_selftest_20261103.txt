@@ -1,0 +1,21 @@
+test_cdc_unsafe_requires_review (__main__.InspectorTests.test_cdc_unsafe_requires_review) ... ok
+test_cli_status_and_report_hash (__main__.InspectorTests.test_cli_status_and_report_hash) ... ok
+test_explicit_resource_budget_is_enforced (__main__.InspectorTests.test_explicit_resource_budget_is_enforced) ... ok
+test_missing_coverage_is_incomplete (__main__.InspectorTests.test_missing_coverage_is_incomplete) ... ok
+test_missing_report_is_incomplete (__main__.InspectorTests.test_missing_report_is_incomplete) ... ok
+test_mixed_designs_is_incomplete (__main__.InspectorTests.test_mixed_designs_is_incomplete) ... ok
+test_negative_setup_is_failure (__main__.InspectorTests.test_negative_setup_is_failure) ... ok
+test_no_cdc_rows_is_incomplete (__main__.InspectorTests.test_no_cdc_rows_is_incomplete) ... ok
+test_no_checked_endpoints_is_incomplete (__main__.InspectorTests.test_no_checked_endpoints_is_incomplete) ... ok
+test_nonfinite_value_is_incomplete (__main__.InspectorTests.test_nonfinite_value_is_incomplete) ... ok
+test_positive_small_hold_is_not_an_invented_failure (__main__.InspectorTests.test_positive_small_hold_is_not_an_invented_failure) ... ok
+test_positive_wns_does_not_hide_missing_constraints (__main__.InspectorTests.test_positive_wns_does_not_hide_missing_constraints) ... ok
+test_published_reports_are_not_a_clean_signoff (__main__.InspectorTests.test_published_reports_are_not_a_clean_signoff) ... ok
+test_truncated_timing_is_incomplete (__main__.InspectorTests.test_truncated_timing_is_incomplete) ... ok
+test_unknown_cdc_row_after_valid_info_is_incomplete (__main__.InspectorTests.test_unknown_cdc_row_after_valid_info_is_incomplete) ... ok
+test_unparsed_rule_count_is_incomplete (__main__.InspectorTests.test_unparsed_rule_count_is_incomplete) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.792s
+
+OK

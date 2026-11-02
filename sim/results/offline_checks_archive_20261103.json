@@ -1,0 +1,167 @@
+{
+  "archive_date_local": "2026-11-03",
+  "run_utc": "2026-11-02T17:14:46.401483+00:00",
+  "scope": "Archive of actual full offline validation and preservation of the earlier development snapshot; no test results synthesized or changed",
+  "final_summary": {
+    "path": "sim/results/offline_checks_20261103.json",
+    "sha256": "0c667e5342bba3eb4a0547a7e48630eee1fa602541b73b03233a3e3988cf77e8"
+  },
+  "development_summary": {
+    "path": "sim/results/offline_checks_development_20261103.json",
+    "original_summary_sha256": "76d83be123e6c6ce4bfd091951bbc9bdac072d7988735b06e37f8aadd293269f",
+    "archived_sha256": "76d83be123e6c6ce4bfd091951bbc9bdac072d7988735b06e37f8aadd293269f",
+    "status": "pass_partial",
+    "run_utc": "2026-11-02T16:53:06.442335+00:00",
+    "transformation": "none; original snapshot copied byte-for-byte before replacing the main summary"
+  },
+  "development_logs": [
+    {
+      "stage": "boot",
+      "archived": "sim/results/boot_20261103.txt",
+      "archived_sha256": "1816996508ce587810a93c4f09f7687d97e7dedf924457e577c6c6694578fc53",
+      "note": "Existing development-run log retained unchanged; not replaced with full-run output"
+    },
+    {
+      "stage": "native_sd",
+      "archived": "sim/results/native_sd_20261103.txt",
+      "archived_sha256": "5776134a838f9ccc340cf4f9e3dd5689aa9e14da8a772ccf9a2dfe42c7680158",
+      "note": "Existing development-run log retained unchanged; not replaced with full-run output"
+    },
+    {
+      "stage": "comparator_selftest",
+      "archived": "sim/results/comparator_selftest_20261103.txt",
+      "archived_sha256": "b8bd88d3c6aeec16810a381fa32b41d615655d14847290ea407c6bcd42aa8d4b",
+      "note": "Existing development-run log retained unchanged; not replaced with full-run output"
+    },
+    {
+      "stage": "pc_pytest",
+      "archived": "sim/results/pc_pytest_20261103.txt",
+      "archived_sha256": "b8482ac3506ead9eb1477565228ca3d231a4a67922e5f94d33d2ccf5f10f30cd",
+      "note": "Existing development-run log retained unchanged; not replaced with full-run output"
+    },
+    {
+      "stage": "board_tools",
+      "archived": "sim/results/board_tools_20261103.txt",
+      "archived_sha256": "a68bf46839fb6cbe2f0e3d438a98342a4c851db80caaf044913d47c16e31ee08",
+      "note": "Existing development-run log retained unchanged; not replaced with full-run output"
+    }
+  ],
+  "full_run_files": [
+    {
+      "stage": "summary",
+      "source": "build/out/checks/results.json",
+      "source_sha256": "e81697ba10c968daace31857b38c8487f759b94c0025a82c9588e92f93f3d6ca",
+      "source_bytes": 15805,
+      "archived": "sim/results/offline_checks_runner_new_full_20261103.json",
+      "archived_sha256": "e81697ba10c968daace31857b38c8487f759b94c0025a82c9588e92f93f3d6ca",
+      "archived_bytes": 15805,
+      "transformation": "none; byte-for-byte copy"
+    },
+    {
+      "stage": "package",
+      "source": "build/out/checks/package.txt",
+      "source_sha256": "4a1d4e028f6668081702222977362eff6d40ff279c5ac1bd34738919491eb73f",
+      "source_bytes": 55,
+      "archived": "sim/results/package_new_full_20261103.txt",
+      "archived_sha256": "4a1d4e028f6668081702222977362eff6d40ff279c5ac1bd34738919491eb73f",
+      "archived_bytes": 55,
+      "transformation": "none; byte-for-byte copy"
+    },
+    {
+      "stage": "boot",
+      "source": "build/out/checks/boot.txt",
+      "source_sha256": "1816996508ce587810a93c4f09f7687d97e7dedf924457e577c6c6694578fc53",
+      "source_bytes": 84,
+      "archived": "sim/results/boot_new_full_20261103.txt",
+      "archived_sha256": "1816996508ce587810a93c4f09f7687d97e7dedf924457e577c6c6694578fc53",
+      "archived_bytes": 84,
+      "transformation": "none; byte-for-byte copy"
+    },
+    {
+      "stage": "native_sd",
+      "source": "build/out/checks/native_sd.txt",
+      "source_sha256": "5776134a838f9ccc340cf4f9e3dd5689aa9e14da8a772ccf9a2dfe42c7680158",
+      "source_bytes": 121,
+      "archived": "sim/results/native_sd_new_full_20261103.txt",
+      "archived_sha256": "5776134a838f9ccc340cf4f9e3dd5689aa9e14da8a772ccf9a2dfe42c7680158",
+      "archived_bytes": 121,
+      "transformation": "none; byte-for-byte copy"
+    },
+    {
+      "stage": "comparator_selftest",
+      "source": "build/out/checks/comparator_selftest.txt",
+      "source_sha256": "6f4b69226e1da006d05172474adec2d1085ecb4b09fb9f8ec664793bb37db5f4",
+      "source_bytes": 111,
+      "archived": "sim/results/comparator_selftest_new_full_20261103.txt",
+      "archived_sha256": "6f4b69226e1da006d05172474adec2d1085ecb4b09fb9f8ec664793bb37db5f4",
+      "archived_bytes": 111,
+      "transformation": "none; byte-for-byte copy"
+    },
+    {
+      "stage": "pc_pytest",
+      "source": "build/out/checks/pc_pytest.txt",
+      "source_sha256": "daa82c17c74793fc5498c81e093756aecf0582654d5fbceaee8f1fc65c390a93",
+      "source_bytes": 522,
+      "archived": "sim/results/pc_pytest_new_full_20261103.txt",
+      "archived_sha256": "daa82c17c74793fc5498c81e093756aecf0582654d5fbceaee8f1fc65c390a93",
+      "archived_bytes": 522,
+      "transformation": "none; byte-for-byte copy"
+    },
+    {
+      "stage": "board_tools",
+      "source": "build/out/checks/board_tools.txt",
+      "source_sha256": "a68bf46839fb6cbe2f0e3d438a98342a4c851db80caaf044913d47c16e31ee08",
+      "source_bytes": 71,
+      "archived": "sim/results/board_tools_new_full_20261103.txt",
+      "archived_sha256": "a68bf46839fb6cbe2f0e3d438a98342a4c851db80caaf044913d47c16e31ee08",
+      "archived_bytes": 71,
+      "transformation": "none; byte-for-byte copy"
+    },
+    {
+      "stage": "boot",
+      "source": "build/out/boot_verify.json",
+      "source_sha256": "358789909a839739af2fa6b8d3312fb27fd7d17b353b777efd826d0f518ccd00",
+      "source_bytes": 886,
+      "archived": "sim/results/boot_integrity_new_full_20261103.json",
+      "archived_sha256": "358789909a839739af2fa6b8d3312fb27fd7d17b353b777efd826d0f518ccd00",
+      "archived_bytes": 886,
+      "transformation": "none; byte-for-byte copy"
+    },
+    {
+      "stage": "native_sd",
+      "source": "build/out/tests/results.json",
+      "source_sha256": "87555f6995e0206c1a80f6139689fad5f1023124e46f3bd89ab980b0faf30f5b",
+      "source_bytes": 1023,
+      "archived": "sim/results/native_gcc13_new_full_20261103.json",
+      "archived_sha256": "87555f6995e0206c1a80f6139689fad5f1023124e46f3bd89ab980b0faf30f5b",
+      "archived_bytes": 1023,
+      "transformation": "none; byte-for-byte copy"
+    },
+    {
+      "stage": "board_tools",
+      "source": "build/out/board_tools_tests.json",
+      "source_sha256": "ba11652ca54881faeb46c20cd615a4fc412f679fdd5536302490aabe365bb7f5",
+      "source_bytes": 3218,
+      "archived": "sim/results/board_tools_new_full_20261103.json",
+      "archived_sha256": "ba11652ca54881faeb46c20cd615a4fc412f679fdd5536302490aabe365bb7f5",
+      "archived_bytes": 3218,
+      "transformation": "none; byte-for-byte copy"
+    },
+    {
+      "stage": "pc_pytest",
+      "source": "build/out/checks/pc_pytest.xml",
+      "source_sha256": "9c085ed4026bae7a474217a86b2c4ccaf7c15ca97f1560136eb0bea4172bf814",
+      "source_bytes": 50157,
+      "archived": "sim/results/pc_pytest_new_full_20261103.xml",
+      "archived_sha256": "9a3633e1cad60f6bbfe02b219bbb9a0dd4e0abe64e6837d4ecca097c8d5127cd",
+      "archived_bytes": 50149,
+      "transformation": "Replace JUnit hostname with ${host}; all test cases, counts and timings retained"
+    }
+  ],
+  "environment_audit": {
+    "path": "sim/results/python_environment_new_full_20261103.json",
+    "sha256": "98ae59c15e3e85ed20ba9bb01e5520eda6081ba7ea027f541e93190f03499fb2"
+  },
+  "path_redaction": "Runner logs and JSON already use ${package_root}, ${python} and ${host_cc}. Fresh environment identity uses ${reproduction_venv} and ${python_install}; JUnit hostname uses ${host}.",
+  "release_integrity_note": "The package stage passed against the pre-archive manifest. Final release verification must be performed after adding these receipts and updating the manifest; the archive does not claim to have tested a future self-referential manifest."
+}
