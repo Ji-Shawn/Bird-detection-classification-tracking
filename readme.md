@@ -4,9 +4,11 @@
 **第一次接触本项目，请从[从零复现文档](reproduce.md)开始。** 它包含软件安装、可复制命令、每步成功判据、硬件匹配、写卡、源码构建和排错。
 
 本轮补齐复现入口、测试数据、构建修复和可追溯证据，原 M51 工作工程未修改。相机使用 M47/M48 原转接板引脚，不使用 M111/M49 的新转接板引脚。开发过程与验证边界见[大模型协作报告](report/llm_collaboration.md)，复用流程见[技能包](skill/readme.md)。
+
+设计报告的两项重点材料已单列：[协作中的提示词、回答摘要与纠错轨迹](report/llm_collaboration.md)、[技能包提炼过程](report/skill_extraction.md)。评审可按[要求核验索引](build/reports/documentation_history/requirements_confirmation.md)逐项查看来源、验证结果与适用边界。
 ## 目录说明
 
-首次使用建议按“项目说明 → 对应目录说明 → 操作脚本”的顺序阅读。七个顶层目录均有独立导览：[源码](src/readme.md)、[仿真验证](sim/readme.md)、[构建](build/readme.md)、[上板运行](board/readme.md)、[模型数据](data/readme.md)、[技能手册](skill/readme.md)、[设计与验证报告](report/readme.md)。
+首次使用建议按“项目说明 → 对应目录说明 → 操作脚本”的顺序阅读。各功能目录入口为：[源码](src/readme.md)、[仿真验证](sim/readme.md)、[构建](build/readme.md)、[上板运行](board/readme.md)、[模型与参考数据](data/readme.md)、[技能手册](skill/readme.md)。`report/` 只保留[大模型协作记录](report/llm_collaboration.md)和[技能包提炼过程](report/skill_extraction.md)两份文档。
 
 全部提交路径使用小写英文、数字、下划线或连字符；扩展名用英文点号。说明文件统一使用 `readme.md`，中文只用于文件正文。顶层框架固定，内部按功能组织，无需先了解 M12、M29 等开发阶段编号。
 
@@ -29,7 +31,9 @@ github_pack/
 ├── board/                     # 已配套固件、SD 卡模板和上板运行工具
 ├── data/                      # 模型权重、量化参数与参考样本
 ├── skill/                     # 项目开发与排障技能手册
-└── report/                    # 设计报告、协作记录、来源映射和校验清单
+└── report/                    # 仅保留以下两份文档
+    ├── llm_collaboration.md   # 大模型协作记录
+    └── skill_extraction.md    # 技能包提炼过程
 ```
 
 ### 我想做什么，从哪里开始？
@@ -44,7 +48,7 @@ github_pack/
 | 修改 FPGA 硬件或引脚约束 | [src/pl/readme.md](src/pl/readme.md) |
 | 从源码重新生成固件 | 本文“从源码重建 ARM 与 BOOT”，统一从 `build/` 运行 |
 | 先做离线验证 | [sim/readme.md](sim/readme.md)、`build/run_checks.py` |
-| 理解整体设计与开发经验 | `report/design.md`、[协作报告](report/llm_collaboration.md)、[skill/readme.md](skill/readme.md) |
+| 理解整体设计与开发经验 | `src/design.md`、[协作报告](report/llm_collaboration.md)、[skill/readme.md](skill/readme.md) |
 
 | 目录 | 内容 |
 | --- | --- |
@@ -54,11 +58,13 @@ github_pack/
 | `board/` | 当前配套固件、SD 日期模板、下载及连接工具、标明版本的历史实测证据 |
 | `data/models/` | 当前三模型的板端运行权重、量化表、地址和 SHA256 清单；含少量原参考样本 |
 | `skill/` | 项目 Zynq 开发与排障手册 |
-| `report/` | 设计说明、协作摘要、原版验证证据、来源对照和本包校验清单 |
+| `report/` | 大模型协作记录、技能包提炼过程 |
+
+设计说明见 [src/design.md](src/design.md)，补充原始材料在 [data/collaboration_sources/](data/collaboration_sources/readme.md)。本包校验清单与来源映射在 `build/metadata/`，历史验证记录在 `build/receipts/package_history/`，历史审查文档见 [build/reports/documentation_history/](build/reports/documentation_history/readme.md)。
 
 `src/services/` 是实际参与构建的服务源码与入口。应用构建会将基础服务与 `src/application/tools/` 中的功能生成器组合成最终 C 源码；修改功能时同时检查这两处。`src/**/build/` 保留必要链接脚本和 FSBL（第一阶段启动程序）源码；新生成的编译结果统一进入 `build/out/`。
 
-历史报告中的 Mxx 编号保留作来源追溯，不再用作当前目录名。目录迁移对照和本次验证范围见 `report/directory_reorganization.json`；原有验证报告描述的是整理前的工程导出。
+历史报告中的 Mxx 编号保留作来源追溯，不再用作当前目录名。目录迁移对照和本次验证范围见 `build/metadata/history/directory_reorganization.json`；原有验证报告描述的是整理前的工程导出。
 
 ## 最新行为
 
@@ -137,8 +143,8 @@ New-Item -ItemType Directory -Force -Path build/out | Out-Null
 
 真实历史模型板测已归档在[board/evidence](board/evidence/readme.md)，包含失败及逐层误差。当前 SSD95 集成固件的实测日志尚待提供并核对；未把历史实验、新编译产物和已发布固件混写成同一次验收。本轮未连接板卡或写物理 SD 卡。原始导出和目录整理报告仍保留原日期与验证范围。
 
-原始封存清单的摘要只用于追溯；本包使用独立的相对路径清单 `report/package_manifest.json` 校验，不依赖开发机历史目录或旧版本工程。导出时清除了重复备份、旧固件、对象文件、缓存、抓拍数据和运行日志。
+原始封存清单的摘要只用于追溯；本包使用独立的相对路径清单 `build/metadata/package_manifest.json` 校验，不依赖开发机历史目录或旧版本工程。导出时清除了重复备份、旧固件、对象文件、缓存、抓拍数据和运行日志。
 
 上传 GitHub 时使用源文件与经审阅的证据；交付 ZIP 使用 `python -B build/export_package.py` 按清单导出，详见[复现第 11 节](reproduce.md)。不要把含缓存的整个工作目录直接压缩。`build/out/`、虚拟环境和运行抓拍不属于提交材料；`.gitattributes` 禁用自动换行转换，使跨机器克隆后的校验值保持一致。当前交付文件均小于 50 MiB。
 
-第三方许可和当前授权信息见 `report/third_party_notices.md`。本包没有擅自为原项目、模型或训练数据授予新的开源许可证。
+第三方许可和当前授权信息见 `src/third_party_notices.md`。本包没有擅自为原项目、模型或训练数据授予新的开源许可证。

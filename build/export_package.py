@@ -1,14 +1,14 @@
 """Export only verified manifest files, excluding Git and generated outputs."""
 from pathlib import Path
 import argparse, hashlib, json, zipfile
-from verify_package import verify, ROOT
+from verify_package import verify, ROOT, MANIFEST_REL
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=ROOT/'build/out/github_pack.zip')
     args=parser.parse_args()
     manifest=verify()
-    paths=sorted([*manifest['files'], 'report/package_manifest.json'])
+    paths=sorted([*manifest['files'], MANIFEST_REL])
     destination=args.output.resolve()
     if destination.exists():raise SystemExit('Output exists; choose another --output name to retain the previous archive.')
     if destination in [(ROOT/p).resolve() for p in paths]:raise SystemExit('Output cannot replace a package input.')

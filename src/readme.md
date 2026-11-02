@@ -5,6 +5,8 @@
 ```text
 src/
 ├── readme.md              # 源码总览
+├── design.md              # 系统设计与功能说明
+├── third_party_notices.md # 第三方来源与授权说明
 ├── pc/                    # 电脑端监控与调参界面
 ├── application/           # 当前板端应用与功能生成器
 ├── services/              # core0 主核服务、core1 副核构建入口
@@ -15,6 +17,8 @@ src/
 ```
 
 下表中的路径相对于本目录；命令均从仓库根目录执行。返回[项目说明](../readme.md)，或查看[构建导览](../build/readme.md)。
+
+系统功能与软硬件分工见[设计说明](design.md)，第三方来源与授权范围见[来源说明](third_party_notices.md)。
 
 | 目录 | 内容 | 常见修改入口 |
 | --- | --- | --- |

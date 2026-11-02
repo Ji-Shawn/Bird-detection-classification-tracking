@@ -1,0 +1,103 @@
+{
+  "review_date": "2026-11-03",
+  "supplied_by": "user, from other agent conversations",
+  "source_originals_modified": false,
+  "documents_are_identical": false,
+  "docx_difference": "Different edited narrative with a new CRC prototype reuse claim at P042 and explicit limitations at P058-P063; not an identical rendering of the Markdown.",
+  "files": [
+    {
+      "provided_filename": "大模型协作记录.md",
+      "archive": "agent_collaboration.md",
+      "source_bytes": 9705,
+      "source_sha256": "7760d8cd763a1c8b94366b56bf99075cde1ded981201166357275f812b67d182",
+      "archive_sha256": "7760d8cd763a1c8b94366b56bf99075cde1ded981201166357275f812b67d182",
+      "transformation": "none; exact source bytes",
+      "evidence_level": "user_provided_retrospective_summary_not_complete_chat_export"
+    },
+    {
+      "provided_filename": "技能包提炼过程.md",
+      "archive": "agent_skill_extraction.md",
+      "source_bytes": 8305,
+      "source_sha256": "50d06fdea13e54fb2679257f788b4f83f74fb92b9eaaea7ee81ec61bc01bdf55",
+      "archive_sha256": "50d06fdea13e54fb2679257f788b4f83f74fb92b9eaaea7ee81ec61bc01bdf55",
+      "transformation": "none; exact source bytes",
+      "evidence_level": "user_provided_retrospective_summary_not_complete_chat_export"
+    },
+    {
+      "provided_filename": "技能包的提炼过程.docx",
+      "archive": "docx_text.md",
+      "source_bytes": 41824,
+      "source_sha256": "3c6f8b774158a2e2c6e2aee9f455b794fdb38364660dd91b96c2f314ae081959",
+      "document_xml_sha256": "78c9589e1e9fa2a128764470accd5b0358fbbe2ce22e74bdc89f4be12795b2cb",
+      "archive_sha256": "b85c07b0e05724bd3b89c13dba578350f78c06d481172a57f4ceeb30ef97ae16",
+      "transformation": "Ordered nonempty w:p extraction via w:t; table cells retained in document order; no DOCX editing or layout certification",
+      "paragraph_count": 66,
+      "table_count": 2,
+      "images": 0,
+      "tracked_insertions": 0,
+      "tracked_deletions": 0,
+      "comments_present": false,
+      "evidence_level": "user_provided_retrospective_summary_not_raw_experiment_log"
+    }
+  ],
+  "handover_cross_checks": {
+    "archive": "handover_excerpts.md",
+    "archive_sha256": "b4aae87d0f997726a7c9f6ca0ebd43d4d11019e36f87e18a410058358fa88cac",
+    "sources": [
+      {
+        "source_basename": "HANDOVER_vivado_v2.0.md",
+        "source_bytes": 34767,
+        "source_sha256": "bb0b0c18a736b56ffe510490f5caf0c52e8251c711a49a18c05e4db5861f1101",
+        "line_ranges": [
+          [
+            132,
+            166
+          ],
+          [
+            188,
+            207
+          ],
+          [
+            217,
+            270
+          ]
+        ],
+        "evidence_level": "historical_handover_summary_and_embedded_snippets_not_new_execution"
+      },
+      {
+        "source_basename": "HANDOVER_vivado_v3.0.md",
+        "source_bytes": 11781,
+        "source_sha256": "4a859da77a87a392d279fd1b24bba991f52343248360369c64d6a2cbad94f4b0",
+        "line_ranges": [
+          [
+            1,
+            96
+          ]
+        ],
+        "evidence_level": "historical_handover_summary_and_embedded_snippets_not_new_execution"
+      },
+      {
+        "source_basename": "HANDOVER_vivado_v5.0.md",
+        "source_bytes": 70532,
+        "source_sha256": "76eecaeb6bde33405d1134a44151512fa2584e7abe32261ffa36e8cb70bc8fab",
+        "line_ranges": [
+          [
+            1,
+            22
+          ],
+          [
+            531,
+            550
+          ]
+        ],
+        "evidence_level": "historical_handover_summary_and_embedded_snippets_not_new_execution"
+      }
+    ]
+  },
+  "requirement_image": {
+    "archive": "design_report_requirements.jpg",
+    "sha256": "7a55fbac86a058d2c7e05bdcb8c3285cc0fda6a2e01a1c66d54723057be10257",
+    "source": "user_attached_excerpt_section_3_3_5_3",
+    "scope": "Only the two bold report requirements requested for this supplement"
+  }
+}

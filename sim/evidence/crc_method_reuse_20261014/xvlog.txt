@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "${original_case}/crc16_stream.sv" into library work
+INFO: [VRFC 10-311] analyzing module crc16_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "${original_case}/tb_crc16.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_crc16

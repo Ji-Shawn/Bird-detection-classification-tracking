@@ -2,6 +2,7 @@
 from pathlib import Path
 import argparse,hashlib,json,re
 ROOT=Path(__file__).resolve().parents[1]
+MANIFEST_REL='build/metadata/package_manifest.json'
 EXPECTED={
  'boot.bin':'c04337b3943dcd633f29f63af24005de3d8e3f2d749f85e32b83d6a73b6977d9',
  'core0.elf':'4d2391599eeab5adf9ff38790320aeba958dae3c675687977ba4572c47474e33',
@@ -10,7 +11,7 @@ EXPECTED={
 }
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def verify(firmware_only=False):
-    manifest=json.loads((ROOT/'report/package_manifest.json').read_text(encoding='utf8'))
+    manifest=json.loads((ROOT/MANIFEST_REL).read_text(encoding='utf8'))
     assert manifest['project']=='m51' and manifest['photo_ssd_minimum']==.95
     for rel,digest in manifest['files'].items():
         if firmware_only and not rel.startswith(('board/firmware/','data/models/')):continue
@@ -31,7 +32,7 @@ def verify(firmware_only=False):
                 actual_files.add(rel)
                 assert p.stat().st_size < 50*1024*1024,('Unexpected large file',rel)
                 assert p.suffix not in {'.o','.pyc','.jou','.wdb','.dcp'},('Intermediate artifact',rel)
-        expected_files=set(manifest['files'])|{'report/package_manifest.json'}
+        expected_files=set(manifest['files'])|{MANIFEST_REL}
         assert actual_files==expected_files,('Manifest inventory mismatch',
             'unlisted',sorted(actual_files-expected_files),'missing',sorted(expected_files-actual_files))
     print('M51_PORTABLE_PACKAGE_PASS',len(manifest['files']),'files',len(rows),'model assets',flush=True)

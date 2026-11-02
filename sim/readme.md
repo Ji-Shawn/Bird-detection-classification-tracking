@@ -80,4 +80,6 @@ python -B build/run_checks.py
 | 协议黄金文件缺失 | 恢复 `sim/fixtures/protocol/`，不要删除测试或用当前解码器临时生成“期望值” |
 | 电脑测试全绿，但板卡仍无输出 | 按 [board/readme.md](../board/readme.md) 排查实际连接和启动；离线通过不能代替上板验收 |
 
-详细上板工具测试说明见 [board_tools/readme.md](board_tools/readme.md)，历史与当前验证记录见[报告导览](../report/readme.md)。
+详细上板工具测试说明见 [board_tools/readme.md](board_tools/readme.md)，构建与验证证据见[构建导览](../build/readme.md)，过去的目录审查记录见[历史审查文档](../build/reports/documentation_history/readme.md)。
+
+技能方法迁移的补充案例见 [CRC32 独立原型归档](evidence/crc_method_reuse_20261014/readme.md)：历史 XSim 完成 3042 包对拍，本轮只核验并重建黄金向量，没有重新运行 RTL 或集成到当前固件。该案例独立于上述完整离线套件，不能计入当前 SSD95 整机板测。

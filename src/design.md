@@ -2,6 +2,8 @@
 
 本包整理自 M51 的 `ssd95_record_20261027` 修订。整理日期为 2026-10-29；整理工程目录不等于重新训练模型、重新验证实物或更新板卡。具体操作入口、目录对应关系和构建方法以仓库根目录说明为准。
 
+设计报告采用主文加专题附件的组织方式。2026-11-03 补齐的 **大模型协作记录** 见 [llm_collaboration.md](../report/llm_collaboration.md)：第 13 节给出历史提示词、模型回答与动作摘要、自我纠错链，第 14 节给出智能体工作流。**技能包的提炼过程** 见 [skill_extraction.md](../report/skill_extraction.md)，逐项说明失败来源、有效性验证和适用边界。两项要求的核验索引见 [requirements_confirmation.md](../build/reports/documentation_history/requirements_confirmation.md)；从零操作见 [reproduce.md](../reproduce.md)。这些附件均属于本设计报告材料，历史整理记录与当前实测结果分别标明。
+
 ## 功能与分工
 
 系统使用四路麦克风估计固定基座坐标系中的声源方向，控制水平云台寻向并进行竖直搜索。检测到鸟目标后，由视觉链路接管追踪；SSD 检测与鸟种分类为两个阶段。正式目标定位先给 NCC 和舵机控制服务执行机会，再补充鸟种分类结果。
