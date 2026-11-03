@@ -1,0 +1,9 @@
+# CPU selftests verified on CPython 3.12.5 / Windows, 2026-11-03.
+# Install the matching torch/torchvision CPU or CUDA wheels first; see readme.md.
+torch==2.8.0
+torchvision==0.23.0
+numpy==1.26.4
+pandas==3.0.5
+scikit-learn==1.9.1
+Pillow==11.3.0
+lxml==6.1.3

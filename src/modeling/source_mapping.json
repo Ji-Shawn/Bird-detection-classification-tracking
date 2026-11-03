@@ -1,0 +1,235 @@
+{
+  "schema": 1,
+  "source_root": "D:/CoordinateNet-main/CoordinateNet-main",
+  "source_read_only": true,
+  "original_project_attribution": "CoordinateNet by Stanislav Novikov, per source README; later workspace extensions are not attributed wholesale to that author",
+  "source_readme_sha256": "73f182a1a8c39a4f3765474da00ee8d6532d5eb41250e21661ef891c0b97ee66",
+  "initial_copied_source_files_unchanged": true,
+  "cub_recipe_matches_published_run_snapshot": true,
+  "cub_snapshot_sha256": "4971abd2a09d359225b59c9c88df18c6cd8f9a8d1ee145af43e1b3eb042be213",
+  "excluded": [
+    "legacy",
+    "runs checkpoints and data",
+    "virtual environments",
+    "teacher and distillation experiments",
+    "old GAP/SmallBirdCNN training",
+    "unmigrated ONNX/INT8 deployment scripts"
+  ],
+  "files": [
+    {
+      "path": "deployment.md",
+      "sha256": "c25482f55877ff4cae8c1855311d8fe47ad4292ec034c5245cbfcc8c785e7460",
+      "sources": [],
+      "adaptations": [
+        "New source-evidence review of released weights and conversion limitations; no export pipeline implemented"
+      ]
+    },
+    {
+      "path": "model/bird_detection_data.py",
+      "sha256": "6142f4e4992729e292254034343566b2d18f1389e148b182212455cc6aaa19c3",
+      "sources": [
+        {
+          "path": "model/bird_detection_data.py",
+          "sha256": "6142f4e4992729e292254034343566b2d18f1389e148b182212455cc6aaa19c3"
+        }
+      ],
+      "adaptations": [
+        "Original detection audit/data logic; text newlines normalized"
+      ]
+    },
+    {
+      "path": "model/classification_data.py",
+      "sha256": "16087f131815b41928724fedd9bef756166b188655bb8c968ee04a7c272c003a",
+      "sources": [
+        {
+          "path": "model/sound_classifier_v7.1.0_gap2_torch.py",
+          "sha256": "71f583d76a388ba56a0183576f0a0dd7198b262db856a1e14b9c9e6988fee2f7"
+        },
+        {
+          "path": "model/image_classifier_v1.0.0_torch.py",
+          "sha256": "2f67cdf498dd62a05b5ded35359255caf9c9d3f178250a8402b358beb6b798a7"
+        }
+      ],
+      "adaptations": [
+        "Extracted active MelDataset preprocessing without old GAP model dependency; retain numpy.resize ordering, image transforms and seeded image split; explicit data root; disallow pickle arrays; validate samples/classes/splits; all-minus-80-dB input becomes zeros instead of NaN"
+      ]
+    },
+    {
+      "path": "model/classification_training.py",
+      "sha256": "02d380fbf524d9fd769ce7fce463b7bbf45942259af386a79fc6a186597e5d2e",
+      "sources": [
+        {
+          "path": "model/mobilenet_v2_v1.0.0_torch.py",
+          "sha256": "5f15e73bc33f8f34fbae2ad30ec6b17c3a5b99402e210bd783d059f39e1a52c0"
+        },
+        {
+          "path": "model/image_classifier_v1.0.0_torch.py",
+          "sha256": "2f67cdf498dd62a05b5ded35359255caf9c9d3f178250a8402b358beb6b798a7"
+        }
+      ],
+      "adaptations": [
+        "Shared explicit train/evaluate entry; preserve MobileNetV2 ImageNet V1 construction, Adam groups, schedules, seed and train-loss selection; configurable roots; ordered class metadata; explicit weight-only warm start; reject empty/invalid inputs and overwritten run"
+      ]
+    },
+    {
+      "path": "model/ssdlite_background_finetune.py",
+      "sha256": "2d6495784f68f8b419f3e664fd39c1f3d82fbf54545d5ed85a7926f96fd0bc7d",
+      "sources": [
+        {
+          "path": "model/ssdlite_background_finetune_v1.0.py",
+          "sha256": "3bb64f5fdcfaeed72bac7e6e77c9e66009f6de7d9211bd1ed64f38a65f8ab49b"
+        }
+      ],
+      "adaptations": [
+        "Filename normalized; defaults relocated to build/out/modeling; training recipe retained"
+      ]
+    },
+    {
+      "path": "model/ssdlite_cub_continue.py",
+      "sha256": "18b551038765e12d5e4b7432442afa30e0c2aad5f8762de34b2b30e228f84a97",
+      "sources": [
+        {
+          "path": "model/ssdlite_cub_continue_v1.0.py",
+          "sha256": "4971abd2a09d359225b59c9c88df18c6cd8f9a8d1ee145af43e1b3eb042be213"
+        }
+      ],
+      "adaptations": [
+        "Filename normalized; dataset/replay/initial weights required as CLI arguments; outputs relocated; removed import-time KMP_DUPLICATE_LIB_OK mutation; original CUDA-only training recipe retained"
+      ]
+    },
+    {
+      "path": "model/ssdlite_mobilenet_v2.py",
+      "sha256": "f3a1b9d1af10ebccdbe4e59030b66a6c4b1dc226ef7e45f6b2c81340eeb20dc1",
+      "sources": [
+        {
+          "path": "model/ssdlite_mobilenet_v2.py",
+          "sha256": "f3a1b9d1af10ebccdbe4e59030b66a6c4b1dc226ef7e45f6b2c81340eeb20dc1"
+        }
+      ],
+      "adaptations": [
+        "Original detector topology, package validation and background loss; no algorithm change"
+      ]
+    },
+    {
+      "path": "model/train_bird_detector.py",
+      "sha256": "6b965598f55bb8253ed8062f1a10d75e998b09552e5207193f9262b158cece92",
+      "sources": [
+        {
+          "path": "model/train_bird_detector.py",
+          "sha256": "3271922983d750b4f505b8a821bb4c8b3e6e47b05808e89233f5220782796a41"
+        }
+      ],
+      "adaptations": [
+        "Default outputs moved to build/out/modeling/detector; dataset paths explicitly required for prepare"
+      ]
+    },
+    {
+      "path": "readme.md",
+      "sha256": "139a17a4b73652f79bc6d6b0520bbc5674cb66cd1bb3e9259b33d73d8ca86ca0",
+      "sources": [],
+      "adaptations": [
+        "New packaging documentation, dependency declaration, entry point or behavioral tests; see file content"
+      ]
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "18de3ed2f2b232c71231e58ade2d3dc6eac1fe80c63e4660337e121ab5691ee1",
+      "sources": [],
+      "adaptations": [
+        "New packaging documentation, dependency declaration, entry point or behavioral tests; see file content"
+      ]
+    },
+    {
+      "path": "requirements_audio.txt",
+      "sha256": "77f494b9764884c1f01cf4e2baa296930df4c1abe25e6fefa0c1719f1ad5d341",
+      "sources": [],
+      "adaptations": [
+        "New packaging documentation, dependency declaration, entry point or behavioral tests; see file content"
+      ]
+    },
+    {
+      "path": "run.py",
+      "sha256": "990176c9d5955087f1f2b117de816c28e9a7ab6e2c6912f304c1d1db692d40f9",
+      "sources": [],
+      "adaptations": [
+        "New packaging documentation, dependency declaration, entry point or behavioral tests; see file content"
+      ]
+    },
+    {
+      "path": "scripts/audio_preprocessing.py",
+      "sha256": "9ec0c38e7c5b2ea7bd3170eddfb7ad8a78fdb3ea62c93901e7629bebb6c7ab2a",
+      "sources": [
+        {
+          "path": "scripts/preparing_data_torch_v1.0.py",
+          "sha256": "7c162493d72e0fc7e534128909c9291139feb67f3a1505d38e214e3ea64e4929"
+        }
+      ],
+      "adaptations": [
+        "Extract get_noise function only; no automatic data pipeline/trainer imports"
+      ]
+    },
+    {
+      "path": "scripts/prepare_ssw60.py",
+      "sha256": "20c37f772cdb10bba5004ed990c41af9213a5b097077a32d7f723fb8d0c4752b",
+      "sources": [
+        {
+          "path": "scripts/ssw60_adapter_v1.0.py",
+          "sha256": "22c351c1c457124c3afa5a2f47a316728eeff65ed1c543a6dd55db28d2a954d8"
+        }
+      ],
+      "adaptations": [
+        "Preserve actual per-recording random 10% split rather than contradictory original comment; retain window/augmentation order; explicit source/output; lowercase no-space generated paths; no auto-training; fail on read/copy errors and invalid/duplicate metadata; reject all nonempty output caches"
+      ]
+    },
+    {
+      "path": "scripts/selftest.py",
+      "sha256": "5c40153a2130b52261ff689b761a3994ff7e4f4d4fe523e34eb5c9d5027d23a8",
+      "sources": [],
+      "adaptations": [
+        "New packaging documentation, dependency declaration, entry point or behavioral tests; see file content"
+      ]
+    },
+    {
+      "path": "tests/test_bird_detector.py",
+      "sha256": "95253b1edaaae390339365b22844967d6522b055064cdc3448cc610703adbfd9",
+      "sources": [
+        {
+          "path": "tests/test_bird_detector.py",
+          "sha256": "95253b1edaaae390339365b22844967d6522b055064cdc3448cc610703adbfd9"
+        }
+      ],
+      "adaptations": [
+        "Original five detector behavioral tests; no pretrained weights"
+      ]
+    },
+    {
+      "path": "tests/test_classification.py",
+      "sha256": "5ee5544bb6149beabec0562ef90086f01910001548bce1a59a11d2a837639b2f",
+      "sources": [],
+      "adaptations": [
+        "New packaging documentation, dependency declaration, entry point or behavioral tests; see file content"
+      ]
+    },
+    {
+      "path": "tests/test_cub_recipe.py",
+      "sha256": "7ac530a3a6c46d87eec9f12dafb0c17dae97db9921937a0075423e8bd5cee605",
+      "sources": [],
+      "adaptations": [
+        "New packaging documentation, dependency declaration, entry point or behavioral tests; see file content"
+      ]
+    },
+    {
+      "path": "tests/test_ssdlite_background.py",
+      "sha256": "c13d1d73044fe914dc26c8d8322ee687f3d9bf346ea13ca821b2083ab2801f90",
+      "sources": [
+        {
+          "path": "tests/test_ssdlite_background.py",
+          "sha256": "4e46d323e321da8495bb05c38dc834ae0ffd5b74da4b41d2594376577bf7b618"
+        }
+      ],
+      "adaptations": [
+        "Original four tests; dynamic reference updated to normalized background trainer filename"
+      ]
+    }
+  ]
+}

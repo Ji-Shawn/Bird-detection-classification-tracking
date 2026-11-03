@@ -1,6 +1,6 @@
 # 构建导览
 
-本目录从源码生成 ARM 双核程序、BOOT 启动镜像和 FPGA 固件。所有命令从仓库根目录执行；安装、环境变量、成功输出和排错详见[从零复现第 3、7、8 节](../reproduce.md)。下表的 `python` 应使用该文档建立的虚拟环境 Python。
+本目录提供模型、ARM 双核程序、BOOT 启动镜像和 FPGA 固件的构建入口。所有命令从仓库根目录执行；安装、环境变量、成功输出和排错详见[从零复现](../reproduce.md)。模型构建使用[模型说明](../src/modeling/readme.md)中的独立环境，其余命令使用复现文档建立的环境。
 
 ```text
 build/
@@ -9,6 +9,7 @@ build/
 ├── doctor.py             # 检查本机 Python/编译器/工具路径
 ├── run_checks.py         # 完整离线检查与结果汇总
 ├── export_package.py     # 按清单导出干净 ZIP
+├── build_models.py       # 模型构建、数据准备、训练与评估
 ├── build_firmware.py     # 构建 ARM 双核程序
 ├── build_boot.py         # 打包 BOOT 启动镜像
 ├── verify_boot.py        # 启动镜像检查工具
@@ -22,6 +23,8 @@ build/
 
 | 目标 | 命令或入口 | 输出 |
 | --- | --- | --- |
+| 查看模型构建用法 | `python -B build/build_models.py --help` | 三套模型的操作入口 |
+| 检查模型结构与前向计算 | `python -B build/build_models.py selftest` | 离线自检结果；不下载预训练权重 |
 | 校验当前包 | `python -B build/verify_package.py` | 终端中的校验结果 |
 | 完整离线检查 | `python -B build/run_checks.py --host-cc <native_gcc_path>` | `build/out/checks/` |
 | 重建两个 ARM 核 | `python -B build/build_firmware.py --core both` | `build/out/firmware/` |
@@ -32,6 +35,8 @@ build/
 ARM 构建从 `src/application/`、`src/services/`、`src/platform/` 及两个预处理驱动目录读取输入，先在 `build/out/work/` 中生成最终源码。修改源文件和功能生成器，不要只修改输出工作区中的文件。
 
 构建入口不会自动覆盖 `board/firmware/` 中的发布固件或写 SD 卡。目录内的历史报告不代表新构建的验收结果。
+
+模型源码在 `src/modeling/`，新数据处理结果、检查点和评估结果默认在 `build/out/modeling/`。训练新的 FP32 权重与生成板端 INT8 资产是不同步骤，具体配套关系见[模型部署说明](../src/modeling/deployment.md)。
 
 ## 清单与历史回执从哪里找
 

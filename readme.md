@@ -3,7 +3,7 @@
 
 **第一次接触本项目，请从[从零复现文档](reproduce.md)开始。** 它包含软件安装、可复制命令、每步成功判据、硬件匹配、写卡、源码构建和排错。
 
-本轮补齐复现入口、测试数据、构建修复和可追溯证据，原 M51 工作工程未修改。相机使用 M47/M48 原转接板引脚，不使用 M111/M49 的新转接板引脚。开发过程与验证边界见[大模型协作报告](report/llm_collaboration.md)，复用流程见[技能包](skill/readme.md)。
+本包包含模型构建与训练源码、复现入口、测试数据、构建脚本和可追溯证据，原 M51 工作工程及模型源仓库保持原样。相机使用 M47/M48 原转接板引脚，不使用 M111/M49 的新转接板引脚。开发过程与验证边界见[大模型协作报告](report/llm_collaboration.md)，复用流程见[技能包](skill/readme.md)。
 
 设计报告的两项重点材料已单列：[协作中的提示词、回答摘要与纠错轨迹](report/llm_collaboration.md)、[技能包提炼过程](report/skill_extraction.md)。评审可按[要求核验索引](build/reports/documentation_history/requirements_confirmation.md)逐项查看来源、验证结果与适用边界。
 ## 目录说明
@@ -18,6 +18,7 @@ github_pack/
 ├── reproduce.md               # 零基础逐步操作、成功判据和排错
 ├── src/                       # 设计源码（详见 src/readme.md）
 │   ├── pc/                    # 电脑端：监控界面、预览与在线调参
+│   ├── modeling/              # 电脑端：模型定义、数据准备、训练与评估
 │   ├── application/           # 板端应用：追踪、对焦、显示、存图及功能生成器
 │   ├── services/              # ARM 双核服务
 │   │   ├── core0/             # 主核：网络、视频、融合调度与视觉追踪
@@ -27,7 +28,7 @@ github_pack/
 │   ├── detector_preprocess/   # SSD 图像预处理的板端驱动
 │   └── pl/                    # FPGA 硬件：采集、推理、图像增强、HDMI 与约束
 ├── sim/                       # 离线仿真与验证脚本、测试数据
-├── build/                     # ARM / BOOT / FPGA 构建脚本与实现报告
+├── build/                     # 模型 / ARM / BOOT / FPGA 构建入口与实现报告
 ├── board/                     # 已配套固件、SD 卡模板和上板运行工具
 ├── data/                      # 模型权重、量化参数与参考样本
 ├── skill/                     # 项目开发与排障技能手册
@@ -43,6 +44,7 @@ github_pack/
 | 完全小白，从安装到运行 | [reproduce.md](reproduce.md) |
 | 先运行现成固件、连接板卡 | [board/readme.md](board/readme.md) |
 | 修改电脑端监控界面 | `src/pc/av_monitor/` |
+| 构建和训练三套识别模型 | [模型构建说明](src/modeling/readme.md)，统一入口 `build/build_models.py` |
 | 修改追踪、对焦、显示或 SD 存图 | `src/application/software/` 及 `src/application/tools/` |
 | 查看双核分工、网络与融合服务 | `src/services/`，基础代码在 `src/platform/` |
 | 修改 FPGA 硬件或引脚约束 | [src/pl/readme.md](src/pl/readme.md) |
@@ -52,15 +54,15 @@ github_pack/
 
 | 目录 | 内容 |
 | --- | --- |
-| `src/` | ARM 双核软件、上位机、BSP、持久化 overlay，以及 `pl/` 中实际 RTL/ROM/约束 |
+| `src/` | 模型构建代码、ARM 双核软件、上位机、BSP，以及 `pl/` 中实际 RTL/ROM/约束 |
 | `sim/` | 存图/FatFs 仿真、协议夹具、推理数值比较、离线验证结果，不访问物理 SD 卡 |
-| `build/` | ARM、BOOT、PL 构建脚本、原编译输入摘要和实现报告；生成内容进入 `build/out/` |
+| `build/` | 模型、ARM、BOOT、PL 构建入口、输入摘要和实现报告；生成内容进入 `build/out/` |
 | `board/` | 当前配套固件、SD 日期模板、下载及连接工具、标明版本的历史实测证据 |
 | `data/models/` | 当前三模型的板端运行权重、量化表、地址和 SHA256 清单；含少量原参考样本 |
 | `skill/` | 项目 Zynq 开发与排障手册 |
 | `report/` | 大模型协作记录、技能包提炼过程 |
 
-设计说明见 [src/design.md](src/design.md)，补充原始材料在 [data/collaboration_sources/](data/collaboration_sources/readme.md)。本包校验清单与来源映射在 `build/metadata/`，历史验证记录在 `build/receipts/package_history/`，历史审查文档见 [build/reports/documentation_history/](build/reports/documentation_history/readme.md)。
+设计说明见 [src/design.md](src/design.md)，完整设计报告见 [src/design_report.docx](src/design_report.docx)，补充原始材料在 [data/collaboration_sources/](data/collaboration_sources/readme.md)。本包校验清单与来源映射在 `build/metadata/`，历史验证记录在 `build/receipts/package_history/`，历史审查文档见 [build/reports/documentation_history/](build/reports/documentation_history/readme.md)。
 
 `src/services/` 是实际参与构建的服务源码与入口。应用构建会将基础服务与 `src/application/tools/` 中的功能生成器组合成最终 C 源码；修改功能时同时检查这两处。`src/**/build/` 保留必要链接脚本和 FSBL（第一阶段启动程序）源码；新生成的编译结果统一进入 `build/out/`。
 

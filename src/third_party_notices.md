@@ -8,6 +8,10 @@
 
 部署模型与类别映射作为复现所需资产保留其来源记录与指纹。工程中没有完整训练数据及完整的数据、权重再发布授权证据。checkpoint 中的历史指标、训练路径或训练元数据不构成许可，也不代表当前整理包重新评测的结果。实际训练框架或模型结构名称不能代替对应权重的许可声明。
 
+## 模型构建代码来源
+
+`modeling/` 中的模型构建代码整理自用户指定的 `D:/CoordinateNet-main/CoordinateNet-main`。该仓库源于 Stanislav Novikov 的 CoordinateNet，并演化为基于 PyTorch/torchvision 的 MobileNetV2 分类与 SSDLite 检测流程；各源文件保留原有作者与版权文字。当前集成范围、改动及原文件身份见模型目录中的来源记录。SSW60、CUB、COCO 等外部数据和预训练权重不因本次代码整理获得额外再发布授权，数据获取和使用须遵循各自条款。
+
 ## AMD/Xilinx 平台软件
 
 工程 BSP、FSBL 与驱动包含 AMD/Xilinx 版权内容。已检查的平台头文件包含允许复制、修改、分发的软件许可文本；当前 SDPS 驱动文件标记 `SPDX-License-Identifier: MIT`，版权属于 Xilinx, Inc. 及 Advanced Micro Devices, Inc.。保留逐文件的版权和许可头；不是所有文件都可以仅凭一个 SPDX 标记概括。

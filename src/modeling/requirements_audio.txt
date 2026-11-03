@@ -1,0 +1,7 @@
+-r requirements.txt
+# Additional audio dependencies checked with synthetic 16/22.05/32 kHz WAVs.
+# Complete SSW60 preparation/training was not run in this delivery.
+librosa==0.11.0
+soundfile==0.14.0
+# Installed only in a temporary dependency directory for the validation run.
+resampy==0.4.3

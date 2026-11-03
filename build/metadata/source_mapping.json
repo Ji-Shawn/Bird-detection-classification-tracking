@@ -18487,6 +18487,6 @@
   ],
   "note": "Original files and seals remain immutable. Changed export bytes are path/entry adaptations and redacted informational evidence, not changes to bird control or thresholds.",
   "layout_note": "Package paths reorganized by function on 2026-10-30; source paths and original hashes retain their historical meaning.",
-  "package_revision": "report_two_documents_20261103",
+  "package_revision": "modeling_integration_20261103",
   "provenance_note": "Original source sha256/bytes retained; package_sha256/package_bytes describe current packaged files. New documentation, fixtures and audit tools are recorded by the package manifest and their own provenance."
 }

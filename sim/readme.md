@@ -83,3 +83,5 @@ python -B build/run_checks.py
 详细上板工具测试说明见 [board_tools/readme.md](board_tools/readme.md)，构建与验证证据见[构建导览](../build/readme.md)，过去的目录审查记录见[历史审查文档](../build/reports/documentation_history/readme.md)。
 
 技能方法迁移的补充案例见 [CRC32 独立原型归档](evidence/crc_method_reuse_20261014/readme.md)：历史 XSim 完成 3042 包对拍，本轮只核验并重建黄金向量，没有重新运行 RTL 或集成到当前固件。该案例独立于上述完整离线套件，不能计入当前 SSD95 整机板测。
+
+模型构建新增验证见 [modeling_20261103.json](results/modeling_20261103.json)：16 项 CPU 自检通过，48 项独立数据与命令检查经复核成立。回执嵌入原始小日志、哈希和线程设置差异的复核过程，合成数据不计为模型准确率评估。模型环境安装后可从根目录运行 `python -B build/build_models.py selftest`；它需要额外的 PyTorch 依赖，独立于前述板端工程离线检查。步骤见[模型构建说明](../src/modeling/readme.md)。

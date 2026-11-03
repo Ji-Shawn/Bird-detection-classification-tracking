@@ -1,12 +1,14 @@
 # 源码导览
 
-先分清运行位置：`pc/` 在电脑上运行；`application/`、`services/`、`platform/` 和两个预处理驱动运行在 Zynq 的 ARM 处理器上；`pl/` 是 FPGA 内的硬件逻辑。
+先分清运行位置：`pc/` 和 `modeling/` 在电脑上运行，前者负责监控，后者负责模型构建；`application/`、`services/`、`platform/` 和两个预处理驱动运行在 Zynq 的 ARM 处理器上；`pl/` 是 FPGA 内的硬件逻辑。
 
 ```text
 src/
 ├── readme.md              # 源码总览
 ├── design.md              # 系统设计与功能说明
+├── design_report.docx     # 用户提供的完整设计报告
 ├── third_party_notices.md # 第三方来源与授权说明
+├── modeling/              # 电脑端：模型定义、数据准备、训练与评估
 ├── pc/                    # 电脑端监控与调参界面
 ├── application/           # 当前板端应用与功能生成器
 ├── services/              # core0 主核服务、core1 副核构建入口
@@ -18,10 +20,11 @@ src/
 
 下表中的路径相对于本目录；命令均从仓库根目录执行。返回[项目说明](../readme.md)，或查看[构建导览](../build/readme.md)。
 
-系统功能与软硬件分工见[设计说明](design.md)，第三方来源与授权范围见[来源说明](third_party_notices.md)。
+系统功能与软硬件分工见[设计说明](design.md)，完整原稿见[设计报告](design_report.docx)，第三方来源与授权范围见[来源说明](third_party_notices.md)。
 
 | 目录 | 内容 | 常见修改入口 |
 | --- | --- | --- |
+| `modeling/` | 音频分类、图像分类和鸟目标检测的模型构建 | [模型构建说明](modeling/readme.md)；统一入口 `build/build_models.py` |
 | `pc/` | Python 监控界面、图像预览、在线调参 | `av_monitor/`；本轮固定依赖在 `requirements_reproduce.txt`，开发范围在 `requirements.txt` |
 | `application/` | 当前板端应用及构建时应用的功能修改 | `software/` 为 C 源码；`tools/` 为构建与功能生成器 |
 | `services/core0/` | 主核基础服务：视频 DMA、UDP 网络、融合调度、视觉追踪 | `dma_service.c`、`udp_stream.c`、`fusion_service.c`、`visual_tracker.c` |

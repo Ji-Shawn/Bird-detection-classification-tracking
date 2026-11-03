@@ -17,7 +17,7 @@ data/
 
 模型资产由 `build/build_boot.py` 打包到启动镜像，或由 `board/tools/launch.py` 的显式 JTAG 下载入口读取。使用方式见[构建说明](../build/readme.md)和[上板说明](../board/readme.md)。
 
-本包没有完整训练数据或训练流水线。第三方和模型授权信息见[来源与授权说明](../src/third_party_notices.md)，不要把参考样本当作完整准确率评估集。
+模型定义、数据准备、训练与评估代码见 [src/modeling/](../src/modeling/readme.md)，从根目录运行 `python -B build/build_models.py` 查看可用命令。完整训练数据由使用者单独准备，训练产物默认写入 `build/out/modeling/`。随包的 `data/models/` 是既有板端资产，训练新模型后还需导出、量化、资产转换和重新验收，见[训练与部署的对应关系](../src/modeling/deployment.md)。第三方和模型授权信息见[来源与授权说明](../src/third_party_notices.md)，不要把参考样本当作完整准确率评估集。
 
 数值对拍见 [samples/readme.md](models/samples/readme.md)：需要独立采集完整实际输出，再执行 `sim/compare_inference.py`；自测通过或复制参考值不构成板测证据。历史 222 行逐层比较见 [reference/history_models_20261002](reference/history_models_20261002/readme.md)，对应旧输入和旧固件，包含非零误差。
 
