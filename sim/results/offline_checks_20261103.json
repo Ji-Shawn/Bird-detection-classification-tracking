@@ -265,7 +265,6 @@
   "archive_provenance": "sim/results/offline_checks_archive_20261103.json",
   "original_runner_result": "sim/results/offline_checks_runner_new_full_20261103.json",
   "original_runner_result_sha256": "e81697ba10c968daace31857b38c8487f759b94c0025a82c9588e92f93f3d6ca",
-  "development_snapshot": "sim/results/offline_checks_development_20261103.json",
   "environment_audit": "sim/results/python_environment_new_full_20261103.json",
   "source_hashes_rechecked_at_archive": {
     "files": 113,

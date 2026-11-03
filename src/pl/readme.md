@@ -43,6 +43,6 @@ src/pl/
 
 从仓库根目录使用 `build/pl/create_project.tcl` 创建工程，使用 `build/pl/build_pl.tcl` 构建。详细步骤与验证限制见 [build/pl/readme.md](../../build/pl/readme.md)。
 
-原报告保留开发时的阶段名，当前目录对照见 `build/metadata/history/directory_reorganization.json`。目录整理不会改变 RTL、ROM、IP 配置或引脚约束内容；正式重新实现后的固件仍需独立检查时序并上板验证。
+`build/reports/pl_*.rpt`、引脚表和时钟表对应当前 `board/firmware/` 的发布 PL。RTL、ROM、结构连接源码和 IP 配置均为正式构建输入；重新实现后的固件需要独立检查时序并上板验证。
 
 2026-11-03 从这些输入完成了新的综合与实现，详见[本轮报告](../../build/reports/rebuild_20261103/readme.md)。资源与时序数据描述该轮产物；CDC、I/O 覆盖等待处理项同时保留，不据此声称完成物理板卡验收。

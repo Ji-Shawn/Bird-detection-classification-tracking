@@ -5,10 +5,10 @@
 
 本包包含模型构建与训练源码、复现入口、测试数据、构建脚本和可追溯证据，原 M51 工作工程及模型源仓库保持原样。相机使用 M47/M48 原转接板引脚，不使用 M111/M49 的新转接板引脚。开发过程与验证边界见[大模型协作报告](report/llm_collaboration.md)，复用流程见[技能包](skill/readme.md)。
 
-设计报告的两项重点材料已单列：[协作中的提示词、回答摘要与纠错轨迹](report/llm_collaboration.md)、[技能包提炼过程](report/skill_extraction.md)。评审可按[要求核验索引](build/reports/documentation_history/requirements_confirmation.md)逐项查看来源、验证结果与适用边界。
+完整设计报告见 [report/report.pdf](report/report.pdf)。两项专题材料已单列：[协作中的提示词、回答摘要与纠错轨迹](report/llm_collaboration.md)、[技能包提炼过程](report/skill_extraction.md)，分别说明证据来源、验证结果与适用边界。
 ## 目录说明
 
-首次使用建议按“项目说明 → 对应目录说明 → 操作脚本”的顺序阅读。各功能目录入口为：[源码](src/readme.md)、[仿真验证](sim/readme.md)、[构建](build/readme.md)、[上板运行](board/readme.md)、[模型与参考数据](data/readme.md)、[技能手册](skill/readme.md)。`report/` 只保留[大模型协作记录](report/llm_collaboration.md)和[技能包提炼过程](report/skill_extraction.md)两份文档。
+首次使用建议按“项目说明 → 对应目录说明 → 操作脚本”的顺序阅读。各功能目录入口为：[源码](src/readme.md)、[仿真验证](sim/readme.md)、[构建](build/readme.md)、[上板运行](board/readme.md)、[模型与参考数据](data/readme.md)、[技能手册](skill/readme.md)。`report/` 保留设计报告 PDF、大模型协作记录和技能包提炼过程三份文档。
 
 全部提交路径使用小写英文、数字、下划线或连字符；扩展名用英文点号。说明文件统一使用 `readme.md`，中文只用于文件正文。顶层框架固定，内部按功能组织，无需先了解 M12、M29 等开发阶段编号。
 
@@ -32,7 +32,8 @@ github_pack/
 ├── board/                     # 已配套固件、SD 卡模板和上板运行工具
 ├── data/                      # 模型权重、量化参数与参考样本
 ├── skill/                     # 项目开发与排障技能手册
-└── report/                    # 仅保留以下两份文档
+└── report/                    # 设计报告与两份专题文档
+    ├── report.pdf             # 用户提供的最终设计报告
     ├── llm_collaboration.md   # 大模型协作记录
     └── skill_extraction.md    # 技能包提炼过程
 ```
@@ -57,16 +58,16 @@ github_pack/
 | `src/` | 模型构建代码、ARM 双核软件、上位机、BSP，以及 `pl/` 中实际 RTL/ROM/约束 |
 | `sim/` | 存图/FatFs 仿真、协议夹具、推理数值比较、离线验证结果，不访问物理 SD 卡 |
 | `build/` | 模型、ARM、BOOT、PL 构建入口、输入摘要和实现报告；生成内容进入 `build/out/` |
-| `board/` | 当前配套固件、SD 日期模板、下载及连接工具、标明版本的历史实测证据 |
+| `board/` | 当前配套固件、SD 日期模板、下载及连接工具、当前版本实测证据的采集要求 |
 | `data/models/` | 当前三模型的板端运行权重、量化表、地址和 SHA256 清单；含少量原参考样本 |
 | `skill/` | 项目 Zynq 开发与排障手册 |
-| `report/` | 大模型协作记录、技能包提炼过程 |
+| `report/` | 最终设计报告 PDF、大模型协作记录、技能包提炼过程 |
 
-设计说明见 [src/design.md](src/design.md)，完整设计报告见 [src/design_report.docx](src/design_report.docx)，补充原始材料在 [data/collaboration_sources/](data/collaboration_sources/readme.md)。本包校验清单与来源映射在 `build/metadata/`，历史验证记录在 `build/receipts/package_history/`，历史审查文档见 [build/reports/documentation_history/](build/reports/documentation_history/readme.md)。
+设计说明见 [src/design.md](src/design.md)，完整设计报告见 [report/report.pdf](report/report.pdf)，协作报告的来源材料在 [data/collaboration_sources/](data/collaboration_sources/readme.md)。当前包校验清单与来源映射在 `build/metadata/`；发布验证和最新源码重建记录统一由[构建导览](build/readme.md)索引。
 
 `src/services/` 是实际参与构建的服务源码与入口。应用构建会将基础服务与 `src/application/tools/` 中的功能生成器组合成最终 C 源码；修改功能时同时检查这两处。`src/**/build/` 保留必要链接脚本和 FSBL（第一阶段启动程序）源码；新生成的编译结果统一进入 `build/out/`。
 
-历史报告中的 Mxx 编号保留作来源追溯，不再用作当前目录名。目录迁移对照和本次验证范围见 `build/metadata/history/directory_reorganization.json`；原有验证报告描述的是整理前的工程导出。
+来源记录中的 Mxx 编号用于辨认当前发布文件的原始身份，功能入口按上表查找。包内保留当前发布固件的配套证据与最新源码重建结果，二者分别标明适用对象。
 
 ## 最新行为
 
@@ -82,7 +83,7 @@ github_pack/
 
 ## 先校验，再运行
 
-建议把工程解压到短的英文路径。下面是熟悉 Python 的读者使用的简明入口；新手按[复现第 3～4 节](reproduce.md)建立 Python 3.12 虚拟环境并配置原生 GCC。项目代码要求 Python 3.10+，本次实际环境为 Python 3.12.5、GCC 8.1/13.1。
+建议把工程解压到短的英文路径。下面是熟悉 Python 的读者使用的简明入口；新手按[复现第 3～4 节](reproduce.md)建立 Python 3.12 虚拟环境并配置原生 GCC。项目代码要求 Python 3.10+，随包完整离线记录使用 Python 3.12.5、GCC 13.1。
 
 ```powershell
 python -m pip install -r src/pc/requirements_reproduce.txt
@@ -135,15 +136,15 @@ New-Item -ItemType Directory -Force -Path build/out | Out-Null
 & "$env:VIVADO_BIN\vivado.bat" -mode batch -source build/pl/build_pl.tcl -log build/out/pl_build.log -journal build/out/pl_build.jou
 ```
 
-旧 BD 导出保留为连线参考：其中一处 AXI 协议元数据不能通过重新验证，因此不将该 BD 当作正式构建入口，也未修改协议参数来绕过检查。正式入口从真实结构源码重新生成 IP 并实现，已补入 Explore 策略。10 月 31 日实际完整构建的默认策略失败、Explore 通过时序，两份结果均保留在[构建证据](build/reports/rebuild_20261031/readme.md)。CDC、I/O 覆盖及普通告警仍需审查；重新实现后必须检查新的报告并另行上板验证。
+BD 导出保留为连线参考：其中一处 AXI 协议元数据不能通过重新验证，因此不将该 BD 当作正式构建入口，也未修改协议参数来绕过检查。正式入口从真实结构源码重新生成 IP，并使用 Explore 策略实现。`build/reports/pl_*.rpt`、`pl_pins.tsv` 和 `pl_clocks.tsv` 对应 `board/firmware/` 的当前发布 PL；自行重新实现后应检查新报告并另行上板验证。
 
 2026-11-03 本轮完整 PL 构建已产生新 bitstream，WNS=+0.062 ns、WHS=+0.012 ns，详见[本轮综合与实现报告](build/reports/rebuild_20261103/readme.md)。已保留告警与审查结论，没有将时序通过写成整机签核。
 
 ## 验证范围与发布
 
-本轮运行存图 37 项、上位机 377 项和 4 个子测试、上板工具 25 项、推理比较器 8 项；存图测试同时在原生 GCC 8.1 与 13.1 通过。最新检查状态、范围、输入哈希和原日志见[离线回执](sim/results/offline_checks_20261103.json)。完整 ARM/BOOT 重建也已完成，8 个分区与 388 项运行模型资产配对校验通过。上述结果不代表模型准确率、机械响应或 SD 冷启动实测。
+随包完整离线运行使用原生 GCC 13.1，存图 37 项、上位机 377 项和 4 个子测试、上板工具 25 项、推理比较器 8 项通过。检查状态、范围、输入哈希和原日志见[离线回执](sim/results/offline_checks_20261103.json)。完整 ARM/BOOT 重建也已完成，8 个分区与 388 项运行模型资产配对校验通过。上述结果不代表模型准确率、机械响应或 SD 冷启动实测。
 
-真实历史模型板测已归档在[board/evidence](board/evidence/readme.md)，包含失败及逐层误差。当前 SSD95 集成固件的实测日志尚待提供并核对；未把历史实验、新编译产物和已发布固件混写成同一次验收。本轮未连接板卡或写物理 SD 卡。原始导出和目录整理报告仍保留原日期与验证范围。
+当前 SSD95 集成固件的实测日志尚待提供并核对，采集要求见[board/evidence](board/evidence/readme.md)。本轮未连接板卡或写物理 SD 卡；源码重建结果和当前发布固件具有不同的文件指纹，须分别验收。
 
 原始封存清单的摘要只用于追溯；本包使用独立的相对路径清单 `build/metadata/package_manifest.json` 校验，不依赖开发机历史目录或旧版本工程。导出时清除了重复备份、旧固件、对象文件、缓存、抓拍数据和运行日志。
 

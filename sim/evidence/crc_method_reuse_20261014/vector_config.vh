@@ -1,2 +1,0 @@
-`define WORDS 2123546
-`define PACKETS 3042

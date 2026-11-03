@@ -6,7 +6,6 @@
 src/
 ├── readme.md              # 源码总览
 ├── design.md              # 系统设计与功能说明
-├── design_report.docx     # 用户提供的完整设计报告
 ├── third_party_notices.md # 第三方来源与授权说明
 ├── modeling/              # 电脑端：模型定义、数据准备、训练与评估
 ├── pc/                    # 电脑端监控与调参界面
@@ -20,7 +19,7 @@ src/
 
 下表中的路径相对于本目录；命令均从仓库根目录执行。返回[项目说明](../readme.md)，或查看[构建导览](../build/readme.md)。
 
-系统功能与软硬件分工见[设计说明](design.md)，完整原稿见[设计报告](design_report.docx)，第三方来源与授权范围见[来源说明](third_party_notices.md)。
+系统功能与软硬件分工见[设计说明](design.md)，最终设计报告见 [report/report.pdf](../report/report.pdf)，第三方来源与授权范围见[来源说明](third_party_notices.md)。
 
 | 目录 | 内容 | 常见修改入口 |
 | --- | --- | --- |
@@ -46,5 +45,5 @@ src/
 - `platform/capture/sdk/core0_network/`：主核网络应用基础代码。
 - `platform/capture/sdk/core1_audio/`：副核音频应用基础代码。
 - `platform/capture/shared/`：双核共用的协议和接口。
-- `platform/runtime/`：模型推理运行库和生成的模型表。
+- `platform/runtime/`：模型推理运行库和生成的模型表；其中 `generated/` 的 C 源码与头文件直接参与当前双核构建。
 - `platform/build/`：链接脚本；`application/build/fsbl/`：第一阶段启动程序源码及其 BSP。这些目录中的文件是构建输入。

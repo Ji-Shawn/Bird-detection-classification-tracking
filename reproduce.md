@@ -73,7 +73,7 @@ py -3.12 -m venv .venv
 
 ### 4.2 准备原生 GCC
 
-原生 GCC 生成电脑上运行的测试程序；ARM GCC 生成板上程序，两者用途不同。已验证的原生编译器为 MinGW GCC 8.1 和 13.1。
+原生 GCC 生成电脑上运行的测试程序；ARM GCC 生成板上程序，两者用途不同。随包完整离线记录使用 MinGW GCC 13.1。
 
 若已有 Qt/MinGW 或 Vivado 配套 MinGW，找到其 `bin/gcc.exe` 即可。没有时可以按 [MSYS2 官方入门说明](https://www.msys2.org/)安装 MSYS2，在其 **UCRT64** 窗口运行下面这一条命令（不是在 PowerShell 运行）：
 
@@ -230,11 +230,11 @@ New-Item -ItemType Directory -Force -Path build/out | Out-Null
 
 脚本会从包内 RTL、ROM、精确 IP 配置和约束重新创建工程，执行综合、布局、布线、物理优化并生成 `build/out/pl/adapter_system.bit`。过程可能较长；不要因界面暂时无输出而反复启动多份构建。
 
-当前入口已采用10月31日成功记录中的 Explore 布局布线策略，保留时序和布线检查。此前默认策略曾 WNS=-0.073 ns，不能把同源码的旧正时序报告当作新实现的结果。证据见 [完整构建记录](build/reports/rebuild_20261031/readme.md)。
+当前入口采用 Explore 布局布线策略，保留时序和布线检查。`build/reports/pl_*.rpt` 与同目录引脚、时钟表对应 `board/firmware/` 中当前发布的 PL；重新实现时必须阅读本次输出报告。
 
 2026-11-03 已再次从源码完成综合与实现，WNS=+0.062 ns、WHS=+0.012 ns，生成新 bitstream；[本轮报告](build/reports/rebuild_20261103/readme.md)保留输入指纹、原始日志及待审查项。不同次实现不要求 bitstream 字节相同。
 
-**成功判据分两层**：脚本完成并打印 `PL_IMPLEMENTATION_TIMING_PASS`，说明其构建和时序门槛通过；还需查看 CDC、I/O 延时覆盖和方法学报告，说明待处理项，最后再上板。当前历史报告中存在未闭合告警，不能写“所有工程检查全绿”。详细处置边界见 [build/pl/readme.md](build/pl/readme.md)。
+**成功判据分两层**：脚本完成并打印 `PL_IMPLEMENTATION_TIMING_PASS`，说明其构建和时序门槛通过；还需查看 CDC、I/O 延时覆盖和方法学报告，说明待处理项，最后再上板。发布报告与最新重建报告均有尚待审查的告警，不能写“所有工程检查全绿”。详细处置边界见 [build/pl/readme.md](build/pl/readme.md)。
 
 脚本输出 BIT，不自动产生一套新 XSA/BOOT。改变 PS 外设、地址映射或相机接线时，旧 XSA 和 FSBL 不能继续当作新硬件验收产物。不要套用通用 PS preset 覆盖本项目已经确认的 DDR/MIO 配置。
 
@@ -248,7 +248,7 @@ Get-FileHash board/firmware/boot.bin -Algorithm SHA256
 
 该命令记录的是准备部署的文件；还应记录实际写卡和启动过程，不能只凭这条哈希证明板上正在运行同一文件。
 
-每次至少记录：测试目标、输入来源、场景条件、实际结果、参考结果、通过标准、失败样本、固件/模型标识、原始日志路径。分类准确率要说明样本和标注；性能要说明是否包含采集、传输、预处理及推理。历史板测在 [board/evidence](board/evidence/readme.md)，其不同样本或固件的结果不能替代你这一轮的实测。
+每次至少记录：测试目标、输入来源、场景条件、实际结果、参考结果、通过标准、失败样本、固件/模型标识、原始日志路径。分类准确率要说明样本和标注；性能要说明是否包含采集、传输、预处理及推理。当前版本的整机实测证据尚待补充，具体采集要求见 [board/evidence](board/evidence/readme.md)。
 
 对包内三个固定输入做数值对拍，请使用 [样本与观察格式](data/models/samples/readme.md)和 `sim/compare_inference.py`。该工具需要独立采集的完整 logits/检测框，普通监控日志的概率或 top1 不等于这些原始数值。没有对应输入与原始输出时，保留“待验证”，不要复制 `expected.json` 充当实际输出。
 
@@ -277,7 +277,7 @@ Get-FileHash board/firmware/boot.bin -Algorithm SHA256
 
 这个入口按已校验清单导出，排除 `.git/`、`.venv/` 和 `build/out/`。如果 ZIP 已存在，换一个文件名保存，避免覆盖已有交付。不要直接把含缓存的整个工作目录压缩提交。
 
-压缩包解压后，先从第 3 节为新目录建立 `.venv` 并安装依赖，再按第 4 节重新设置 `HOST_CC` 和运行检查，确认换路径仍可通过。虚拟环境不随 ZIP 分发。提交材料可从[项目总览](readme.md)、[大模型协作报告](report/llm_collaboration.md)、[技能包入口](skill/readme.md)进入。尚未拿到真实当前版本证据的测试项，应在提交前补齐并保留原始记录。
+压缩包解压后，先从第 3 节为新目录建立 `.venv` 并安装依赖，再按第 4 节重新设置 `HOST_CC` 和运行检查，确认换路径仍可通过。虚拟环境不随 ZIP 分发。提交材料可从[项目总览](readme.md)、[最终设计报告](report/report.pdf)、[大模型协作报告](report/llm_collaboration.md)、[技能包入口](skill/readme.md)进入。尚未拿到真实当前版本证据的测试项，应在提交前补齐并保留原始记录。
 
 ## 12. 构建、训练和评估模型
 

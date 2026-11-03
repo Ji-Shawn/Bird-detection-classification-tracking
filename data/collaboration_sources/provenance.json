@@ -93,11 +93,5 @@
         "evidence_level": "historical_handover_summary_and_embedded_snippets_not_new_execution"
       }
     ]
-  },
-  "requirement_image": {
-    "archive": "design_report_requirements.jpg",
-    "sha256": "7a55fbac86a058d2c7e05bdcb8c3285cc0fda6a2e01a1c66d54723057be10257",
-    "source": "user_attached_excerpt_section_3_3_5_3",
-    "scope": "Only the two bold report requirements requested for this supplement"
   }
 }

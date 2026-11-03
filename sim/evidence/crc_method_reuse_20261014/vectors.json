@@ -1,7 +1,0 @@
-{
-  "seed": 2276,
-  "packets": 3042,
-  "words": 2123546,
-  "video_bytes": 4147200,
-  "oracle": "Python zlib.crc32"
-}

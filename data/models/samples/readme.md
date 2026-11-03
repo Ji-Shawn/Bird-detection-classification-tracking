@@ -19,7 +19,7 @@
 
 `capture.execution` 只能为 `board`、`rtl_simulation` 或 `cpu_reference`。`raw_evidence` 是相对于观察 JSON 的原始日志路径。`captured_at` 填带时区的时间，`run_id` 填可追溯的实验编号。不要复制参考值填到实际输出，也不要把另一个固件、另一组输入的旧日志改称当前结果。
 
-10 月 2 日的历史 SSD 记录使用 anchor 3175，和本目录样本不同；历史分类记录没有完整 logits。因此它们不能直接输入这个比较器，已有对照单独放在 [历史参考汇总](../../reference/history_models_20261002/readme.md)。
+本目录 SSD 样本的参考结果尚缺与当前完整参数、输入和运行版本同时关联的生成回执，边界见[模型部署说明](../../../src/modeling/deployment.md)。比较结果只能用于分析这组给定数值，不能据此宣称当前整机模型已验收；在正式验收前，应补齐同一输入、完整模型指纹和独立参考的对应关系。
 
 ## 2. 执行比较
 

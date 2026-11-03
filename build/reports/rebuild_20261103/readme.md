@@ -1,6 +1,6 @@
 # 2026-11-03 当前工程完整 FPGA 重建
 
-本目录保存本轮从项目源码和 IP 配置开始的实际综合、布局、布线及 bitstream 生成结果。Vivado 2023.2 于 2026-11-03 00:53:38 启动，01:14:26 正常结束，日志出现 `PL_IMPLEMENTATION_TIMING_PASS`。该结果独立于 [2026-10-31 历史重建](../rebuild_20261031/readme.md)，两次记录没有混用或覆盖。
+本目录保存最新一轮从项目源码和 IP 配置开始的实际综合、布局、布线及 bitstream 生成结果。Vivado 2023.2 于 2026-11-03 00:53:38 启动，01:14:26 正常结束，日志出现 `PL_IMPLEMENTATION_TIMING_PASS`。当前发布固件的配套报告仍为上级目录的 `pl_*.rpt`，本目录描述单独生成的新 PL，未替换 `board/firmware/` 中的发布文件。
 
 **结论：完成实现并满足本次脚本的时序门槛，仍需审查 CDC、I/O 约束和普通告警；没有新上板验收。** 结构化结果见 [result.json](result.json)。
 
@@ -30,12 +30,12 @@
 | `timing.rpt`、`utilization.rpt`、`route.rpt` | 实现后时序、层次化资源和路由状态 |
 | `synthesis_timing.rpt`、`synthesis_utilization.rpt` | 综合阶段结果，不能冒充实现后结果 |
 | `cdc.rpt`、`drc.rpt`、`methodology.rpt`、`bus_skew.rpt` | 保留待分析条目和原检查结果 |
-| `summary_review.json` | 技能脚本真实输出：`review_required`，32 条待审查事项 |
+| `summary_review.json` | 对脱敏前 `build/out/pl/` 报告运行技能脚本的真实输出：`review_required`，32 条待审查事项；输入哈希对应原文件 |
 | `input_sha256.json` | 归档时 148 个 `src/pl/` 文件及构建 Tcl 的指纹、脚本直接引用路径 |
 | `provenance.json` | 原文件与脱敏归档文件各自的 SHA256、大小和转换规则 |
 | `process_stderr.txt` | 原进程 stderr 的两行“系统找不到指定的路径。”，由 GB18030 转为 UTF-8 后保留 |
 
-日志只替换工作目录、工具安装目录、临时目录和主机名；不删除告警、错误或失败条目。原 stderr 消息的具体来源尚未定位，它没有阻止本次 Vivado 完成；不能把它从证据中隐藏，也不能将其等同于本轮综合实现失败。
+日志只替换工作目录、工具安装目录、临时目录和主机名；不删除告警、错误或失败条目。脱敏后归档 `.rpt` 的字节和哈希会变化，不能用 `summary_review.json` 中的原输入哈希直接校验本目录文件；应查看 `provenance.json` 中原文件与归档文件的对应记录。原 stderr 消息的具体来源尚未定位，它没有阻止本次 Vivado 完成；不能把它从证据中隐藏，也不能将其等同于本轮综合实现失败。
 
 `input_sha256.json` 是**归档时快照**，不是当时未保存的全输入构建前快照。除了单独留存的实际运行脚本版本，不声称已经有所有源文件的构建前后哈希对照。
 

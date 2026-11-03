@@ -18,7 +18,7 @@ sim/
 
 ## 一次运行离线检查
 
-准备 Python 3.10 或更新版本（包含 tkinter）、原生 GCC 兼容编译器，再安装依赖。Windows 下优先使用已安装的 MinGW-w64；这里的编译器用于电脑上的 C 测试，不能用 `arm-none-eabi-gcc` 替代。2026-11-03 实际验证了 GCC 8.1.0 和 13.1.0。
+准备 Python 3.10 或更新版本（包含 tkinter）、原生 GCC 兼容编译器，再安装依赖。Windows 下优先使用已安装的 MinGW-w64；这里的编译器用于电脑上的 C 测试，不能用 `arm-none-eabi-gcc` 替代。随包完整离线记录使用 GCC 13.1.0。
 
 第一次运行请先按[从零复现第 3～4 节](../reproduce.md)建立环境。下文的 `python` 均应使用同一个解释器；按该文档创建虚拟环境后，将它替换为 `.\.venv\Scripts\python.exe`，不需要激活环境。
 
@@ -56,7 +56,7 @@ python -B build/run_checks.py
 
 回执中的 `archived_log`、`archived_detail` 和 `archived_junit` 指向这次运行的 `new_full_20261103` 文件；[归档来源清单](results/offline_checks_archive_20261103.json)记录原始文件与归档文件的 SHA256、脱敏规则和分项关联。113 个被测源码与夹具指纹在归档时再次核对一致。[环境核验](results/python_environment_new_full_20261103.json)记录同一新环境的解释器和依赖版本，明确其采集时间为运行完成后的归档阶段。
 
-此前跳过包校验的[开发阶段快照](results/offline_checks_development_20261103.json)保留为 `pass_partial`，其旧日志没有替换成新运行结果。单独的 [GCC 8.1 记录](results/native_gcc8_20261103.json)和早期 GCC 13.1 记录同样保留，不能与本轮完整运行混为一次。
+本目录保留完整离线运行及对应的 `new_full_20261103` 明细、[迁移复现回执](results/relocation_20261103.json)与配套记录，以及模型、技能和视频超时专项结果。不同验证范围分别记录；再次运行产生的文件默认写入 `build/out/`。
 
 完整运行中的包校验对应当时的清单，日志记录 2605 个文件、391 项模型资产。将这些回执纳入交付包后，文件数和清单会变化，发布时还须刷新清单并再次独立核验包完整性；不能要求回执预先包含它自身最终哈希。这些离线结果均不表示完成了当前固件的上板验收。
 
@@ -80,8 +80,8 @@ python -B build/run_checks.py
 | 协议黄金文件缺失 | 恢复 `sim/fixtures/protocol/`，不要删除测试或用当前解码器临时生成“期望值” |
 | 电脑测试全绿，但板卡仍无输出 | 按 [board/readme.md](../board/readme.md) 排查实际连接和启动；离线通过不能代替上板验收 |
 
-详细上板工具测试说明见 [board_tools/readme.md](board_tools/readme.md)，构建与验证证据见[构建导览](../build/readme.md)，过去的目录审查记录见[历史审查文档](../build/reports/documentation_history/readme.md)。
+详细上板工具测试说明见 [board_tools/readme.md](board_tools/readme.md)，构建与验证证据见[构建导览](../build/readme.md)。`archive/` 中的两个 C 文件是当前 `run_tests.py` 直接编译和包含的测试源码；`fixtures/` 中的数据是运行这些测试的输入，均须保留。
 
-技能方法迁移的补充案例见 [CRC32 独立原型归档](evidence/crc_method_reuse_20261014/readme.md)：历史 XSim 完成 3042 包对拍，本轮只核验并重建黄金向量，没有重新运行 RTL 或集成到当前固件。该案例独立于上述完整离线套件，不能计入当前 SSD95 整机板测。
+技能报告检查器的 [16 项自检结果](results/skill_selftest_20261103.json)与[原始日志](results/skill_selftest_20261103.txt)验证解析和异常判定；操作方法见 [skill/readme.md](../skill/readme.md)。[视频超时专项结果](results/video_timeout_regression_20261103.json)记录对应边界修复的验证。这些专项结果各有范围，不能相加为整机或硬件测试次数。
 
 模型构建新增验证见 [modeling_20261103.json](results/modeling_20261103.json)：16 项 CPU 自检通过，48 项独立数据与命令检查经复核成立。回执嵌入原始小日志、哈希和线程设置差异的复核过程，合成数据不计为模型准确率评估。模型环境安装后可从根目录运行 `python -B build/build_models.py selftest`；它需要额外的 PyTorch 依赖，独立于前述板端工程离线检查。步骤见[模型构建说明](../src/modeling/readme.md)。

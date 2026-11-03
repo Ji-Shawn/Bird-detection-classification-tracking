@@ -6,7 +6,6 @@
 data/
 ├── readme.md              # 数据用途与读取入口
 ├── collaboration_sources/ # 用户补充原文、Word 正文、交接摘录及来源指纹
-├── reference/            # 历史实测与参考的逐层误差、分段性能汇总
 └── models/
     ├── assets/           # 音频分类、鸟目标检测、视觉分类的板端模型资产
     ├── assets_manifest.json # 文件路径、大小、加载地址和 SHA256
@@ -19,10 +18,10 @@ data/
 
 模型定义、数据准备、训练与评估代码见 [src/modeling/](../src/modeling/readme.md)，从根目录运行 `python -B build/build_models.py` 查看可用命令。完整训练数据由使用者单独准备，训练产物默认写入 `build/out/modeling/`。随包的 `data/models/` 是既有板端资产，训练新模型后还需导出、量化、资产转换和重新验收，见[训练与部署的对应关系](../src/modeling/deployment.md)。第三方和模型授权信息见[来源与授权说明](../src/third_party_notices.md)，不要把参考样本当作完整准确率评估集。
 
-数值对拍见 [samples/readme.md](models/samples/readme.md)：需要独立采集完整实际输出，再执行 `sim/compare_inference.py`；自测通过或复制参考值不构成板测证据。历史 222 行逐层比较见 [reference/history_models_20261002](reference/history_models_20261002/readme.md)，对应旧输入和旧固件，包含非零误差。
+数值对拍见 [samples/readme.md](models/samples/readme.md)：需要独立采集完整实际输出，再执行 `sim/compare_inference.py`；自测通过或复制参考值不构成板测证据。本目录仅提供当前运行资产及固定样本，当前集成固件的完整实测输出仍待采集，要求见 [board/evidence/readme.md](../board/evidence/readme.md)。
 
 ## 协作报告的来源材料
 
-`collaboration_sources/` 保存两份历史 Markdown、Word 全文提取、带原行号的交接摘录、要求截图及来源记录；阅读方式见[来源材料说明](collaboration_sources/readme.md)，文件身份与转换方式见 [provenance.json](collaboration_sources/provenance.json)。这些材料用于核对当时的提示词摘要、判断变化和技能来源，不作为模型输入或板端资产清单的一部分。
+`collaboration_sources/` 保存两份来源 Markdown、Word 全文提取、带原行号的交接摘录及来源记录；阅读方式见[来源材料说明](collaboration_sources/readme.md)，文件身份与转换方式见 [provenance.json](collaboration_sources/provenance.json)。这些材料用于核对报告中的提示词摘要、判断变化和技能来源，不作为模型输入或板端资产清单的一部分。
 
-来源稿保留当时的表述，包括后来撤回或收窄的结论；它们不能替代原始实验日志，也不能直接当作现行操作指令。当前采纳结论见 [大模型协作报告](../report/llm_collaboration.md)和[技能包提炼过程](../report/skill_extraction.md)，实际技能使用见 [skill/readme.md](../skill/readme.md)。根目录 `report/` 仅保留这两份报告正文。
+来源稿保留当时的表述，包括后来撤回或收窄的结论；它们不能替代原始实验日志，也不能直接当作现行操作指令。当前采纳结论见 [大模型协作报告](../report/llm_collaboration.md)和[技能包提炼过程](../report/skill_extraction.md)，实际技能使用见 [skill/readme.md](../skill/readme.md)。根目录 `report/` 保留[最终设计报告 PDF](../report/report.pdf)和这两份专题 Markdown。

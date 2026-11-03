@@ -1,8 +1,8 @@
-# M51 设计说明
+# SSD95 鸟类识别系统设计说明
 
-本包整理自 M51 的 `ssd95_record_20261027` 修订。整理日期为 2026-10-29；整理工程目录不等于重新训练模型、重新验证实物或更新板卡。具体操作入口、目录对应关系和构建方法以仓库根目录说明为准。
+本包的当前发布固件为 SSD95（来源编号 M51，修订 `ssd95_record_20261027`）。本说明概述其功能与接口；具体操作入口和构建方法以仓库根目录说明为准。最新源码重建及离线测试分别保存证据，尚未完成新整机板测。
 
-设计报告采用主文加专题附件的组织方式。2026-11-03 补齐的 **大模型协作记录** 见 [llm_collaboration.md](../report/llm_collaboration.md)：第 13 节给出历史提示词、模型回答与动作摘要、自我纠错链，第 14 节给出智能体工作流。**技能包的提炼过程** 见 [skill_extraction.md](../report/skill_extraction.md)，逐项说明失败来源、有效性验证和适用边界。两项要求的核验索引见 [requirements_confirmation.md](../build/reports/documentation_history/requirements_confirmation.md)；从零操作见 [reproduce.md](../reproduce.md)。这些附件均属于本设计报告材料，历史整理记录与当前实测结果分别标明。
+设计报告采用主文加专题材料的组织方式，最终主文为 [report/report.pdf](../report/report.pdf)。**大模型协作记录**见 [llm_collaboration.md](../report/llm_collaboration.md)，说明提示词、模型回答与动作摘要、自我纠错及工作流程；**技能包提炼过程**见 [skill_extraction.md](../report/skill_extraction.md)，逐项说明失败来源、有效性验证和适用边界。从零操作见 [reproduce.md](../reproduce.md)。
 
 ## 功能与分工
 
@@ -78,9 +78,9 @@ bird_class/
 
 ## 验证范围
 
-最新 95% 修订的历史离线验证为 `PASS_OFFLINE_READY`：37 项原生测试，其中包含 5 项执行真实照片生产和 FatFs 的集成场景；ARM Core0 已编译，其他 34 个 Core0 对象逐字节未变，Core1、PL 与模型沿用已配对版本。原生测试使用确定性的 SSD 和视觉分类输入，不能作为模型准确率实测。
+当前发布修订的验证状态为 `PASS_OFFLINE_READY`，记录见[发布验证](../build/receipts/release_validation.json)及[发布测试](../build/receipts/release_tests.json)：37 项原生测试，其中包含 5 项执行真实照片生产和 FatFs 的集成场景；Core0 已编译，Core1、PL 与模型沿用该发布版本配套文件。原生测试使用确定性的 SSD 和视觉分类输入，不能作为模型准确率实测。
 
-本次目录整理没有连接板卡、JTAG 下载、写入实体 SD 卡或重新进行冷启动、镜头和机械跟随测试。历史离线结果与新的打包完整性检查应分开阅读。
+2026-11-03 的[完整离线运行](../sim/results/offline_checks_20261103.json)、[ARM/BOOT 重建](../build/receipts/arm_rebuild_20261103.json)及[PL 重建](../build/reports/rebuild_20261103/readme.md)分别记录了最新验证范围。重建 ARM/BOOT 使用发布 PL，新 PL bitstream 单独生成，尚未作为一套新整机版本验收。本轮没有连接板卡、JTAG 下载、写入实体 SD 卡或进行冷启动、镜头和机械跟随测试。
 
 | 配对产物 | SHA-256 |
 | --- | --- |

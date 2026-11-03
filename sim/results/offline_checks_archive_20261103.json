@@ -1,51 +1,11 @@
 {
   "archive_date_local": "2026-11-03",
   "run_utc": "2026-11-02T17:14:46.401483+00:00",
-  "scope": "Archive of actual full offline validation and preservation of the earlier development snapshot; no test results synthesized or changed",
+  "scope": "Archive of the actual final complete offline validation only; earlier development records are omitted from this delivery. Full-run test results and recorded source/archive log hashes remain unchanged.",
   "final_summary": {
     "path": "sim/results/offline_checks_20261103.json",
-    "sha256": "0c667e5342bba3eb4a0547a7e48630eee1fa602541b73b03233a3e3988cf77e8"
+    "sha256": "dde2a3b3c6218cebb83240304580ddcdc7a10461e722f373e463cc3634909ed4"
   },
-  "development_summary": {
-    "path": "sim/results/offline_checks_development_20261103.json",
-    "original_summary_sha256": "76d83be123e6c6ce4bfd091951bbc9bdac072d7988735b06e37f8aadd293269f",
-    "archived_sha256": "76d83be123e6c6ce4bfd091951bbc9bdac072d7988735b06e37f8aadd293269f",
-    "status": "pass_partial",
-    "run_utc": "2026-11-02T16:53:06.442335+00:00",
-    "transformation": "none; original snapshot copied byte-for-byte before replacing the main summary"
-  },
-  "development_logs": [
-    {
-      "stage": "boot",
-      "archived": "sim/results/boot_20261103.txt",
-      "archived_sha256": "1816996508ce587810a93c4f09f7687d97e7dedf924457e577c6c6694578fc53",
-      "note": "Existing development-run log retained unchanged; not replaced with full-run output"
-    },
-    {
-      "stage": "native_sd",
-      "archived": "sim/results/native_sd_20261103.txt",
-      "archived_sha256": "5776134a838f9ccc340cf4f9e3dd5689aa9e14da8a772ccf9a2dfe42c7680158",
-      "note": "Existing development-run log retained unchanged; not replaced with full-run output"
-    },
-    {
-      "stage": "comparator_selftest",
-      "archived": "sim/results/comparator_selftest_20261103.txt",
-      "archived_sha256": "b8bd88d3c6aeec16810a381fa32b41d615655d14847290ea407c6bcd42aa8d4b",
-      "note": "Existing development-run log retained unchanged; not replaced with full-run output"
-    },
-    {
-      "stage": "pc_pytest",
-      "archived": "sim/results/pc_pytest_20261103.txt",
-      "archived_sha256": "b8482ac3506ead9eb1477565228ca3d231a4a67922e5f94d33d2ccf5f10f30cd",
-      "note": "Existing development-run log retained unchanged; not replaced with full-run output"
-    },
-    {
-      "stage": "board_tools",
-      "archived": "sim/results/board_tools_20261103.txt",
-      "archived_sha256": "a68bf46839fb6cbe2f0e3d438a98342a4c851db80caaf044913d47c16e31ee08",
-      "note": "Existing development-run log retained unchanged; not replaced with full-run output"
-    }
-  ],
   "full_run_files": [
     {
       "stage": "summary",

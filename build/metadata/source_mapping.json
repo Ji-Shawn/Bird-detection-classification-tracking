@@ -18435,7 +18435,7 @@
     },
     {
       "source": "verification/m51_ssd95_record_20261027/validation.json",
-      "package": "build/receipts/package_history/original_validation.json",
+      "package": "build/receipts/release_validation.json",
       "sha256": "eb7b6de29906e9ff138aff8a2f34bdcba18cbbb0b5662aeb687eb324252e4594",
       "bytes": 1589,
       "package_sha256": "ba59ec69cadff06607562a1d032191abeef4f2b5a49ca9f44c7ffbcbb02745f6",
@@ -18443,7 +18443,7 @@
     },
     {
       "source": "verification/m51_ssd95_record_20261027/ssd95_tests.json",
-      "package": "build/receipts/package_history/original_ssd95_tests.json",
+      "package": "build/receipts/release_tests.json",
       "sha256": "512d3419a4e5944c163e07135b2b79917537e4347680c2313210ed9d644b2dd5",
       "bytes": 3028,
       "package_sha256": "6ddd751c6282c1de25f4b7e43b11801ca762b5c904ac99a53cc3ca1dd561bcb3",
@@ -18451,7 +18451,7 @@
     },
     {
       "source": "verification/m51_ssd95_record_20261027/release_manifest.json",
-      "package": "build/receipts/package_history/original_release_manifest.json",
+      "package": "build/receipts/release_manifest.json",
       "sha256": "c1e79e8d2e947ea59bbe50f91adafec371abc23ec3878ba825fa6d37a5db0403",
       "bytes": 1651375,
       "package_sha256": "e8552b30c39a11e90db0864dc17e10e88348aa5686e61dcf90d03e0ebc80ca01",
@@ -18479,14 +18479,14 @@
     "src/services/core1/build_core1.py",
     "build/boot/package_sd_base.py",
     "sim/archive/test_ssd95_record.c",
-    "report/original_validation.json",
-    "report/original_ssd95_tests.json",
-    "report/original_release_manifest.json",
+    "build/receipts/release_validation.json",
+    "build/receipts/release_tests.json",
+    "build/receipts/release_manifest.json",
     "build/receipts/core0_original.json",
     "build/receipts/core1_original.json"
   ],
   "note": "Original files and seals remain immutable. Changed export bytes are path/entry adaptations and redacted informational evidence, not changes to bird control or thresholds.",
   "layout_note": "Package paths reorganized by function on 2026-10-30; source paths and original hashes retain their historical meaning.",
-  "package_revision": "modeling_integration_20261103",
-  "provenance_note": "Original source sha256/bytes retained; package_sha256/package_bytes describe current packaged files. New documentation, fixtures and audit tools are recorded by the package manifest and their own provenance."
+  "package_revision": "final_delivery_20261103",
+  "provenance_note": "Original source sha256/bytes retained for current payload only; package_sha256/package_bytes describe current packaged files. Removed historical artifacts are not listed as current package files."
 }

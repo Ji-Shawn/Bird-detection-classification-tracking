@@ -11,7 +11,7 @@ build/pl/
 └── av_system.tcl          # 历史连线参考
 ```
 
-输入源码位于 `src/pl/`，生成工程和结果位于 `build/out/pl/`，原发布实现报告位于 `build/reports/`。所有命令从仓库根目录运行。
+输入源码位于 `src/pl/`，生成工程和结果位于 `build/out/pl/`。`build/reports/pl_*.rpt`、`pl_pins.tsv` 和 `pl_clocks.tsv` 对应 `board/firmware/` 中的当前发布 PL；最新源码重建证据单独放在 `build/reports/rebuild_20261103/`。所有命令从仓库根目录运行。
 
 工具版本为 Vivado 2023.2，器件为 `xc7z020clg400-2`。在仓库根目录执行：
 
@@ -31,9 +31,7 @@ Windows 可使用 Vivado 安装目录中的 `vivado.bat`。第一条命令只建
 
 `src/pl/bd/av_system.bd` 与 `build/pl/av_system.tcl` **仅作为原设计连线和地址配置的参考**，不作为正式构建入口。对它们进行全新 `validate_bd_design` 时，旧接口传播元数据将 `vdma_proto` 的目标协议推为 AXI4，但该转换器只接受 AXI3/AXI4LITE，因此检查失败。已发布硬件的真实配置是该转换器输出 AXI3，而后级总线接收 AXI4 子集。打包没有更改协议、跳过失败后声称通过，也没有改动已发布的 bitstream；改用实际结构连接源码保留原来硬件实现。
 
-原始导出阶段完成了干净工程创建、39 个叶 IP 重新生成和功能配置核对，以及 `synth_design -rtl` 展开检查（168 个端口、4 位实体按键，0 严重警告、0 错误；487 条普通警告）。历史结果见 `build/receipts/package_history/pl_package.json` 与 `build/reports/pl_package_checks.txt`，旧阶段路径可通过 `build/metadata/history/directory_reorganization.json` 对照。
-
-10 月 31 日同一 Git 提交完整重建，默认策略 WNS=-0.073 ns，Explore 策略 WNS=+0.082 ns、WHS=+0.012 ns。39 个 IP、217 项手动 PS 设置、168 个引脚核对一致。原始成功脚本以前只在忽略的输出目录中，本轮已把该策略加入正式入口，详见[完整证据与待审查项](../reports/rebuild_20261031/readme.md)。顶层 `pl_*.rpt` 仍是原发布实现，不能与新构建混用。
+当前入口采用 Explore 布局、AggressiveExplore 物理优化、Explore 布线及再次 AggressiveExplore 物理优化。发布 PL 的报告记录 WNS=+0.128 ns、WHS=+0.005 ns；这些数字仅对应发布产物，不能代替新构建的报告。
 
 2026-11-03 已从源码完整重建，WNS=+0.062 ns、WHS=+0.012 ns，输出 bitstream。新报告包含综合与实现阶段，见[本轮证据](../reports/rebuild_20261103/readme.md)。随后仅改变 IP 生成的工作目录以避免根目录产生临时文件，又在独立新目录实测完成 39 个 IP 生成；具体两次运行的范围与脚本指纹在该证据内分别记录。
 
